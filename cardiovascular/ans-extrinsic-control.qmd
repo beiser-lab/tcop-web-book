@@ -1,0 +1,284 @@
+---
+title: "ANS and Extrinsic Control"
+subtitle: "How the nervous system sets heart rate, contractility and vascular tone"
+bibliography: [../references.bib, ../bib/w6.bib]
+---
+
+::: {.callout-note title="Goals for this chapter"}
+- Describe the control hierarchy: the hypothalamus as coordinator, the medullary cardiorespiratory center (NTS, DMV, RVLM, CVLM) as integrator, and the limbic system as context.
+- Compare sympathetic and parasympathetic pathways: where the neurons start, where they synapse, and which transmitter and receptor each step uses, including the sweat gland and adrenal medulla exceptions.
+- Explain how β~1~ and M~2~ receptors change heart rate, AV conduction and contractility.
+- Predict whether adrenergic signaling constricts or dilates a vessel from the receptor it acts on (α~1~ or β~2~), and explain how venous tone changes stressed volume and P~ms~.
+- Trace the baroreceptor reflex from stretch of the carotid sinus to the change in heart rate and vascular tone.
+- Explain why the chemoreceptor reflex slows the heart when ventilation is fixed but speeds it in a person who is breathing.
+- Name the extrinsic factors, from other organ systems, that also act on the circulation.
+
+Names, dates and the exact values in figure captions are context, not things to memorize.
+:::
+
+Every tissue controls its own arterioles. The [Microcirculation and Local Control](microcirculation.qmd) chapter showed how myogenic, metabolic and endothelial mechanisms match local blood flow to local need, minute to minute. Local control cannot defend the whole circulation, though. If every bed dilated at once, arterial pressure would fall and the brain and heart would lose their perfusion pressure. The circulation is a set of parallel beds fed by one pump, so something has to set cardiac output, hold mean arterial pressure (MAP) steady, and decide which beds get the cardiac output when there is not enough to go around. That is the job of the autonomic nervous system (ANS), with help from hormones and other organ systems. The [Control of Cardiac Output](control-of-co.qmd) chapter showed what moves cardiac output: P~ms~, contractility, heart rate and SVR. This chapter shows how the nerves move them. It covers the efferent side first (what the nerves do to the heart and vessels), then the afferent side (the sensors and the reflexes they drive), then a preview of extrinsic control.
+
+## The control hierarchy
+
+Higher centers and the medulla together shape autonomic output to the circulation (@fig-ans-extrinsic-control-hierarchy).
+
+![The control hierarchy. Higher centers set the context and the overall pattern; the medulla integrates the afferent signals and sets sympathetic and vagal outflow moment to moment. Green arrows excite and the red bar inhibits. The NTS excites the CVLM, which inhibits the RVLM, so more afferent input to the NTS means less sympathetic outflow. Course figure.](figures/ans-extrinsic-control/control-hierarchy.svg){#fig-ans-extrinsic-control-hierarchy}
+
+**The hypothalamus is the coordinator.** It sits below the thalamus, above the pituitary, and takes input from the retina, cortex, striatum, amygdala, hippocampus and spinal cord. It sets broad autonomic patterns and links cardiovascular responses to temperature control and endocrine output. It is a relay that sets the pattern, not the controller that adjusts each beat.
+
+**The limbic system provides context.** The amygdala, hippocampus and cingulate cortex supply the emotional reasons to act: fear, anxiety, anticipation. That is why your heart rate rises before an exam starts, with no change in posture or blood volume.
+
+**The medullary cardiorespiratory center is the integrator.** (The slide figures label it the medullary cardiovascular control center.) Clusters of neurons in the medulla (and lower pons) receive the afferent signals from the baroreceptors and chemoreceptors, combine them with input from higher centers, and set sympathetic and parasympathetic outflow in real time. The course names these nuclei:
+
+| Nucleus | Role |
+|---|---|
+| Nucleus tractus solitarius (NTS) | Receives the afferents in CN IX and CN X. The first stop for baroreceptor and chemoreceptor signals. |
+| Dorsal motor nucleus of the vagus (DMV) | Parasympathetic (vagal) output. The nucleus ambiguus, in the ventrolateral medulla, sends most of the vagal fibers to the heart. |
+| Rostral ventrolateral medulla (RVLM) | Tonically active. Drives the sympathetic preganglionic neurons in the spinal cord. |
+| Caudal ventrolateral medulla (CVLM) | Inhibitory. When the NTS excites it, it turns the RVLM down. |
+
+The wiring explains the direction of the baroreflex. The NTS does not inhibit the RVLM directly. It excites the CVLM, and the CVLM inhibits the RVLM. So when the NTS gets more afferent traffic, sympathetic outflow falls. At the same time the NTS excites the vagal neurons, so parasympathetic outflow rises.
+
+## Efferent pathways
+
+Both divisions of the ANS use two neurons in series between the central nervous system and the target. The first, the *preganglionic* neuron, has its cell body in the brainstem or spinal cord. It synapses in a ganglion on the second, *postganglionic* neuron, which runs to the target. At every autonomic ganglion, the preganglionic neuron releases acetylcholine (ACh) onto nicotinic receptors. The divisions differ in where the ganglia sit and in what the postganglionic neuron releases (@fig-ans-extrinsic-control-efferents).
+
+![Autonomic efferent pathways. Every ganglion uses ACh on nicotinic receptors. Sympathetic postganglionic neurons release norepinephrine (NE), except those to sweat glands, which release ACh. The adrenal medulla has no postganglionic neuron: preganglionic fibers end on chromaffin cells, which release epinephrine into the blood. Course figure.](figures/ans-extrinsic-control/efferent-pathways.svg){#fig-ans-extrinsic-control-efferents}
+
+### Sympathetic
+
+1. Signals from the hypothalamus pass through the medullary center (the RVLM) and down the spinal cord to preganglionic cell bodies in the lateral horn (the intermediolateral column) of the thoracic and upper lumbar cord, T1 to L2.
+2. The preganglionic axons leave the cord with the ventral roots and enter the sympathetic trunk (the chain of ganglia beside the vertebral column). Most synapse in the chain ganglion at the level where they left the cord. Some run up or down the chain first, which is how the head and the pelvis get sympathetic fibers even though no preganglionic neurons sit in the cervical or sacral cord. The preganglionic neurons are short.
+3. The postganglionic neurons have their cell bodies in the chain ganglia (or, for the abdominal organs, in ganglia in front of the aorta) and send long axons to the target tissues, where they release norepinephrine (NE) onto adrenergic receptors (α~1~, α~2~, β~1~, β~2~).
+
+Sympathetic postganglionic fibers to sweat glands are an exception: they release ACh onto muscarinic receptors (the skin's circulation is covered in [Other Special Circulations](special-circulations.qmd)). And in the adrenal medulla, preganglionic fibers end directly on chromaffin cells, which act as modified postganglionic neurons and release epinephrine (with a little NE) into the blood. Sympathetic activation is therefore both a nerve signal to specific targets and a hormone signal to every tissue with adrenergic receptors.
+
+### Parasympathetic
+
+1. Signals from the hypothalamus reach preganglionic neurons in the brainstem nuclei and the sacral cord (the craniosacral outflow).
+2. The preganglionic axons are long. They run all the way to ganglia in or next to the target organ. About 75% of all parasympathetic outflow travels in the vagus nerve (CN X).
+3. The postganglionic neurons are short. They release ACh onto muscarinic receptors on the target.
+
+| | Sympathetic | Parasympathetic |
+|---|---|---|
+| Preganglionic cell bodies | Lateral horn, T1 to L2 | Brainstem (mostly CN X) and sacral cord |
+| Ganglia | Sympathetic trunk (and prevertebral ganglia), near the cord | In or near the target |
+| Preganglionic neuron | Short; ACh on nicotinic receptors | Long; ACh on nicotinic receptors |
+| Postganglionic neuron | Long; NE on adrenergic receptors | Short; ACh on muscarinic receptors |
+| Exceptions | Sweat glands (ACh, muscarinic); adrenal medulla (epinephrine into blood) | |
+
+The receptors are G protein-coupled ([Membrane Potentials and Excitable Cells](../muscle/excitable-cells.qmd) explains what that means). The table of receptors, G proteins and second messengers (G~s~ and cAMP, G~i~, G~q~ and IP~3~) is in [Smooth Muscle](../muscle/smooth-muscle.qmd). This chapter uses them without the detail.
+
+## Autonomic control of the heart
+
+Sympathetic and parasympathetic fibers reach the heart through the cardiac plexus, a web of nerves at the base of the heart. Sympathetic preganglionic neurons in the upper thoracic cord synapse in the cervical and upper thoracic chain ganglia (including the stellate ganglion), and the postganglionic fibers run in the cardiac nerves to the plexus and on to the SA node, the AV node and the working myocytes of the atria and ventricles. Vagal preganglionic fibers run to the plexus and synapse on postganglionic neurons on the heart itself, mostly near the SA and AV nodes and in the atria.
+
+The nerves act on:
+
+- the **SA node**, which sets heart **rate**;
+- the **AV node**, which sets how fast the impulse passes from atria to ventricles;
+- the **myocytes**, where sympathetic input sets **contractility**.
+
+### Heart rate
+
+The SA node fires slow-response action potentials. Phase 4 is a slow depolarization driven mostly by the funny current (I~f~, a mixed Na^+^/K^+^ cation current through HCN channels, carried mainly by inward Na^+^ at diastolic potentials) and then by T-type and L-type Ca^2+^ current. When the membrane reaches threshold, the L-type Ca^2+^ current produces the upstroke. The time it takes to get from the most negative potential to threshold sets the rate. The [EKG I: Ionic Basis](ecg-ionic-basis.qmd) chapter, later in the block, covers the ionic basis in full.
+
+**Sympathetic (β~1~).** NE binds β~1~ receptors on SA node cells. G~s~ activates adenylyl cyclase and cAMP rises. cAMP increases I~f~ and the Ca^2+^ currents, so phase 4 is steeper and the cell reaches threshold sooner. The rate rises.
+
+**Parasympathetic (M~2~).** ACh from vagal fibers binds M~2~ receptors and has two effects at the same time:
+
+- It opens K^+^ channels. K^+^ conductance rises, the membrane moves toward E~K~, and each cycle starts from a more negative potential.
+- Through G~i~, it lowers cAMP. Less cAMP means less I~f~, so the phase 4 slope flattens.
+
+Both effects lengthen the time to threshold, and both slow the heart. The EKG I chapter draws both effects on the SA node action potential.
+
+::: {.callout-note title="If you are comparing with the notes"}
+The peer-educator notes write the vagal effect as one chain: "ACh → muscarinic receptors → ↑ K^+^ efflux → ↓ cAMP → slower phase 4 slope." That reads as if K^+^ efflux causes the fall in cAMP. It does not. The K^+^ channel effect and the cAMP effect run in parallel from the same receptor (course errata entry 21). The notes also say sympathetic input acts on "the sodium channels" in pacemaker cells. Those are the HCN channels, whose funny current is carried mostly by Na^+^, not the fast Na^+^ channels of working myocytes. cAMP also increases the Ca^2+^ currents.
+:::
+
+**The AV node.** The same receptors act on the AV node, which is also a slow-response tissue. β~1~ stimulation speeds AV conduction and shortens the PR interval; M~2~ stimulation slows it and lengthens the PR interval. Strong vagal activity can block AV conduction for a beat or more. The AV node changes conduction, not rate.
+
+::: {.callout-warning title="A common mistake"}
+In the SA and AV nodes the upstroke is carried by L-type Ca^2+^ current, not by fast Na^+^ current. So AV conduction depends on L-type Ca^2+^ channels: β~1~ stimulation, which increases L-type current, speeds it, and an L-type Ca^2+^ channel blocker slows it and lengthens the PR interval. A Na^+^ channel blocker does not slow the heart rate. It slows the upstroke of fast-response action potentials in atrial and ventricular muscle and in the Purkinje fibers, so it slows conduction there and widens the QRS.
+:::
+
+### Vagal tone dominates at rest
+
+Both divisions are active all the time, but at rest the vagus wins. With no autonomic input at all, the SA node fires at its intrinsic rate, about 100/min. The normal resting sinus rate, 60 to 100/min and often 60 to 70 in a resting adult, sits below that because vagal tone holds it down.
+
+The lecture shows this with a transplanted heart and with drugs. In a person with a heart transplant, the autonomic nerves to the heart are cut and do not reconnect, so the resting rate is near the intrinsic rate, about 100/min. And in healthy subjects, blocking each division with a drug shows how much each contributes (@fig-ans-extrinsic-control-dual-blockade). Atropine blocks muscarinic receptors and removes vagal tone: the rate jumps from about 63 to about 117/min. Propranolol blocks β receptors and removes sympathetic tone: the rate falls only from about 61 to about 51/min. With both blocked, in either order, the rate settles near 100/min.
+
+![Heart rate in healthy nonathletes after autonomic blockade. Atropine (muscarinic block) raises the rate far more than propranolol (β block) lowers it, so vagal tone dominates at rest. With both blocked, the rate is the intrinsic rate of the SA node. Values read from the graph of Katona, McLean, Dighton and Guz [@w6-katona], as shown in the 2026 lecture.](figures/ans-extrinsic-control/dual-blockade.svg){#fig-ans-extrinsic-control-dual-blockade}
+
+### Contractility
+
+Contractility is the force the heart muscle can develop at a given preload and afterload, which the course measures as the slope of the end-systolic pressure-volume relationship. Heart rate and relaxation are separate properties (course errata entry 2). Sympathetic stimulation raises contractility; this is the main reason sympathetic activity increases stroke volume at a given end-diastolic volume.
+
+NE (or circulating epinephrine) binds β~1~ receptors on ventricular myocytes. G~s~ raises cAMP, and cAMP activates protein kinase A (PKA), which phosphorylates, among other proteins (@fig-ans-extrinsic-control-signaling A):
+
+- **L-type Ca^2+^ channels.** More Ca^2+^ enters during the plateau, which triggers more Ca^2+^ release from the sarcoplasmic reticulum (SR).
+- **Phospholamban.** Unphosphorylated phospholamban holds back SERCA, the pump that returns Ca^2+^ to the SR. Phosphorylation removes the brake. SERCA takes up Ca^2+^ faster, so the SR holds more Ca^2+^ to release on the next beat (stronger contraction) and the cytosol clears faster (faster relaxation, which helps preserve filling time at high heart rates).
+
+The details of excitation-contraction coupling and phospholamban are in [Cardiac Muscle](../muscle/cardiac-muscle.qmd).
+
+ACh at M~2~ receptors does the reverse through G~i~: cAMP falls, phospholamban is less phosphorylated, SERCA takes up less Ca^2+^, and force falls. Vagal fibers go mostly to the nodes and the atria, so vagal effects on force are strongest in the atria. There, ACh also opens the same K^+^ channels it opens in the SA node, which shortens the action potential and lets in less Ca^2+^. In the ventricles, the main thing ACh does is blunt the effect of whatever sympathetic stimulation is present.
+
+![Receptor signaling. (A) In the heart, β~1~ receptors raise cAMP and M~2~ receptors lower it; M~2~ receptors also open K^+^ channels in the SA node and atria. (B) In vascular smooth muscle, α~1~ receptors raise intracellular Ca^2+^ through IP~3~ and cause constriction; β~2~ receptors raise cAMP, which inhibits myosin light chain kinase (MLCK) and causes relaxation. Course figure.](figures/ans-extrinsic-control/receptor-signaling.svg){#fig-ans-extrinsic-control-signaling}
+
+## Autonomic control of the vessels
+
+Sympathetic nerves supply the smooth muscle of nearly all small arteries, arterioles and veins, and they are tonically active. Parasympathetic nerves supply only a few vessels (in the genitalia and the salivary glands), so the vascular half of autonomic control is almost entirely sympathetic. The capillaries have no smooth muscle and no nerves.
+
+Sympathetic tone acts on veins and arterioles with different results:
+
+- **Veins (venous tone).** Venoconstriction shrinks the unstressed volume of the veins and moves blood into the stressed volume. Stressed volume rises, so P~ms~ (mean systemic filling pressure) rises, venous return rises, and preload rises. About 30% of venous volume can be mobilized this way. The [Control of Cardiac Output](control-of-co.qmd) chapter explained stressed volume and P~ms~.
+- **Arterioles (arterial tone).** Arteriolar constriction raises SVR, which raises MAP and afterload. Constricting some beds while others stay open also redistributes cardiac output.
+
+### The receptor decides the response
+
+"Sympathetic" does not mean "constriction." What NE or epinephrine does to a vessel depends on which receptor its smooth muscle carries (@fig-ans-extrinsic-control-signaling B):
+
+- **α~1~ receptors** couple to G~q~. Phospholipase C makes IP~3~, IP~3~ releases Ca^2+^ from the SR, Ca^2+^-calmodulin activates MLCK, and the muscle contracts. α~1~ is the predominant receptor in most of the peripheral circulation, on arterioles and veins alike.
+- **β~2~ receptors** couple to G~s~. cAMP rises and inhibits MLCK, and the muscle relaxes. β~2~ receptors are plentiful on skeletal muscle arterioles.
+
+The mechanism of smooth muscle contraction, and why MLCK is the switch, is in [Smooth Muscle](../muscle/smooth-muscle.qmd).
+
+The two catecholamines do not reach these receptors equally. NE released from sympathetic nerves acts strongly on α~1~ and β~1~ receptors and weakly on β~2~. So sympathetic nerve activity constricts skeletal muscle arterioles, as it does arterioles elsewhere. Epinephrine from the adrenal medulla reaches every vessel through the blood and acts on β~2~ receptors as well. At the concentrations of a "fight or flight" response, it dilates skeletal muscle arterioles through β~2~ while it constricts the skin, gut and kidney through α~1~. That shift of flow toward muscle is the receptor distribution at work. During exercise, metabolic vasodilators add to it ([Other Special Circulations](special-circulations.qmd)).
+
+::: {.callout-note title="If you are comparing with the slides"}
+The vascular-control slides show "Epinephrine / Norepinephrine" acting on α~1~ and β~2~ receptors and say "B2 present in muscle vasculature => Dilation." The peer-educator notes go further and list "skeletal muscle vasodilation (β~2~)" as an effect of sympathetic nerves, and say NE "will cause dilation" in muscle. The β~2~ dilation in muscle comes from circulating epinephrine. Neural NE has little effect on β~2~ receptors, so sympathetic nerve stimulation constricts muscle arterioles through α~1~. Both versions agree that receptors set the response; the difference is which catecholamine reaches the β~2~ receptors.
+
+The same slides show parasympathetic "(pelvic) M~2~ (vasodilation)" with "(Gut)." Parasympathetic vasodilation is limited to a few beds, such as the genitalia, and ACh dilates vessels by acting on muscarinic receptors on endothelial cells, which release nitric oxide. The gut circulation is under sympathetic, not parasympathetic, control (course errata entry 14; [Other Special Circulations](special-circulations.qmd)).
+:::
+
+## Putting the efferent side together
+
+The lecture summarizes autonomic control with the arterial version of Ohm's law, CO = (MAP − CVP)/SVR, rearranged with CVP left out and expanded:
+
+$$\text{MAP} \approx \text{CO} \times \text{SVR} = (\text{HR} \times \text{SV}) \times \text{SVR} = \big(\text{HR} \times (\text{EDV} - \text{ESV})\big) \times \text{SVR}$$
+
+Each term has an autonomic handle. Sympathetic and vagal input set HR. Venous return and the compliance of the ventricle set EDV, and venous tone sets venous return. Contractility sets how far the ventricle empties, ESV. Arteriolar tone sets SVR. Sympathetic activation raises HR, EDV and SVR and lowers ESV. Vagal activation lowers HR. In the baroreflex, vagal activation and sympathetic withdrawal happen together, so the changes all reverse.
+
+::: {.callout-warning title="A common mistake"}
+MAP ≈ CO × SVR drops CVP. That is harmless when CVP is a few mm Hg, but when CVP is high, as in heart failure or tamponade, use SVR = (MAP − CVP)/CO, as in [Peripheral Circulation and Hemodynamics](hemodynamics.qmd).
+:::
+
+The same summary can be drawn on the cardiac and vascular function curves (@fig-ans-extrinsic-control-curves). Sympathetic stimulation of the heart (rate and contractility) shifts the cardiac function curve up. Venoconstriction raises P~ms~ and shifts the vascular function curve to the right. The new operating point has a higher cardiac output, while right atrial pressure (P~ra~) barely changes. These are the curves from the [Control of Cardiac Output](control-of-co.qmd) chapter.
+
+![Sympathetic activation on the cardiac and vascular function curves. β~1~ stimulation shifts the cardiac function curve up; venoconstriction raises P~ms~ and shifts the vascular function curve right. Open circle, operating point before; filled circle, after. Course figure. The lecture's summary slide reuses the hemorrhage-with-compensation graph from the Control of Cardiac Output lecture.](figures/ans-extrinsic-control/sympathetic-curves.svg){#fig-ans-extrinsic-control-curves}
+
+## Afferents and reflexes: the baroreceptors
+
+The efferent nerves need information. The main sensors for the circulation are the arterial baroreceptors: stretch-sensitive nerve endings in the walls of the **carotid sinus** (a slight bulge where the internal carotid artery begins) and the **aortic arch**. Their afferent fibers run in the glossopharyngeal nerve (CN IX) from the carotid sinus and in the vagus nerve (CN X) from the aortic arch, and both end in the NTS.
+
+The receptors sense stretch of the arterial wall, so they report pressure. When MAP rises, the wall stretches more, the nerve endings depolarize more, and their firing rate rises. When MAP falls, firing falls.
+
+### The baroreceptor reflex
+
+The reflex is a negative feedback loop that holds MAP near its set point (@fig-ans-extrinsic-control-baroreflex). Follow a rise in pressure:
+
+1. MAP rises and the carotid sinus and aortic arch stretch.
+2. Baroreceptor firing rises in CN IX and CN X.
+3. The NTS excites the CVLM, which inhibits the RVLM, so sympathetic outflow falls. The NTS also excites the vagal neurons, so vagal outflow rises.
+4. Heart rate falls (more vagal, less sympathetic), contractility falls, arterioles dilate (SVR falls), and veins dilate (stressed volume and P~ms~ fall, so venous return falls).
+5. CO and SVR fall, and MAP comes back down.
+
+A fall in pressure runs the loop the other way: less firing, less vagal and more sympathetic outflow, a faster and stronger heart, venoconstriction and arteriolar constriction, and MAP back up.
+
+![The baroreceptor reflex for a rise in MAP. Afferents in CN IX and CN X reach the NTS, which inhibits sympathetic outflow (through the CVLM and RVLM) and increases vagal outflow. The effects lower MAP back toward its set point. Course figure, after the reflex chart in Boron and Boulpaep [@w6-boron2012], as used in the 2026 lecture.](figures/ans-extrinsic-control/baroreflex.svg){#fig-ans-extrinsic-control-baroreflex}
+
+Standing up is the everyday test. Gravity pools blood in the leg veins, venous return falls, stroke volume and CO fall, and MAP starts to drop. Within a few beats the baroreceptors fire less, and the reflex raises heart rate and contractility, constricts the veins (which pushes blood back toward the heart) and constricts the arterioles. MAP is restored before you notice. When the efferent side fails, as in some neurologic disorders that damage autonomic nerves, standing drops the pressure and can cause fainting: orthostatic hypotension, the puzzle at the end of the [Control of Cardiac Output](control-of-co.qmd) chapter.
+
+The baroreflex is fast and strong, but it is a short-term controller. The kidneys, previewed at the end of the lecture, set blood volume over days. In hemorrhage and heart failure, the baroreflex is what produces the compensation you see in the curves ([Cardiovascular Integration and Adaptation](cv-integration.qmd)).
+
+## Afferents and reflexes: the chemoreceptors
+
+Chemoreceptors sense the chemistry of blood and brain fluid. Their main job is to control breathing ([Control of Ventilation](../pulmonary/control-of-ventilation.qmd)), but they also act on the heart and vessels.
+
+- **Central chemoreceptors**, near the surface of the medulla, detect CO~2~ and pH. CO~2~ crosses into the brain fluid and lowers its pH.
+- **Peripheral chemoreceptors** sit next to the baroreceptors. The **carotid bodies**, at the carotid bifurcation, detect O~2~, CO~2~ and pH and signal through CN IX. The **aortic bodies**, on the aortic arch, detect O~2~ and CO~2~ and signal through CN X.
+
+### Two responses to the same stimulus
+
+Low PO~2~, high PCO~2~ or low pH activates the chemoreceptors, and what happens to the heart depends on whether the person can breathe (@fig-ans-extrinsic-control-chemoreflex).
+
+**The integrated response, breathing freely.** In a person who can breathe, the chemoreceptors drive ventilation up: the peripheral chemoreceptors alone respond to low PO~2~, and both central and peripheral chemoreceptors respond to high PCO~2~ or low pH. The larger breaths stretch the lungs, and the extra ventilation lowers PCO~2~. Lung stretch and the lower PCO~2~ both inhibit the vagal center. The net effect is less vagal outflow and **tachycardia**, the usual result of hypoxia in daily life. The respiratory response normally overrides the peripheral "hypoxic" bradycardia described next.
+
+**The primary response, with ventilation fixed.** If breathing cannot increase, the peripheral chemoreceptor reflex shows itself directly. It is unusual in using both divisions at once: it increases vagal outflow to the heart, which causes **bradycardia**, and increases sympathetic outflow to the vessels, which causes **vasoconstriction**. The lecture's thought exercise is a patient who is not breathing during placement of a breathing tube. PO~2~ falls and PCO~2~ rises with no rise in ventilation, and the heart slows, sometimes sharply.
+
+![The chemoreceptor reflex. (A) When breathing is free, ventilation rises (low PO~2~ acts through the peripheral chemoreceptors; high PCO~2~ and low pH act through both), and lung stretch and the lower PCO~2~ inhibit the vagal center, so the heart speeds up. (B) With ventilation held fixed, the peripheral chemoreceptors increase vagal outflow to the heart (bradycardia) and sympathetic outflow to the vessels (vasoconstriction). Course figure, after the reflex charts in Boron and Boulpaep [@w6-boron2012], as used in the 2026 lecture.](figures/ans-extrinsic-control/chemoreflex.svg){#fig-ans-extrinsic-control-chemoreflex}
+
+## Extrinsic control: a preview
+
+The lecture closes with a preview of the other organ systems that act on the circulation. Each gets its own lectures later.
+
+- **The lungs and chest.** Each breath changes intrathoracic pressure. Inspiration lowers the pressure around the right atrium and the great veins, which draws blood toward the heart; positive pressure in the chest does the reverse.
+- **The kidneys.** They set blood volume, and so P~ms~, by controlling salt and water excretion. They also release renin, which leads to angiotensin II.
+- **Hormones.** Epinephrine from the adrenal medulla acts on β~1~ receptors in the heart and β~2~ receptors in muscle vessels, as above. Angiotensin II and vasopressin (antidiuretic hormone) constrict vessels and help the kidneys retain volume. Thyroid hormone raises heart rate and contractility.
+- **Temperature.** The hypothalamus controls skin blood flow through sympathetic nerves to the skin's vessels and sweat glands.
+- **Emotion and behavior.** Limbic and hypothalamic signals change the baseline output of the medulla.
+- **Exercise.** Sympathetic activation and local metabolic vasodilation act together ([Cardiovascular Adaptation to Exercise](cv-exercise.qmd)).
+
+## Check your understanding
+
+1. A patient with a transplanted heart has a resting heart rate of 98/min. Why is it higher than yours, and what does that tell you about the autonomic balance at rest in a normal heart?
+
+    <details><summary>Answer</summary>
+
+    The transplanted heart has no autonomic nerves, so it beats at the intrinsic rate of the SA node, about 100/min. A normal resting sinus rate, often 60 to 70/min in a resting adult, is lower than that, so at rest vagal tone outweighs sympathetic tone and holds the rate down.
+
+    </details>
+
+2. ACh at M~2~ receptors slows the SA node by two separate mechanisms. Name them, and say which part of the action potential each one changes.
+
+    <details><summary>Answer</summary>
+
+    It opens K^+^ channels, which moves the membrane toward E~K~, so each cycle starts from a more negative potential. And it lowers cAMP through G~i~, which reduces the funny current (I~f~) and flattens the phase 4 slope. Both lengthen the time to threshold. The K^+^ effect does not cause the cAMP effect; they run in parallel.
+
+    </details>
+
+3. A drug blocks α~1~ receptors and nothing else. Predict the effect on SVR, on P~ms~, and, before any reflex, on MAP.
+
+    <details><summary>Answer</summary>
+
+    α~1~ receptors carry most sympathetic constriction of both arterioles and veins. Blocking them dilates the arterioles, so SVR falls, and dilates the veins, so unstressed volume rises, stressed volume falls and P~ms~ falls. With SVR down and venous return down, MAP falls. The baroreflex then raises heart rate through β~1~ receptors, which the drug does not block.
+
+    </details>
+
+4. During a sudden scare, blood flow to the leg muscles rises while blood flow to the skin falls. Both beds receive the same sympathetic signal. Explain the difference.
+
+    <details><summary>Answer</summary>
+
+    The adrenal medulla releases epinephrine into the blood. Skeletal muscle arterioles have many β~2~ receptors, and epinephrine acting on them raises cAMP, inhibits MLCK and dilates the vessels. Skin arterioles have mainly α~1~ receptors, so epinephrine and neural NE constrict them. Neural NE alone would constrict both beds; the dilation in muscle comes from circulating epinephrine.
+
+    </details>
+
+5. A drug constricts arterioles and veins through α~1~ receptors and has no direct action on the heart. MAP rises within a minute. Trace the reflex. Why does heart rate fall, and why does MAP come back down only part of the way?
+
+    <details><summary>Answer</summary>
+
+    The higher pressure stretches the carotid sinus and aortic arch, and baroreceptor firing rises in CN IX and CN X. The NTS excites the CVLM, which inhibits the RVLM, so sympathetic outflow falls, and the NTS excites the vagal neurons, so vagal outflow rises. At the SA node there is more ACh at M~2~ receptors and less norepinephrine at β~1~ receptors: K^+^ channels open, cAMP falls, phase 4 flattens, and the rate falls. The drug has no action on the heart, so the whole fall in rate comes from the reflex. The vascular arm of the reflex helps less than usual, because withdrawing sympathetic tone cannot relax vessels whose α~1~ receptors the drug is still activating. Most of the correction comes from the slower, weaker heart, and MAP stays above where it started.
+
+    </details>
+
+6. A sedated patient stops breathing for two minutes. PO~2~ falls and PCO~2~ rises. Does the heart rate rise or fall, and why is this different from what happens at high altitude?
+
+    <details><summary>Answer</summary>
+
+    It falls. With ventilation fixed at zero, the peripheral chemoreceptor reflex acts alone: it increases vagal outflow to the heart (bradycardia) and sympathetic outflow to the vessels (vasoconstriction). At altitude the person can breathe. Low PO~2~ drives ventilation up through the peripheral chemoreceptors (the central chemoreceptors do not sense O~2~), and lung stretch and the lower PCO~2~ inhibit vagal outflow. The net response there is tachycardia.
+
+    </details>
+
+## Key equations
+
+| Equation | Use |
+|---|---|
+| CO = (MAP − CVP)/SVR; MAP ≈ CO × SVR | Arterial pressure from flow and resistance (CVP ≈ P~ra~) |
+| CO = HR × SV; SV = EDV − ESV | Where heart rate, venous return and contractility enter |
+
+## Sources
+
+This chapter follows the 2026 Autonomic and Extrinsic Regulation lecture for MEDC 30504 and draws on the peer-educator notes and the course's 2018 notes on autonomic regulation, corrected and updated. All figures were drawn for this book.
+
+::: {#refs}
+:::

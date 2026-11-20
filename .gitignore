@@ -1,0 +1,10 @@
+_book/
+_preview/
+.quarto/
+__pycache__/
+*.pyc
+.DS_Store
+.claude/
+
+/.quarto/
+**/*.quarto_ipynb

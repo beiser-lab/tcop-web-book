@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="594.72pt" height="230.709pt" viewBox="0 0 594.72 230.709" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 230.709 
+L 594.72 230.709 
+L 594.72 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 40.594373 72.623496 
+L 151.908951 72.623496 
+L 151.908951 55.060104 
+L 40.594373 55.060104 
+z
+" clip-path="url(#p42eca990aa)" style="fill: #dbe7ee; stroke: #155f83; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 40.594373 152.457096 
+L 151.908951 152.457096 
+L 151.908951 134.893704 
+L 40.594373 134.893704 
+z
+" clip-path="url(#p42eca990aa)" style="fill: #dbe7ee; stroke: #155f83; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 11.909219 123.717 
+Q 23.895048 123.717 34.315629 123.717 
+" clip-path="url(#p42eca990aa)" style="fill: none; stroke: #193944; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 29.115629 121.117 
+L 34.315629 123.717 
+L 29.115629 126.317 
+z
+" clip-path="url(#p42eca990aa)" style="fill: #193944; stroke: #193944; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 40.594373 103.7586 
+L 151.908951 103.7586 
+" clip-path="url(#p42eca990aa)" style="fill: none; stroke: #155f83; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 40.594373 102.161928 
+L 151.908951 102.161928 
+" clip-path="url(#p42eca990aa)" style="fill: none; stroke: #155f83; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 40.594373 183.5922 
+L 151.908951 183.5922 
+" clip-path="url(#p42eca990aa)" style="fill: none; stroke: #155f83; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 40.594373 181.995528 
+L 151.908951 181.995528 
+" clip-path="url(#p42eca990aa)" style="fill: none; stroke: #155f83; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 8.6px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #4d4d4d" transform="translate(57.546959 207.26168)">2 vessels collapsed,</text>
+    <text style="font-size: 8.6px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #4d4d4d" transform="translate(64.870397 217.52148)">2 modestly filled</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #193944" x="7.2" y="17.925" transform="rotate(-0 7.2 17.925)">A. Rest</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_5">
+    <path d="M 245.413197 72.623496 
+L 356.727775 72.623496 
+L 356.727775 55.060104 
+L 245.413197 55.060104 
+z
+" clip-path="url(#p44f575d879)" style="fill: #dbe7ee; stroke: #155f83; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 245.413197 111.74196 
+L 356.727775 111.74196 
+L 356.727775 95.77524 
+L 245.413197 95.77524 
+z
+" clip-path="url(#p44f575d879)" style="fill: #dbe7ee; stroke: #800000; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 245.413197 152.457096 
+L 356.727775 152.457096 
+L 356.727775 134.893704 
+L 245.413197 134.893704 
+z
+" clip-path="url(#p44f575d879)" style="fill: #dbe7ee; stroke: #155f83; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 245.413197 191.57556 
+L 356.727775 191.57556 
+L 356.727775 175.60884 
+L 245.413197 175.60884 
+z
+" clip-path="url(#p44f575d879)" style="fill: #dbe7ee; stroke: #800000; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 216.728043 123.717 
+Q 228.713871 123.717 239.134452 123.717 
+" clip-path="url(#p44f575d879)" style="fill: none; stroke: #193944; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 233.934452 121.117 
+L 239.134452 123.717 
+L 233.934452 126.317 
+z
+" clip-path="url(#p44f575d879)" style="fill: #193944; stroke: #193944; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 8.6px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #4d4d4d" transform="translate(255.038314 207.26168)">collapsed vessels open:</text>
+    <text style="font-size: 8.6px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #4d4d4d" transform="translate(253.361986 217.52148)">more channels in parallel</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #193944" x="212.018824" y="17.925" transform="rotate(-0 212.018824 17.925)">B. Recruitment</text>
+   </g>
+  </g>
+  <g id="axes_3">
+   <g id="patch_10">
+    <path d="M 450.23202 78.211848 
+L 561.546598 78.211848 
+L 561.546598 49.471752 
+L 450.23202 49.471752 
+z
+" clip-path="url(#pe0d5bc2d3c)" style="fill: #dbe7ee; stroke: #800000; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 450.23202 158.045448 
+L 561.546598 158.045448 
+L 561.546598 129.305352 
+L 450.23202 129.305352 
+z
+" clip-path="url(#pe0d5bc2d3c)" style="fill: #dbe7ee; stroke: #800000; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 421.546866 123.717 
+Q 433.532695 123.717 443.953276 123.717 
+" clip-path="url(#pe0d5bc2d3c)" style="fill: none; stroke: #193944; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 438.753276 121.117 
+L 443.953276 123.717 
+L 438.753276 126.317 
+z
+" clip-path="url(#pe0d5bc2d3c)" style="fill: #193944; stroke: #193944; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 450.23202 103.7586 
+L 561.546598 103.7586 
+" clip-path="url(#pe0d5bc2d3c)" style="fill: none; stroke: #155f83; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 450.23202 102.161928 
+L 561.546598 102.161928 
+" clip-path="url(#pe0d5bc2d3c)" style="fill: none; stroke: #155f83; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_7">
+    <path d="M 450.23202 183.5922 
+L 561.546598 183.5922 
+" clip-path="url(#pe0d5bc2d3c)" style="fill: none; stroke: #155f83; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_8">
+    <path d="M 450.23202 181.995528 
+L 561.546598 181.995528 
+" clip-path="url(#pe0d5bc2d3c)" style="fill: none; stroke: #155f83; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 8.6px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #4d4d4d" transform="translate(465.670872 207.26168)">vessels already open</text>
+    <text style="font-size: 8.6px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #4d4d4d" transform="translate(494.425778 217.52148)">widen</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #193944" x="416.837647" y="17.925" transform="rotate(-0 416.837647 17.925)">C. Distension</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p42eca990aa">
+   <rect x="7.2" y="23.925" width="170.682353" height="199.584"/>
+  </clipPath>
+  <clipPath id="p44f575d879">
+   <rect x="212.018824" y="23.925" width="170.682353" height="199.584"/>
+  </clipPath>
+  <clipPath id="pe0d5bc2d3c">
+   <rect x="416.837647" y="23.925" width="170.682353" height="199.584"/>
+  </clipPath>
+ </defs>
+</svg>

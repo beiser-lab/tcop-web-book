@@ -1,0 +1,333 @@
+---
+title: "Ventilation and Perfusion"
+subtitle: "Matching air to blood, and what happens when they don't match"
+bibliography: [../references.bib, ../bib/w11.bib]
+---
+
+::: {.callout-note title="Goals for this chapter"}
+- Separate anatomic, alveolar and physiologic dead space, and explain how the Fowler and Bohr methods measure them.
+- Explain why ventilation and blood flow are both greater at the base of the upright lung, why V/Q is lowest there, and what zone 1 means for gas exchange.
+- Use the alveolar gas equation and the A–a gradient to sort hypoxemia into a low PAO~2~ and a gas-exchange problem.
+- Use the two-alveolus model to explain shunt and low V/Q, and why one responds to supplemental O~2~ and the other does not.
+- Explain how hypoxic pulmonary vasoconstriction and a low mixed venous saturation change the PaO~2~ when there is shunt.
+- Calculate O~2~ delivery and say how it differs from O~2~ content.
+- Work through the approach to hypoxemia.
+
+Names, dates and the exact values in figure captions are context, not things to memorize.
+:::
+
+The heart and lungs work as one system: they bring O~2~ to the tissues and carry CO~2~ away and out of the body. Doing that takes two flows. *Ventilation* is the convective movement of air that exchanges gas between the atmosphere and the alveoli. *Perfusion* is the convective movement of blood that carries dissolved gases to and from the lung. Gas exchange works only where the two meet in the right proportion. Earlier chapters covered each piece on its own ([Alveolar Ventilation](ventilation.qmd), [Diffusion](diffusion.qmd), [Transport of O~2~ and CO~2~](o2-co2-transport.qmd)), and the CV block covered the pulmonary circulation ([Pulmonary Circulation](../cardiovascular/pulmonary-circulation.qmd)). This chapter puts them together, first in the normal lung and then in disease, where a mismatch between air and blood is the most common reason a patient is hypoxemic.
+
+## Ventilation, dead space and alveolar ventilation
+
+A quick review of the numbers from [Alveolar Ventilation](ventilation.qmd):
+
+| Quantity | Per breath | Per minute (at 15/min) |
+|---|---|---|
+| Tidal volume, V~T~, and minute ventilation, V̇E | 500 mL | 7.5 L/min |
+| Anatomic dead space, V~D~, and dead space ventilation, V̇D | 150 mL | 2.25 L/min |
+| Fresh gas reaching the alveoli, and alveolar ventilation, V̇A | 350 mL | 5.25 L/min |
+
+The 350 mL of fresh gas mixes into the 2 to 3 L already in the lung at FRC. The muscles do the work of moving all of V̇E, but only V̇A takes part in gas exchange, and it is close to pulmonary blood flow, about 5 L/min. Dead space is ventilated but does no gas exchange (the trachea has a blood supply, but no gas crosses its wall).
+
+### Fast or deep
+
+The lecture reviews why, for the same V̇E, deep breaths give more alveolar ventilation than fast, shallow ones: the dead space is a smaller fraction of each breath (@fig-ventilation-perfusion-dead-space B; the arithmetic is in [Alveolar Ventilation](ventilation.qmd)). In a sick patient whose muscles are tiring, rapid, shallow breathing is a recipe for respiratory failure: much of the work goes into moving air in and out of the dead space.
+
+![(A) Anatomic dead space is the conducting airways. Alveolar dead space is alveoli that are ventilated but not perfused. Together they make the physiologic dead space. (B) Two breathing patterns with the same V̇E of 15 L/min, using the lecture's numbers. Deep breathing gives more alveolar ventilation because the dead space is a smaller fraction of each breath. Course figure.](figures/ventilation-perfusion/dead-space.svg){#fig-ventilation-perfusion-dead-space}
+
+### Anatomic, alveolar and physiologic dead space
+
+In a healthy person almost all dead space is *anatomic*: the conducting airways from the nose and mouth to the terminal bronchioles. In disease, alveoli that still get air can lose their blood flow. Air moved into them does no gas exchange, so they add *alveolar dead space*. The two together are the *physiologic dead space*. The classic example is a pulmonary embolism: a clot blocks a pulmonary artery, and the alveoli it supplied are ventilated but not perfused.
+
+**Fowler's method** measures the anatomic dead space. The subject takes a single breath of 100% O~2~ and then breathes out through a nitrogen meter. The O~2~ that filled the conducting airways comes out first and has no nitrogen. Once alveolar gas, still carrying nitrogen from earlier room-air breaths, starts to arrive, nitrogen rises. The volume exhaled before the rise is the anatomic dead space. It is a laboratory method, not a bedside one, and you need the concept, not the tracing.
+
+**Bohr's method** measures the physiologic dead space, anatomic plus alveolar, and uses a gas that matters to physiology: CO~2~. Inspired air has essentially no CO~2~. Only perfused alveoli add CO~2~ to the gas, and their PCO~2~ is close to PaCO~2~. Gas from the conducting airways and from unperfused alveoli comes out with no CO~2~ and dilutes the rest. So the more dead space, the lower the PCO~2~ of the whole exhaled breath. Any CO~2~-free inspired gas works, and room air is the usual one; the method does not need 100% O~2~. The Bohr equation:
+
+$$\frac{V_D}{V_T} = \frac{P_{aCO_2} - P_{\bar{E}CO_2}}{P_{aCO_2}}$$
+
+P~Ē~CO~2~ is the *mixed expired* PCO~2~, the average PCO~2~ of all the gas exhaled in a breath, measured by collecting the gas. PaCO~2~ from a blood gas stands in for alveolar PCO~2~. With a PaCO~2~ of 40 and a P~Ē~CO~2~ of 28:
+
+$$\frac{V_D}{V_T} = \frac{40 - 28}{40} = 0.3$$
+
+Normal is 20 to 35% of each tidal breath. In a healthy person there is so little alveolar dead space that the Fowler and Bohr methods give nearly the same number.
+
+![The PCO~2~ of exhaled gas across one 500 mL breath. Gas from the anatomic dead space comes out first, with no CO~2~. (A) In a healthy lung the alveolar plateau sits at PaCO~2~ (drawn idealized; in a real lung end-tidal PCO~2~ is a few mm Hg below PaCO~2~). The mixed expired PCO~2~ averages the whole breath, 28 mm Hg, and gives V~D~/V~T~ 0.3. (B) If half the alveoli lose their blood flow, their CO~2~-free gas dilutes the plateau to 20 and the mixed expired PCO~2~ falls to 14, so V~D~/V~T~ is 0.65. Adapted from Boron and Boulpaep, *Medical Physiology* [@w11-boron2012], as used in the 2026 lecture.](figures/ventilation-perfusion/bohr.svg){#fig-ventilation-perfusion-bohr}
+
+At the bedside, a capnograph measures *end-tidal* PCO~2~ (P~ET~CO~2~): the PCO~2~ of the last gas out, which comes from the alveoli. In a healthy lung it is a few mm Hg below PaCO~2~, about 35 to 38 when PaCO~2~ is 40. When part of the lung loses its blood flow, the alveolar gas is diluted and end-tidal PCO~2~ falls well below PaCO~2~ (@fig-ventilation-perfusion-bohr B). That *gap* is the bedside sign of alveolar dead space. A patient on a ventilator whose end-tidal PCO~2~ falls from about 38 to 20 while PaCO~2~ rises has added alveolar dead space, and an embolism is a classic cause.
+
+::: {.callout-note title="If you are comparing with the slides"}
+The slide 12 notes say mixed expired PCO~2~ can be measured by capnography, and in the recording end-tidal PCO~2~ goes into the Bohr equation with a normal value of "28, 30 or so". The 28 on slide 13 is the mixed expired value, which the Bohr equation uses. A bedside capnograph shows end-tidal PCO~2~, normally close to PaCO~2~; the arterial to end-tidal gap estimates alveolar dead space, not total V~D~/V~T~. The slide 10 figure (and the recording) label the breath 100% O~2~. Any CO~2~-free gas works, including room air, as the slide 10 notes say.
+:::
+
+You can often spot extra dead space without a calculation. Sitting in class you breathe about 12 times a minute at half a liter and hold your PaCO~2~ at 40. A patient taking big breaths 35 times a minute with a PaCO~2~ of 40 is doing a great deal of breathing for very little CO~2~ clearance; unless he is making far more CO~2~, his dead space is up. The extra work is one way dead space leads to respiratory failure ([Pulmonary Acid Base](acid-base.qmd)).
+
+### CO~2~ and alveolar ventilation
+
+With CO~2~ production steady at about 200 mL/min, PACO~2~ ∝ V̇CO~2~/V̇A: halve alveolar ventilation and PaCO~2~ doubles, double it and PaCO~2~ halves ([Alveolar Ventilation](ventilation.qmd)). A patient breathing fast and hard with a normal or high PaCO~2~ has a low *alveolar* ventilation, whatever the V̇E.
+
+## The V/Q ratio
+
+Picture the ideal lung as a single alveolus with a single capillary. Mixed venous blood arrives, equilibrates with alveolar gas, and leaves with the alveolar PO~2~ and PCO~2~. For that to work, the air brought to the alveolus has to match the blood carried past it. The *ventilation-perfusion ratio* is:
+
+$$\dot V / \dot Q = \frac{\text{alveolar ventilation (L/min)}}{\text{pulmonary blood flow (L/min)}}$$
+
+For the whole lung it is about 0.8 to 1. A V̇A of 4 to 5.25 L/min over a cardiac output of 5 to 6 L/min gives anything from about 0.7 to 1.05. Real lungs have millions of units, each with its own ratio, and in health they cluster around that average.
+
+::: {.callout-note title="If you are comparing with the slides"}
+The V/Q lecture's slides use 0.8 (slide 28), and the Ventilation lecture uses about 1. Both come from the same arithmetic with different inputs (4.2 L/min over 5 gives 0.84; 5.25 over 5 gives 1.05). What matters is the direction: apex high, base low, and disease pushing units toward 0 or infinity.
+:::
+
+### Ventilation is greater at the base
+
+In an upright person, pleural pressure is more negative at the apex (about −10 cm H~2~O) than at the base (about −2.5). The weight of the lung hangs from the top, like a Slinky held by its top coil: the upper coils are stretched and the lower ones bunched. So at FRC the apical alveoli are already well inflated and the basal ones are small.
+
+Ventilation is about the *change* in volume during a breath, not the volume. The small basal alveoli sit on the steep part of the lung's pressure-volume curve, and the stretched apical alveoli sit near the flat top ([Respiratory Statics](statics.qmd)). The same fall in pleural pressure during inspiration therefore adds more volume at the base. Ventilation per unit of lung falls steadily from base to apex.
+
+### Blood flow is greater at the base, by more
+
+The pulmonary circulation is low pressure, low resistance and highly compliant, and its capillaries are recruited and distended as flow rises ([Pulmonary Circulation](../cardiovascular/pulmonary-circulation.qmd)). Because its pressures are low, gravity has a large effect on them: arterial pressure is higher at the base, where the column of blood above adds to it, and lower at the apex. Blood flow therefore falls from base to apex too, and it falls more steeply than ventilation.
+
+So V/Q rises from base to apex (@fig-ventilation-perfusion-regional). At the base, both are high but blood flow is higher, and V/Q is about 0.6. Near the middle they are about equal. At the apex both are low, but blood flow is much lower, and V/Q is about 3.
+
+![(A) Alveolar ventilation and blood flow in three slices of an upright lung, with their ratio, from the values on the 2026 lecture slide. Both fall toward the apex, blood flow more steeply. (B) Each region's alveolar gas, plotted as PO~2~ against PCO~2~. A unit with V/Q of 0 has the gas of mixed venous blood; a unit with infinite V/Q has the gas of inspired air. Panel B values adapted from Costanzo, *Physiology* [@costanzo], as used in the 2026 lecture.](figures/ventilation-perfusion/regional-vq.svg){#fig-ventilation-perfusion-regional}
+
+A unit's V/Q sets its alveolar gas. At the high-V/Q apex, PAO~2~ is about 130 mm Hg and PACO~2~ about 33. At the low-V/Q base, PAO~2~ is about 90 and PACO~2~ about 42. The base has the lowest PAO~2~ and highest PACO~2~ of the upright lung, even though it gets the most air, and because it also gets most of the blood, its gas counts most toward the arterial blood.
+
+### The West zones and gas exchange
+
+The West zones, defined by the order of alveolar pressure (P~alv~) and the pressures in the pulmonary arteries (P~a~) and veins (P~v~), are taught in the CV block; see [the West zones figure](../cardiovascular/pulmonary-circulation.qmd#fig-pulmonary-circulation-zones). What they add to V/Q is this. In zone 1 (P~alv~ > P~a~ > P~v~) the capillaries are closed, so a zone 1 region is ventilated but not perfused: alveolar dead space. Healthy lungs have little or none, matching the point that healthy people have almost no alveolar dead space. Zone 1 appears when vascular pressures fall (acute hypovolemia, such as bleeding) or alveolar pressures rise (air trapping in asthma, or high ventilator pressures). Most matched gas exchange happens in zone 3, where the capillaries stay open. The zones move with position: lying on the back, the posterior, dependent lung gets the most blood flow, because gravity sends more blood to whatever part of the lung is lowest.
+
+::: {.callout-note title="If you are comparing with the slides"}
+The Costanzo figure on slide 28 labels the apex point "Zone 1, V/Q highest", the middle "Zone 2" and the base "Zone 3". Read these as apex, middle and base. In the West zones (slide 27), zone 1 has no blood flow, so its V/Q is infinite, and the normal upright lung has little of it. The apex has the highest *finite* V/Q of the normal lung, about 3, with the highest PAO~2~ and lowest PACO~2~.
+:::
+
+## Oxygen: from air to tissue
+
+What matters for life is how much O~2~ reaches the tissues, the *O~2~ delivery*: cardiac output times arterial O~2~ content. At rest the tissues extract about 25%, so mixed venous blood returns about 75% saturated. Getting O~2~ from air into the alveoli takes three steps.
+
+1. **Ambient air.** PO~2~ = PB × FiO~2~, with FiO~2~ 0.21 for room air.
+2. **Inspired air.** The upper airway humidifies the air completely, even cold, dry air in fast breathing. Water vapor at body temperature takes 47 mm Hg, so PIO~2~ = (PB − 47) × FiO~2~.
+3. **Alveolar gas.** CO~2~ arriving from the blood takes its share:
+
+$$P_{AO_2} = (P_B - P_{H_2O})\,F_{IO_2} - \frac{P_{aCO_2}}{R}$$
+
+R is the respiratory exchange ratio, the CO~2~ the body puts out divided by the O~2~ it takes up, about 0.8 on a typical Western diet. At sea level, (760 − 47) × 0.21 = 150, and 150 − 40/0.8 = 100 mm Hg. In Chicago, with PB 747, PAO~2~ is about 97.
+
+::: {.callout-note title="If you are comparing with the slides"}
+The case slides write PAO~2~ = 0.21 (700 mm Hg) − PaCO~2~/R. The 700 is already PB − PH~2~O (747 − 47), so do not subtract 47 again. The V/Q notes do, which is where their ranges ("31–40", "236–255", "96–106") come from; the slide values below are right.
+:::
+
+## Case 1: a comatose patient
+
+A comatose young woman arrives in the emergency department. Her saturation is 75%. Her blood gas on room air is 7.08 / 85 / 42 / 75%: an acute respiratory acidosis and a low PaO~2~. Did she aspirate and get a pneumonia? The alveolar gas equation answers without an X-ray:
+
+$$P_{AO_2} = 0.21\,(747 - 47) - \frac{85}{0.8} = 147 - 106 \approx 41 \text{ mm Hg}$$
+
+Her PaO~2~ of 42 matches it. The A–a gradient is essentially zero, so whatever O~2~ reaches her alveoli is getting into her blood. Her lungs are fine; she is not breathing enough. Her gas is the same as the opioid patient's in [Pulmonary Acid Base](acid-base.qmd), and the lecture treats her as an opioid overdose. Global hypoventilation is enough to cause hypoxemia, and clinicians often miss it: they see a low saturation and assume the lungs are the problem.
+
+A few liters of O~2~ would raise her saturation but not lower her PaCO~2~. The fix is to make her breathe. If she goes from 4 to 6 breaths a minute to 10 to 12, alveolar ventilation roughly doubles, PaCO~2~ halves back toward 40, and PAO~2~ rises to about 97 with no extra O~2~.
+
+### Causes of a low alveolar PO~2~
+
+Each term in the alveolar gas equation points to a cause:
+
+- **Low PB:** high altitude.
+- **Low FiO~2~:** suffocation, as in a confined space where O~2~ has been used up or displaced.
+- **High PaCO~2~:** global hypoventilation.
+
+The history usually makes the first two obvious. In all three the A–a gradient is normal.
+
+## The A–a gradient
+
+The A–a gradient is PAO~2~, calculated, minus PaO~2~, measured on a blood gas. In a young adult it is under 10 mm Hg. PAO~2~ at sea level is about 100, but a healthy PaO~2~ is more often about 90. About 5% of the cardiac output is a normal anatomic shunt that never meets alveolar gas: bronchial veins draining into the pulmonary veins, and thebesian veins draining the heart muscle into the left ventricle. A little V/Q scatter in the normal lung adds to the gap. Neither raises PaCO~2~ noticeably. Mixed venous PCO~2~ (46) is only 6 mm Hg above alveolar PCO~2~ (40), while mixed venous PO~2~ (40) is 60 below alveolar PO~2~. The shapes of the curves matter more. Blood mixes by content, and because the top of the O~2~ curve is flat, a small loss of O~2~ content lowers PO~2~ a lot; the CO~2~ curve is steep and nearly straight, so the same mixing barely moves PCO~2~ (see the two-alveolus model below).
+
+The gradient rises with age. The slide 44 notes give an estimate, (age/4) + 4, which comes to about 10 at 24 and about 21 at 68.
+
+::: {.callout-note title="If you are comparing with the slides"}
+Course materials give less than 10 mm Hg (small-group keys, slide 44, the lecture), 5 to 15 (Ventilation notes) and (age/4) + 4 (slide 44 notes). They differ only for gradients between 10 and 15 mm Hg, and none of the course's cases falls there. This book uses under 10 for a young adult, as the small groups do. In the recording, "anything less than ten is a problem" is a slip for *more* than ten.
+:::
+
+A raised gradient means O~2~ is reaching the alveoli but not getting into the arterial blood. The causes are:
+
+- **Diffusion limitation,** where a thickened barrier slows O~2~ transfer, most of all in exercise ([Diffusion](diffusion.qmd)).
+- **V/Q mismatch,** mainly units with low V/Q.
+- **Shunt,** blood that passes the lung without meeting ventilated alveoli.
+
+A low mixed venous saturation does not belong on this list by itself. It makes shunt and low V/Q worse, as a later section shows, but it does little in normal lungs.
+
+## The V/Q spectrum
+
+V/Q runs from 0 to infinity (@fig-ventilation-perfusion-spectrum).
+
+![Three units on the V/Q spectrum. Capillary values are PO~2~ / PCO~2~ in mm Hg. A unit with no ventilation (shunt) leaves blood as it arrived: mixed venous. A matched unit brings blood to the alveolar gas, PO~2~ 100 and PCO~2~ 40. A unit with no blood flow (dead space) keeps the gas it breathes in, PO~2~ 150 and PCO~2~ 0. Low V/Q units sit between the first two, and high V/Q units between the last two. Course figure, after the lecture slide.](figures/ventilation-perfusion/vq-spectrum.svg){#fig-ventilation-perfusion-spectrum}
+
+A *low V/Q* unit is ventilated, but less than its blood flow needs, so blood leaves it with a PO~2~ below 100 and a PCO~2~ above 40: blood going where there is not enough O~2~. A *high V/Q* unit has more air than its blood can use: gas going where there is no blood to use it. Healthy lungs have little dead space and only the small anatomic shunt. Diseased lungs are a mixture skewed toward one end or the other; as the course notes put it, "we live in the middle".
+
+## Case 2: pneumonia on 40% O~2~
+
+A 34-year-old woman has had cough, fever and shortness of breath for four days, and her chest X-ray shows pneumonia. On 40% O~2~ her blood gas is pH 7.48, PaCO~2~ 30 and PaO~2~ 65 mm Hg: she is hyperventilating. A PaO~2~ of 65 might not look alarming, but compare it with what her alveoli hold. She is breathing 40% O~2~ and blowing her CO~2~ down to 20, so:
+
+$$P_{AO_2} = 0.40 \times 700 - \frac{30}{0.8} = 280 - 37.5 \approx 243 \text{ mm Hg}$$
+
+Her A–a gradient is about 243 − 65 = 178 mm Hg (slide 44 calls it the A-a difference), far above 10. Always ask what the PaO~2~ *should* be at the FiO~2~ the patient is on. On supplemental O~2~, even a PaO~2~ of 100 or 150 can hide a very large gradient.
+
+::: {.callout-note title="If you are comparing with the slides"}
+Slides 43 and 44 give the gas as 7.40 / 20 / 65. A pH of 7.40 with a PaCO~2~ of 20 implies an HCO~3~^−^ of about 12 mEq/L, a mixed disorder the case does not discuss, and the lecture noted the numbers need fixing. The course errata replace it with 7.48 / 30 / 65, which is used here. The A–a gradient is a little smaller (178 rather than 190 mm Hg), and the conclusion is the same.
+:::
+
+## The two-alveolus model
+
+The lecture explains the causes of a raised gradient with two alveoli side by side, each with its own capillary, the blood from both mixing in the pulmonary veins. In the normal model both alveoli have PAO~2~ about 102 and PACO~2~ 40; mixed venous blood arrives at PO~2~ 40 and PCO~2~ 46 and leaves both units at the alveolar values.
+
+### Shunt
+
+**Anatomic shunt** is blood that bypasses the lung through a channel: the normal bronchial and thebesian veins (about 5%), an abnormal connection inside the heart, or an arteriovenous malformation in the lung. The lecture focuses on **physiologic shunt**, where blood flows past alveoli that get no air. Either the airway is blocked completely (a tumor, a foreign body, a mucus plug) or the alveoli are filled with something other than air: blood, pus or water. Collapsed alveoli (atelectasis) and the flooded lung of ARDS are shunt too.
+
+Blood that leaves a shunted alveolus is still mixed venous blood. The breathing centers respond to the low PaO~2~ by driving more ventilation, so the good alveoli get extra air and a higher PAO~2~, but the blood passing the shunted alveolus never meets it. Mixing gives an arterial saturation below 100% (@fig-ventilation-perfusion-shunt A).
+
+With equal flow through the two units, blood leaves the shunted unit at 75% and the good unit at 100%, and the mixture is about 88%. Averaging saturations works here: when two streams with the same Hb mix, the O~2~ *content* of the mixture is the flow-weighted average of the two, and on room air almost all the O~2~ is bound to Hb. PO~2~ is the value you cannot average, because the dissociation curve is not straight. Blood at 88% has a PO~2~ of about 55 mm Hg, not the average of 100 and 40.
+
+![The two-alveolus model with half the blood flow through a shunt. (A) On room air, blood leaving the shunted unit at 75% mixes with blood at 100% for an SaO~2~ of about 88%. (B) On 100% O~2~ the good unit's PAO~2~ is 663, but its Hb was already full; only the dissolved O~2~ rises, and SaO~2~ reaches only about 92%. (C) If mixed venous saturation falls to 50%, the same shunt gives about 79% even on 100% O~2~. (D) Arterial saturation against shunt fraction on room air and on 100% O~2~ (Hb 15 g/dL, PaCO~2~ 40, sea level). Mixed values come from averaging O~2~ contents, with O~2~ content = 1.39 × Hb × SO~2~ + 0.003 × PO~2~. The ventilated unit is taken as fully saturated, as on the slides. Course figure, after the lecture's two-alveolus slides.](figures/ventilation-perfusion/shunt-two-alveolus.svg){#fig-ventilation-perfusion-shunt}
+
+### Shunt is refractory to O~2~
+
+Give this patient 100% O~2~. The good alveolus now has a PAO~2~ of about (760 − 47) × 1.0 − 40/0.8 = 663 mm Hg. Its blood was already 100% saturated, and Hb cannot carry more than full. The extra PO~2~ adds only dissolved O~2~, 0.003 × 663 ≈ 2 mL/dL. The shunted blood never sees the extra O~2~ and still leaves at 75%. The mixture rises only to about 92% (@fig-ventilation-perfusion-shunt B). Shunt is refractory to supplemental O~2~, and that failure to respond is how you recognize it.
+
+::: {.callout-note title="If you are comparing with the slides"}
+Slides 49 and 54 average saturations on 100% O~2~ to get 87.5% and 75% (and write "75 + 100/2" for (75 + 100)/2). The dissolved O~2~ in the ventilated stream makes the true values about 92% and 79%. Either way the shunt is refractory, which is the slides' point. The V/Q notes and the Small Group 3 key call averaging saturations "not mathematically correct"; it is close enough on room air, and averaging PO~2~ is the mistake to avoid.
+:::
+
+@fig-ventilation-perfusion-shunt D shows why shunt size matters. The lecture's slide 52 makes the same point with PaO~2~: above about a 30% shunt, an FiO~2~ of 1.0 cannot bring PaO~2~ to 100.
+
+### Case 3: cough and fever, on room air and then 100% O~2~
+
+A 68-year-old man with cough and fever has a chest X-ray with widespread white opacities. On room air his gas is 7.35 / 33 / 40 / 75%:
+
+$$P_{AO_2} = 0.21 \times 700 - \frac{33}{0.8} \approx 147 - 41 = 106 \text{ mm Hg}$$
+
+His A–a gradient is 106 − 40 = 66. On 100% O~2~ his saturation rises only to 88%: shunt physiology. It rises more than a pure shunt would, because some alveoli are only partly filled and still take some air, and those low-V/Q units respond to O~2~.
+
+### Hypoxic pulmonary vasoconstriction
+
+The body has its own way to reduce a shunt. Small pulmonary arteries that supply poorly ventilated, hypoxic alveoli constrict. The response is present even in isolated lung tissue; its exact mechanism is still unclear. With cardiac output unchanged, blood that would have gone to the bad region goes to better-ventilated lung, so the shunt fraction falls and PaO~2~ rises. In the lecture's example, moving the flow through a shunted unit from half to a quarter raises SaO~2~ from about 88% to about 94% (@fig-ventilation-perfusion-lowvq C).
+
+It helps most when the disease is regional. A patient who suddenly plugs a bronchus with mucus may drop to a saturation of 60 to 70%, with a whited-out lung on X-ray, and over about 15 minutes the saturation climbs back. Suctioning may get the credit, but the repeat X-ray often still shows the whited-out lung; vasoconstriction diverted the blood. When less than about 20% of the lung is affected, total resistance barely changes. When the disease is diffuse, or the whole lung is hypoxic as at altitude, the vessels constrict everywhere, pulmonary vascular resistance can double, and the right ventricle faces an afterload it tolerates poorly.
+
+::: {.callout-note collapse="true" title="Background: when inflammation overrides the response"}
+In a bacterial or other strongly inflammatory lung lesion, the inflammation dilates the local vessels and brings blood to the infected region, so the bad lobe can get *more* blood flow, not less, and the shunt is worse than its size suggests. This was taught in the 2026 lecture. The Small Group 3 key marks it as not on the exam.
+:::
+
+### A low mixed venous saturation worsens shunt
+
+The blood that passes a shunt leaves with whatever O~2~ it arrived with. Mixed venous O~2~ depends on how much O~2~ is delivered to the tissues and how much they take out. If cardiac output falls, as in heart failure, or the tissues extract more, as with fever, a high work of breathing or sepsis, mixed venous blood comes back less saturated. In a patient with a shunt, that lower saturation goes straight into the arterial blood. The slides and lecture call this mixing *venous admixture* (slide 54, "Poor venous saturation/admixture"): poorly saturated venous blood that passes the shunt mixing into the arterial blood. Without any change in the shunt, SaO~2~ falls further (@fig-ventilation-perfusion-shunt C), and hypoxemia lowers delivery further, a downward spiral.
+
+In normal lungs a low mixed venous saturation does little, because blood that passes well-ventilated alveoli reaches the alveolar PO~2~ whatever it started at. It matters when there is shunt, low V/Q, or a diffusion-limited barrier, as in exercise.
+
+So with a severe shunt, the levers are to lower the shunt fraction, raise O~2~ delivery and lower O~2~ consumption (treating fever, resting the respiratory muscles).
+
+### O~2~ delivery
+
+$$\dot Q_{O_2} = \dot Q \times C_{aO_2} = \dot Q \times \left[(1.39 \times S_{aO_2} \times \text{Hb}) + (0.003 \times P_{aO_2})\right]$$
+
+Each gram of fully saturated Hb carries 1.39 mL of O~2~, and each mm Hg of PO~2~ adds 0.003 mL/dL dissolved. With a cardiac output of 5 L/min (50 dL/min), SaO~2~ 1.0, Hb 15 g/dL and PaO~2~ 97:
+
+$$\dot Q_{O_2} = 50 \times \left[(1.39 \times 1.0 \times 15) + (0.003 \times 97)\right] = 50 \times 21 \approx 1050 \text{ mL O}_2/\text{min}$$
+
+O~2~ content is Hb, saturation and, slightly, PaO~2~. Cardiac output is not part of content; it multiplies content to give delivery. Raising cardiac output helps a patient with a shunt by raising delivery, which lowers extraction and raises the mixed venous O~2~.
+
+::: {.callout-note title="If you are comparing with the slides"}
+The slide 54 notes say "oxygen content relies on hemoglobin and cardiac output" and then give the content equation, which has no cardiac output in it. Content depends on Hb and saturation (and slightly on PaO~2~); delivery is cardiac output times content, as slide 56 shows.
+:::
+
+## Case 4: low V/Q in asthma
+
+A 24-year-old man has cough, wheezing, shortness of breath and a subjective fever. His saturation is 85% on room air and 97% on 30% O~2~. His X-ray shows big lungs with flat diaphragms and not much white. A few liters of O~2~ fixed his saturation, so this is not shunt.
+
+Air goes preferentially to units whose airways are open, so the units behind narrowed airways get less ventilation for the same blood flow: low V/Q, with a lower PAO~2~ and a higher PACO~2~ (@fig-ventilation-perfusion-lowvq A). They are still ventilated, so raising FiO~2~ raises their PAO~2~ too and their blood saturates (@fig-ventilation-perfusion-lowvq B). Low V/Q responds to O~2~.
+
+![(A) Low V/Q in the two-alveolus model, with the lecture's values. Behind a narrowed airway, PAO~2~ is 77 and PACO~2~ 45; the other unit gets extra ventilation, with PAO~2~ 105 and PACO~2~ 36. Mixed pulmonary venous PO~2~ is about 89, while PCO~2~ is back near 40. (B) On 30% O~2~, PIO~2~ rises by about 64 mm Hg in every ventilated unit, and both units now saturate their blood. (C) Hypoxic vasoconstriction in a shunt: halving the flow to the airless unit, from 50% to 25% of the total, raises SaO~2~ from about 88% to about 94%. Course figure, after the lecture slides.](figures/ventilation-perfusion/lowvq-hpv.svg){#fig-ventilation-perfusion-lowvq}
+
+The low-V/Q unit in @fig-ventilation-perfusion-lowvq A raises its PCO~2~ to 45, but the extra ventilation of the other unit lowers its PCO~2~ to 36, and the mix comes back near 40. The same extra ventilation cannot rescue the O~2~. Blood leaving the well-ventilated unit is already nearly saturated, so a PAO~2~ of 105 instead of 100 adds almost nothing; the flat top of the O~2~ dissociation curve leaves nothing to gain. The CO~2~ curve is nearly straight over this range, so extra ventilation removes extra CO~2~ in proportion. That is why V/Q mismatch lowers PaO~2~ much more than it raises PaCO~2~, and why a high PaCO~2~ usually means total alveolar ventilation is too low: the patient is tiring, or cannot raise ventilation enough, as in severe COPD.
+
+::: {.callout-note title="If you are comparing with the notes"}
+The V/Q notes say V/Q mismatch spares PaCO~2~ because CO~2~ diffuses about 20 times faster than O~2~. Both gases equilibrate fully in a normal capillary; the reason is the shapes of the two dissociation curves.
+:::
+
+Opening the airways improves oxygenation, but the more immediate danger in asthma is the work of moving air through narrowed tubes. Hypoxic vasoconstriction plays a small part in low V/Q; once the patient gets O~2~, the stimulus goes away.
+
+### What disturbs V/Q
+
+**Airway problems:** asthma, COPD (bronchitis and emphysema), secretions, bronchiectasis, foreign bodies and masses. **Alveolar problems:** pneumonia, interstitial lung disease and edema. **Vascular problems:** high or low pressures in the pulmonary circulation. Pneumonia and edema cause low V/Q where the alveoli are partly filled and shunt where they are filled completely. Atelectasis, where the alveoli have collapsed, is shunt.
+
+::: {.callout-note title="If you are comparing with the slides"}
+Slide 59 lists atelectasis with pneumonia, interstitial lung disease and edema as alveolar problems that disturb V/Q, and the lecture presented the list as problems that "don't totally sock in" the alveoli, that is, low V/Q. Collapsed alveoli get no air, so atelectasis is shunt, as the slide 47 notes say.
+:::
+
+## The approach to hypoxemia
+
+Every patient with a low saturation goes through the same steps (@fig-ventilation-perfusion-approach). Calculate PAO~2~, measure PaO~2~, and take the A–a gradient. If the gradient is normal, gas exchange works and too little O~2~ is reaching the alveoli: look for hypoventilation, altitude or a low FiO~2~. If it is raised, give O~2~. A good response means low V/Q (or diffusion limitation); keep the O~2~ on while you treat what is lowering ventilation. A poor response means shunt.
+
+![The approach to hypoxemia, from the 2026 lecture. The A–a gradient separates a low alveolar PO~2~ from a gas-exchange problem, and the response to supplemental O~2~ separates low V/Q from shunt. A low mixed venous O~2~ worsens shunt and low V/Q. Course figure.](figures/ventilation-perfusion/hypoxemia-approach.svg){#fig-ventilation-perfusion-approach}
+
+Low V/Q is by far the most common reason a patient is hypoxemic.
+
+::: {.callout-note collapse="true" title="Background: the shunt toolbox"}
+For severe shunt the lecture described, as physiology, what ICU teams do: positive end-expiratory pressure (PEEP) holds flooded alveoli open and turns shunt into O~2~-responsive low V/Q; diuresis removes lung water; turning a patient with ARDS onto the belly evens out ventilation and perfusion; and laying a patient good lung down lets gravity send blood to the ventilated lung.
+:::
+
+## Check your understanding
+
+1. A person pants, with a very high rate and a tidal volume close to the anatomic dead space. The mixed expired PCO~2~ of the gas collected from his breaths falls toward zero, yet his PaCO~2~ rises. Explain both changes.
+
+    <details><summary>Answer</summary>
+
+    Each breath first fills and empties the conducting airways, which add no CO~2~. With V~T~ close to V~D~, almost all of each exhaled breath is dead space gas, and the little alveolar gas in it is diluted, so the mixed expired PCO~2~ falls toward zero (in the Bohr equation, V~D~/V~T~ approaches 1). Meanwhile alveolar ventilation, (V~T~ − V~D~) × RR, stays small however high the rate goes. CO~2~ leaves the body only with alveolar ventilation, so removal falls below production and PaCO~2~ rises.
+
+    </details>
+
+2. In an upright person, the base gets the most ventilation. Why does it still have the lowest PAO~2~?
+
+    <details><summary>Answer</summary>
+
+    Blood flow rises toward the base even more steeply than ventilation, so the base has the lowest V/Q (about 0.6). Each unit of blood there is matched with less fresh air, so more O~2~ is taken out of the alveolar gas and more CO~2~ added to it, and PAO~2~ ends up lowest and PACO~2~ highest.
+
+    </details>
+
+3. Breathing 100% O~2~ raises a healthy person's PaO~2~ from about 100 to about 600 mm Hg. With a hemoglobin of 15 g/dL, roughly how much does CaO~2~ rise, and why so little for a sixfold rise in PaO~2~?
+
+    <details><summary>Answer</summary>
+
+    About 2 mL/dL, from about 20.5 to about 22.6 mL/dL, roughly 10%. Hemoglobin is already about 97% saturated at a PaO~2~ of 100, on the flat top of the curve, so the bound term can rise only to 100%: about 1.39 × 15 × 0.03 ≈ 0.6 mL/dL more. The rest is dissolved O~2~, 0.003 × 500 = 1.5 mL/dL. Almost all the O~2~ in blood rides on hemoglobin, and once hemoglobin is full, extra PO~2~ adds only the small dissolved amount.
+
+    </details>
+
+4. Why does V/Q mismatch lower PaO~2~ much more than it raises PaCO~2~?
+
+    <details><summary>Answer</summary>
+
+    The patient breathes more, and the well-ventilated units blow off extra CO~2~. The CO~2~ curve is nearly straight, so their lower PCO~2~ offsets the high PCO~2~ of the low-V/Q units. Extra ventilation cannot add O~2~ to blood that is already nearly saturated, because the O~2~ curve is flat at the top, so nothing offsets the poorly saturated blood from the low-V/Q units.
+
+    </details>
+
+
+## Key equations
+
+| Equation | Use |
+|---|---|
+| V̇E = V~T~ × RR; V̇A = (V~T~ − V~D~) × RR | Minute and alveolar ventilation |
+| V~D~/V~T~ = (PaCO~2~ − P~Ē~CO~2~)/PaCO~2~ | Bohr equation, with mixed expired PCO~2~ |
+| PACO~2~ ∝ V̇CO~2~ / V̇A | CO~2~ and alveolar ventilation |
+| V/Q = V̇A / Q̇ | Ventilation-perfusion ratio |
+| PIO~2~ = (PB − PH~2~O) FiO~2~ | Inspired PO~2~ |
+| PAO~2~ = (PB − PH~2~O) FiO~2~ − PaCO~2~/R | Alveolar gas equation |
+| A–a gradient = PAO~2~ − PaO~2~ | Is gas exchange working? |
+| CaO~2~ = (1.39 × Hb × SaO~2~) + (0.003 × PaO~2~) | O~2~ content |
+| Q̇O~2~ = Q̇ × CaO~2~ | O~2~ delivery |
+
+## Sources
+
+This chapter follows the 2026 Ventilation and Perfusion I and II lectures for MEDC 30504 and draws on the course's V/Q notes, Small Group 3 and the 2018 course notes, corrected and updated. All figures were drawn for this book.
+
+::: {#refs}
+:::

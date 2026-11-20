@@ -1,0 +1,16 @@
+/* Shared look with the Respiratory Mechanics Lab and Circulation Lab (UChicago maroon). */
+:root { --accent: #800000; --lung: #a65e00; --cw: #155f83; --muted: #666666; --border: #d9d9d9; }
+
+a { color: var(--accent); text-underline-offset: 2px; }
+h1, h2, h3 { color: #193944; letter-spacing: -0.3px; }
+.subtitle { color: var(--muted); }
+
+figure img, .figure img, img { max-width: 100%; height: auto; }
+figcaption, .figure-caption { font-size: 0.88em; color: #4d4d4d; line-height: 1.5; }
+
+table { border-collapse: collapse; font-size: 0.92em; margin: 1em 0; }
+th, td { padding: 5px 10px; border-bottom: 1px solid #ececec; text-align: left; vertical-align: top; }
+thead th { border-bottom: 1px solid var(--border); color: var(--muted); }
+
+details { margin: 0.4em 0 1em; padding: 0.4em 0.8em; background: #f7f2f2; border-left: 3px solid var(--accent); border-radius: 4px; }
+details summary { cursor: pointer; font-weight: 600; color: var(--accent); }

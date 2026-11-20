@@ -1,0 +1,61 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Tissues, Cells & Organ Physiology"
+  subtitle: "A web-book for MEDC 30504"
+  repo-actions: []
+  search: true
+  site-url: https://beiser-lab.github.io/tcop-web-book/
+  chapters:
+    - index.qmd
+    # Cardiovascular block, in the 2026 lecture order (overview deck, "Flow of Major Topics").
+    - part: "Cardiovascular physiology, excitable cells and muscle"
+      chapters:
+        - cardiovascular/cv-overview.qmd
+        - cardiovascular/cardiac-pump.qmd
+        - muscle/excitable-cells.qmd
+        - cardiovascular/hemodynamics.qmd
+        - muscle/skeletal-muscle.qmd
+        - muscle/smooth-muscle.qmd
+        - muscle/cardiac-muscle.qmd
+        - cardiovascular/microcirculation.qmd
+        - cardiovascular/control-of-co.qmd
+        - cardiovascular/ans-extrinsic-control.qmd
+        - cardiovascular/ecg-ionic-basis.qmd
+        - cardiovascular/ecg-vectors-axis.qmd
+        - cardiovascular/ecg-interpretation.qmd
+        - cardiovascular/cv-integration.qmd
+        - cardiovascular/cv-exercise.qmd
+        - cardiovascular/coronary.qmd
+        - cardiovascular/special-circulations.qmd
+        - cardiovascular/pulmonary-circulation.qmd
+    # Pulmonary block, in the course-map order P1 to P12.
+    - part: "Pulmonary physiology"
+      chapters:
+        - pulmonary/respiratory-intro.qmd
+        - pulmonary/statics.qmd
+        - pulmonary/dynamics-1.qmd
+        - pulmonary/dynamics-2.qmd
+        - pulmonary/ventilation.qmd
+        - pulmonary/diffusion.qmd
+        - pulmonary/o2-co2-transport.qmd
+        - pulmonary/acid-base.qmd
+        - pulmonary/ventilation-perfusion.qmd
+        - pulmonary/control-of-ventilation.qmd
+        - pulmonary/exercise.qmd
+        - pulmonary/respiratory-consultant.qmd
+
+bibliography: references.bib
+link-citations: true
+csl: numbered.csl
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    number-sections: true
+    fig-cap-location: bottom
+    html-math-method: mathjax

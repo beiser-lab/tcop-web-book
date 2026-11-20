@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="550.08pt" height="260.7075pt" viewBox="0 0 550.08 260.7075" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 260.7075 
+L 550.08 260.7075 
+L 550.08 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 65.637818 104.277 
+L 182.513455 104.277 
+" clip-path="url(#p9858df148b)" style="fill: none; stroke: #aebdc4; stroke-width: 9"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 65.637818 104.277 
+L 182.513455 104.277 
+" clip-path="url(#p9858df148b)" style="fill: none; stroke: #ffffff; stroke-width: 6; stroke-linecap: square"/>
+   </g>
+   <g id="patch_2">
+    <path d="M 65.637818 123.756273 
+C 70.803782 123.756273 75.758856 121.703814 79.411744 118.050926 
+C 83.064632 114.398038 85.117091 109.442964 85.117091 104.277 
+C 85.117091 99.111036 83.064632 94.155962 79.411744 90.503074 
+C 75.758856 86.850186 70.803782 84.797727 65.637818 84.797727 
+C 60.471855 84.797727 55.51678 86.850186 51.863892 90.503074 
+C 48.211005 94.155962 46.158545 99.111036 46.158545 104.277 
+C 46.158545 109.442964 48.211005 114.398038 51.863892 118.050926 
+C 55.51678 121.703814 60.471855 123.756273 65.637818 123.756273 
+z
+" clip-path="url(#p9858df148b)" style="fill: #ffffff; stroke: #a65e00; stroke-width: 2.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 182.513455 143.235545 
+C 192.845382 143.235545 202.755531 139.130627 210.061306 131.824852 
+C 217.367082 124.519076 221.472 114.608927 221.472 104.277 
+C 221.472 93.945073 217.367082 84.034924 210.061306 76.729148 
+C 202.755531 69.423373 192.845382 65.318455 182.513455 65.318455 
+C 172.181528 65.318455 162.271379 69.423373 154.965603 76.729148 
+C 147.659827 84.034924 143.554909 93.945073 143.554909 104.277 
+C 143.554909 114.608927 147.659827 124.519076 154.965603 131.824852 
+C 162.271379 139.130627 172.181528 143.235545 182.513455 143.235545 
+z
+" clip-path="url(#p9858df148b)" style="fill: #ffffff; stroke: #a65e00; stroke-width: 2.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 9.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #193944" transform="translate(35.824146 146.325273)">r = 0.8, T = 50</text>
+    <text style="font-size: 9.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #193944" transform="translate(35.125748 157.658773)">P = 2T/r = 125</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 9.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #193944" transform="translate(152.699783 159.717273)">r = 1.6, T = 50</text>
+    <text style="font-size: 9.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #193944" transform="translate(154.642087 171.050773)">P = 2T/r = 62</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 9.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #800000" transform="translate(7.2 50.146364)">The small alveolus needs more pressure,</text>
+    <text style="font-size: 9.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #800000" transform="translate(7.2 61.479864)">so it empties into the large one</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #193944" x="7.2" y="17.925" transform="rotate(-0 7.2 17.925)">A. Same surface tension</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="line2d_3">
+    <path d="M 357.826909 104.277 
+L 474.702545 104.277 
+" clip-path="url(#pc2865e7284)" style="fill: none; stroke: #aebdc4; stroke-width: 9"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 357.826909 104.277 
+L 474.702545 104.277 
+" clip-path="url(#pc2865e7284)" style="fill: none; stroke: #ffffff; stroke-width: 6; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 357.826909 123.756273 
+C 362.992873 123.756273 367.947947 121.703814 371.600835 118.050926 
+C 375.253723 114.398038 377.306182 109.442964 377.306182 104.277 
+C 377.306182 99.111036 375.253723 94.155962 371.600835 90.503074 
+C 367.947947 86.850186 362.992873 84.797727 357.826909 84.797727 
+C 352.660946 84.797727 347.705871 86.850186 344.052983 90.503074 
+C 340.400095 94.155962 338.347636 99.111036 338.347636 104.277 
+C 338.347636 109.442964 340.400095 114.398038 344.052983 118.050926 
+C 347.705871 121.703814 352.660946 123.756273 357.826909 123.756273 
+z
+" clip-path="url(#pc2865e7284)" style="fill: #ffffff; stroke: #a65e00; stroke-width: 2.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 474.702545 143.235545 
+C 485.034472 143.235545 494.944621 139.130627 502.250397 131.824852 
+C 509.556173 124.519076 513.661091 114.608927 513.661091 104.277 
+C 513.661091 93.945073 509.556173 84.034924 502.250397 76.729148 
+C 494.944621 69.423373 485.034472 65.318455 474.702545 65.318455 
+C 464.370618 65.318455 454.460469 69.423373 447.154694 76.729148 
+C 439.848918 84.034924 435.744 93.945073 435.744 104.277 
+C 435.744 114.608927 439.848918 124.519076 447.154694 131.824852 
+C 454.460469 139.130627 464.370618 143.235545 474.702545 143.235545 
+z
+" clip-path="url(#pc2865e7284)" style="fill: #ffffff; stroke: #a65e00; stroke-width: 2.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 9.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #193944" transform="translate(324.052183 146.325273)">r = 0.8, T = 12.5</text>
+    <text style="font-size: 9.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #193944" transform="translate(329.955542 157.658773)">P = 2T/r = 31</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 9.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #193944" transform="translate(444.888874 159.717273)">r = 1.6, T = 25</text>
+    <text style="font-size: 9.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #193944" transform="translate(446.831178 171.050773)">P = 2T/r = 31</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 9.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #800000" transform="translate(299.389091 50.146364)">Surfactant is denser on the small one, so its tension</text>
+    <text style="font-size: 9.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #800000" transform="translate(299.389091 61.479864)">falls; the pressures match and both stay open</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #193944" x="299.389091" y="17.925" transform="rotate(-0 299.389091 17.925)">B. With surfactant</text>
+   </g>
+  </g>
+  <g id="text_9">
+   <text style="font-size: 8.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4d4d4d" x="266.4" y="251.697" transform="rotate(-0 266.4 251.697)">Arbitrary units. Tension falls in the small alveolus because the same amount of surfactant covers less surface.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p9858df148b">
+   <rect x="7.2" y="23.925" width="243.490909" height="160.704"/>
+  </clipPath>
+  <clipPath id="pc2865e7284">
+   <rect x="299.389091" y="23.925" width="243.490909" height="160.704"/>
+  </clipPath>
+ </defs>
+</svg>

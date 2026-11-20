@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="457.200612pt" height="210.181034pt" viewBox="0 0 457.200612 210.181034" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 210.181034 
+L 457.200612 210.181034 
+L 457.200612 -0 
+L 0 -0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 89.072069 167.384483 
+C 106.064638 167.384483 122.363522 160.633264 134.379083 148.617703 
+C 146.394643 136.602143 153.145862 120.303258 153.145862 103.31069 
+C 153.145862 86.318121 146.394643 70.019237 134.379083 58.003676 
+C 122.363522 45.988116 106.064638 39.236897 89.072069 39.236897 
+C 72.0795 39.236897 55.780616 45.988116 43.765055 58.003676 
+C 31.749495 70.019237 24.998276 86.318121 24.998276 103.31069 
+C 24.998276 120.303258 31.749495 136.602143 43.765055 148.617703 
+C 55.780616 160.633264 72.0795 167.384483 89.072069 167.384483 
+z
+" clip-path="url(#pdec381cafb)" style="fill: #eef3f6"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 108.401196 35.902014 
+C 97.962657 32.908812 86.970132 32.380803 76.292765 34.359736 
+C 65.615398 36.338669 55.542213 40.770976 46.869666 47.306209 
+C 38.197119 53.841442 31.159966 62.302699 26.314612 72.020976 
+C 21.469258 81.739252 18.946862 92.451484 18.946862 103.31069 
+C 18.946862 114.169895 21.469258 124.882127 26.314612 134.600404 
+C 31.159966 144.31868 38.197119 152.779937 46.869666 159.31517 
+C 55.542213 165.850403 65.615398 170.28271 76.292765 172.261643 
+C 86.970132 174.240577 97.962657 173.712568 108.401196 170.719365 
+L 105.065204 159.08538 
+C 96.428241 161.56199 87.332903 161.99887 78.49833 160.361479 
+C 69.663757 158.724088 61.329092 155.056747 54.153329 149.649422 
+C 46.977567 144.242097 41.154948 137.241159 37.145848 129.200148 
+C 33.136748 121.159138 31.04969 112.295718 31.04969 103.31069 
+C 31.04969 94.325662 33.136748 85.462241 37.145848 77.421231 
+C 41.154948 69.38022 46.977567 62.379282 54.153329 56.971957 
+C 61.329092 51.564632 69.663757 47.897292 78.49833 46.2599 
+C 87.332903 44.622509 96.428241 45.05939 105.065204 47.535999 
+z
+" clip-path="url(#pdec381cafb)" style="fill: #155f83; stroke: #ffffff; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 192.808023 52.969563 
+C 181.352202 41.513743 166.322151 34.304484 150.217467 32.540734 
+C 134.112783 30.776984 117.878635 34.562257 104.21487 43.267035 
+C 90.551105 51.971814 80.259635 65.085223 75.052002 80.426417 
+C 69.844369 95.76761 70.026202 112.436227 75.567263 127.660165 
+L 103.999607 117.311638 
+C 100.813497 108.557873 100.708943 98.973419 103.703332 90.152233 
+C 106.697721 81.331047 112.615316 73.790836 120.471981 68.785588 
+C 128.328646 63.780341 137.663282 61.603809 146.923475 62.617965 
+C 156.183668 63.632121 164.825947 67.777445 171.413044 74.364542 
+z
+" clip-path="url(#pdec381cafb)" style="fill: #800000; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 75.567263 127.660165 
+C 79.122737 137.428751 84.775033 146.301079 92.12577 153.651816 
+C 99.476508 161.002553 108.348835 166.654849 118.117421 170.210324 
+C 127.886007 173.765798 138.31583 175.13891 148.671784 174.232882 
+C 159.027739 173.326853 169.060671 170.163482 178.063448 164.965726 
+L 162.934914 138.762335 
+C 157.758317 141.751045 151.989381 143.569984 146.034707 144.09095 
+C 140.080033 144.611917 134.082885 143.822377 128.465948 141.777979 
+C 122.849011 139.733581 117.747423 136.483511 113.520749 132.256837 
+C 109.294075 128.030163 106.044005 122.928575 103.999607 117.311638 
+z
+" clip-path="url(#pdec381cafb)" style="fill: #155f83; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 178.063448 164.965726 
+C 187.520158 159.505892 195.595156 151.942831 201.661799 142.863459 
+C 207.728441 133.784087 211.62563 123.429503 213.050933 112.603254 
+C 214.476236 101.777006 213.391803 90.766579 209.881791 80.426417 
+C 206.371779 70.086254 200.529394 60.690935 192.808023 52.969563 
+L 171.413044 74.364542 
+C 175.852833 78.804331 179.212204 84.206639 181.230461 90.152233 
+C 183.248718 96.097826 183.872267 102.428821 183.052718 108.653914 
+C 182.233169 114.879007 179.992285 120.832893 176.503965 126.053532 
+C 173.015646 131.274171 168.372522 135.622931 162.934914 138.762335 
+z
+" clip-path="url(#pdec381cafb)" style="fill: #c16622; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 142.466897 144.246724 
+C 153.32326 144.246724 163.736436 139.933445 171.413044 132.256837 
+C 179.089652 124.580229 183.402931 114.167053 183.402931 103.31069 
+C 183.402931 92.454326 179.089652 82.04115 171.413044 74.364542 
+C 163.736436 66.687934 153.32326 62.374655 142.466897 62.374655 
+C 131.610533 62.374655 121.197357 66.687934 113.520749 74.364542 
+C 105.844141 82.04115 101.530862 92.454326 101.530862 103.31069 
+C 101.530862 114.167053 105.844141 124.580229 113.520749 132.256837 
+C 121.197357 139.933445 131.610533 144.246724 142.466897 144.246724 
+z
+" clip-path="url(#pdec381cafb)" style="fill: #ffffff; stroke: #aebdc4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 240.357414 31.04969 
+L 251.74831 31.04969 
+L 251.74831 19.658793 
+L 240.357414 19.658793 
+z
+" clip-path="url(#pdec381cafb)" style="fill: #800000"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 240.357414 79.105034 
+L 251.74831 79.105034 
+L 251.74831 67.714138 
+L 240.357414 67.714138 
+z
+" clip-path="url(#pdec381cafb)" style="fill: #c16622"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 240.357414 127.160379 
+L 251.74831 127.160379 
+L 251.74831 115.769483 
+L 240.357414 115.769483 
+z
+" clip-path="url(#pdec381cafb)" style="fill: #155f83"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 9.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4d4d4d" x="142.466897" y="99.039103" transform="rotate(-0 142.466897 99.039103)">LV cavity</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #4d4d4d" transform="translate(41.317279 101.26769)">RV</text>
+    <text style="font-size: 9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #4d4d4d" transform="translate(35.318216 112.00469)">cavity</text>
+   </g>
+   <g id="text_3">
+    <text style="font-style: italic; font-size: 9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4d4d4d" x="142.466897" y="19.658793" transform="rotate(-0 142.466897 19.658793)">anterior</text>
+   </g>
+   <g id="text_4">
+    <text style="font-style: italic; font-size: 9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4d4d4d" x="142.466897" y="190.522241" transform="rotate(-0 142.466897 190.522241)">inferior (posterior)</text>
+   </g>
+   <g id="text_5">
+    <text style="font-style: italic; font-size: 9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #4d4d4d" x="222.559138" y="106.65869" transform="rotate(-0 222.559138 106.65869)">lateral</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 8.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #ffffff" transform="translate(90.513741 118.495807) rotate(-90)">septum</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 9.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #193944" x="256.375862" y="27.530879" transform="rotate(-0 256.375862 27.530879)">LAD (from the left main)</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 8.8px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #4d4d4d" x="256.375862" y="46.190634" transform="rotate(-0 256.375862 46.190634)">anterior wall and front of the septum</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 9.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #193944" x="256.375862" y="75.586224" transform="rotate(-0 256.375862 75.586224)">Left circumflex (from the left main)</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 8.8px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #4d4d4d" x="256.375862" y="94.245979" transform="rotate(-0 256.375862 94.245979)">lateral wall</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 9.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #193944" x="256.375862" y="123.641569" transform="rotate(-0 256.375862 123.641569)">Right coronary artery</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 8.8px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #4d4d4d" transform="translate(256.375862 142.424524)">RV, and in right-dominant hearts the</text>
+    <text style="font-size: 8.8px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #4d4d4d" transform="translate(256.375862 152.922924)">inferior wall and back of the septum (via the PDA)</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pdec381cafb">
+   <rect x="7.2" y="7.2" width="412.92" height="195.781034"/>
+  </clipPath>
+ </defs>
+</svg>
