@@ -402,7 +402,7 @@ def fig_espvr():
     a1.text(30, 285, "Systolic P-V curve (ESPVR)", fontsize=9, color=C["arterial"])
     a1.text(154, 34, "Diastolic\nP-V curve\n(EDPVR)", fontsize=9, color=C["venous"])
     # B
-    a2.set_title("B  Slope = contractility")
+    a2.set_title("B  Contractility changes the slope")
     for ees, ls, lab, xy in ((3.2, ":", "Higher contractility", (22, 312)), (p["Ees"], "-", "", None),
                              (1.3, "--", "Lower contractility", (128, 140))):
         V = np.linspace(p["V0"], min(168, p["V0"] + 320 / ees), 50)

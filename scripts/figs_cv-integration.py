@@ -348,7 +348,7 @@ def fig_pv_loops():
                          EDP=round(float(B["Plv"][B["i_mc"]]), 1))
     ami_p = ami["p"]
     pm.espvr(axs[1], ami_p, vmax=125, color=C["arterial"], lw=1.6, ls=":")
-    axs[0].text(84, 140, "ESPVR (contractility)\nunchanged", fontsize=8.5, color=C["arterial"], va="top")
+    axs[0].text(84, 140, "ESPVR unchanged\n(same contractility)", fontsize=8.5, color=C["arterial"], va="top")
     axs[0].text(150, 92, "EDPVR\n(filling curve)", fontsize=8.5, color=C["venous"])
     axs[0].text(4, 146, "faded: before", fontsize=8.5, color=C["text"], va="top")
     axs[1].text(127, 128, "flatter ESPVR", fontsize=8.5, color=C["arterial"])

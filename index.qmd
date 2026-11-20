@@ -4,6 +4,16 @@ This web-book goes with MEDC 30504, Tissues, Cells & Organ Physiology. Each chap
 
 It covers the cardiovascular and pulmonary blocks, with the muscle lectures and the excitable-cell material that the muscle and autonomic lectures need.
 
+::: {.callout-note title="How AI was used to make this book"}
+This book was built with generative AI (Anthropic's Claude, through Claude Code) under faculty direction. The AI was used to:
+
+- reformat and rewrite content from the course's earlier web-book, and to draft chapters from the current lectures, lecture notes and small-group materials;
+- edit the chapters for accuracy and for consistency with the current course materials, terms and corrections;
+- redraw figures, either from equations and the course simulators' models or as adaptations of published figures, which are credited in their captions.
+
+The course faculty set the scope and the conventions, and decided every correction. AI can make mistakes. If something here disagrees with your lectures or looks wrong, tell the course directors.
+:::
+
 ## How to use it
 
 Read a chapter before or after its lecture. Each one opens with goals and ends with practice questions and the key equations. Boxes marked "Background" hold material you will not be examined on.

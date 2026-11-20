@@ -8,7 +8,7 @@ bibliography: [../references.bib, ../bib/w3.bib]
 - Describe the functional anatomy of the heart: four chambers, one-way valves that move passively, and how the ventricle shortens.
 - Follow one heartbeat through its seven phases on the Wiggers diagram, using pressure differences to explain when each valve opens and closes.
 - Relate the heart sounds and the physiologic splitting of S~2~ to valve closure on the two sides of the heart.
-- Draw the diastolic and systolic pressure-volume curves (EDPVR and ESPVR) and say what each one measures.
+- Draw the diastolic and systolic pressure-volume curves (EDPVR and ESPVR) and say what each one shows.
 - Draw a pressure-volume loop, label the four valve events, and read stroke volume and stroke work from it.
 - Predict how a change in preload, afterload or contractility changes the loop and the stroke volume.
 
@@ -113,18 +113,14 @@ The [Cardiac Muscle](../muscle/cardiac-muscle.qmd) chapter covers this in detail
 
 The lecture shows it with a thought experiment. Imagine the aortic valve kept shut by a very high pressure in the aorta, so the ventricle cannot eject. Every contraction is then isovolumic, and you can record the peak pressure the ventricle develops at each filling volume (@fig-cardiac-pump-espvr A). Fill to point 1 on the diastolic curve and contract: pressure rises straight up, at constant volume, to point A. Fill more, to point 2, and the contraction reaches B. Fill to 3 and it reaches C. The peak pressure rises with end-diastolic volume. Joining A, B and C gives the *systolic pressure-volume curve*, the end-systolic pressure-volume relationship (ESPVR).
 
-![Building the systolic pressure-volume curve. (A) With the aortic valve held shut, the ventricle contracts from three filling volumes (1, 2, 3) on the diastolic curve and develops a peak pressure (A, B, C) that rises with filling. The line through the peaks is the systolic curve (ESPVR). (B) The slope of the systolic curve is contractility. More filling moves a beat up the same line. Curves from the model in @fig-cardiac-pump-wiggers. Panel A follows the experiment shown in Berne and colleagues, *Physiology* [@w3-berne], as used in the 2026 lecture.](figures/cardiac-pump/espvr.svg){#fig-cardiac-pump-espvr}
+![Building the systolic pressure-volume curve. (A) With the aortic valve held shut, the ventricle contracts from three filling volumes (1, 2, 3) on the diastolic curve and develops a peak pressure (A, B, C) that rises with filling. The line through the peaks is the systolic curve (ESPVR). (B) Greater contractility makes the systolic curve steeper; less contractility makes it flatter. More filling moves a beat up the same line. Curves from the model in @fig-cardiac-pump-wiggers. Panel A follows the experiment shown in Berne and colleagues, *Physiology* [@w3-berne], as used in the 2026 lecture.](figures/cardiac-pump/espvr.svg){#fig-cardiac-pump-espvr}
 
-In this course the systolic curve is the Frank-Starling curve. Over the normal range of filling it is close to a straight line, and the lecture draws it that way. The curve from the original experiments flattens at very large volumes and then bends down. Because contractility is the slope of this curve, that flattening is a fall in contractility: past a point, the overstretched ventricle gains less force from each extra milliliter, and in a failing heart it may lose force.
+The systolic curve shows the Frank-Starling mechanism in pressure-volume terms: a beat that starts from a larger volume develops a higher pressure. The lecture calls it "the Frank-Starling curve". Over the normal range of filling it is close to a straight line, and the lecture draws it that way. At very high filling it flattens, so more filling adds little force.
 
-**Contractility is the slope of the systolic (Frank-Starling) curve** (@fig-cardiac-pump-espvr B). It is a property of the state of the muscle itself: its Ca^2+^ handling and the health of the tissue. Circulating adrenaline makes the line steeper (more contractility). Scar from a myocardial infarction makes it flatter (less contractility). Contractility means inotropy only. Heart rate and the speed of relaxation also affect cardiac output, but they are separate properties, and in this course a change in heart rate does not change the systolic curve.
+**Contractility**, also called inotropy, is the intrinsic ability of the heart muscle to generate force and shorten at a given preload and afterload. It does not depend on loading. It is set by the state of the muscle itself: sympathetic stimulation and circulating adrenaline acting through β~1~ receptors, its Ca^2+^ handling, and the health of the tissue. Greater contractility makes the systolic curve steeper (the line rotates up and to the left); less contractility makes it flatter (@fig-cardiac-pump-espvr B); scar from a myocardial infarction, for example, makes it flatter. The **force of contraction** is the pressure a given beat develops. It depends on preload (the Frank-Starling mechanism), afterload and contractility. Heart rate and the speed of relaxation also affect cardiac output, but they are separate from contractility, and in this course a change in heart rate does not change the systolic curve.
 
 ::: {.callout-warning title="A common mistake"}
-Over the normal range of filling, stretching the ventricle does not raise its contractility. Stretch raises the **force of contraction**: the beat starts from a larger volume and moves up the same Frank-Starling line, whose slope is unchanged. Contractility changes when the slope changes, as with adrenaline or injury, or where the curve flattens at very high volumes.
-:::
-
-::: {.callout-note title="If you are comparing with the slides"}
-The Small Group 2 key (Question 3a) writes "increased preload/LVEDV → increased myocardial stretch → increased contractility & SV." Over the normal range, more stretch increases the force of contraction and the stroke volume along the same Frank-Starling curve. The slope, and so contractility, does not change. Contractility falls only at very high volumes, where the curve flattens, which is what the key's Question 3b describes.
+Stretching the ventricle does not raise its contractility. Stretch raises the **force of contraction**: the beat starts from a larger volume and moves up the same systolic curve, with contractility unchanged. Contractility changes only when the state of the muscle changes, as with adrenaline or injury, and then the line itself becomes steeper or flatter.
 :::
 
 ### The pressure-volume loop
@@ -165,7 +161,7 @@ The lecture's mantra: when someone says *stroke volume*, you say **preload, afte
 
 - **Preload**: the stretch of the resting muscle before it contracts, measured as LVEDV (RVEDV for the right ventricle).
 - **Afterload**: the load against which the muscle exerts its force during ejection. It is a concept, not a single measurement. It rises with the pressure the ventricle has to reach to open the aortic valve and eject (the diastolic and systolic aortic pressures), and with any resistance across the aortic valve. Arterial resistance, arterial stiffness and the size and shape of the ventricle also affect it. In the course diagrams, aortic pressure stands in for afterload.
-- **Contractility**: an intrinsic property of the muscle, its ability to develop force at a given preload and afterload, shown by the slope of the systolic curve.
+- **Contractility** (inotropy): an intrinsic property of the muscle, its ability to develop force and shorten at a given preload and afterload. Greater contractility makes the systolic curve steeper.
 
 @fig-cardiac-pump-determinants changes each one in turn. Read each panel as an isolated change from the baseline beat, with the other two determinants held fixed, the valves working normally, and no reflex response yet.
 
@@ -233,7 +229,7 @@ This is how the heart matches its output to what the veins return, beat by beat,
 
     <details><summary>Answer</summary>
 
-    The observation is right: more filling gives more force of contraction and a larger stroke volume (Frank-Starling). The conclusion is wrong: contractility is the slope of the systolic curve, and filling moves the beat along the same line. More preload widens the loop to the right with the systolic line unchanged. More contractility makes the systolic line steeper and widens the loop to the left, at the same LVEDV.
+    The observation is right: more filling gives more force of contraction and a larger stroke volume (Frank-Starling). The conclusion is wrong: contractility is a property of the muscle at a given preload and afterload, and filling moves the beat along the same systolic curve without changing it. More preload widens the loop to the right with the systolic line unchanged. More contractility makes the systolic line steeper and widens the loop to the left, at the same LVEDV.
 
     </details>
 
@@ -268,7 +264,6 @@ This is how the heart matches its output to what the veins return, beat by beat,
 | Compliance = ΔV/ΔP | How easily the relaxed ventricle fills. On the diastolic curve as drawn, the slope is stiffness (ΔP/ΔV), the inverse of compliance |
 | SV = LVEDV − LVESV | Stroke volume, the width of the pressure-volume loop |
 | CO = HR × SV | Cardiac output; needs heart rate, which the loop does not show |
-| Contractility = slope of the ESPVR | A steeper systolic curve means more contractility |
 
 ## Sources
 
