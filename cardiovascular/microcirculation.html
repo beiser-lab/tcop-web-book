@@ -1,0 +1,1653 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>8&nbsp; Microcirculation and Local Control – Tissues, Cells &amp; Organ Physiology</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../cardiovascular/control-of-co.html" rel="next">
+<link href="../muscle/cardiac-muscle.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-01a495efc5497ac6e3f5457e7ed18e65.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Toolbar">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../cardiovascular/cv-overview.html">Cardiovascular physiology, excitable cells and muscle</a></li><li class="breadcrumb-item"><a href="../cardiovascular/microcirculation.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Microcirculation and Local Control</span></a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Tissues, Cells &amp; Organ Physiology</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About this book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Cardiovascular physiology, excitable cells and muscle</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cv-overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cardiovascular Physiology Overview</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cardiac-pump.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Cardiac Pump</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/excitable-cells.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Membrane Potentials and Excitable Cells</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/hemodynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Peripheral Circulation and Hemodynamics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/skeletal-muscle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Skeletal Muscle</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/smooth-muscle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Smooth Muscle</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/cardiac-muscle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Cardiac Muscle</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/microcirculation.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Microcirculation and Local Control</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/control-of-co.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Control of Cardiac Output and Ventricular-Vascular Coupling</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ans-extrinsic-control.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">ANS and Extrinsic Control</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ecg-ionic-basis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">EKG I: Ionic Basis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ecg-vectors-axis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">ECG II: Vectors and Mean Electrical Axis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ecg-interpretation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">EKG III: Clinical Interpretation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cv-integration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Cardiovascular Integration and Adaptation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cv-exercise.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Cardiovascular Adaptation to Exercise</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/coronary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Coronary Circulation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/special-circulations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Other Special Circulations</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/pulmonary-circulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Pulmonary Circulation</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Pulmonary physiology</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/respiratory-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Respiratory Physiology Introduction</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/statics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Respiratory Statics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/dynamics-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Respiratory Dynamics I</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/dynamics-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Respiratory Dynamics II</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/ventilation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Alveolar Ventilation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/diffusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Diffusion</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/o2-co2-transport.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Transport of O<sub>2</sub> and CO<sub>2</sub> in the Blood</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/acid-base.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Pulmonary Acid Base</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/ventilation-perfusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Ventilation and Perfusion</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/control-of-ventilation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Control of Pulmonary Ventilation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/exercise.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Physiology of Exercise</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/respiratory-consultant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Think Like a Respiratory Consultant</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#the-microcirculation" id="toc-the-microcirculation" class="nav-link active" data-scroll-target="#the-microcirculation"><span class="header-section-number">8.1</span> The microcirculation</a>
+  <ul class="collapse">
+  <li><a href="#arterioles-the-stopcocks-of-the-circulation" id="toc-arterioles-the-stopcocks-of-the-circulation" class="nav-link" data-scroll-target="#arterioles-the-stopcocks-of-the-circulation"><span class="header-section-number">8.1.1</span> Arterioles: the stopcocks of the circulation</a></li>
+  <li><a href="#capillaries-built-for-exchange" id="toc-capillaries-built-for-exchange" class="nav-link" data-scroll-target="#capillaries-built-for-exchange"><span class="header-section-number">8.1.2</span> Capillaries: built for exchange</a></li>
+  </ul></li>
+  <li><a href="#crossing-the-capillary-wall" id="toc-crossing-the-capillary-wall" class="nav-link" data-scroll-target="#crossing-the-capillary-wall"><span class="header-section-number">8.2</span> Crossing the capillary wall</a>
+  <ul class="collapse">
+  <li><a href="#ficks-law-concentration-drives-diffusion" id="toc-ficks-law-concentration-drives-diffusion" class="nav-link" data-scroll-target="#ficks-law-concentration-drives-diffusion"><span class="header-section-number">8.2.1</span> Fick’s law: concentration drives diffusion</a></li>
+  </ul></li>
+  <li><a href="#water-the-starling-forces" id="toc-water-the-starling-forces" class="nav-link" data-scroll-target="#water-the-starling-forces"><span class="header-section-number">8.3</span> Water: the Starling forces</a>
+  <ul class="collapse">
+  <li><a href="#along-the-length-of-a-capillary-the-classical-model" id="toc-along-the-length-of-a-capillary-the-classical-model" class="nav-link" data-scroll-target="#along-the-length-of-a-capillary-the-classical-model"><span class="header-section-number">8.3.1</span> Along the length of a capillary: the classical model</a></li>
+  </ul></li>
+  <li><a href="#lymphatics-the-sewer-system" id="toc-lymphatics-the-sewer-system" class="nav-link" data-scroll-target="#lymphatics-the-sewer-system"><span class="header-section-number">8.4</span> Lymphatics: the sewer system</a></li>
+  <li><a href="#using-the-starling-forces" id="toc-using-the-starling-forces" class="nav-link" data-scroll-target="#using-the-starling-forces"><span class="header-section-number">8.5</span> Using the Starling forces</a></li>
+  <li><a href="#arterioles-set-capillary-hydrostatic-pressure" id="toc-arterioles-set-capillary-hydrostatic-pressure" class="nav-link" data-scroll-target="#arterioles-set-capillary-hydrostatic-pressure"><span class="header-section-number">8.6</span> Arterioles set capillary hydrostatic pressure</a></li>
+  <li><a href="#local-control-of-blood-flow" id="toc-local-control-of-blood-flow" class="nav-link" data-scroll-target="#local-control-of-blood-flow"><span class="header-section-number">8.7</span> Local control of blood flow</a>
+  <ul class="collapse">
+  <li><a href="#vasomotor-tone" id="toc-vasomotor-tone" class="nav-link" data-scroll-target="#vasomotor-tone"><span class="header-section-number">8.7.1</span> Vasomotor tone</a></li>
+  <li><a href="#autoregulation" id="toc-autoregulation" class="nav-link" data-scroll-target="#autoregulation"><span class="header-section-number">8.7.2</span> Autoregulation</a></li>
+  <li><a href="#a-quick-review-flow-versus-velocity" id="toc-a-quick-review-flow-versus-velocity" class="nav-link" data-scroll-target="#a-quick-review-flow-versus-velocity"><span class="header-section-number">8.7.3</span> A quick review: flow versus velocity</a></li>
+  <li><a href="#the-myogenic-response-stretch-causes-constriction" id="toc-the-myogenic-response-stretch-causes-constriction" class="nav-link" data-scroll-target="#the-myogenic-response-stretch-causes-constriction"><span class="header-section-number">8.7.4</span> The myogenic response: stretch causes constriction</a></li>
+  <li><a href="#endothelial-control-shear-causes-dilation" id="toc-endothelial-control-shear-causes-dilation" class="nav-link" data-scroll-target="#endothelial-control-shear-causes-dilation"><span class="header-section-number">8.7.5</span> Endothelial control: shear causes dilation</a></li>
+  <li><a href="#metabolic-control-matching-flow-to-demand" id="toc-metabolic-control-matching-flow-to-demand" class="nav-link" data-scroll-target="#metabolic-control-matching-flow-to-demand"><span class="header-section-number">8.7.6</span> Metabolic control: matching flow to demand</a></li>
+  <li><a href="#summary-of-local-control" id="toc-summary-of-local-control" class="nav-link" data-scroll-target="#summary-of-local-control"><span class="header-section-number">8.7.7</span> Summary of local control</a></li>
+  </ul></li>
+  <li><a href="#why-dont-capillaries-rupture" id="toc-why-dont-capillaries-rupture" class="nav-link" data-scroll-target="#why-dont-capillaries-rupture"><span class="header-section-number">8.8</span> Why don’t capillaries rupture?</a></li>
+  <li><a href="#check-your-understanding" id="toc-check-your-understanding" class="nav-link" data-scroll-target="#check-your-understanding"><span class="header-section-number">8.9</span> Check your understanding</a></li>
+  <li><a href="#key-equations" id="toc-key-equations" class="nav-link" data-scroll-target="#key-equations"><span class="header-section-number">8.10</span> Key equations</a></li>
+  <li><a href="#sources" id="toc-sources" class="nav-link" data-scroll-target="#sources"><span class="header-section-number">8.11</span> Sources</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../cardiovascular/cv-overview.html">Cardiovascular physiology, excitable cells and muscle</a></li><li class="breadcrumb-item"><a href="../cardiovascular/microcirculation.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Microcirculation and Local Control</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Microcirculation and Local Control</span></h1>
+<p class="subtitle lead">Exchange across the capillary wall, and how each tissue sets its own flow</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Goals for this chapter
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Describe how capillary structure, number and arrangement support exchange, and why blood moves slowly through them.</li>
+<li>Use Fick’s law to predict how concentration difference, surface area, permeability and diffusion distance change solute transfer.</li>
+<li>Use the Starling forces to predict whether a change favors filtration or absorption, and explain when edema forms.</li>
+<li>Explain how arteriolar tone sets capillary hydrostatic pressure.</li>
+<li>Distinguish the myogenic, endothelial and metabolic mechanisms of local control, and the experiments that separate them.</li>
+<li>Tell active from reactive hyperemia.</li>
+<li>Explain why a capillary one cell thick does not rupture.</li>
+</ul>
+<p>The numbers in figure captions are illustrations. Know the directions and the reasoning.</p>
+</div>
+</div>
+<p>Everything upstream of the capillaries exists to deliver blood to them. This chapter is about what happens when it arrives: how gases, solutes and water cross the capillary wall, where the extra fluid goes, and how each tissue adjusts the radius of its own arterioles to get the flow it needs. It builds directly on <a href="../cardiovascular/hemodynamics.html">Peripheral Circulation and Hemodynamics</a>, especially Poiseuille’s law, aggregate cross-sectional area and the difference between perfusion and transmural pressure. Reflex and hormonal control of the same vessels is in <a href="../cardiovascular/ans-extrinsic-control.html">ANS and Extrinsic Control</a>.</p>
+<section id="the-microcirculation" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="the-microcirculation"><span class="header-section-number">8.1</span> The microcirculation</h2>
+<p>The microcirculation is the arterioles, the capillaries and the venules. In some tissues small precapillary sphincters guard the entrances to the capillaries, and short channels (metarterioles) run from arterioles across to venules. The arterioles regulate how much blood enters; the capillaries provide an enormous surface for exchange.</p>
+<p>If you watch a living capillary bed under a microscope, red cells pass through the capillaries one after another, slowly, with no visible pulse. The pulse has been filtered out upstream by the combination of arterial compliance and arteriolar resistance, the hydraulic filter of the previous chapter. How a bed is organized varies a good deal from tissue to tissue; textbook drawings are schematic.</p>
+<section id="arterioles-the-stopcocks-of-the-circulation" class="level3" data-number="8.1.1">
+<h3 data-number="8.1.1" class="anchored" data-anchor-id="arterioles-the-stopcocks-of-the-circulation"><span class="header-section-number">8.1.1</span> Arterioles: the stopcocks of the circulation</h3>
+<p>Arterioles are resistance vessels: an endothelium inside a thick coat of smooth muscle. By contracting or relaxing that muscle they change their radius, and because resistance varies with 1/r<sup>4</sup>, a small change in radius makes a large change in resistance. The course compares them to the stopcock on an IV line, which can be turned to shut one port off completely. An arteriole can constrict enough to stop flow into a tissue bed.</p>
+<p>Raynaud phenomenon shows this in the fingers. With a mild chill the digital arterioles clamp down, the fingers turn white, and they ache because the tissue is briefly ischemic. When flow returns they flush pink, for a reason covered under metabolic control below.</p>
+</section>
+<section id="capillaries-built-for-exchange" class="level3" data-number="8.1.2">
+<h3 data-number="8.1.2" class="anchored" data-anchor-id="capillaries-built-for-exchange"><span class="header-section-number">8.1.2</span> Capillaries: built for exchange</h3>
+<ul>
+<li><strong>Wall.</strong> A single layer of flattened endothelial cells, 0.2 to 0.5 µm thick, on a basement membrane, with scattered contractile pericytes inside the basement membrane. There is no smooth muscle and no outer adventitia.</li>
+<li><strong>Size.</strong> 5 to 10 µm in diameter, about the size of a red cell, so red cells pass in single file. Each capillary is about 0.5 to 1 mm long.</li>
+<li><strong>Distribution.</strong> Capillary density follows the tissue’s metabolic demand. Active tissues such as heart muscle have far more capillaries per gram than quiet ones.</li>
+<li><strong>Number.</strong> About 10<sup>10</sup> capillaries in parallel, whose aggregate cross-sectional area is the 24-inch pizza (the Big Benito) of the previous chapter.</li>
+</ul>
+<p>Mean velocity is total flow divided by aggregate cross-sectional area. Because that area is so large, blood moves through the capillaries at only about 0.03 cm/s, a fraction of a millimeter per second, and the slow transit gives time for exchange.</p>
+</section>
+</section>
+<section id="crossing-the-capillary-wall" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="crossing-the-capillary-wall"><span class="header-section-number">8.2</span> Crossing the capillary wall</h2>
+<p>Different substances take different routes.</p>
+<ul>
+<li><strong>Lipid-soluble substances,</strong> including O<sub>2</sub> and CO<sub>2</sub>, diffuse straight through the endothelial cells, crossing two plasma membranes and the cytoplasm between them.</li>
+<li><strong>Small water-soluble solutes,</strong> such as Na<sup>+</sup>, K<sup>+</sup>, Cl<sup>−</sup> and glucose, diffuse through water-filled pathways in the clefts between endothelial cells, a few nanometers wide. (The slide calls these “intra-cellular clefts.” They are the gaps <em>between</em> cells.)</li>
+<li><strong>Plasma proteins,</strong> above all albumin, are strongly held back and normally stay in the capillary. In inflammation, as in sepsis, the barrier is injured and albumin leaks out.</li>
+</ul>
+<section id="ficks-law-concentration-drives-diffusion" class="level3" data-number="8.2.1">
+<h3 data-number="8.2.1" class="anchored" data-anchor-id="ficks-law-concentration-drives-diffusion"><span class="header-section-number">8.2.1</span> Fick’s law: concentration drives diffusion</h3>
+<p>Solutes and gases cross the wall mainly by passive diffusion. Fick’s first law describes it:</p>
+<p><span class="math display">\[J = -D\,\frac{d\phi}{dx}\]</span></p>
+<p>J is the flux of solute (amount per unit area per unit time), dφ/dx is the concentration gradient across the barrier, and D is the diffusion coefficient of that solute in that barrier. The minus sign says that solute moves down its gradient, from high concentration to low. The law has the same shape as Ohm’s law: the gradient plays the role of the pressure difference, and the diffusion coefficient plays the role of a conductance. You will not calculate it, but you should be able to predict what changes the rate.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Change</th>
+<th>Effect, with the other factors fixed</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Larger concentration difference</td>
+<td>More net flux down the gradient</td>
+</tr>
+<tr class="even">
+<td>More exchange surface area</td>
+<td>More total transfer, with the barrier’s intrinsic permeability unchanged</td>
+</tr>
+<tr class="odd">
+<td>Higher (or lower) barrier permeability</td>
+<td>Higher (or lower) flux per unit area</td>
+</tr>
+<tr class="even">
+<td>Longer diffusion path</td>
+<td>Less transfer for the same concentration difference</td>
+</tr>
+</tbody>
+</table>
+<p>The numbers are large. The systemic capillaries have about 100 m² of wall, roughly half a singles tennis court. Do not confuse that with the aggregate cross-sectional area of about 2,800 cm²: the first is the area of wall available for exchange, the second the area that blood flows through. Most cells lie within about 10 µm of a capillary, and lengthening that distance even a little matters. Interstitial edema pushes cells and capillaries apart, so the diffusion path lengthens, O<sub>2</sub> flux falls, and tissue oxygen delivery suffers.</p>
+</section>
+</section>
+<section id="water-the-starling-forces" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="water-the-starling-forces"><span class="header-section-number">8.3</span> Water: the Starling forces</h2>
+<p>About 20 L of fluid a day is filtered out of the capillaries and most of it comes back. The Starling equation estimates the direction and size of the net water movement across the capillary wall. The course writes it as:</p>
+<p><span class="math display">\[Q_f = K\left[(P_c - P_i) - \sigma(\pi_c - \pi_i)\right]\]</span></p>
+<p>A positive Q<sub>f</sub> means filtration, water moving from the capillary into the interstitium. A negative Q<sub>f</sub> means absorption.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>What it is</th>
+<th>Direction it pushes water</th>
+<th>Course value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>P<sub>c</sub></td>
+<td>Capillary hydrostatic pressure, pressing on the wall from inside</td>
+<td>Out</td>
+<td>About 25 mm Hg (falling from about 35 at the arteriolar end to about 15 at the venular end)</td>
+</tr>
+<tr class="even">
+<td>P<sub>i</sub></td>
+<td>Interstitial hydrostatic pressure</td>
+<td>In</td>
+<td>About 0 mm Hg (slightly negative in many tissues; the lecture’s worked example uses −2)</td>
+</tr>
+<tr class="odd">
+<td>π<sub>c</sub></td>
+<td>Plasma oncotic pressure, set by plasma proteins, mostly albumin</td>
+<td>In</td>
+<td>About 25 mm Hg</td>
+</tr>
+<tr class="even">
+<td>π<sub>i</sub></td>
+<td>Interstitial oncotic pressure, set by the protein outside the capillary</td>
+<td>Out</td>
+<td>1 to 5 mm Hg</td>
+</tr>
+<tr class="odd">
+<td>σ</td>
+<td>Reflection coefficient: how well the wall holds protein back (1 = completely; 0 = not at all)</td>
+<td></td>
+<td>Close to 1 normally; falls in inflammation</td>
+</tr>
+<tr class="even">
+<td>K</td>
+<td>Filtration constant: how permeable the wall is to water (the slides write k or K<sub>f</sub>)</td>
+<td></td>
+<td>Rises sharply in burns, trauma, sepsis, toxic injury and after cardiac arrest</td>
+</tr>
+</tbody>
+</table>
+<p>Oncotic pressure always draws water toward the side with more protein. Hydrostatic pressure pushes water away from the side where it is higher. The equation is the sum of the outward pressures minus the sum of the inward ones, scaled by K. Clinically it is never calculated, because none of its terms is measured at the bedside. Its value is in predicting what a change will do.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>If you are comparing with the slides
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The slide’s speaker notes and the lecture notes write the equation as Q<sub>f</sub> = k[(P<sub>c</sub> + π<sub>i</sub>) − (P<sub>i</sub> + π<sub>c</sub>)], grouping the outward and inward pressures, and the supplementary slide writes the net driving pressure as (P<sub>c</sub> − P<sub>i</sub>) − (π<sub>c</sub> − π<sub>i</sub>). These are the same as the form above with σ = 1, rearranged. The σ term is there to show what inflammation does: a leakier wall lets protein through, σ falls, and the plasma proteins hold less water in. When the wall is intact, use σ = 1 and all three forms give the same answer.</p>
+</div>
+</div>
+<section id="along-the-length-of-a-capillary-the-classical-model" class="level3" data-number="8.3.1">
+<h3 data-number="8.3.1" class="anchored" data-anchor-id="along-the-length-of-a-capillary-the-classical-model"><span class="header-section-number">8.3.1</span> Along the length of a capillary: the classical model</h3>
+<p>Capillary hydrostatic pressure falls along the capillary, from about 35 mm Hg at the arteriolar end to about 15 mm Hg at the venular end, because blood loses pressure as it flows through it. The oncotic difference stays roughly constant. In the classical model, then, the net force favors filtration near the arteriolar end and can cross over to favor absorption near the venular end (<a href="#fig-microcirculation-starling" class="quarto-xref">Figure&nbsp;<span>8.1</span></a>).</p>
+<div id="fig-microcirculation-starling" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-microcirculation-starling-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/microcirculation/starling-classical.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-microcirculation-starling-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.1: Starling forces along a capillary in the classical model. (A) The outward hydrostatic difference (P<sub>c</sub> − P<sub>i</sub>) falls along the capillary as P<sub>c</sub> falls; the inward oncotic difference (π<sub>c</sub> − π<sub>i</sub>) changes little. (B) The net driving pressure is +12 mm Hg at the arteriolar end (filtration) and −5 mm Hg at the venular end (absorption), crossing zero about two-thirds of the way along. Values from the lecture’s supplementary example, with σ = 1. Course figure.
+</figcaption>
+</figure>
+</div>
+<p>The crossover comes from the fall in P<sub>c</sub>, not from a change in protein concentration. (As water filters out, the protein left behind in the capillary becomes slightly more concentrated, but in this model π<sub>c</sub> is treated as roughly constant.)</p>
+<p>This is a simplified model, and it does not describe every capillary bed. What matters is the balance: across the body, filtration exceeds absorption by about 2 to 4 L a day, and that excess has to leave the tissues another way.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Background: the classical Starling calculation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The lecture’s supplementary slide works one example, with σ = 1 and all pressures in mm Hg.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>P<sub>c</sub></th>
+<th>P<sub>i</sub></th>
+<th>π<sub>c</sub></th>
+<th>π<sub>i</sub></th>
+<th>Net = (P<sub>c</sub> − P<sub>i</sub>) − (π<sub>c</sub> − π<sub>i</sub>)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Arteriolar end</td>
+<td>35</td>
+<td>−2</td>
+<td>25</td>
+<td>0</td>
+<td>(35 + 2) − 25 = +12</td>
+</tr>
+<tr class="even">
+<td>Venular end</td>
+<td>15</td>
+<td>−2</td>
+<td>25</td>
+<td>3</td>
+<td>(15 + 2) − 22 = −5</td>
+</tr>
+</tbody>
+</table>
+<p>The net driving pressure is not the same thing as capillary hydrostatic pressure, and the flow it produces also depends on K. The numbers are illustrative: real capillary beds differ, and the balance shifts whenever P<sub>c</sub> changes, as after a hemorrhage.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="lymphatics-the-sewer-system" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="lymphatics-the-sewer-system"><span class="header-section-number">8.4</span> Lymphatics: the sewer system</h2>
+<p>The lymphatics are a second circulatory system, one you probably dissected past without seeing because their walls are so thin. Terminal lymphatics sit right next to the capillaries. Their openings are relatively large, so filtered protein enters along with water. Larger lymphatics have one-way valves, like veins, and smooth muscle that contracts rhythmically to pump lymph forward. Contraction of the surrounding skeletal muscle adds to the pumping. Lymph returns the net capillary filtrate, about 2 to 4 L a day, to the circulation through the thoracic duct, and with it about a quarter to a half of the circulating plasma protein each day.</p>
+<p>Lymph flow rises as interstitial pressure rises (<a href="#fig-microcirculation-lymph" class="quarto-xref">Figure&nbsp;<span>8.2</span></a>). More filtration puts more fluid into the interstitium, P<sub>i</sub> rises, and lymph flow increases to carry it away. That works over a useful range. At high interstitial pressures lymph flow reaches its maximum and cannot rise further. <strong>Edema develops when fluid enters the interstitium faster than the lymphatics can clear it.</strong></p>
+<div id="fig-microcirculation-lymph" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-microcirculation-lymph-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/microcirculation/lymph-flow.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-microcirculation-lymph-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.2: Lymph flow and interstitial fluid pressure. Over the normal range, a small rise in P<sub>i</sub> produces a large rise in lymph flow, which clears the extra fluid. Above about +2 mm Hg lymph flow is near its maximum, so further filtration accumulates as edema. Shape after the lecture’s graph. Course figure.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="using-the-starling-forces" class="level2" data-number="8.5">
+<h2 data-number="8.5" class="anchored" data-anchor-id="using-the-starling-forces"><span class="header-section-number">8.5</span> Using the Starling forces</h2>
+<p>For any situation, predict the direction of each term separately, then decide which is likely to dominate. In a real patient several can change at once.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Situation</th>
+<th>Main change</th>
+<th>Expected tendency</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Expanded intravascular volume, or a rise in venous pressure (as in heart failure)</td>
+<td>↑ P<sub>c</sub></td>
+<td>More filtration</td>
+</tr>
+<tr class="even">
+<td>Low plasma albumin: protein malnutrition, a protein-losing state such as nephrotic syndrome</td>
+<td>↓ π<sub>c</sub></td>
+<td>More filtration; edema, and fluid in the abdomen (ascites)</td>
+</tr>
+<tr class="odd">
+<td>Inflammation or barrier injury: burns, sepsis</td>
+<td>↑ K and ↓ σ; protein leaks out, so π<sub>i</sub> rises</td>
+<td>More fluid and protein escape</td>
+</tr>
+<tr class="even">
+<td>Lymphatic blockage</td>
+<td>Less fluid cleared</td>
+<td>Interstitial fluid accumulates</td>
+</tr>
+<tr class="odd">
+<td>Hemorrhage, or an acute fall in arterial pressure</td>
+<td>↓ P<sub>c</sub></td>
+<td>Less filtration; for a while, net absorption of interstitial fluid into the blood</td>
+</tr>
+<tr class="even">
+<td>Severe dehydration (salt and water loss)</td>
+<td>↓ P<sub>c</sub>, and plasma proteins are concentrated so π<sub>c</sub> rises</td>
+<td>Less filtration; fluid drawn into the capillaries</td>
+</tr>
+<tr class="odd">
+<td>Intravenous albumin</td>
+<td>↑ π<sub>c</sub></td>
+<td>Water drawn from the interstitium into the capillaries</td>
+</tr>
+<tr class="even">
+<td>A large intravenous infusion of water or saline</td>
+<td>↑ P<sub>c</sub> and diluted plasma proteins, ↓ π<sub>c</sub></td>
+<td>More filtration</td>
+</tr>
+<tr class="odd">
+<td>Standing still for hours</td>
+<td>↑ P<sub>c</sub> in the legs from the column of blood above them</td>
+<td>More filtration; swollen ankles</td>
+</tr>
+</tbody>
+</table>
+<p>Standing still is worse than walking. When you walk, the contracting leg muscles squeeze the valved veins and the lymphatics. That lowers venous pressure in the legs, so P<sub>c</sub> falls, and pumps lymph away. Standing motionless (for ten hours, say, holding a retractor in a long operation) gives neither benefit, and the shoes get tight.</p>
+<p>Compression stockings help by raising the pressure outside the capillaries. A higher P<sub>i</sub> reduces the net outward pressure, so less fluid filters out, and the external squeeze also supports venous and lymphatic return. Wrap a hand and forearm in an elastic bandage for an hour and the arm holds less interstitial fluid when you take it off, partly because lymph flow rose.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>If you are comparing with the slides
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The lecture notes say the stockings push water back into the capillaries. The slide’s own notes put it better: the main effect is less filtration and better venous and lymphatic return, not sustained reabsorption.</p>
+</div>
+</div>
+</section>
+<section id="arterioles-set-capillary-hydrostatic-pressure" class="level2" data-number="8.6">
+<h2 data-number="8.6" class="anchored" data-anchor-id="arterioles-set-capillary-hydrostatic-pressure"><span class="header-section-number">8.6</span> Arterioles set capillary hydrostatic pressure</h2>
+<p>Apply Ohm’s law along the pathway from artery to vein. The segments are in series, so each one’s share of the pressure drop is proportional to its resistance. Hold arterial and venous pressures fixed and change only the arterioles (<a href="#fig-microcirculation-tone" class="quarto-xref">Figure&nbsp;<span>8.3</span></a>):</p>
+<ul>
+<li><strong>Arteriolar constriction</strong> raises the arterioles’ share of the total resistance, so more of the pressure is used up before the blood reaches the capillaries. P<sub>c</sub> falls, and so does flow. Filtration falls and absorption is favored.</li>
+<li><strong>Arteriolar dilation</strong> does the reverse: less pressure is lost upstream, P<sub>c</sub> rises, flow rises, and filtration rises.</li>
+<li><strong>Raising venous pressure,</strong> or resistance downstream of the capillaries, raises P<sub>c</sub> too, because the capillaries sit between the arteriolar and venous resistances.</li>
+</ul>
+<p>So the arterioles set more than flow. They also set how much fluid each capillary bed filters or reabsorbs. If an arteriole clamped down completely, the pressure on its downstream side would fall toward venous pressure.</p>
+<div id="fig-microcirculation-tone" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-microcirculation-tone-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/microcirculation/arteriolar-tone-pc.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-microcirculation-tone-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.3: Arteriolar tone and capillary pressure. Mean pressure along one pathway, with arterial pressure 95 mm Hg and, except for the dashed line, venous pressure 5 mm Hg. P<sub>c</sub> is the mean pressure across the capillary segment, and flow is relative to normal. Constricting the arterioles moves more of the pressure drop upstream of the capillaries and lowers P<sub>c</sub>; dilating them raises P<sub>c</sub>. Raising venous pressure raises P<sub>c</sub> with no change in arteriolar tone. Lumped resistances in series; values illustrative. Course figure.
+</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Background: precapillary and postcapillary resistance
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Treat the capillary as a node between a precapillary resistance (mostly the arterioles) and a postcapillary resistance (mostly the venules). With arterial and venous pressures fixed, P<sub>c</sub> lies between them, closer to whichever side has the smaller resistance. Normally precapillary resistance is several times larger than postcapillary resistance, so P<sub>c</sub> sits nearer venous pressure than the simple average of the two. Raising precapillary resistance (arteriolar constriction) or lowering postcapillary resistance moves P<sub>c</sub> toward venous pressure. Lowering precapillary resistance or raising postcapillary resistance (venular constriction) moves it toward arterial pressure.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="local-control-of-blood-flow" class="level2" data-number="8.7">
+<h2 data-number="8.7" class="anchored" data-anchor-id="local-control-of-blood-flow"><span class="header-section-number">8.7</span> Local control of blood flow</h2>
+<section id="vasomotor-tone" class="level3" data-number="8.7.1">
+<h3 data-number="8.7.1" class="anchored" data-anchor-id="vasomotor-tone"><span class="header-section-number">8.7.1</span> Vasomotor tone</h3>
+<p>Arteriolar smooth muscle is normally partly contracted. This <em>basal tone</em> is what lets an arteriole both constrict and dilate. More tone narrows the vessel and raises its resistance; less tone dilates it and lowers resistance, and because of the fourth-power law a small change in radius has a large effect.</p>
+<p>Two kinds of influence set tone:</p>
+<ul>
+<li><strong>Extrinsic</strong> influences come from outside the tissue: sympathetic nerves and circulating signals such as epinephrine, angiotensin II and vasopressin. These are covered in <a href="../cardiovascular/ans-extrinsic-control.html">ANS and Extrinsic Control</a>.</li>
+<li><strong>Local</strong> influences come from the tissue and the vessel itself: pressure, flow and metabolism. They need no nerves and no central control.</li>
+</ul>
+<p>Their relative importance differs among tissues. Local control dominates minute to minute in the heart and brain; the skin and the splanchnic bed are under strong sympathetic control. The <a href="../cardiovascular/coronary.html">Coronary Circulation</a> and <a href="../cardiovascular/special-circulations.html">Other Special Circulations</a> chapters take each bed in turn.</p>
+</section>
+<section id="autoregulation" class="level3" data-number="8.7.2">
+<h3 data-number="8.7.2" class="anchored" data-anchor-id="autoregulation"><span class="header-section-number">8.7.2</span> Autoregulation</h3>
+<p><em>Autoregulation</em> is the overall result of local control: blood flow through a tissue stays nearly constant across a wide range of perfusion pressures, about 20 to 150 mm Hg in the lecture’s skeletal muscle example (<a href="#fig-microcirculation-autoregulation" class="quarto-xref">Figure&nbsp;<span>8.4</span></a>). When perfusion pressure changes suddenly, flow first changes with it, because resistance has not had time to change. Then, over the following seconds to a minute, the arterioles adjust their radius and flow returns close to its earlier value. Below the range, the arterioles are already fully dilated and flow falls with pressure. Above it, they are fully constricted and flow rises with pressure.</p>
+<div id="fig-microcirculation-autoregulation" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-microcirculation-autoregulation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/microcirculation/autoregulation.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-microcirculation-autoregulation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.4: Autoregulation. Filled circles: flow immediately after an abrupt change in perfusion pressure from the control level, before resistance adjusts; flow follows pressure (dashed line). Open circles: flow after local compensation. Across the autoregulatory range, about 20 to 150 mm Hg in this course, flow returns close to control. Outside the range, flow follows pressure. Schematic. The lecture’s figure shows the same pattern in skeletal muscle, from Jones and Berne <span class="citation" data-cites="w5-jones1964">[<a href="cv-overview.html#ref-w5-jones1964" role="doc-biblioref">1</a>]</span>. Course figure.
+</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>If you are comparing with the slides
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The speaker notes for the autoregulation slide, and the lecture notes, give the range as 20 to 120 mm Hg. The course uses 20 to 150 mm Hg. Sources differ on the upper limit. The point to keep is that the range is wide, not narrow.</p>
+</div>
+</div>
+<p>Three local mechanisms carry out autoregulation and the rest of local control: <strong>myogenic</strong>, <strong>endothelial</strong> and <strong>metabolic</strong>. Two experiments on a single isolated arteriole separate the first two, and they depend on keeping two pressures apart:</p>
+<ul>
+<li><strong>Transmural pressure</strong> is the pressure across the vessel wall, inside minus outside. It stretches the wall, and it is the stimulus for the myogenic response.</li>
+<li><strong>The longitudinal pressure gradient</strong> is the pressure difference along the vessel from one end to the other. It drives flow, and with flow comes shear on the endothelium.</li>
+</ul>
+</section>
+<section id="a-quick-review-flow-versus-velocity" class="level3" data-number="8.7.3">
+<h3 data-number="8.7.3" class="anchored" data-anchor-id="a-quick-review-flow-versus-velocity"><span class="header-section-number">8.7.3</span> A quick review: flow versus velocity</h3>
+<p>Before the experiments, one caution from the previous chapter. Mean velocity is v = Q/A, and what happens to flow and velocity when a vessel widens depends on what is held constant.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>If radius increases…</th>
+<th>Volume flow, Q</th>
+<th>Mean velocity, v</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>with Q held fixed</td>
+<td>Unchanged</td>
+<td>Decreases (v ∝ 1/r²)</td>
+</tr>
+<tr class="even">
+<td>with ΔP held fixed (ideal Poiseuille tube, length and viscosity fixed)</td>
+<td>Increases (Q ∝ r<sup>4</sup>)</td>
+<td>Increases (v ∝ r²)</td>
+</tr>
+<tr class="odd">
+<td>in a vascular network</td>
+<td>Depends on how flow redistributes</td>
+<td>Depends on Q and A</td>
+</tr>
+</tbody>
+</table>
+<p>“Dilating an arteriole slows the blood” is true only if the flow through it stays the same. If the pressure difference stays the same, dilating a single tube speeds the blood up. In the body, blood turned away from one constricted bed goes largely to its neighbors, so always ask what is being held constant before predicting velocity.</p>
+</section>
+<section id="the-myogenic-response-stretch-causes-constriction" class="level3" data-number="8.7.4">
+<h3 data-number="8.7.4" class="anchored" data-anchor-id="the-myogenic-response-stretch-causes-constriction"><span class="header-section-number">8.7.4</span> The myogenic response: stretch causes constriction</h3>
+<p>In the first experiment an isolated arteriole is connected at both ends to fluid reservoirs at the same height, so nothing flows through it. Raising both reservoirs together raises the pressure inside the vessel, and so its transmural pressure, with no flow at all (<a href="#fig-microcirculation-arteriole" class="quarto-xref">Figure&nbsp;<span>8.5</span></a> A).</p>
+<p>A rubber tube would simply expand. The arteriole stretches for a moment and then actively narrows, and the higher the pressure, the narrower it gets. Removing the endothelium does not change the response, so it comes from the smooth muscle itself. Relaxing the smooth muscle with sodium nitroprusside, an NO donor, abolishes the constriction and reveals the passive distension underneath: without active tone, the vessel just stretches.</p>
+<p>Stretch opens mechanosensitive pathways in the smooth muscle that let more Ca<sup>2+</sup> into the cell, and contraction strengthens.</p>
+<p>↑ transmural pressure → stretch of arteriolar smooth muscle → ↑ Ca<sup>2+</sup> entry → contraction → ↓ radius (↑ resistance) → flow held near its earlier value. The opposite happens when transmural pressure falls.</p>
+<div id="fig-microcirculation-arteriole" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-microcirculation-arteriole-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/microcirculation/isolated-arteriole.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-microcirculation-arteriole-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.5: Two experiments on an isolated cardiac arteriole. (A) Myogenic response: transmural pressure is raised step by step with no flow. With active tone the arteriole narrows as pressure rises, with or without its endothelium. With the smooth muscle relaxed by nitroprusside it is passively stretched. (B) Endothelial response: the pressure gradient along the vessel, and so flow, is raised while transmural pressure is held constant. The arteriole dilates with its endothelium intact, and not at all with it removed. Pressures in cm H<sub>2</sub>O, as in the original experiments. Redrawn approximately from Kuo, Davis and Chilian <span class="citation" data-cites="w5-kuo1990">[<a href="cv-overview.html#ref-w5-kuo1990" role="doc-biblioref">2</a>]</span>, as used in the 2026 lecture.
+</figcaption>
+</figure>
+</div>
+<p>The myogenic response defends a tissue’s flow against a rise in arterial pressure. It also acts when you stand: the higher transmural pressure in the arterioles of the feet makes them constrict, which limits the rise in capillary pressure and filtration below them.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Background: mechanosensitive channels
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Several stretch-sensitive channels and signaling pathways link stretch of vascular smooth muscle to Ca<sup>2+</sup> entry and contraction. Piezo1 and Piezo2 are among the mechanosensitive channels involved. Mechanosensation comes up again with the baroreceptors. No single channel accounts for the whole myogenic response, and you do not need to name them.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="endothelial-control-shear-causes-dilation" class="level3" data-number="8.7.5">
+<h3 data-number="8.7.5" class="anchored" data-anchor-id="endothelial-control-shear-causes-dilation"><span class="header-section-number">8.7.5</span> Endothelial control: shear causes dilation</h3>
+<p><em>Shear stress</em> is the frictional drag of moving blood on the endothelium. The blood touching the wall does not move, so the drag depends on how steeply velocity rises from the wall toward the center: the faster the flow, the steeper that rise and the greater the drag. (Very high shear can strip endothelial cells from the wall.)</p>
+<p>In the second experiment the transmural pressure is held constant, and the pressure gradient along the arteriole is raised step by step, so flow through it increases. Each step dilates the arteriole (<a href="#fig-microcirculation-arteriole" class="quarto-xref">Figure&nbsp;<span>8.5</span></a> B). Removing the endothelium abolishes the response, so this mechanism depends on the endothelium.</p>
+<p>The endothelial signal is mainly nitric oxide (NO), with prostacyclin (PGI<sub>2</sub>) as a second dilator. NO diffuses into the neighboring smooth muscle, activates soluble guanylyl cyclase and raises cGMP, which relaxes the muscle. When an effect is endothelium-dependent, NO is the first candidate, and for this course it is enough to think of flow-induced dilation as NO-mediated. Nitroprusside, from the first experiment, works by supplying NO directly.</p>
+<p>↑ flow (blood velocity) → ↑ wall shear stress → ↑ endothelial NO and PGI<sub>2</sub> → ↑ cGMP in smooth muscle → relaxation → ↑ radius (↓ resistance). For a given flow, the wider vessel has a lower wall shear, which limits the stimulus.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>If you are comparing with the slides
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The shear slide ends its chain with “↓ Velocity.” The slide’s speaker notes say not to claim that the experiment shows reduced velocity, and they are right: in the experiment flow rises, and the vessel dilates because flow rose. What the dilation reduces, for a given flow, is the shear on the wall. That is the negative feedback: more shear, more dilation, less shear per unit of flow.</p>
+</div>
+</div>
+</section>
+<section id="metabolic-control-matching-flow-to-demand" class="level3" data-number="8.7.6">
+<h3 data-number="8.7.6" class="anchored" data-anchor-id="metabolic-control-matching-flow-to-demand"><span class="header-section-number">8.7.6</span> Metabolic control: matching flow to demand</h3>
+<p>When a tissue’s metabolism rises, or its blood supply falls, local signals build up that dilate its arterioles and precapillary sphincters. The course names adenosine (from the breakdown of ATP), K<sup>+</sup>, CO<sub>2</sub> and H<sup>+</sup>, and low O<sub>2</sub>. Resistance falls and flow into the bed rises. The extra flow improves O<sub>2</sub> delivery and washes the vasodilator metabolites out, and as they clear, the vessels return toward their basal tone. It is feedback driven by the tissue’s own metabolism: production of the dilators is proportional to metabolic rate, and their removal is proportional to blood flow.</p>
+<p>↓ blood flow or ↑ metabolism → ↑ local vasodilator metabolites → arteriolar dilation → ↓ resistance → ↑ flow → metabolites washed out → tone returns.</p>
+<p>Two everyday results have names (<a href="#fig-microcirculation-hyperemia" class="quarto-xref">Figure&nbsp;<span>8.6</span></a>):</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Active hyperemia</th>
+<th>Reactive hyperemia</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Trigger</td>
+<td>Increased tissue metabolism</td>
+<td>A temporary interruption of flow</td>
+</tr>
+<tr class="even">
+<td>When flow increases</td>
+<td>During the increased activity</td>
+<td>After flow is restored</td>
+</tr>
+<tr class="odd">
+<td>Example</td>
+<td>Working skeletal muscle</td>
+<td>Release of an occlusion: a cuff, a pressed fingertip, Raynaud fingers rewarming</td>
+</tr>
+<tr class="even">
+<td>Response</td>
+<td>Perfusion rises with demand</td>
+<td>Flow overshoots above baseline for a while, then returns</td>
+</tr>
+</tbody>
+</table>
+<p>Squeeze a fingertip hard for a minute or two and let go: the pink flush is reactive hyperemia. Metabolites accumulated while flow was stopped, and they keep the arterioles dilated until the extra flow washes them out. Both kinds of hyperemia correct a mismatch between delivery and the tissue’s needs.</p>
+<div id="fig-microcirculation-hyperemia" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-microcirculation-hyperemia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/microcirculation/hyperemia.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-microcirculation-hyperemia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.6: Reactive and active hyperemia. (A) After a period with no flow, flow overshoots baseline when the occlusion is released and then returns. (B) During muscular work, flow rises to match the higher metabolic rate and stays up until the work stops. Schematic. Course figure.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="summary-of-local-control" class="level3" data-number="8.7.7">
+<h3 data-number="8.7.7" class="anchored" data-anchor-id="summary-of-local-control"><span class="header-section-number">8.7.7</span> Summary of local control</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Mechanism</th>
+<th>Primary stimulus</th>
+<th>Typical response</th>
+<th>Needs the endothelium?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Myogenic</td>
+<td>Increased transmural pressure (stretch)</td>
+<td>Smooth muscle contraction</td>
+<td>No</td>
+</tr>
+<tr class="even">
+<td>Endothelial</td>
+<td>Increased flow-induced shear</td>
+<td>Dilation, via NO and prostacyclin</td>
+<td>Yes</td>
+</tr>
+<tr class="odd">
+<td>Metabolic</td>
+<td>Demand exceeding O<sub>2</sub> or nutrient delivery</td>
+<td>Local dilation</td>
+<td>Not required; acts mainly on smooth muscle</td>
+</tr>
+</tbody>
+</table>
+<p>The myogenic experiment changes pressure without flow. The endothelial experiment changes flow at constant transmural pressure.</p>
+</section>
+</section>
+<section id="why-dont-capillaries-rupture" class="level2" data-number="8.8">
+<h2 data-number="8.8" class="anchored" data-anchor-id="why-dont-capillaries-rupture"><span class="header-section-number">8.8</span> Why don’t capillaries rupture?</h2>
+<p>Capillary hydrostatic pressure is about 25 to 35 mm Hg, held by a wall one cell thick. Why doesn’t it burst?</p>
+<p>For a cylindrical vessel, the law of Laplace gives the tension in the wall (force per unit length of wall) needed to hold a given transmural pressure:</p>
+<p><span class="math display">\[T = \Delta P \times r\]</span></p>
+<p>At the same pressure, a smaller radius needs proportionally less wall tension. A capillary has a radius of about 2.5 µm, the aorta about 1.25 cm. That is a 5,000-fold difference in radius, so at equal pressure the aortic wall would have to carry 5,000 times the tension of the capillary wall.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Vessel</th>
+<th>Illustrative radius</th>
+<th>Relative wall tension at equal pressure</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Capillary</td>
+<td>2.5 µm</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Aorta</td>
+<td>1.25 cm</td>
+<td>5,000</td>
+</tr>
+</tbody>
+</table>
+<p>The tension is spread through the thickness of the wall. The <em>wall stress</em>, which is what the wall material actually has to withstand, is about</p>
+<p><span class="math display">\[\text{wall stress} \approx \frac{\Delta P \times r}{w}\]</span></p>
+<p>where w is the wall thickness. A thicker wall lowers the stress at a given pressure and radius. The aorta, with its large radius, needs a thick wall; the capillary, with its tiny radius, gets by with one cell. (For a sphere, such as an alveolus, the law of Laplace has a factor of 2, P = 2T/r; see <a href="../pulmonary/statics.html">Respiratory Statics</a>.)</p>
+</section>
+<section id="check-your-understanding" class="level2" data-number="8.9">
+<h2 data-number="8.9" class="anchored" data-anchor-id="check-your-understanding"><span class="header-section-number">8.9</span> Check your understanding</h2>
+<ol type="1">
+<li><p>The arterioles feeding a capillary bed constrict while arterial and venous pressures stay the same. Trace what happens to the pressure drop across the arterioles, P<sub>c</sub>, and net filtration. Now leave the arterioles alone and raise venous pressure instead, as in heart failure. What changes?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>Constriction raises the arterioles’ share of the resistance, so a larger part of the pressure drop occurs across them, P<sub>c</sub> falls, and net filtration falls (absorption is favored). Raising venous pressure raises P<sub>c</sub> directly, because the capillaries sit between the arteriolar and venous resistances, so filtration rises and edema becomes more likely.</p>
+</details></li>
+<li><p>A patient with severe dehydration has lost salt and water but no protein. Which Starling term does the water loss change, and which way does fluid move between the interstitium and the capillaries? Apply the same reasoning to a child with severe protein malnutrition.</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>Losing water without protein concentrates the plasma proteins, so π<sub>c</sub> rises. More oncotic pressure holds water in the capillaries, net filtration falls, and fluid is drawn from the interstitium into the capillaries. (The lower blood volume also lowers P<sub>c</sub>, which pushes the same way.) In protein malnutrition, plasma albumin is low, so π<sub>c</sub> falls. Less oncotic pressure holds water in the capillaries, filtration rises, and edema forms, in severe cases with ascites. Low albumin is only part of the story; the lecture notes that malnutrition is more complex.</p>
+</details></li>
+<li><p>In severe sepsis the capillary wall becomes leaky. Which terms of the Starling equation change, and which way?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>K rises (more water crosses for a given pressure difference) and σ falls (the wall holds protein back less well). Protein leaks into the interstitium, so π<sub>i</sub> rises and the effective oncotic difference holding water in falls. All of these favor filtration, so edema forms even if P<sub>c</sub> is normal.</p>
+</details></li>
+<li><p>Arterial pressure into a resting vascular bed rises suddenly and then stays high. Describe what happens to flow through the bed in the first few seconds and over the next minute, and name the local mechanism responsible for the change.</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>In the first seconds flow rises, because the pressure difference across the bed is larger and resistance has not changed yet. The higher pressure also stretches the arteriolar walls. Within seconds their smooth muscle responds to the raised transmural pressure by contracting, the myogenic response, and the arterioles narrow. Resistance rises, and flow falls back toward its earlier value even though the pressure stays high. That is autoregulation: over the range the bed can regulate, flow stays nearly constant as perfusion pressure changes.</p>
+</details></li>
+<li><p>A blood pressure cuff on the upper arm is inflated above systolic pressure for three minutes and then released. Describe the forearm blood flow over the next few minutes, and explain it.</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>Flow is zero while the cuff is up. After release it rises well above its earlier value, then falls back over the next minute or two: reactive hyperemia. During the occlusion, vasodilator metabolites (adenosine, K<sup>+</sup>, CO<sub>2</sub> and H<sup>+</sup>, low O<sub>2</sub>) built up and dilated the arterioles. The high flow on release washes them out, and tone returns.</p>
+</details></li>
+<li><p>When you stand still, the column of blood above your feet raises capillary hydrostatic pressure there several-fold. Why does a vessel with a wall one cell thick still not burst? What two features of a vessel’s design keep the stress in its wall low?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>Wall stress is about ΔP × r / w. A capillary’s radius is so small that the tension its wall must carry (T = ΔP × r) stays tiny even when the pressure inside rises, so a single cell layer is strong enough. The two features are a small radius and a thick wall: large vessels, which cannot have a small radius, need thick walls instead.</p>
+</details></li>
+</ol>
+</section>
+<section id="key-equations" class="level2" data-number="8.10">
+<h2 data-number="8.10" class="anchored" data-anchor-id="key-equations"><span class="header-section-number">8.10</span> Key equations</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Equation</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>J = −D dφ/dx</td>
+<td>Fick’s first law of diffusion (concept only)</td>
+</tr>
+<tr class="even">
+<td>Q<sub>f</sub> = K[(P<sub>c</sub> − P<sub>i</sub>) − σ(π<sub>c</sub> − π<sub>i</sub>)]</td>
+<td>Starling: net filtration across the capillary wall</td>
+</tr>
+<tr class="odd">
+<td>v = Q / A</td>
+<td>Mean velocity</td>
+</tr>
+<tr class="even">
+<td>R = 8ηL / πr<sup>4</sup></td>
+<td>Poiseuille: why a small change in radius has a large effect</td>
+</tr>
+<tr class="odd">
+<td>T = ΔP × r</td>
+<td>Law of Laplace for a cylindrical vessel</td>
+</tr>
+<tr class="even">
+<td>Wall stress ≈ ΔP × r / w</td>
+<td>Stress in a wall of thickness w</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sources" class="level2" data-number="8.11">
+<h2 data-number="8.11" class="anchored" data-anchor-id="sources"><span class="header-section-number">8.11</span> Sources</h2>
+<p>This chapter follows the 2026 Microcirculation and Local Control lecture for MEDC 30504 and draws on the 2026 lecture notes and the course’s 2018 microcirculation notes, corrected and updated. All figures were drawn for this book.</p>
+<div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-w5-jones1964" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Jones RD, Berne RM. <em>Circulation Research</em> 1964;14:126.</div>
+</div>
+<div id="ref-w5-kuo1990" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Kuo L, Davis MJ, Chilian WM. <em>American Journal of Physiology</em> 1990;259:H1063.</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/beiser-lab\.github\.io\/tcop-web-book\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+<nav class="page-navigation" aria-label="Page">
+  <div class="nav-page nav-page-previous">
+      <a href="../muscle/cardiac-muscle.html" class="pagination-link" aria-label="Cardiac Muscle">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Cardiac Muscle</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../cardiovascular/control-of-co.html" class="pagination-link" aria-label="Control of Cardiac Output and Ventricular-Vascular Coupling">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Control of Cardiac Output and Ventricular-Vascular Coupling</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

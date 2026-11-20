@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>20&nbsp; Respiratory Statics – Tissues, Cells &amp; Organ Physiology</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../pulmonary/dynamics-1.html" rel="next">
+<link href="../pulmonary/respiratory-intro.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-01a495efc5497ac6e3f5457e7ed18e65.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Toolbar">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pulmonary/respiratory-intro.html">Pulmonary physiology</a></li><li class="breadcrumb-item"><a href="../pulmonary/statics.html"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Respiratory Statics</span></a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Tissues, Cells &amp; Organ Physiology</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About this book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Cardiovascular physiology, excitable cells and muscle</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cv-overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cardiovascular Physiology Overview</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cardiac-pump.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Cardiac Pump</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/excitable-cells.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Membrane Potentials and Excitable Cells</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/hemodynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Peripheral Circulation and Hemodynamics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/skeletal-muscle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Skeletal Muscle</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/smooth-muscle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Smooth Muscle</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/cardiac-muscle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Cardiac Muscle</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/microcirculation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Microcirculation and Local Control</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/control-of-co.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Control of Cardiac Output and Ventricular-Vascular Coupling</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ans-extrinsic-control.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">ANS and Extrinsic Control</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ecg-ionic-basis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">EKG I: Ionic Basis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ecg-vectors-axis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">ECG II: Vectors and Mean Electrical Axis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ecg-interpretation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">EKG III: Clinical Interpretation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cv-integration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Cardiovascular Integration and Adaptation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cv-exercise.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Cardiovascular Adaptation to Exercise</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/coronary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Coronary Circulation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/special-circulations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Other Special Circulations</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/pulmonary-circulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Pulmonary Circulation</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Pulmonary physiology</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/respiratory-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Respiratory Physiology Introduction</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/statics.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Respiratory Statics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/dynamics-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Respiratory Dynamics I</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/dynamics-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Respiratory Dynamics II</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/ventilation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Alveolar Ventilation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/diffusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Diffusion</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/o2-co2-transport.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Transport of O<sub>2</sub> and CO<sub>2</sub> in the Blood</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/acid-base.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Pulmonary Acid Base</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/ventilation-perfusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Ventilation and Perfusion</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/control-of-ventilation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Control of Pulmonary Ventilation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/exercise.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Physiology of Exercise</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/respiratory-consultant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Think Like a Respiratory Consultant</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#lung-volumes-and-capacities" id="toc-lung-volumes-and-capacities" class="nav-link active" data-scroll-target="#lung-volumes-and-capacities"><span class="header-section-number">20.1</span> Lung volumes and capacities</a>
+  <ul class="collapse">
+  <li><a href="#what-spirometry-can-and-cannot-measure" id="toc-what-spirometry-can-and-cannot-measure" class="nav-link" data-scroll-target="#what-spirometry-can-and-cannot-measure"><span class="header-section-number">20.1.1</span> What spirometry can and cannot measure</a></li>
+  <li><a href="#measuring-frc-with-a-body-box" id="toc-measuring-frc-with-a-body-box" class="nav-link" data-scroll-target="#measuring-frc-with-a-body-box"><span class="header-section-number">20.1.2</span> Measuring FRC with a body box</a></li>
+  </ul></li>
+  <li><a href="#pressures-units-and-transmural-pressure" id="toc-pressures-units-and-transmural-pressure" class="nav-link" data-scroll-target="#pressures-units-and-transmural-pressure"><span class="header-section-number">20.2</span> Pressures, units, and transmural pressure</a></li>
+  <li><a href="#pressure-volume-curves" id="toc-pressure-volume-curves" class="nav-link" data-scroll-target="#pressure-volume-curves"><span class="header-section-number">20.3</span> Pressure-volume curves</a></li>
+  <li><a href="#the-single-alveolus-model" id="toc-the-single-alveolus-model" class="nav-link" data-scroll-target="#the-single-alveolus-model"><span class="header-section-number">20.4</span> The single-alveolus model</a></li>
+  <li><a href="#compliance-and-the-work-of-breathing" id="toc-compliance-and-the-work-of-breathing" class="nav-link" data-scroll-target="#compliance-and-the-work-of-breathing"><span class="header-section-number">20.5</span> Compliance and the work of breathing</a></li>
+  <li><a href="#what-sets-the-lungs-elastic-recoil" id="toc-what-sets-the-lungs-elastic-recoil" class="nav-link" data-scroll-target="#what-sets-the-lungs-elastic-recoil"><span class="header-section-number">20.6</span> What sets the lung’s elastic recoil</a>
+  <ul class="collapse">
+  <li><a href="#air-versus-saline" id="toc-air-versus-saline" class="nav-link" data-scroll-target="#air-versus-saline"><span class="header-section-number">20.6.1</span> Air versus saline</a></li>
+  <li><a href="#surface-tension-and-the-law-of-laplace" id="toc-surface-tension-and-the-law-of-laplace" class="nav-link" data-scroll-target="#surface-tension-and-the-law-of-laplace"><span class="header-section-number">20.6.2</span> Surface tension and the law of Laplace</a></li>
+  <li><a href="#surfactant" id="toc-surfactant" class="nav-link" data-scroll-target="#surfactant"><span class="header-section-number">20.6.3</span> Surfactant</a></li>
+  </ul></li>
+  <li><a href="#what-sets-frc-tlc-and-rv" id="toc-what-sets-frc-tlc-and-rv" class="nav-link" data-scroll-target="#what-sets-frc-tlc-and-rv"><span class="header-section-number">20.7</span> What sets FRC, TLC and RV</a></li>
+  <li><a href="#disease-patterns" id="toc-disease-patterns" class="nav-link" data-scroll-target="#disease-patterns"><span class="header-section-number">20.8</span> Disease patterns</a></li>
+  <li><a href="#check-your-understanding" id="toc-check-your-understanding" class="nav-link" data-scroll-target="#check-your-understanding"><span class="header-section-number">20.9</span> Check your understanding</a></li>
+  <li><a href="#key-equations" id="toc-key-equations" class="nav-link" data-scroll-target="#key-equations"><span class="header-section-number">20.10</span> Key equations</a></li>
+  <li><a href="#sources" id="toc-sources" class="nav-link" data-scroll-target="#sources"><span class="header-section-number">20.11</span> Sources</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pulmonary/respiratory-intro.html">Pulmonary physiology</a></li><li class="breadcrumb-item"><a href="../pulmonary/statics.html"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Respiratory Statics</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Respiratory Statics</span></h1>
+<p class="subtitle lead">Lung volumes and the forces that set them</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Goals for this chapter
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Name the lung volumes and capacities, and say which ones spirometry cannot measure.</li>
+<li>Explain how a body box measures FRC.</li>
+<li>Draw the pressure-volume curves of the lung, the chest wall, and the respiratory system, and find FRC, TLC and RV on them.</li>
+<li>Use P<sub>alv</sub>, P<sub>pl</sub>, P<sub>tp</sub> and P<sub>el</sub> to explain why air flows in when pleural pressure falls.</li>
+<li>Explain how surface tension and surfactant set the lung’s elastic recoil.</li>
+<li>Decide whether a problem lies in the lung, the chest wall or the muscles, and predict how TLC, FRC and RV change.</li>
+</ul>
+<p>Names, dates and the exact values in figure captions are context, not things to memorize.</p>
+</div>
+</div>
+<p>As the <a href="../pulmonary/respiratory-intro.html">introduction</a> set out, the lungs have two jobs, ventilation (moving CO<sub>2</sub> out) and oxygenation (getting O<sub>2</sub> into the blood). Both depend on moving air in and out, and that depends on mechanics. <em>Statics</em> is the part of mechanics that deals with the respiratory system when nothing is moving: the forces that hold the lungs at a given volume when the airway is open and air is not flowing. Dynamics, the next chapter, adds airflow and airway resistance.</p>
+<section id="lung-volumes-and-capacities" class="level2" data-number="20.1">
+<h2 data-number="20.1" class="anchored" data-anchor-id="lung-volumes-and-capacities"><span class="header-section-number">20.1</span> Lung volumes and capacities</h2>
+<p>A <em>volume</em> is a single, non-overlapping slice of the lung’s air. A <em>capacity</em> is the sum of two or more volumes. <a href="#fig-spirogram" class="quarto-xref">Figure&nbsp;<span>20.1</span></a> shows them on a spirometer tracing.</p>
+<div id="fig-spirogram" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-spirogram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/statics/spirogram.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-spirogram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;20.1: Lung volumes and capacities on a spirometer tracing. The subject breathes quietly, takes the deepest possible breath, breathes out as far as possible, then returns to quiet breathing. Values are for a healthy young adult in the Respiratory Mechanics Lab <span class="citation" data-cites="rml2026">[<a href="../cardiovascular/cv-overview.html#ref-rml2026" role="doc-biblioref">1</a>]</span>: TLC 6.0 L, FRC 3.0 L, RV 1.5 L, V<sub>T</sub> 0.5 L. Course figure.
+</figcaption>
+</figure>
+</div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Volume</th>
+<th>What it is</th>
+<th>Typical (L)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tidal volume (V<sub>T</sub>)</td>
+<td>Air moved in or out in a quiet breath</td>
+<td>0.5</td>
+</tr>
+<tr class="even">
+<td>Inspiratory reserve volume (IRV)</td>
+<td>Extra air you can breathe in after a normal inspiration</td>
+<td>2.5</td>
+</tr>
+<tr class="odd">
+<td>Expiratory reserve volume (ERV)</td>
+<td>Extra air you can breathe out after a normal, passive expiration</td>
+<td>1.5</td>
+</tr>
+<tr class="even">
+<td>Residual volume (RV)</td>
+<td>Air still in the lungs after a maximal expiration</td>
+<td>1.5</td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Capacity</th>
+<th>Made of</th>
+<th>Typical (L)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Inspiratory capacity (IC)</td>
+<td>V<sub>T</sub> + IRV</td>
+<td>3.0</td>
+</tr>
+<tr class="even">
+<td>Functional residual capacity (FRC)</td>
+<td>ERV + RV</td>
+<td>3.0</td>
+</tr>
+<tr class="odd">
+<td>Vital capacity (VC)</td>
+<td>IRV + V<sub>T</sub> + ERV</td>
+<td>4.5</td>
+</tr>
+<tr class="even">
+<td>Total lung capacity (TLC)</td>
+<td>All four volumes, or FRC + IC</td>
+<td>6.0</td>
+</tr>
+</tbody>
+</table>
+<p>FRC is the volume at the end of a quiet expiration, when the respiratory muscles are relaxed. It is the starting point for every quiet breath, and most of this chapter is about why it sits where it does.</p>
+<p>Volumes scale with body size, age and sex. Hutchinson, who built the first practical spirometer, showed in 1846 that vital capacity rises with height <span class="citation" data-cites="hutchinson1846">[<a href="../cardiovascular/cv-overview.html#ref-hutchinson1846" role="doc-biblioref">2</a>]</span>. A patient’s measured values are compared with predicted values from reference equations and reported as percent predicted.</p>
+<section id="what-spirometry-can-and-cannot-measure" class="level3" data-number="20.1.1">
+<h3 data-number="20.1.1" class="anchored" data-anchor-id="what-spirometry-can-and-cannot-measure"><span class="header-section-number">20.1.1</span> What spirometry can and cannot measure</h3>
+<p>A spirometer measures air that moves through the mouth. Older spirometers collected exhaled air in a bell floating in water. Most modern ones measure flow, with a pneumotachograph or a turbine or ultrasonic sensor, and integrate it to get volume.</p>
+<p>Either way, a spirometer can only measure air that comes out. RV never leaves the lung, so spirometry cannot measure RV, and it cannot measure any capacity that contains RV: FRC and TLC. Spirometry gives V<sub>T</sub>, IRV, ERV, IC and VC. To get the rest, you need one more number, and the usual one is FRC. It is measured at the end of a quiet breath, which takes no effort, so it is the most reproducible starting point. Once FRC is known, RV = FRC − ERV and TLC = FRC + IC. A full set of pulmonary function tests is three tests: spirometry, lung volumes (usually by body box) and the diffusing capacity, which a later chapter covers.</p>
+</section>
+<section id="measuring-frc-with-a-body-box" class="level3" data-number="20.1.2">
+<h3 data-number="20.1.2" class="anchored" data-anchor-id="measuring-frc-with-a-body-box"><span class="header-section-number">20.1.2</span> Measuring FRC with a body box</h3>
+<p>In body box plethysmography the patient sits in a sealed, transparent box and breathes through a mouthpiece <span class="citation" data-cites="dubois1956 wanger2005">[<a href="../cardiovascular/cv-overview.html#ref-dubois1956" role="doc-biblioref">3</a>, <a href="../cardiovascular/cv-overview.html#ref-wanger2005" role="doc-biblioref">4</a>]</span>. At the end of a quiet expiration (at FRC), a shutter closes the mouthpiece and the patient makes small panting efforts against it. No air enters or leaves the lungs, so the lung gas is simply compressed and decompressed.</p>
+<p>Boyle’s law says that for a fixed amount of gas at constant temperature, P<sub>1</sub>V<sub>1</sub> = P<sub>2</sub>V<sub>2</sub>. Here the pressures must be absolute pressures, not pressures relative to the atmosphere. For the gas in the lungs:</p>
+<ul>
+<li>Before the effort: P<sub>1</sub> is barometric pressure, P<sub>atm</sub> (strictly, barometric pressure minus water vapor pressure), and V<sub>1</sub> = FRC, the unknown.</li>
+<li>During an effort to breathe in: the chest enlarges by a small ΔV, so the lung gas expands and its pressure, measured at the mouth, changes by ΔP (it falls, so ΔP is negative).</li>
+</ul>
+<p>So P<sub>atm</sub> × FRC = (P<sub>atm</sub> + ΔP)(FRC + ΔV). Multiplying out, dropping the tiny ΔP × ΔV term, and solving:</p>
+<p><span class="math display">\[\text{FRC} = -\frac{\Delta V}{\Delta P}\,P_{atm}\]</span></p>
+<p>ΔP comes from the mouthpiece gauge. ΔV comes from the box: when the chest enlarges, it squeezes the gas in the box, and the rise in box pressure is calibrated to volume. On the outward pant everything runs in reverse: the lung gas is compressed, the patient gets smaller and box pressure falls. The lecture slide shows that pant, and the arithmetic comes out the same.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>What you need from this
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You will not be asked to do the body box calculation. Know that spirometry cannot measure RV, FRC or TLC, that the body box measures FRC using Boyle’s law, and that once you have FRC, spirometry gives you everything else.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Background: gas dilution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>FRC or TLC can also be measured by having the patient breathe a known amount of an inert gas such as helium. The gas mixes into the lung air, and its fall in concentration gives the volume it mixed into (C<sub>1</sub>V<sub>1</sub> = C<sub>2</sub>V<sub>2</sub>). Dilution only counts gas that is in contact with the open airways. In obstructive disease some gas is trapped behind closed or narrowed airways, so dilution underestimates lung volume. The body box compresses all the gas in the chest, so it counts trapped gas that dilution misses.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="pressures-units-and-transmural-pressure" class="level2" data-number="20.2">
+<h2 data-number="20.2" class="anchored" data-anchor-id="pressures-units-and-transmural-pressure"><span class="header-section-number">20.2</span> Pressures, units, and transmural pressure</h2>
+<p>Respiratory pressures are small, so they are measured in centimeters of water. One cm H<sub>2</sub>O is the pressure that holds up a 1 cm column of water. It is about 0.74 mm Hg (1 mm Hg ≈ 1.36 cm H<sub>2</sub>O). From here on, all pressures are relative to atmospheric pressure, so “0” means atmospheric and “−5” means 5 cm H<sub>2</sub>O below it.</p>
+<p>What matters for any elastic structure is the pressure difference across its wall, the <em>transmural pressure</em>:</p>
+<p><span class="math display">\[P_{tm} = P_{in} - P_{out}\]</span></p>
+<p>A positive transmural pressure pushes the wall outward and distends the structure. The lung, the chest wall and the airways each have one, and it is the transmural pressure, not the absolute pressure on either side, that sets their volume. In the dynamics chapters, P<sub>tm</sub> is used for the airway wall: airway pressure minus pleural pressure.</p>
+</section>
+<section id="pressure-volume-curves" class="level2" data-number="20.3">
+<h2 data-number="20.3" class="anchored" data-anchor-id="pressure-volume-curves"><span class="header-section-number">20.3</span> Pressure-volume curves</h2>
+<p>The best way to see what holds the lungs at a given volume is to plot volume against the pressure needed to hold each structure at that volume with its muscles relaxed. <a href="#fig-pv" class="quarto-xref">Figure&nbsp;<span>20.2</span></a> shows the three curves the course uses (the small-group keys call them compliance curves). On these plots, pressure to the right of zero means the structure is being held <em>expanded</em> against its tendency to shrink, and pressure to the left means it is being held <em>compressed</em> against its tendency to spring out.</p>
+<div id="fig-pv" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-pv-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/statics/pv-lung-chestwall-system.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pv-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;20.2: Relaxation pressure-volume curves of the lung (orange), chest wall (blue) and whole respiratory system (maroon). At each volume the system’s pressure is the sum of the lung’s and the chest wall’s. Curves come from the Respiratory Mechanics Lab statics model <span class="citation" data-cites="rml2026">[<a href="../cardiovascular/cv-overview.html#ref-rml2026" role="doc-biblioref">1</a>]</span>. The chest wall curve is fit to the measurements of Rahn and colleagues <span class="citation" data-cites="rahn1946">[<a href="../cardiovascular/cv-overview.html#ref-rahn1946" role="doc-biblioref">5</a>]</span>, and the lung curve uses the exponential form of Salazar and Knowles <span class="citation" data-cites="salazar1964">[<a href="../cardiovascular/cv-overview.html#ref-salazar1964" role="doc-biblioref">6</a>]</span>, extended below the range they fit.
+</figcaption>
+</figure>
+</div>
+<p><strong>The chest wall wants to be big.</strong> The relaxed chest wall rests at about 4.75 L, 72% of the way from RV to TLC <span class="citation" data-cites="rahn1946">[<a href="../cardiovascular/cv-overview.html#ref-rahn1946" role="doc-biblioref">5</a>]</span>. Below that volume it recoils outward, and above it, it recoils inward. That is a property of its anatomy: ribs, cartilage and muscle that have been sprung inward. The diaphragm and the abdomen below it count as part of the chest wall.</p>
+<p><strong>The lung wants to be small.</strong> At zero transpulmonary pressure, a lung removed from the chest shrinks to a small “minimal volume,” below RV. It never empties completely, because its small airways pinch shut at low volume and trap some gas. At every volume in the chest it recoils inward, and the recoil grows as it is stretched. A later section explains where the recoil comes from.</p>
+<p><strong>The pleural space links them.</strong> The lung and chest wall are not attached to each other. They are coupled by the thin, sealed film of fluid in the pleural space. When one moves, it pulls the other with it, so they always share the same volume. At FRC, the lung pulls inward with 5 cm H<sub>2</sub>O and the chest wall pulls outward with 5 cm H<sub>2</sub>O. The two pulls make the pleural pressure negative: about −5 cm H<sub>2</sub>O at FRC. That is an average. In an upright person it is more negative at the apex and less negative at the base, which matters in the ventilation-perfusion chapter.</p>
+<p>A pneumothorax shows what happens when the seal breaks. Air enters the pleural space, pleural pressure rises to atmospheric, and each structure goes its own way: the lung collapses toward its minimal volume and the chest wall springs outward.</p>
+<p><strong>The respiratory system curve</strong> is the lung and chest wall together, which is what you feel as a whole person. Because they share one volume, their pressures add at each volume: the system’s pressure is the lung’s recoil pressure plus the chest wall’s. Below the chest wall’s resting volume, the chest wall springs outward and helps, so the system needs less pressure than the lung alone and its curve lies to the left of the lung curve. Above it, the chest wall also has to be stretched, so the system needs more pressure than the lung alone and its curve crosses to the right. In <a href="#fig-pv" class="quarto-xref">Figure&nbsp;<span>20.2</span></a> the crossing is near 4.75 L.</p>
+<p><strong>FRC is where the system’s pressure is zero:</strong> the volume where the lung’s inward recoil and the chest wall’s outward recoil cancel, with no muscle effort. The course calls FRC “the P<sub>ms</sub> of the respiratory system”: like mean systemic filling pressure in the circulation, it is the state the system settles into when nothing is driving it.</p>
+</section>
+<section id="the-single-alveolus-model" class="level2" data-number="20.4">
+<h2 data-number="20.4" class="anchored" data-anchor-id="the-single-alveolus-model"><span class="header-section-number">20.4</span> The single-alveolus model</h2>
+<p>Treat the whole lung as one balloon (the alveolus) inside a box (the chest wall), connected to the mouth by one airway (<a href="#fig-alveolus" class="quarto-xref">Figure&nbsp;<span>20.3</span></a>). Four pressures describe it.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Symbol</th>
+<th>Name</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>P<sub>alv</sub></td>
+<td>Alveolar pressure</td>
+<td>Pressure of the gas inside the alveoli. Written P<sub>A</sub> on the lecture slides.</td>
+</tr>
+<tr class="even">
+<td>P<sub>pl</sub></td>
+<td>Pleural pressure</td>
+<td>Pressure in the pleural space, just outside the lung</td>
+</tr>
+<tr class="odd">
+<td>P<sub>tp</sub></td>
+<td>Transpulmonary pressure</td>
+<td>The lung’s transmural pressure: P<sub>tp</sub> = P<sub>alv</sub> − P<sub>pl</sub></td>
+</tr>
+<tr class="even">
+<td>P<sub>el</sub></td>
+<td>Elastic recoil pressure</td>
+<td>The inward pressure the lung’s recoil generates; set by lung volume and by the lung’s tissue and surface forces</td>
+</tr>
+</tbody>
+</table>
+<p>The lung’s recoil squeezes the gas inside it, so alveolar pressure sits P<sub>el</sub> above pleural pressure:</p>
+<p><span class="math display">\[P_{alv} = P_{pl} + P_{el}\]</span></p>
+<p>Rearranging, P<sub>tp</sub> = P<sub>alv</sub> − P<sub>pl</sub> = P<sub>el</sub>. The pressure distending the lung is matched by the lung’s own recoil at that volume. What changes during a breath is P<sub>pl</sub>. P<sub>alv</sub> follows it, and air flows until the new volume’s recoil catches up.</p>
+<p>The order of events is always the same. The muscles are the only lever: they change P<sub>pl</sub>, the change in P<sub>pl</sub> changes P<sub>alv</sub>, P<sub>alv</sub> drives flow, flow changes volume, and volume changes P<sub>el</sub>.</p>
+<div id="fig-alveolus" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-alveolus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/statics/single-alveolus.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-alveolus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;20.3: The single-alveolus model. (A) At FRC with the glottis open and no flow. (B) The instant inspiration begins: the inspiratory muscles have lowered pleural pressure, but almost no air has entered yet, so P<sub>el</sub> is unchanged. Pressures in cm H<sub>2</sub>O relative to atmosphere. Course figure, after the lecture’s model.
+</figcaption>
+</figure>
+</div>
+<p><strong>At FRC (panel A).</strong> No air is flowing, so alveolar pressure equals mouth pressure, 0. The lung’s recoil at FRC is about 5 cm H<sub>2</sub>O. So P<sub>pl</sub> = P<sub>alv</sub> − P<sub>el</sub> = 0 − 5 = −5, and P<sub>tp</sub> = 0 − (−5) = 5.</p>
+<p><strong>Starting a breath (panel B).</strong> The diaphragm contracts (with help from the intercostal muscles) and lowers pleural pressure, say to −7. At that instant almost no air has entered, so lung volume, and with it the lung’s recoil, is essentially unchanged at 5. Alveolar pressure becomes P<sub>pl</sub> + P<sub>el</sub> = −7 + 5 = −2, which is below mouth pressure, so air flows in. As air enters, lung volume and recoil rise and alveolar pressure climbs back toward 0, where flow stops. We are negative-pressure breathers: we breathe in by lowering the pressure around the lung, not by pushing air in.</p>
+<p>P<sub>tp</sub> is still 5 because lung volume has not changed yet. The total difference between the mouth and the pleural space is 7 cm H<sub>2</sub>O: 5 of it holds the lung at its current volume and 2 drives air through the airways, by the same Ohm’s law as in the circulation (ΔP = flow × airway resistance).</p>
+<p>Quiet expiration takes no muscle work. The inspiratory muscles relax, pleural pressure rises back toward −5, and the larger recoil at the higher volume pushes P<sub>alv</sub> above zero, so air flows out. In a forced expiration, the expiratory muscles push pleural pressure above zero. The next chapter follows the whole breath with numbers.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>If you are comparing with the slides
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The lecture slides write P<sub>tp</sub> = 0 − (−7) = 7 at the start of inspiration and say that P<sub>tp</sub> now exceeds P<sub>el</sub>. That 7 is calculated with P<sub>alv</sub> still at 0, so it is the mouth-to-pleural pressure: the total pressure the muscles have put across the lung and airways. Once P<sub>alv</sub> has fallen to −2, P<sub>alv</sub> − P<sub>pl</sub> is 5, equal to P<sub>el</sub>. Both ways give the same P<sub>alv</sub> of −2 and the same answer: air flows in.</p>
+<p>The slides also write the same relation as P<sub>A</sub> = P<sub>el</sub> − P<sub>tp</sub>, where the slides’ P<sub>tp</sub> (calculated with P<sub>alv</sub> = 0) is just −P<sub>pl</sub>. That is P<sub>alv</sub> = P<sub>pl</sub> + P<sub>el</sub> rearranged. In this course, work problems with P<sub>alv</sub> = P<sub>pl</sub> + P<sub>el</sub>.</p>
+<p>You may later meet a third convention, mostly in critical care, where “transpulmonary pressure” means airway-opening pressure minus pleural pressure. With no flow, all of these give the same number.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Try it
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The <a href="https://beiser-lab.github.io/respiratory-mechanics-lab/">Respiratory Mechanics Lab</a> draws these curves and lets you take a 0.5 L breath from FRC, with P<sub>pl</sub>, P<sub>alv</sub>, P<sub>tp</sub> and P<sub>el</sub> updated as the breath runs <span class="citation" data-cites="rml2026">[<a href="../cardiovascular/cv-overview.html#ref-rml2026" role="doc-biblioref">1</a>]</span>.</p>
+</div>
+</div>
+</section>
+<section id="compliance-and-the-work-of-breathing" class="level2" data-number="20.5">
+<h2 data-number="20.5" class="anchored" data-anchor-id="compliance-and-the-work-of-breathing"><span class="header-section-number">20.5</span> Compliance and the work of breathing</h2>
+<p><em>Compliance</em> is how much volume you get for a change in pressure: the slope of a pressure-volume curve.</p>
+<p><span class="math display">\[C = \frac{\Delta V}{\Delta P}\]</span></p>
+<p>A compliant lung inflates a lot for a small pressure. A stiff lung has low compliance. Near FRC, the lung and the chest wall each have a compliance of roughly 0.2 to 0.3 L/cm H<sub>2</sub>O, and the respiratory system about half of either, because their pressures add at each volume <span class="citation" data-cites="rahn1946 west2016">[<a href="../cardiovascular/cv-overview.html#ref-rahn1946" role="doc-biblioref">5</a>, <a href="../cardiovascular/cv-overview.html#ref-west2016" role="doc-biblioref">7</a>]</span>.</p>
+<p>Two details matter:</p>
+<ul>
+<li><strong>Compliance falls as the lung gets bigger.</strong> The lung curve in <a href="#fig-pv" class="quarto-xref">Figure&nbsp;<span>20.2</span></a> flattens near TLC. Each extra liter takes more pressure.</li>
+<li><strong>Overall versus specific compliance.</strong> Compliance depends on how much lung there is. A person who has had a lung removed has about half the overall compliance, but the remaining lung is normal tissue. Dividing compliance by the volume it was measured at (usually FRC) gives <em>specific compliance</em>, which describes the tissue itself. Diseases that make the lung stiff, such as fibrosis, lower specific compliance.</li>
+</ul>
+<p>Pressure times volume has the units of work (force per area × volume = force × distance). The more pressure a breath needs, the more work it takes. In a stiff, fibrotic lung the recoil at rest might be 12 cm H<sub>2</sub>O instead of 5, so P<sub>pl</sub> sits near −12 at FRC, and taking a breath means pulling it to about −14 instead of −7. Every breath takes more work, and a bigger breath, as in exercise, costs more still. That is why people with stiff lungs first notice breathlessness on exertion. So what sets the lung’s recoil, and how does the body keep it low?</p>
+</section>
+<section id="what-sets-the-lungs-elastic-recoil" class="level2" data-number="20.6">
+<h2 data-number="20.6" class="anchored" data-anchor-id="what-sets-the-lungs-elastic-recoil"><span class="header-section-number">20.6</span> What sets the lung’s elastic recoil</h2>
+<p>The lung’s recoil has two sources: the elastic tissue in its walls (elastin and collagen), and surface tension at the thin layer of liquid lining every alveolus.</p>
+<section id="air-versus-saline" class="level3" data-number="20.6.1">
+<h3 data-number="20.6.1" class="anchored" data-anchor-id="air-versus-saline"><span class="header-section-number">20.6.1</span> Air versus saline</h3>
+<p>Von Neergaard separated the two in 1929 by inflating isolated lungs with air and then with saline <span class="citation" data-cites="vonneergaard1929">[<a href="../cardiovascular/cv-overview.html#ref-vonneergaard1929" role="doc-biblioref">8</a>]</span>. Saline removes the air-liquid interface and leaves only tissue forces. <a href="#fig-air-saline" class="quarto-xref">Figure&nbsp;<span>20.4</span></a> shows the result.</p>
+<div id="fig-air-saline" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-air-saline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/statics/air-vs-saline.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-air-saline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;20.4: Pressure-volume curves of an isolated lung inflated with saline and with air. Solid lines, inflation; dashed lines, deflation. The tan band between saline and air deflation is the extra pressure surface tension adds. The gray band between the two air limbs is hysteresis. Schematic adapted from von Neergaard’s experiment <span class="citation" data-cites="vonneergaard1929">[<a href="../cardiovascular/cv-overview.html#ref-vonneergaard1929" role="doc-biblioref">8</a>]</span>; similar curves appear in West and Luks <span class="citation" data-cites="west2016">[<a href="../cardiovascular/cv-overview.html#ref-west2016" role="doc-biblioref">7</a>]</span>.
+</figcaption>
+</figure>
+</div>
+<p>Three things stand out:</p>
+<ul>
+<li>The saline-filled lung inflates with far less pressure. Surface tension accounts for more than half of the recoil of an air-filled lung.</li>
+<li>Starting from collapse, almost no air enters until the pressure reaches an opening pressure. Then volume rises quickly.</li>
+<li>The air-filled lung shows <em>hysteresis</em>: inflation and deflation follow different curves, so at any pressure the lung holds more volume on the way down than on the way up. Two things cause it. Opening collapsed alveoli takes more pressure than keeping open ones open, and the surfactant film has higher tension while it is being stretched than while it is being compressed. The saline-filled lung shows almost no hysteresis.</li>
+</ul>
+<p>Tissue forces still matter. They are what change in fibrosis, where scar makes the tissue itself stiff.</p>
+</section>
+<section id="surface-tension-and-the-law-of-laplace" class="level3" data-number="20.6.2">
+<h3 data-number="20.6.2" class="anchored" data-anchor-id="surface-tension-and-the-law-of-laplace"><span class="header-section-number">20.6.2</span> Surface tension and the law of Laplace</h3>
+<p>Water molecules attract each other. A molecule inside the liquid is pulled equally in all directions, but one at the surface is pulled only sideways and inward. The surface behaves like a stretched sheet that tries to make its area as small as possible. That pull, force per unit length of surface, is the <em>surface tension</em> (T).</p>
+<p>In a sphere, surface tension squeezes the gas inside. The law of Laplace gives the pressure needed to keep the sphere open:</p>
+<p><span class="math display">\[P = \frac{2T}{r}\]</span></p>
+<p>The smaller the sphere, the more pressure it needs. That would make a lung lined only with water unstable. Alveoli of different sizes are connected through the airways, so the gas in them is at the same pressure. If a small and a large alveolus had the same surface tension, the small one would need more pressure to stay open than the large one, and it would empty into the large one (<a href="#fig-laplace" class="quarto-xref">Figure&nbsp;<span>20.5</span></a> A). Left alone, the lung would tend toward a few overinflated alveoli and many collapsed ones, and inflating it would take a great deal of work.</p>
+<p>Real alveoli are not separate bubbles. They share walls and hold one another open, which also resists collapse. The two-bubble picture is a simplification, but it shows why surface tension has to be controlled.</p>
+<div id="fig-laplace" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-laplace-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/statics/laplace-surfactant.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-laplace-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;20.5: The law of Laplace for two connected alveoli. (A) With the same surface tension, the small alveolus needs twice the pressure of the large one and empties into it. (B) Surfactant lowers tension more in the smaller alveolus, so the pressures match and both stay open. Arbitrary units. Course figure.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="surfactant" class="level3" data-number="20.6.3">
+<h3 data-number="20.6.3" class="anchored" data-anchor-id="surfactant"><span class="header-section-number">20.6.3</span> Surfactant</h3>
+<p>Surfactant solves the problem <span class="citation" data-cites="clements1957">[<a href="../cardiovascular/cv-overview.html#ref-clements1957" role="doc-biblioref">9</a>]</span>. Type II alveolar cells secrete it. It is mostly phospholipid, chiefly dipalmitoylphosphatidylcholine (DPPC), with a small amount of surfactant proteins. Each molecule has a water-loving head that sits in the lining liquid and water-fearing tails that point into the air. The molecules collect at the surface, push water molecules apart, and weaken their attraction.</p>
+<p>Surface tension is measured in dyn/cm (the same as mN/m). Water at body temperature is about 70 dyn/cm. A surfactant film left undisturbed settles near 25 dyn/cm. When the film is compressed, as when an alveolus shrinks during expiration, tension falls close to zero. Measured in intact lungs, it runs from near zero at low volumes to about 30 dyn/cm near TLC <span class="citation" data-cites="schurch1976">[<a href="../cardiovascular/cv-overview.html#ref-schurch1976" role="doc-biblioref">10</a>]</span>.</p>
+<p>The effect depends on how crowded the surfactant is. The amount on an alveolus barely changes from one breath to the next, so:</p>
+<ul>
+<li><strong>When an alveolus is small,</strong> the same surfactant covers less surface and packs tightly, so surface tension is low. Small alveoli stop emptying into large ones (<a href="#fig-laplace" class="quarto-xref">Figure&nbsp;<span>20.5</span></a> B).</li>
+<li><strong>When an alveolus is large,</strong> the surfactant is spread thin and surface tension rises, which adds to the lung’s recoil at high volume. Most of the flattening near TLC comes from the tissue, though: the collagen network reaches its limit, which is why the saline curve in <a href="#fig-air-saline" class="quarto-xref">Figure&nbsp;<span>20.4</span></a> flattens too.</li>
+</ul>
+<p>The overall result is a more compliant lung, less work per breath, and alveoli that fill more evenly.</p>
+<p>Premature infants are born before their type II cells make enough surfactant. Their lungs are stiff, their alveoli collapse, and breathing takes more work than they can sustain: neonatal respiratory distress syndrome. Avery and Mead linked the syndrome to a lack of surfactant in 1959 <span class="citation" data-cites="avery1959">[<a href="../cardiovascular/cv-overview.html#ref-avery1959" role="doc-biblioref">11</a>]</span>. Treatment includes giving surfactant directly into the airway.</p>
+<p>In adults, inflammation from pneumonia, sepsis or injury can flood the alveoli with fluid and wash out or inactivate surfactant. This is the acute respiratory distress syndrome (ARDS). The lungs become heavy and stiff, alveoli collapse, and blood flows past collapsed alveoli without picking up oxygen. The V/Q chapter calls that <em>shunt</em>.</p>
+</section>
+</section>
+<section id="what-sets-frc-tlc-and-rv" class="level2" data-number="20.7">
+<h2 data-number="20.7" class="anchored" data-anchor-id="what-sets-frc-tlc-and-rv"><span class="header-section-number">20.7</span> What sets FRC, TLC and RV</h2>
+<p>Each of the three volumes that spirometry cannot see is set by a balance of forces (<a href="#fig-muscles" class="quarto-xref">Figure&nbsp;<span>20.6</span></a>).</p>
+<div id="fig-muscles" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-muscles-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/statics/pv-muscles-tlc-rv.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-muscles-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;20.6: The respiratory system curve (maroon), with faint lung and chest wall curves. The red dashed lines show the recoil each muscle group can just hold against at each volume. The inspiratory muscles (right) hold the system expanded against its inward recoil. The expiratory muscles (left) hold it compressed against its outward recoil. Where a line meets the system curve, the muscles can go no further: TLC at upper right, RV at lower left. The lines slope because each muscle group is weaker at the volume where it is shortest. Curves come from the Respiratory Mechanics Lab statics model <span class="citation" data-cites="rml2026">[<a href="../cardiovascular/cv-overview.html#ref-rml2026" role="doc-biblioref">1</a>]</span>. Muscle strength is set so that the maximal mouth pressures (recoil plus muscle pressure) are about −110 cm H<sub>2</sub>O at RV and +200 cm H<sub>2</sub>O at TLC, between the values Black and Hyatt reported for young men and women <span class="citation" data-cites="black1969">[<a href="../cardiovascular/cv-overview.html#ref-black1969" role="doc-biblioref">12</a>]</span>.
+</figcaption>
+</figure>
+</div>
+<p><strong>FRC: lung versus chest wall, with no muscles.</strong> FRC is where the lung’s inward recoil equals the chest wall’s outward recoil with the muscles relaxed. Change either curve and FRC moves. Change only the muscles and FRC does not.</p>
+<p><strong>TLC: the inspiratory muscles versus the inward recoil of the system.</strong> Above about 4.75 L, the chest wall’s resting volume, both the lung and the chest wall recoil inward, and the inspiratory muscles have to overcome both. TLC is the volume where the strongest inspiratory effort can go no further. The inspiratory line slopes because of length-tension, which you met in the muscle block: as the lung fills, the diaphragm flattens and shortens, so it can generate less force.</p>
+<p>You will also read that TLC is set by the elastic properties of the lung. Near TLC the lung is so stiff that more effort buys very little volume (in the model, the lung supplies 34 of the system’s 37 cm H<sub>2</sub>O of recoil at TLC), so a stiff lung lowers TLC and a floppy one raises it. But the muscles still set the end point, which is why weak muscles lower TLC even when the lung is normal.</p>
+<p><strong>RV: the expiratory muscles versus the chest wall, or the airways.</strong> In a young adult with healthy airways, RV is the volume where the expiratory muscles can squeeze the chest wall no smaller: the compressed chest wall becomes very stiff <span class="citation" data-cites="leith1967">[<a href="../cardiovascular/cv-overview.html#ref-leith1967" role="doc-biblioref">13</a>]</span>. In lecture you heard that the flat bottom of the curve is where airways collapse. That is the limit in older adults and in obstructive lung disease: small airways close before the chest wall limit is reached and trap gas behind them, so RV rises. It is also why a lung taken out of the chest never empties. The dynamics chapter explains airway closure.</p>
+</section>
+<section id="disease-patterns" class="level2" data-number="20.8">
+<h2 data-number="20.8" class="anchored" data-anchor-id="disease-patterns"><span class="header-section-number">20.8</span> Disease patterns</h2>
+<p><em>Restrictive</em> diseases lower TLC: the lungs are small. <em>Obstructive</em> diseases narrow the airways and slow expiratory flow, which spirometry shows as a low FEV<sub>1</sub>/FVC (next chapter). Some obstructive diseases, emphysema above all, also make the lungs big.</p>
+<p>A restrictive pattern can come from three places: a stiff lung, a stiff or loaded chest wall, or weak muscles. For any case, work through the same steps:</p>
+<ol type="1">
+<li>Is the problem in the lung, the chest wall or the muscles?</li>
+<li>Which curve moves, and which way?</li>
+<li>What happens to TLC, FRC and RV, and to the work of breathing?</li>
+</ol>
+<p><a href="#fig-disease" class="quarto-xref">Figure&nbsp;<span>20.7</span></a> shows four cases.</p>
+<div id="fig-disease" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-disease-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/statics/disease-patterns.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-disease-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;20.7: Lung volumes in four conditions, from the Respiratory Mechanics Lab statics model <span class="citation" data-cites="rml2026">[<a href="../cardiovascular/cv-overview.html#ref-rml2026" role="doc-biblioref">1</a>]</span>. Thin dashed lines show the healthy curve that changed and the healthy respiratory system. Red dashed lines are the muscle limits. (A) Pulmonary fibrosis: lung compliance reduced. (B) Emphysema: lung compliance increased. (C) Obesity: an inward load on the chest wall. (D) Respiratory muscle weakness: muscle strength reduced to 25%. The static model does not include airway closure, so it does not show the rise in RV that air trapping causes in emphysema.
+</figcaption>
+</figure>
+</div>
+<p><strong>Pulmonary fibrosis (a lung problem).</strong> Scar makes the lung tissue stiff, so the lung curve shifts down and to the right and flattens, and the lung’s recoil at every volume rises. The lung wins the tug-of-war with the chest wall, so FRC falls, and the system reaches the inspiratory muscle limit sooner, so TLC falls. RV falls a little; the small-group keys mark it decreased. The change is small because in a young adult the chest wall, which fibrosis does not change, sets RV. The main problem is the tissue, not the surfactant.</p>
+<p><strong>ARDS (a lung problem).</strong> Lost surfactant and extra lung water make the lung stiff through surface forces as well as tissue. On the air-filled lung’s pressure-volume loop (as in <a href="#fig-air-saline" class="quarto-xref">Figure&nbsp;<span>20.4</span></a>), both limbs shift right and flatten: filling the lung and keeping it open both take more pressure.</p>
+<p><strong>Emphysema (a lung problem).</strong> Smoking, or less often alpha-1 antitrypsin deficiency, destroys alveolar walls and their elastic connections, so the lung loses recoil: its curve shifts up and to the left and steepens. The chest wall wins, so FRC rises (hyperinflation) and TLC rises. RV rises even more, because without the outward pull of surrounding tissue the small airways close early and trap gas. The dynamics chapter covers that part. People with emphysema are short of breath even though their lungs are easy to stretch. At a high FRC the diaphragm starts every breath flattened and short, at a poor point on its length-tension curve.</p>
+<p><strong>Chest wall and abdominal restriction (a chest wall problem).</strong> The lung is normal, but the chest wall is stiffer or loaded. Examples include a circumferential burn whose scar binds the chest, kyphoscoliosis, and anything that keeps the diaphragm from descending: obesity, pregnancy, ascites or a large upper abdominal mass. The chest wall curve shifts to the right, so it no longer springs outward as much, and FRC falls. In obesity FRC falls while RV changes little, so ERV shrinks the most. TLC falls less, and in the model it barely changes.</p>
+<p><strong>Respiratory muscle weakness (a muscle problem).</strong> The lung and chest wall are normal, so their curves do not move, and FRC, which needs no muscle, stays normal. Weak inspiratory muscles cannot pull the system as far, so TLC falls. Weak expiratory muscles cannot squeeze it as far, so RV rises. Read in percent predicted, TLC is low, FRC normal and RV high, a rising pattern the small groups call the step-up pattern. Diseases that weaken the respiratory muscles, such as amyotrophic lateral sclerosis or myasthenia gravis, show this pattern. In long-standing weakness FRC can drift down a little, because the lung and chest wall stiffen over time.</p>
+<p>The Respiratory Mechanics Lab has each of these as a preset, along with kyphoscoliosis <span class="citation" data-cites="rml2026">[<a href="../cardiovascular/cv-overview.html#ref-rml2026" role="doc-biblioref">1</a>]</span>.</p>
+</section>
+<section id="check-your-understanding" class="level2" data-number="20.9">
+<h2 data-number="20.9" class="anchored" data-anchor-id="check-your-understanding"><span class="header-section-number">20.9</span> Check your understanding</h2>
+<ol type="1">
+<li><p>A patient’s spirometry shows a vital capacity of 4.5 L, and the lab also wants her FRC. Why can a body box measure FRC when the spirometer cannot? Use Boyle’s law.</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>A spirometer measures only air that comes out, and FRC includes RV, which never leaves the lung. In the body box the shutter closes at the end of a quiet expiration, at FRC, and the patient pants against it. No air enters or leaves, so the gas in the chest is only compressed and decompressed. By Boyle’s law (P<sub>1</sub>V<sub>1</sub> = P<sub>2</sub>V<sub>2</sub>, with absolute pressures), the pressure change at the mouth and the small change in chest volume, read from the box, give the volume of gas being squeezed: FRC. The box compresses all the gas in the chest, so it counts RV too. Then TLC = FRC + IC and RV = FRC − ERV.</p>
+</details></li>
+<li><p>What is pleural pressure at FRC, and why is it negative? What happens to it during a forced expiration?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>About −5 cm H<sub>2</sub>O. At FRC the lung pulls inward with 5 cm H<sub>2</sub>O and the chest wall pulls outward with 5, and the sealed pleural fluid between them is pulled on from both sides, so its pressure is below atmospheric. In a forced expiration the expiratory muscles squeeze the chest and push P<sub>pl</sub> above zero. P<sub>alv</sub> = P<sub>pl</sub> + P<sub>el</sub> then rises well above mouth pressure, and air flows out fast.</p>
+</details></li>
+<li><p>Partway through a quiet inspiration, P<sub>pl</sub> is −7 cm H<sub>2</sub>O and the lung’s elastic recoil is 6 cm H<sub>2</sub>O. What are P<sub>alv</sub> and P<sub>tp</sub>, and is air moving?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>P<sub>alv</sub> = P<sub>pl</sub> + P<sub>el</sub> = −7 + 6 = −1 cm H<sub>2</sub>O, below mouth pressure, so air is still flowing in. P<sub>tp</sub> = P<sub>alv</sub> − P<sub>pl</sub> = −1 − (−7) = 6, equal to P<sub>el</sub>. If you calculated 0 − (−7) = 7, that is the mouth-to-pleural pressure the slides call “P<sub>tp</sub>”. It exceeds P<sub>el</sub> by the 1 cm H<sub>2</sub>O that is driving flow.</p>
+</details></li>
+<li><p>A woman has large-volume ascites. Why does her FRC fall more than her TLC?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>FRC is the volume where the lung’s inward recoil and the chest wall’s outward recoil balance, with no muscle effort. The fluid pushes the diaphragm up and loads the chest wall from below, so the chest wall springs outward less and that balance point moves to a smaller volume. TLC is set by how far the inspiratory muscles can pull the system. They can still pull most of the way against the extra load, so TLC falls less. The lung itself is normal.</p>
+</details></li>
+<li><p>In emphysema, why does RV rise more than FRC or TLC?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>In a young adult with healthy airways, RV is set by the expiratory muscles squeezing a chest wall that becomes very stiff when compressed. In emphysema the small airways have lost the surrounding tissue that holds them open, and the lung’s recoil is weak, so they close early during expiration, before the chest wall limit is reached. Gas is trapped behind them. RV is then set by airway closure, and it rises the most.</p>
+</details></li>
+<li><p>Why are the smallest alveoli of a premature infant the first to collapse?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>With too little surfactant, surface tension stays high and about the same in large and small alveoli. By the law of Laplace (P = 2T/r), a small alveolus then needs more pressure to stay open, so it empties into its larger neighbors. Surfactant normally prevents this by lowering tension most in the smallest alveoli.</p>
+</details></li>
+</ol>
+</section>
+<section id="key-equations" class="level2" data-number="20.10">
+<h2 data-number="20.10" class="anchored" data-anchor-id="key-equations"><span class="header-section-number">20.10</span> Key equations</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Equation</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>TLC = FRC + IC; RV = FRC − ERV</td>
+<td>Getting the hidden volumes once FRC is known</td>
+</tr>
+<tr class="even">
+<td>P<sub>1</sub>V<sub>1</sub> = P<sub>2</sub>V<sub>2</sub>; FRC = −(ΔV/ΔP) P<sub>atm</sub></td>
+<td>Body box (concept only)</td>
+</tr>
+<tr class="odd">
+<td>P<sub>tm</sub> = P<sub>in</sub> − P<sub>out</sub></td>
+<td>Transmural pressure of any wall</td>
+</tr>
+<tr class="even">
+<td>P<sub>tp</sub> = P<sub>alv</sub> − P<sub>pl</sub></td>
+<td>Transpulmonary pressure</td>
+</tr>
+<tr class="odd">
+<td>P<sub>alv</sub> = P<sub>pl</sub> + P<sub>el</sub></td>
+<td>Alveolar pressure in the single-alveolus model</td>
+</tr>
+<tr class="even">
+<td>C = ΔV/ΔP</td>
+<td>Compliance</td>
+</tr>
+<tr class="odd">
+<td>P = 2T/r</td>
+<td>Law of Laplace for a sphere</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sources" class="level2" data-number="20.11">
+<h2 data-number="20.11" class="anchored" data-anchor-id="sources"><span class="header-section-number">20.11</span> Sources</h2>
+<p>This chapter follows the 2026 Respiratory Statics lectures for MEDC 30504 and draws on the course’s 2018 statics notes, corrected and updated. All figures were drawn for this book.</p>
+<div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-rml2026" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">MEDC 30504. <em>Respiratory Mechanics Lab</em>. Interactive simulator for the respiratory statics, PFT and exercise sessions. 2026.</div>
+</div>
+<div id="ref-hutchinson1846" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Hutchinson J. On the capacity of the lungs, and on the respiratory functions, with a view of establishing a precise and easy method of detecting disease by the spirometer. <em>Medico-Chirurgical Transactions</em> 1846;29:137–252. <a href="https://doi.org/10.1177/095952874602900113">https://doi.org/10.1177/095952874602900113</a>.</div>
+</div>
+<div id="ref-dubois1956" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">DuBois AB, Botelho SY, Bedell GN, Marshall R, Comroe Jr JH. A rapid plethysmographic method for measuring thoracic gas volume: A comparison with a nitrogen washout method for measuring functional residual capacity in normal subjects. <em>Journal of Clinical Investigation</em> 1956;35(3):322–326. <a href="https://doi.org/10.1172/JCI103281">https://doi.org/10.1172/JCI103281</a>.</div>
+</div>
+<div id="ref-wanger2005" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Wanger J, Clausen JL, Coates A, and others. Standardisation of the measurement of lung volumes. <em>European Respiratory Journal</em> 2005;26(3):511–522. <a href="https://doi.org/10.1183/09031936.05.00035005">https://doi.org/10.1183/09031936.05.00035005</a>.</div>
+</div>
+<div id="ref-rahn1946" class="csl-entry" role="listitem">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">Rahn H, Otis AB, Chadwick LE, Fenn WO. The pressure-volume diagram of the thorax and lung. <em>American Journal of Physiology</em> 1946;146(2):161–178. <a href="https://doi.org/10.1152/ajplegacy.1946.146.2.161">https://doi.org/10.1152/ajplegacy.1946.146.2.161</a>.</div>
+</div>
+<div id="ref-salazar1964" class="csl-entry" role="listitem">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline">Salazar E, Knowles JH. An analysis of pressure-volume characteristics of the lungs. <em>Journal of Applied Physiology</em> 1964;19(1):97–104. <a href="https://doi.org/10.1152/jappl.1964.19.1.97">https://doi.org/10.1152/jappl.1964.19.1.97</a>.</div>
+</div>
+<div id="ref-west2016" class="csl-entry" role="listitem">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline">West JB, Luks AM. <em>West’s Respiratory Physiology: The Essentials</em>. 10th ed. Philadelphia: Wolters Kluwer; 2016.</div>
+</div>
+<div id="ref-vonneergaard1929" class="csl-entry" role="listitem">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline">Neergaard K von. Neue <span>A</span>uffassungen <span class="nocase">ü</span>ber einen <span>G</span>rundbegriff der <span>A</span>temmechanik: Die <span>R</span>etraktionskraft der <span>L</span>unge, abh<span>ä</span>ngig von der <span>O</span>berfl<span>ä</span>chenspannung in den <span>A</span>lveolen. <em>Zeitschrift f<span>ü</span>r Die Gesamte Experimentelle Medizin</em> 1929;66:373–394. <a href="https://doi.org/10.1007/BF02621963">https://doi.org/10.1007/BF02621963</a>.</div>
+</div>
+<div id="ref-clements1957" class="csl-entry" role="listitem">
+<div class="csl-left-margin">9. </div><div class="csl-right-inline">Clements JA. Surface tension of lung extracts. <em>Proceedings of the Society for Experimental Biology and Medicine</em> 1957;95(1):170–172. <a href="https://doi.org/10.3181/00379727-95-23156">https://doi.org/10.3181/00379727-95-23156</a>.</div>
+</div>
+<div id="ref-schurch1976" class="csl-entry" role="listitem">
+<div class="csl-left-margin">10. </div><div class="csl-right-inline">Schürch S, Goerke J, Clements JA. Direct determination of surface tension in the lung. <em>Proceedings of the National Academy of Sciences of the United States of America</em> 1976;73(12):4698–4702. <a href="https://doi.org/10.1073/pnas.73.12.4698">https://doi.org/10.1073/pnas.73.12.4698</a>.</div>
+</div>
+<div id="ref-avery1959" class="csl-entry" role="listitem">
+<div class="csl-left-margin">11. </div><div class="csl-right-inline">Avery ME, Mead J. Surface properties in relation to atelectasis and hyaline membrane disease. <em>AMA Journal of Diseases of Children</em> 1959;97(5, Part 1):517–523. <a href="https://doi.org/10.1001/archpedi.1959.02070010519001">https://doi.org/10.1001/archpedi.1959.02070010519001</a>.</div>
+</div>
+<div id="ref-black1969" class="csl-entry" role="listitem">
+<div class="csl-left-margin">12. </div><div class="csl-right-inline">Black LF, Hyatt RE. Maximal respiratory pressures: Normal values and relationship to age and sex. <em>American Review of Respiratory Disease</em> 1969;99(5):696–702. <a href="https://pubmed.ncbi.nlm.nih.gov/5772056/">https://pubmed.ncbi.nlm.nih.gov/5772056/</a>.</div>
+</div>
+<div id="ref-leith1967" class="csl-entry" role="listitem">
+<div class="csl-left-margin">13. </div><div class="csl-right-inline">Leith DE, Mead J. Mechanisms determining residual volume of the lungs in normal subjects. <em>Journal of Applied Physiology</em> 1967;23(2):221–227. <a href="https://doi.org/10.1152/jappl.1967.23.2.221">https://doi.org/10.1152/jappl.1967.23.2.221</a>.</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/beiser-lab\.github\.io\/tcop-web-book\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+<nav class="page-navigation" aria-label="Page">
+  <div class="nav-page nav-page-previous">
+      <a href="../pulmonary/respiratory-intro.html" class="pagination-link" aria-label="Respiratory Physiology Introduction">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Respiratory Physiology Introduction</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../pulmonary/dynamics-1.html" class="pagination-link" aria-label="Respiratory Dynamics I">
+        <span class="nav-page-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Respiratory Dynamics I</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>13&nbsp; EKG III: Clinical Interpretation – Tissues, Cells &amp; Organ Physiology</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../cardiovascular/cv-integration.html" rel="next">
+<link href="../cardiovascular/ecg-vectors-axis.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-01a495efc5497ac6e3f5457e7ed18e65.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Toolbar">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../cardiovascular/cv-overview.html">Cardiovascular physiology, excitable cells and muscle</a></li><li class="breadcrumb-item"><a href="../cardiovascular/ecg-interpretation.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">EKG III: Clinical Interpretation</span></a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Tissues, Cells &amp; Organ Physiology</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About this book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Cardiovascular physiology, excitable cells and muscle</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cv-overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cardiovascular Physiology Overview</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cardiac-pump.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Cardiac Pump</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/excitable-cells.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Membrane Potentials and Excitable Cells</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/hemodynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Peripheral Circulation and Hemodynamics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/skeletal-muscle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Skeletal Muscle</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/smooth-muscle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Smooth Muscle</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/cardiac-muscle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Cardiac Muscle</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/microcirculation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Microcirculation and Local Control</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/control-of-co.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Control of Cardiac Output and Ventricular-Vascular Coupling</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ans-extrinsic-control.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">ANS and Extrinsic Control</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ecg-ionic-basis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">EKG I: Ionic Basis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ecg-vectors-axis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">ECG II: Vectors and Mean Electrical Axis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ecg-interpretation.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">EKG III: Clinical Interpretation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cv-integration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Cardiovascular Integration and Adaptation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cv-exercise.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Cardiovascular Adaptation to Exercise</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/coronary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Coronary Circulation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/special-circulations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Other Special Circulations</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/pulmonary-circulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Pulmonary Circulation</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Pulmonary physiology</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/respiratory-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Respiratory Physiology Introduction</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/statics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Respiratory Statics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/dynamics-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Respiratory Dynamics I</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/dynamics-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Respiratory Dynamics II</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/ventilation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Alveolar Ventilation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/diffusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Diffusion</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/o2-co2-transport.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Transport of O<sub>2</sub> and CO<sub>2</sub> in the Blood</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/acid-base.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Pulmonary Acid Base</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/ventilation-perfusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Ventilation and Perfusion</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/control-of-ventilation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Control of Pulmonary Ventilation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/exercise.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Physiology of Exercise</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/respiratory-consultant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Think Like a Respiratory Consultant</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#the-waves-and-intervals" id="toc-the-waves-and-intervals" class="nav-link active" data-scroll-target="#the-waves-and-intervals"><span class="header-section-number">13.1</span> The waves and intervals</a></li>
+  <li><a href="#measurement" id="toc-measurement" class="nav-link" data-scroll-target="#measurement"><span class="header-section-number">13.2</span> Measurement</a>
+  <ul class="collapse">
+  <li><a href="#the-paper" id="toc-the-paper" class="nav-link" data-scroll-target="#the-paper"><span class="header-section-number">13.2.1</span> The paper</a></li>
+  <li><a href="#heart-rate" id="toc-heart-rate" class="nav-link" data-scroll-target="#heart-rate"><span class="header-section-number">13.2.2</span> Heart rate</a></li>
+  <li><a href="#normal-values" id="toc-normal-values" class="nav-link" data-scroll-target="#normal-values"><span class="header-section-number">13.2.3</span> Normal values</a></li>
+  </ul></li>
+  <li><a href="#rhythm-analysis" id="toc-rhythm-analysis" class="nav-link" data-scroll-target="#rhythm-analysis"><span class="header-section-number">13.3</span> Rhythm analysis</a>
+  <ul class="collapse">
+  <li><a href="#changes-in-sa-node-automaticity" id="toc-changes-in-sa-node-automaticity" class="nav-link" data-scroll-target="#changes-in-sa-node-automaticity"><span class="header-section-number">13.3.1</span> Changes in SA node automaticity</a></li>
+  <li><a href="#abnormal-and-ectopic-impulse-formation" id="toc-abnormal-and-ectopic-impulse-formation" class="nav-link" data-scroll-target="#abnormal-and-ectopic-impulse-formation"><span class="header-section-number">13.3.2</span> Abnormal and ectopic impulse formation</a></li>
+  </ul></li>
+  <li><a href="#conduction-analysis" id="toc-conduction-analysis" class="nav-link" data-scroll-target="#conduction-analysis"><span class="header-section-number">13.4</span> Conduction analysis</a>
+  <ul class="collapse">
+  <li><a href="#av-block" id="toc-av-block" class="nav-link" data-scroll-target="#av-block"><span class="header-section-number">13.4.1</span> AV block</a></li>
+  <li><a href="#bundle-branch-block" id="toc-bundle-branch-block" class="nav-link" data-scroll-target="#bundle-branch-block"><span class="header-section-number">13.4.2</span> Bundle branch block</a></li>
+  </ul></li>
+  <li><a href="#waveform-analysis" id="toc-waveform-analysis" class="nav-link" data-scroll-target="#waveform-analysis"><span class="header-section-number">13.5</span> Waveform analysis</a>
+  <ul class="collapse">
+  <li><a href="#the-p-wave" id="toc-the-p-wave" class="nav-link" data-scroll-target="#the-p-wave"><span class="header-section-number">13.5.1</span> The P wave</a></li>
+  <li><a href="#the-qrs-complex-and-st-segment" id="toc-the-qrs-complex-and-st-segment" class="nav-link" data-scroll-target="#the-qrs-complex-and-st-segment"><span class="header-section-number">13.5.2</span> The QRS complex and ST segment</a></li>
+  <li><a href="#the-t-wave" id="toc-the-t-wave" class="nav-link" data-scroll-target="#the-t-wave"><span class="header-section-number">13.5.3</span> The T wave</a></li>
+  </ul></li>
+  <li><a href="#the-long-qt-and-torsades-de-pointes" id="toc-the-long-qt-and-torsades-de-pointes" class="nav-link" data-scroll-target="#the-long-qt-and-torsades-de-pointes"><span class="header-section-number">13.6</span> The long QT and torsades de pointes</a></li>
+  <li><a href="#electrolytes-and-drugs-on-the-ecg" id="toc-electrolytes-and-drugs-on-the-ecg" class="nav-link" data-scroll-target="#electrolytes-and-drugs-on-the-ecg"><span class="header-section-number">13.7</span> Electrolytes and drugs on the ECG</a></li>
+  <li><a href="#the-ecg-and-the-cardiac-cycle" id="toc-the-ecg-and-the-cardiac-cycle" class="nav-link" data-scroll-target="#the-ecg-and-the-cardiac-cycle"><span class="header-section-number">13.8</span> The ECG and the cardiac cycle</a></li>
+  <li><a href="#reentry-rhythms-atrial-fibrillation-atrial-flutter-and-ventricular-tachycardia" id="toc-reentry-rhythms-atrial-fibrillation-atrial-flutter-and-ventricular-tachycardia" class="nav-link" data-scroll-target="#reentry-rhythms-atrial-fibrillation-atrial-flutter-and-ventricular-tachycardia"><span class="header-section-number">13.9</span> Reentry rhythms: atrial fibrillation, atrial flutter and ventricular tachycardia</a></li>
+  <li><a href="#putting-it-together" id="toc-putting-it-together" class="nav-link" data-scroll-target="#putting-it-together"><span class="header-section-number">13.10</span> Putting it together</a></li>
+  <li><a href="#check-your-understanding" id="toc-check-your-understanding" class="nav-link" data-scroll-target="#check-your-understanding"><span class="header-section-number">13.11</span> Check your understanding</a></li>
+  <li><a href="#key-equations" id="toc-key-equations" class="nav-link" data-scroll-target="#key-equations"><span class="header-section-number">13.12</span> Key equations</a></li>
+  <li><a href="#sources" id="toc-sources" class="nav-link" data-scroll-target="#sources"><span class="header-section-number">13.13</span> Sources</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../cardiovascular/cv-overview.html">Cardiovascular physiology, excitable cells and muscle</a></li><li class="breadcrumb-item"><a href="../cardiovascular/ecg-interpretation.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">EKG III: Clinical Interpretation</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">EKG III: Clinical Interpretation</span></h1>
+<p class="subtitle lead">Reading rate, rhythm, intervals and waves</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Goals for this chapter
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Label the waves, intervals and segments of the ECG and say what electrical event each one represents.</li>
+<li>Read time and voltage from standard ECG paper, and measure the heart rate three ways.</li>
+<li>Give the course’s normal values for the PR interval, QRS duration and QTc, and say what a long or short value means.</li>
+<li>Recognize normal sinus rhythm, sinus tachycardia and bradycardia, ectopic beats and rhythms, and explain why a PVC is wide.</li>
+<li>Recognize first-degree, second-degree (Mobitz I and Mobitz II) and third-degree AV block, and say where in the conduction system each one usually is.</li>
+<li>Explain why the T wave points the same way as the QRS, and why a long QT matters.</li>
+<li>Work through an ECG in a fixed order, and compare it with a previous tracing.</li>
+</ul>
+<p>Names, dates and the exact values in figure captions are context, not things to memorize.</p>
+</div>
+</div>
+<p>The first two chapters built the ECG from the bottom up: <a href="../cardiovascular/ecg-ionic-basis.html">ion channels and action potentials</a>, then <a href="../cardiovascular/ecg-vectors-axis.html">vectors, leads and the mean electrical axis</a>. This one reads the result, in the lecture’s six steps: measurement, rhythm analysis, conduction analysis, waveform (morphology) analysis, interpretation, and comparison with a previous ECG. Each abnormality comes back to the earlier physiology: which pacemaker is firing, where conduction is slow or blocked, and how the wave of depolarization crosses the ventricles.</p>
+<p>You will practice all of this in the ECG Reading Room session. The course titles spell the recording both ways, EKG and ECG. This book writes ECG.</p>
+<section id="the-waves-and-intervals" class="level2" data-number="13.1">
+<h2 data-number="13.1" class="anchored" data-anchor-id="the-waves-and-intervals"><span class="header-section-number">13.1</span> The waves and intervals</h2>
+<p>Einthoven named the waves of one beat P, Q, R, S and T (<a href="#fig-ecg-interpretation-paper-beat" class="quarto-xref">Figure&nbsp;<span>13.1</span></a>).</p>
+<ul>
+<li><strong>P wave</strong>: atrial depolarization.</li>
+<li><strong>QRS complex</strong>: ventricular depolarization. A <em>Q wave</em> is any negative deflection before the first positive one, the <em>R wave</em> is the first positive deflection, and the <em>S wave</em> is a negative deflection after the R. Not every lead has all three.</li>
+<li><strong>T wave</strong>: ventricular repolarization. Atrial repolarization happens during the QRS and is hidden by it.</li>
+</ul>
+<p>Intervals include at least one wave; segments are the flat stretches between waves.</p>
+<ul>
+<li><strong>PR interval</strong>: from the start of the P wave to the start of the QRS. It covers atrial conduction, the AV node delay, and conduction through the His bundle, bundle branches and Purkinje fibers.</li>
+<li><strong>PR segment</strong>: from the end of the P wave to the start of the QRS.</li>
+<li><strong>QRS duration</strong>: from the start to the end of the QRS.</li>
+<li><strong>ST segment</strong>: from the end of the QRS to the start of the T wave, when the whole ventricle is depolarized (phase 2 everywhere). The point where the QRS ends and the ST segment begins is the <em>J point</em>.</li>
+<li><strong>QT interval</strong>: from the start of the QRS to the end of the T wave, measured whether or not there is a Q wave. It covers ventricular depolarization and repolarization.</li>
+</ul>
+<div id="fig-ecg-interpretation-paper-beat" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ecg-interpretation-paper-beat-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ecg-interpretation/paper-beat.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ecg-interpretation-paper-beat-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;13.1: One beat on standard ECG paper, with its waves, intervals and segments. The calibration pulse at the left is 1 mV tall (10 mm) and 0.2 s wide. Course figure.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="measurement" class="level2" data-number="13.2">
+<h2 data-number="13.2" class="anchored" data-anchor-id="measurement"><span class="header-section-number">13.2</span> Measurement</h2>
+<section id="the-paper" class="level3" data-number="13.2.1">
+<h3 data-number="13.2.1" class="anchored" data-anchor-id="the-paper"><span class="header-section-number">13.2.1</span> The paper</h3>
+<p>An ECG is a graph of voltage against time. Standard paper runs at 25 mm/s, with 10 mm for each millivolt.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Box</th>
+<th>Size</th>
+<th>Time (horizontal)</th>
+<th>Voltage (vertical)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Small box</td>
+<td>1 mm</td>
+<td>0.04 s (40 ms)</td>
+<td>0.1 mV</td>
+</tr>
+<tr class="even">
+<td>Large box</td>
+<td>5 mm, five small boxes</td>
+<td>0.2 s (200 ms)</td>
+<td>0.5 mV</td>
+</tr>
+</tbody>
+</table>
+<p>Check the calibration pulse at the start of every tracing: 10 mm tall (1 mV) and usually 0.2 s wide. A standard printout shows 10 seconds of rhythm.</p>
+</section>
+<section id="heart-rate" class="level3" data-number="13.2.2">
+<h3 data-number="13.2.2" class="anchored" data-anchor-id="heart-rate"><span class="header-section-number">13.2.2</span> Heart rate</h3>
+<p>The lecture gives three ways to measure the ventricular rate (<a href="#fig-ecg-interpretation-rate" class="quarto-xref">Figure&nbsp;<span>13.2</span></a>):</p>
+<ul>
+<li><strong>From the R-R interval.</strong> Rate = 60 / (R-R interval in seconds). An R-R of 0.8 s (4 large boxes) is 75 per minute. (In milliseconds, rate = 60,000 / R-R.)</li>
+<li><strong>The 300 rule.</strong> Find an R wave on a heavy line and count the large boxes to the next R wave. Rate ≈ 300 / (number of large boxes): 1 box is 300, 2 boxes 150, 3 boxes 100, 4 boxes 75, 5 boxes 60, 6 boxes 50, 7 boxes about 43. The slides call this the ER-Doc method. This book keeps that name for the lead I and lead II axis method in <a href="../cardiovascular/ecg-vectors-axis.html">ECG II</a>, so here it is the 300 rule.</li>
+<li><strong>The 10-second rule.</strong> Count the QRS complexes on the 10-second rhythm strip and multiply by 6. The slides call this the pulmonologist method. It is the one to use when the rhythm is irregular, as in atrial fibrillation, because the other two depend on a single R-R interval.</li>
+</ul>
+<div id="fig-ecg-interpretation-rate" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ecg-interpretation-rate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ecg-interpretation/rate.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ecg-interpretation-rate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;13.2: Measuring rate. The R-R interval is 4 large boxes (0.8 s). The numbers above the strip mark the rate you would get if the next R wave fell on each heavy line. Course figure.
+</figcaption>
+</figure>
+</div>
+<p>A rate of 60 to 100 per minute is normal, under 60 is <em>bradycardia</em>, and over 100 is <em>tachycardia</em>. These are definitions, not diagnoses: an athlete at rest may run at 50 and anyone exercising runs over 100.</p>
+</section>
+<section id="normal-values" class="level3" data-number="13.2.3">
+<h3 data-number="13.2.3" class="anchored" data-anchor-id="normal-values"><span class="header-section-number">13.2.3</span> Normal values</h3>
+<p>The course uses these normal values:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Measurement</th>
+<th>Normal</th>
+<th>Small boxes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>PR interval</td>
+<td>120 to 200 ms</td>
+<td>3 to 5</td>
+</tr>
+<tr class="even">
+<td>QRS duration</td>
+<td>under 120 ms (most normal QRS complexes are 80 to 100 ms)</td>
+<td>under 3</td>
+</tr>
+<tr class="odd">
+<td>QTc</td>
+<td>460 ms or less; above 460 ms is prolonged</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>P wave</td>
+<td>under 120 ms, under 0.2 mV</td>
+<td>under 3 wide, under 2 tall</td>
+</tr>
+</tbody>
+</table>
+<p><strong>PR interval.</strong> A quick check: the normal PR fits inside one large box. A PR over 200 ms means conduction is delayed between the atria and the ventricles, most often in the AV node (first-degree AV block, below). A PR under 120 ms means the impulse reached the ventricles without the usual AV node delay, either through an accessory pathway that bypasses the AV node (pre-excitation) or because the impulse started in or near the AV node (a junctional rhythm).</p>
+<p><strong>QRS duration.</strong> A QRS of 120 ms or more is <em>wide</em>. It means the ventricles are being activated, at least in part, by slow cell-to-cell conduction through muscle instead of through the His-Purkinje system: a bundle branch block, an impulse that starts in the ventricle (a PVC or ventricular rhythm), an accessory pathway, or slowed conduction from hyperkalemia or a Na⁺ channel blocker.</p>
+<p><strong>QT interval and QTc.</strong> The QT interval mostly reflects how long ventricular action potentials last. Action potentials shorten as the heart rate rises, so the QT does too. To compare QT intervals at different rates, correct it for rate. The course uses Bazett’s formula, with the R-R interval in seconds:</p>
+<p><span class="math display">\[\text{QTc} = \frac{\text{QT}}{\sqrt{\text{RR}}}\]</span></p>
+<p>At a rate of 60 the R-R is 1 s, so QTc equals QT. A quick visual check is that the measured QT should be less than half the R-R interval. That check works for the uncorrected QT and only at normal heart rates.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>If you are comparing with the slides
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The QRS slide says “&lt; 100 – 110 ms / &lt; 2.5 small boxes,” its speaker note “&lt;100-120 msec,” and the peer-educator notes both “&lt;120 ms” and “Normal (100-120).” The course uses <strong>QRS under 120 ms</strong>, with most normal QRS complexes 80 to 100 ms. When a question depends on a normal range, it gives you the range.</p>
+<p>For the QTc, the slide says normal is under 460 ms, the peer-educator notes give 440 ms for men and 460 ms for women, and the Reading Room quick guide gives “&lt;470 good, 470-500 borderline, &gt;500 concerning.” The course value is a <strong>single cutoff: a QTc above 460 ms is prolonged</strong>. The Reading Room’s 470 and 500 ms are thresholds for the risk of arrhythmia, not normal limits.</p>
+<p>The Reading Room quick guide gives the PR interval as “&lt; 200 ms or 1 big box,” with no lower limit. The normal PR is 120 to 200 ms; a PR under 120 ms is abnormal too.</p>
+<p>The QT speaker note says that “as the heart rate increases the QTc decreases inversely.” It is the measured QT that shortens as the rate rises. The QTc is the QT corrected for rate, so that the rate effect is removed.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="rhythm-analysis" class="level2" data-number="13.3">
+<h2 data-number="13.3" class="anchored" data-anchor-id="rhythm-analysis"><span class="header-section-number">13.3</span> Rhythm analysis</h2>
+<p>Rhythm is read from the <em>rhythm strip</em>, usually lead II, which runs the full width of the printout. Lead II looks along the direction the atria normally depolarize, so it shows the P waves best.</p>
+<p><strong>Normal sinus rhythm</strong> meets all of these:</p>
+<ul>
+<li>A P wave before every QRS, and a QRS after every P wave (P:QRS 1:1).</li>
+<li>P waves upright in lead II (and lead I), and all the same shape. This says the impulse starts in the SA node, in the high right atrium.</li>
+<li>A constant PR interval, within 120 to 200 ms.</li>
+<li>A rate of 60 to 100 per minute.</li>
+<li>A regular R-R interval.</li>
+</ul>
+<p>Normal sinus rhythm describes the rhythm only. An ECG in sinus rhythm can still show a wide QRS, an abnormal axis or ischemia.</p>
+<section id="changes-in-sa-node-automaticity" class="level3" data-number="13.3.1">
+<h3 data-number="13.3.1" class="anchored" data-anchor-id="changes-in-sa-node-automaticity"><span class="header-section-number">13.3.1</span> Changes in SA node automaticity</h3>
+<p>When the SA node fires faster or slower than normal but every other criterion holds, the rhythm is sinus tachycardia or sinus bradycardia (<a href="#fig-ecg-interpretation-sinus" class="quarto-xref">Figure&nbsp;<span>13.3</span></a>).</p>
+<div id="fig-ecg-interpretation-sinus" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ecg-interpretation-sinus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ecg-interpretation/sinus.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ecg-interpretation-sinus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;13.3: Lead II rhythm strips. (A) Normal sinus rhythm at 75 per minute. (B) Sinus tachycardia at 150 per minute: still one upright P before every QRS, but the R-R is only 2 large boxes. (C) Sinus bradycardia at about 43 per minute. Course figure.
+</figcaption>
+</figure>
+</div>
+<p><strong>Sinus tachycardia</strong> (over 100 per minute) comes from increased SA node automaticity:</p>
+<ul>
+<li>Sympathetic stimulation, fight or flight: β<sub>1</sub>-adrenergic stimulation increases I<sub>f</sub> and lowers the firing threshold, so phase 4 reaches threshold sooner.</li>
+<li>Fever (hyperthermia).</li>
+<li>Metabolic and endocrine causes, such as an overactive thyroid.</li>
+</ul>
+<p>Sinus tachycardia is usually a normal response to stress, pain, fever or exercise, not a disease in itself.</p>
+<p><strong>Sinus bradycardia</strong> (under 60 per minute) comes from decreased SA node automaticity:</p>
+<ul>
+<li>Parasympathetic (cholinergic) stimulation, as in a vasovagal faint.</li>
+<li>Intrinsic SA node disease (sick sinus syndrome, ischemia).</li>
+<li>Drugs such as β-blockers.</li>
+<li>Hyperkalemia.</li>
+<li>Hypothermia.</li>
+<li>Physical training: trained athletes have a slow resting rate.</li>
+<li>Raised intracranial pressure.</li>
+</ul>
+<p>The Reading Room’s first case runs through both: a patient afraid of needles goes into sinus tachycardia, then faints at the sight of blood with sinus bradycardia. The <a href="../cardiovascular/ecg-ionic-basis.html">ionic basis chapter</a> explains both mechanisms.</p>
+</section>
+<section id="abnormal-and-ectopic-impulse-formation" class="level3" data-number="13.3.2">
+<h3 data-number="13.3.2" class="anchored" data-anchor-id="abnormal-and-ectopic-impulse-formation"><span class="header-section-number">13.3.2</span> Abnormal and ectopic impulse formation</h3>
+<p>Any cardiac cell can, under the wrong conditions, fire on its own. When a cell outside the SA node fires before the next sinus beat, it produces an <em>ectopic</em> (out-of-place) beat (<a href="#fig-ecg-interpretation-ectopy" class="quarto-xref">Figure&nbsp;<span>13.4</span></a>).</p>
+<div id="fig-ecg-interpretation-ectopy" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ecg-interpretation-ectopy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ecg-interpretation/ectopy.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ecg-interpretation-ectopy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;13.4: (A) Sinus rhythm with two premature ventricular contractions (PVCs): early, wide complexes with no P wave before them, and a T wave pointing the opposite way. (B) An ectopic atrial rhythm: every P wave is negative in lead II, because the atria are being activated from below. (C) Multifocal atrial tachycardia: P waves of several shapes and PR intervals, an irregular rhythm, and a rate over 100. Lead II. Course figure.
+</figcaption>
+</figure>
+</div>
+<p><strong>Premature ventricular contractions (PVCs).</strong> A cell in the ventricle fires early. There is no P wave before it, because the impulse did not come from the atria, and the QRS is wide. Why wide? Ask instead why a normal QRS is narrow: the His-Purkinje system, at about 4 m/s, delivers the impulse to the inner surface of both ventricles almost at once. A PVC spreads cell to cell through muscle, outside the conduction system, at under 1 m/s, so the QRS is wide and abnormally shaped, and the T wave usually points the opposite way. In the Reading Room, the same patient’s palpitations turn out to be sinus rhythm with PVCs.</p>
+<p><strong>Premature atrial contractions (PACs).</strong> An atrial cell outside the SA node fires early. The P wave comes early and has an unusual shape, but the impulse reaches the ventricles through the AV node and His-Purkinje system as usual, so the QRS is narrow.</p>
+<p><strong>Ectopic atrial rhythm.</strong> A site lower in the atria takes over for many beats in a row, because it now fires faster than the SA node. A sinus impulse travels from the high right atrium toward lead II’s positive electrode on the left leg, so the sinus P wave is upright in lead II. An impulse from low in the atria travels upward, away from that electrode, so its P wave is negative in lead II.</p>
+<p><strong>Multifocal atrial tachycardia.</strong> Several atrial sites each fire on their own: at least three P wave shapes, varying PR intervals, an irregular rhythm and a rate over 100. The Reading Room’s patient has a flare of COPD.</p>
+<p><strong>Escape rhythms.</strong> These are the opposite case: the SA node fails or its impulses are blocked, and a slower latent pacemaker takes over because nothing faster is firing. An escape from the AV junction runs at 40 to 60 per minute with a narrow QRS; one from the Purkinje fibers or ventricle runs at about 30 to 40 per minute with a wide QRS. An escape rhythm is a backup, not the problem.</p>
+</section>
+</section>
+<section id="conduction-analysis" class="level2" data-number="13.4">
+<h2 data-number="13.4" class="anchored" data-anchor-id="conduction-analysis"><span class="header-section-number">13.4</span> Conduction analysis</h2>
+<p>When the P waves come from the SA node and look normal but something is wrong with how the impulse gets through, the problem is conduction. Conduction can fail at the SA node, the AV node, or anywhere in the His-Purkinje system, including one bundle branch or fascicle.</p>
+<section id="av-block" class="level3" data-number="13.4.1">
+<h3 data-number="13.4.1" class="anchored" data-anchor-id="av-block"><span class="header-section-number">13.4.1</span> AV block</h3>
+<p>AV blocks are graded by how many atrial impulses get through to the ventricles (<a href="#fig-ecg-interpretation-av-blocks" class="quarto-xref">Figure&nbsp;<span>13.5</span></a>).</p>
+<div id="fig-ecg-interpretation-av-blocks" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ecg-interpretation-av-blocks-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ecg-interpretation/av-blocks.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ecg-interpretation-av-blocks-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;13.5: Lead II strips of AV block. (A) First degree: every P conducts, but the PR is 0.30 s. (B) Mobitz I (Wenckebach): the PR grows longer each beat until one P is not conducted (arrow), then the cycle repeats with a short PR. (C) Mobitz II: the PR is the same before and after a P that suddenly is not conducted (arrows); the QRS is wide here, as it often is. (D) 2:1 block: every second P is not conducted, so there are never two conducted beats in a row to compare. (E) Third-degree block: P waves (triangles) at 90 per minute and QRS complexes at 42 per minute march independently. Course figure.
+</figcaption>
+</figure>
+</div>
+<p><strong>First-degree AV block.</strong> Every P wave is conducted, but slowly: the PR interval is over 200 ms (more than one large box) and constant. It is usually in the AV node, usually causes no symptoms, and does not need a pacemaker.</p>
+<p><strong>Second-degree AV block, Mobitz type I (Wenckebach).</strong> The PR interval gets longer with each beat until a P wave is not conducted and a QRS is dropped; after the pause the PR is short again. Progressive slowing is typical of AV node tissue, so the block is usually in the AV node. It is usually benign, often from high vagal tone (athletes, sleep), and rarely needs treatment. In the Reading Room, a patient whose smartwatch flagged an abnormal rhythm turns out to have Mobitz I.</p>
+<p><strong>Second-degree AV block, Mobitz type II.</strong> Most P waves are conducted with a <strong>constant</strong> PR interval, and then, without warning, one is not. The PR is the same before and after the dropped beat. This all-or-none failure is typical of the His bundle and bundle branches, so Mobitz II is usually <em>below</em> the AV node, and the QRS is often wide because the bundle branches are diseased too. Mobitz II is dangerous: it can progress suddenly to complete heart block, and it is treated with a pacemaker even in patients who have no symptoms.</p>
+<p><strong>2:1 AV block.</strong> When every second P wave is not conducted, there are never two conducted beats in a row, so you cannot tell whether the PR would have lengthened (Mobitz I) or stayed fixed (Mobitz II). 2:1 block is its own category and cannot be typed from the strip.</p>
+<p><strong>Third-degree (complete) AV block.</strong> No atrial impulses reach the ventricles. The atria follow the SA node and the ventricles follow an escape pacemaker below the block. P waves and QRS complexes are both regular but unrelated, the faster P waves marching through the QRS complexes (<em>AV dissociation</em>). The QRS depends on where the escape pacemaker is. If the block is in the AV node, a junctional escape below it fires at 40 to 60 per minute with a narrow QRS. If the block is lower, a ventricular escape fires at about 30 to 40 per minute with a wide QRS. Either way the rate is slow and the escape pacemaker can fail, so complete heart block can cause fainting or cardiac arrest and is treated with a pacemaker. Acquired AV block of any degree most often comes from ischemic heart disease or from drugs, among them β-blockers, digitalis and the L-type Ca²⁺ channel blockers.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Block</th>
+<th>PR interval</th>
+<th>P waves conducted</th>
+<th>Usual level</th>
+<th>Can it progress? Life-threatening?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>First degree</td>
+<td>over 200 ms, constant</td>
+<td>all</td>
+<td>AV node</td>
+<td>No; no</td>
+</tr>
+<tr class="even">
+<td>Mobitz I (Wenckebach)</td>
+<td>lengthens until a beat drops</td>
+<td>most</td>
+<td>AV node</td>
+<td>Rarely; no</td>
+</tr>
+<tr class="odd">
+<td>Mobitz II</td>
+<td>constant, then a sudden drop</td>
+<td>most</td>
+<td>His bundle or bundle branches</td>
+<td>Yes, to complete block; yes</td>
+</tr>
+<tr class="even">
+<td>2:1</td>
+<td>constant in conducted beats</td>
+<td>half</td>
+<td>cannot tell from the strip</td>
+<td>Cannot tell from the strip</td>
+</tr>
+<tr class="odd">
+<td>Third degree</td>
+<td>no relation between P and QRS</td>
+<td>none</td>
+<td>AV node or below</td>
+<td>It is complete block; yes</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>If you are comparing with the slides
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The ECG Reading Room key gives the site of the Mobitz II case (the man who fainted at home) as the AV node. Mobitz II is usually below the AV node, in the His bundle or bundle branches, and the case’s wide QRS points that way. The peer-educator notes put it correctly: “Not an AV node problem.”</p>
+</div>
+</div>
+</section>
+<section id="bundle-branch-block" class="level3" data-number="13.4.2">
+<h3 data-number="13.4.2" class="anchored" data-anchor-id="bundle-branch-block"><span class="header-section-number">13.4.2</span> Bundle branch block</h3>
+<p>When one bundle branch fails, the ventricle it serves is activated late, by cell-to-cell spread from the other side of the septum, so the QRS is wide (120 ms or more) and its shape and axis change. The Reading Room’s syncope case has a left bundle branch block. Recognize that the QRS is wide and why; naming the pattern is a later topic.</p>
+</section>
+</section>
+<section id="waveform-analysis" class="level2" data-number="13.5">
+<h2 data-number="13.5" class="anchored" data-anchor-id="waveform-analysis"><span class="header-section-number">13.5</span> Waveform analysis</h2>
+<section id="the-p-wave" class="level3" data-number="13.5.1">
+<h3 data-number="13.5.1" class="anchored" data-anchor-id="the-p-wave"><span class="header-section-number">13.5.1</span> The P wave</h3>
+<p>A normal P wave lasts under 120 ms and is under 0.2 mV tall. Its direction in different leads tells you where the impulse started. Its size and shape can suggest atrial enlargement, which is beyond what this course asks.</p>
+</section>
+<section id="the-qrs-complex-and-st-segment" class="level3" data-number="13.5.2">
+<h3 data-number="13.5.2" class="anchored" data-anchor-id="the-qrs-complex-and-st-segment"><span class="header-section-number">13.5.2</span> The QRS complex and ST segment</h3>
+<p>The QRS is the place to judge width (above), axis (the <a href="../cardiovascular/ecg-vectors-axis.html">ECG II chapter</a>), and R wave progression across the precordial leads. Very large QRS voltages can mean ventricular hypertrophy; the Reading Room notes this but does not ask you to diagnose it.</p>
+<p>During the ST segment the whole ventricle is depolarized, so in a healthy heart the segment is flat, level with the PR segment. Injured or ischemic muscle makes it rise or fall from the J point onward. ST <em>elevation</em> is the sign of an acute myocardial infarction (a STEMI), which is why patients with chest pain have an ECG within minutes of arrival. ST <em>depression</em> can mean ischemia or hypokalemia. ST changes are a second-year topic; the lecture previews them and the Reading Room does not cover them.</p>
+</section>
+<section id="the-t-wave" class="level3" data-number="13.5.3">
+<h3 data-number="13.5.3" class="anchored" data-anchor-id="the-t-wave"><span class="header-section-number">13.5.3</span> The T wave</h3>
+<p>The T wave is ventricular repolarization. A normal T wave has a shape and direction much like the P wave’s: rounded, and upright in most leads where the QRS is upright. Disease can flatten it, invert it or peak it.</p>
+<p>Why is it upright? A wave of <em>re</em>polarization moving toward the positive electrode writes a <em>down</em>ward deflection (<a href="../cardiovascular/ecg-vectors-axis.html">ECG II</a>), so if the ventricles repolarized in the order they depolarized, the T wave would point opposite to the QRS. It does not, because repolarization runs in roughly the reverse order. Epicardial cells have shorter action potentials than endocardial cells, so although the epicardium depolarizes last, it repolarizes first. Repolarization moves from epicardium to endocardium, opposite to depolarization, and a reversed wave of the opposite sign writes a deflection in the same direction (<a href="#fig-ecg-interpretation-t-wave" class="quarto-xref">Figure&nbsp;<span>13.6</span></a>).</p>
+<div id="fig-ecg-interpretation-t-wave" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ecg-interpretation-t-wave-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ecg-interpretation/t-wave.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ecg-interpretation-t-wave-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;13.6: An endocardial and an epicardial action potential from the left ventricular wall, and the voltage difference between them, which has the sign an electrode facing the epicardium records. The endocardium depolarizes first, so the QRS is upright. The epicardial action potential is shorter, so the epicardium repolarizes first and the T wave is upright too. Schematic. Course figure.
+</figcaption>
+</figure>
+</div>
+<p>The T wave is also smaller and broader than the QRS. Repolarization is spread out over time and less organized than depolarization, so its dipoles are smaller and less aligned.</p>
+</section>
+</section>
+<section id="the-long-qt-and-torsades-de-pointes" class="level2" data-number="13.6">
+<h2 data-number="13.6" class="anchored" data-anchor-id="the-long-qt-and-torsades-de-pointes"><span class="header-section-number">13.6</span> The long QT and torsades de pointes</h2>
+<p>The QT interval matters because a long one sets up a dangerous arrhythmia. In <a href="#fig-ecg-interpretation-qt-torsades" class="quarto-xref">Figure&nbsp;<span>13.7</span></a> A the QT is 0.40 s, which looks normal, but the heart rate is about 94. The R-R interval is 0.64 s, and √0.64 = 0.8, so QTc = 0.40 / 0.8 = 0.50 s, or 500 ms, well above 460 ms. The QT is too long for this heart rate.</p>
+<div id="fig-ecg-interpretation-qt-torsades" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ecg-interpretation-qt-torsades-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ecg-interpretation/qt-torsades.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ecg-interpretation-qt-torsades-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;13.7: (A) Measuring the QT and correcting it for rate. (B) Torsades de pointes, a polymorphic ventricular tachycardia in which the QRS complexes seem to twist around the baseline. Lead II. Course figure.
+</figcaption>
+</figure>
+</div>
+<p>A long QT means the ventricular action potentials are long, and long action potentials, especially if some regions repolarize later than others, can trigger extra beats during repolarization. The result can be <strong>torsades de pointes</strong>, a polymorphic ventricular tachycardia whose QRS complexes change in size and direction as if twisting around the baseline. It can degenerate into ventricular fibrillation and cardiac arrest.</p>
+<p><strong>Ventricular fibrillation (VF)</strong> is chaotic ventricular activity with no organized QRS complexes (<a href="#fig-ecg-interpretation-tachyarrhythmias" class="quarto-xref">Figure&nbsp;<span>13.8</span></a> D). The ventricles quiver instead of contracting, and cardiac output stops: VF is cardiac arrest. VF, and VT without a pulse, are treated by defibrillation.</p>
+<p><strong>Asystole</strong> is the other rhythm of cardiac arrest: no electrical activity at all, with no sinus node activity and no escape rhythm. It is not treated by defibrillation; treatment targets the cause.</p>
+<p>The course names these causes of a long QT: many drugs (some anti-nausea drugs among them), hypokalemia, hypocalcemia and congenital long QT syndrome. Hypercalcemia and digoxin shorten the QT.</p>
+<p>Sympathetic stimulation shortens both the PR and the QT intervals. A QT that does not shorten as the rate rises is a clue that it is prolonged.</p>
+</section>
+<section id="electrolytes-and-drugs-on-the-ecg" class="level2" data-number="13.7">
+<h2 data-number="13.7" class="anchored" data-anchor-id="electrolytes-and-drugs-on-the-ecg"><span class="header-section-number">13.7</span> Electrolytes and drugs on the ECG</h2>
+<p>The course connects a few electrolyte changes and drugs to the ECG through the currents in the <a href="../cardiovascular/ecg-ionic-basis.html">ionic basis chapter</a>:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Change</th>
+<th>Cellular effect</th>
+<th>ECG</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Hyperkalemia</td>
+<td>Partial depolarization of the resting membrane; fewer Na⁺ channels available; slower upstroke and conduction</td>
+<td>Wide QRS; sinus bradycardia; can shift the axis</td>
+</tr>
+<tr class="even">
+<td>Hypokalemia</td>
+<td>Slower repolarization</td>
+<td>Long QT; ST depression</td>
+</tr>
+<tr class="odd">
+<td>Hypocalcemia</td>
+<td>(the course gives only the ECG effect)</td>
+<td>Long QT</td>
+</tr>
+<tr class="even">
+<td>Hypercalcemia</td>
+<td>(the course gives only the ECG effect)</td>
+<td>Short QT</td>
+</tr>
+<tr class="odd">
+<td>Na⁺ channel blocker</td>
+<td>Slower phase 0 in fast-response tissue</td>
+<td>Wide QRS</td>
+</tr>
+<tr class="even">
+<td>L-type Ca²⁺ channel blocker, β-blocker</td>
+<td>Slower conduction through the AV node, and a slower SA node</td>
+<td>Long PR; slower rate</td>
+</tr>
+<tr class="odd">
+<td>Digoxin</td>
+<td>(mention only)</td>
+<td>Short QT</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="the-ecg-and-the-cardiac-cycle" class="level2" data-number="13.8">
+<h2 data-number="13.8" class="anchored" data-anchor-id="the-ecg-and-the-cardiac-cycle"><span class="header-section-number">13.8</span> The ECG and the cardiac cycle</h2>
+<p>The ECG shows electrical events, not contraction. The P wave and the QRS each come just before the contraction they trigger, by about 20 to 50 ms: the P wave before atrial contraction (the atrial kick, about 10% of end-diastolic volume at rest), and the QRS before ventricular contraction and the isovolumic contraction phase. The T wave comes during the end of ejection. The ventricle relaxes as it repolarizes, and filling begins after isovolumic relaxation. The <a href="../cardiovascular/cardiac-pump.html">Cardiac Pump</a> chapter lines these up on the Wiggers diagram.</p>
+</section>
+<section id="reentry-rhythms-atrial-fibrillation-atrial-flutter-and-ventricular-tachycardia" class="level2" data-number="13.9">
+<h2 data-number="13.9" class="anchored" data-anchor-id="reentry-rhythms-atrial-fibrillation-atrial-flutter-and-ventricular-tachycardia"><span class="header-section-number">13.9</span> Reentry rhythms: atrial fibrillation, atrial flutter and ventricular tachycardia</h2>
+<p>The end of the deck, marked optional, covers the fast rhythms that come from reentry. The Reading Room asks you to recognize two of them, atrial fibrillation and ventricular tachycardia, and to reason about where the impulse comes from (<a href="#fig-ecg-interpretation-tachyarrhythmias" class="quarto-xref">Figure&nbsp;<span>13.8</span></a>; panel D, VF, is described with torsades above).</p>
+<div id="fig-ecg-interpretation-tachyarrhythmias" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ecg-interpretation-tachyarrhythmias-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ecg-interpretation/tachyarrhythmias.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ecg-interpretation-tachyarrhythmias-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;13.8: Lead II strips of four fast rhythms; VF (D) is described in the section on torsades. (A) Atrial fibrillation: a wavy baseline with no P waves, and narrow QRS complexes at irregular intervals. (B) Atrial flutter: regular sawtooth flutter waves at about 300 per minute, with every fourth one conducted here. (C) Ventricular tachycardia: regular wide complexes at about 160 per minute, no P waves. (D) Ventricular fibrillation: chaotic activity with no organized QRS complexes. Course figure.
+</figcaption>
+</figure>
+</div>
+<p><strong>Atrial fibrillation.</strong> The slide attributes it to micro-reentrant circuits in the atria, usually in the left atrium around the pulmonary veins. The atria are activated chaotically and do not contract. There are no P waves, only a wavy, irregular baseline, and the AV node lets impulses through at random, so the ventricular rhythm is <em>irregularly irregular</em>. The QRS is narrow, because the impulses that do get through use the normal conduction system. Use the 10-second rule for the rate. Losing the atrial kick costs about 10% of end-diastolic volume at rest. The bigger problem is a fast ventricular rate. In the Reading Room’s case it shortens diastole, so the ventricle fills less and stroke volume, cardiac output and mean arterial pressure fall.</p>
+<p><strong>Atrial flutter.</strong> A single large reentrant circuit, usually around the tricuspid valve ring in the right atrium, activates the atria about 300 times a minute. The ECG shows regular sawtooth flutter waves, best seen in lead II. The AV node cannot conduct every one, so the ventricles usually respond to every second or every fourth (2:1 or 4:1 conduction). With a fixed ratio the ventricular rhythm is regular; when the ratio varies, it is regularly irregular, as the slide says.</p>
+<p><strong>Ventricular tachycardia (VT).</strong> A regular, wide-complex tachycardia that starts in the ventricle, with no P waves before the QRS complexes. The complexes are wide for the same reason a PVC is. Fast VT leaves little time for filling and can quickly lead to cardiac arrest.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>If you are comparing with the slides
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The atrial flutter slide calls the circuit “micro-reentrant.” Typical atrial flutter is a single <em>macro</em>-reentrant circuit around the tricuspid valve ring.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Background: reentry and accessory pathways (optional slides)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Reentry.</strong> An impulse that splits into two paths and meets itself on the far side normally dies out, because each wavefront runs into tissue the other has just made refractory. Reentry needs <em>unidirectional block</em> (usually injured tissue that blocks the impulse in one direction only) and a conduction time around the loop long enough that the tissue at the start has recovered when the impulse returns. Large, dilated hearts and slow, diseased tissue make that easier. The impulse then circles, firing the heart at the loop’s rate. Reentry underlies atrial flutter, many cases of atrial fibrillation and most ventricular tachycardia.</p>
+<p><strong>Accessory pathways (pre-excitation).</strong> In Wolff-Parkinson-White (WPW) syndrome, an extra band of muscle (the bundle of Kent) connects atrium and ventricle across the AV ring and bypasses the AV node. Part of the ventricle is activated early through the pathway, so the PR is short, and that early activation spreads slowly through muscle, so the QRS starts with a slurred <em>delta wave</em>. The QRS is a fusion of the early and the normal activation. The pathway can also form a reentrant loop with the AV node, or let a very fast atrial rhythm reach the ventricles unfiltered.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="putting-it-together" class="level2" data-number="13.10">
+<h2 data-number="13.10" class="anchored" data-anchor-id="putting-it-together"><span class="header-section-number">13.10</span> Putting it together</h2>
+<p>Read every ECG in the same order:</p>
+<ol type="1">
+<li><strong>Rate.</strong> Fast, slow or normal?</li>
+<li><strong>Rhythm.</strong> Regular or irregular?</li>
+<li><strong>P waves.</strong> Present? Upright in lead II and all the same shape? One before every QRS?</li>
+<li><strong>PR interval.</strong> Within 120 to 200 ms? Constant?</li>
+<li><strong>QRS.</strong> Narrow or wide? What is the axis?</li>
+<li><strong>ST segment and T wave.</strong> Flat ST? T waves upright where the QRS is upright?</li>
+<li><strong>QT.</strong> Is the QTc over 460 ms?</li>
+<li><strong>Compare</strong> with a previous ECG. A change over time, such as a new block or new ST changes, is often more important than any single finding.</li>
+</ol>
+<p>Then synthesize: say where the impulse starts, whether it is conducted normally, and how the ventricles are activated.</p>
+</section>
+<section id="check-your-understanding" class="level2" data-number="13.11">
+<h2 data-number="13.11" class="anchored" data-anchor-id="check-your-understanding"><span class="header-section-number">13.11</span> Check your understanding</h2>
+<ol type="1">
+<li><p>On a strip the R-R interval is 3 large boxes and 2 small boxes. What is the heart rate?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>3 × 0.2 + 2 × 0.04 = 0.68 s, and 60 / 0.68 ≈ 88 per minute, between the 300 rule’s 100 and 75.</p>
+</details></li>
+<li><p>Lead II shows a negative P wave before every QRS, with a PR interval of 100 ms. Where does the impulse start, and why is the PR short?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>Low in the atria, near the AV junction. A negative P in lead II means atrial depolarization is moving up, away from lead II’s positive electrode, so it did not start in the SA node. Starting close to the AV node, the impulse spends less time crossing the atria before it reaches the node, so the PR is short.</p>
+</details></li>
+<li><p>A patient has left bundle branch block. Every beat starts in the SA node, every QRS has a normal P wave before it, and the PR interval is normal. Why is the PR normal while every QRS is wide?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>Conduction is normal from the SA node through the atria, the AV node and the His bundle, so the P wave and the PR interval are normal. Below the His bundle, the right bundle still delivers the impulse quickly to the right ventricle and the right side of the septum. The left bundle carries nothing, so the left ventricle is activated late, by cell-to-cell spread through muscle from the right side of the septum, at under 1 m/s instead of the 4 m/s of the His-Purkinje system. Depolarizing both ventricles takes 120 ms or more, so the QRS is wide.</p>
+</details></li>
+<li><p>In Mobitz I the PR interval lengthens before the dropped beat; in Mobitz II it does not. What does that difference tell you about the tissue that is failing in each?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>Progressive slowing is how AV node tissue fails: its slow-response cells recover slowly, so each impulse is conducted a little more slowly than the last until one fails. The His bundle and bundle branches are fast-response tissue that conducts normally right up to the beat it cannot conduct at all, so the PR stays fixed and the block is sudden. So Mobitz I points to the AV node and Mobitz II to the system below it, the level from which block can progress to complete block.</p>
+</details></li>
+<li><p>During exercise a person’s heart rate rises from 60 to 120 per minute. What should happen to the QT interval, and what would it mean if the QT stayed the same as at rest?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>The QT should shorten, because ventricular action potentials shorten at faster rates and with sympathetic input. At 120 per minute the R-R is 0.5 s and √0.5 is about 0.7, so an unchanged QT would give a QTc about 40% higher than at rest (where QTc equals QT). A QT that fails to shorten as the rate rises is relatively prolonged.</p>
+</details></li>
+<li><p>In complete heart block, the QRS complexes are narrow and come at 45 per minute. Where is the escape pacemaker, and where is the block?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>A narrow QRS means the ventricles are activated through the His-Purkinje system, so the escape pacemaker is in the AV junction, above the bundle branches, at its usual 40 to 60. The block is above it, in the AV node. A block below the His bundle would leave a slower ventricular escape with a wide QRS.</p>
+</details></li>
+</ol>
+</section>
+<section id="key-equations" class="level2" data-number="13.12">
+<h2 data-number="13.12" class="anchored" data-anchor-id="key-equations"><span class="header-section-number">13.12</span> Key equations</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Equation</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>HR = 60 / RR interval (s)</td>
+<td>Heart rate from one R-R interval</td>
+</tr>
+<tr class="even">
+<td>HR ≈ 300 / (large boxes between R waves)</td>
+<td>Quick rate (300 rule)</td>
+</tr>
+<tr class="odd">
+<td>HR = (QRS complexes in 10 s) × 6</td>
+<td>Rate of an irregular rhythm</td>
+</tr>
+<tr class="even">
+<td>QTc = QT / √RR (RR in s)</td>
+<td>QT corrected for heart rate</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sources" class="level2" data-number="13.13">
+<h2 data-number="13.13" class="anchored" data-anchor-id="sources"><span class="header-section-number">13.13</span> Sources</h2>
+<p>This chapter follows the 2026 EKG III: Clinical Interpretation lecture for MEDC 30504 (the 2024 deck with speaker notes) and draws on the peer-educator notes, the ECG Reading Room session and key, and the course’s 2018 electrophysiology notes, corrected and updated. All figures were drawn for this book.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/beiser-lab\.github\.io\/tcop-web-book\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+<nav class="page-navigation" aria-label="Page">
+  <div class="nav-page nav-page-previous">
+      <a href="../cardiovascular/ecg-vectors-axis.html" class="pagination-link" aria-label="ECG II: Vectors and Mean Electrical Axis">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">ECG II: Vectors and Mean Electrical Axis</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../cardiovascular/cv-integration.html" class="pagination-link" aria-label="Cardiovascular Integration and Adaptation">
+        <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Cardiovascular Integration and Adaptation</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

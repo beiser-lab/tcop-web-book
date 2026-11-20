@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>27&nbsp; Ventilation and Perfusion – Tissues, Cells &amp; Organ Physiology</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../pulmonary/control-of-ventilation.html" rel="next">
+<link href="../pulmonary/acid-base.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-01a495efc5497ac6e3f5457e7ed18e65.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Toolbar">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pulmonary/respiratory-intro.html">Pulmonary physiology</a></li><li class="breadcrumb-item"><a href="../pulmonary/ventilation-perfusion.html"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Ventilation and Perfusion</span></a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Tissues, Cells &amp; Organ Physiology</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About this book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Cardiovascular physiology, excitable cells and muscle</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cv-overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cardiovascular Physiology Overview</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cardiac-pump.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Cardiac Pump</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/excitable-cells.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Membrane Potentials and Excitable Cells</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/hemodynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Peripheral Circulation and Hemodynamics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/skeletal-muscle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Skeletal Muscle</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/smooth-muscle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Smooth Muscle</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/cardiac-muscle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Cardiac Muscle</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/microcirculation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Microcirculation and Local Control</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/control-of-co.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Control of Cardiac Output and Ventricular-Vascular Coupling</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ans-extrinsic-control.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">ANS and Extrinsic Control</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ecg-ionic-basis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">EKG I: Ionic Basis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ecg-vectors-axis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">ECG II: Vectors and Mean Electrical Axis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ecg-interpretation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">EKG III: Clinical Interpretation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cv-integration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Cardiovascular Integration and Adaptation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cv-exercise.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Cardiovascular Adaptation to Exercise</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/coronary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Coronary Circulation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/special-circulations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Other Special Circulations</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/pulmonary-circulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Pulmonary Circulation</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Pulmonary physiology</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/respiratory-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Respiratory Physiology Introduction</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/statics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Respiratory Statics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/dynamics-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Respiratory Dynamics I</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/dynamics-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Respiratory Dynamics II</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/ventilation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Alveolar Ventilation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/diffusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Diffusion</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/o2-co2-transport.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Transport of O<sub>2</sub> and CO<sub>2</sub> in the Blood</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/acid-base.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Pulmonary Acid Base</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/ventilation-perfusion.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Ventilation and Perfusion</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/control-of-ventilation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Control of Pulmonary Ventilation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/exercise.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Physiology of Exercise</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/respiratory-consultant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Think Like a Respiratory Consultant</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#ventilation-dead-space-and-alveolar-ventilation" id="toc-ventilation-dead-space-and-alveolar-ventilation" class="nav-link active" data-scroll-target="#ventilation-dead-space-and-alveolar-ventilation"><span class="header-section-number">27.1</span> Ventilation, dead space and alveolar ventilation</a>
+  <ul class="collapse">
+  <li><a href="#fast-or-deep" id="toc-fast-or-deep" class="nav-link" data-scroll-target="#fast-or-deep"><span class="header-section-number">27.1.1</span> Fast or deep</a></li>
+  <li><a href="#anatomic-alveolar-and-physiologic-dead-space" id="toc-anatomic-alveolar-and-physiologic-dead-space" class="nav-link" data-scroll-target="#anatomic-alveolar-and-physiologic-dead-space"><span class="header-section-number">27.1.2</span> Anatomic, alveolar and physiologic dead space</a></li>
+  <li><a href="#co2-and-alveolar-ventilation" id="toc-co2-and-alveolar-ventilation" class="nav-link" data-scroll-target="#co2-and-alveolar-ventilation"><span class="header-section-number">27.1.3</span> CO<sub>2</sub> and alveolar ventilation</a></li>
+  </ul></li>
+  <li><a href="#the-vq-ratio" id="toc-the-vq-ratio" class="nav-link" data-scroll-target="#the-vq-ratio"><span class="header-section-number">27.2</span> The V/Q ratio</a>
+  <ul class="collapse">
+  <li><a href="#ventilation-is-greater-at-the-base" id="toc-ventilation-is-greater-at-the-base" class="nav-link" data-scroll-target="#ventilation-is-greater-at-the-base"><span class="header-section-number">27.2.1</span> Ventilation is greater at the base</a></li>
+  <li><a href="#blood-flow-is-greater-at-the-base-by-more" id="toc-blood-flow-is-greater-at-the-base-by-more" class="nav-link" data-scroll-target="#blood-flow-is-greater-at-the-base-by-more"><span class="header-section-number">27.2.2</span> Blood flow is greater at the base, by more</a></li>
+  <li><a href="#the-west-zones-and-gas-exchange" id="toc-the-west-zones-and-gas-exchange" class="nav-link" data-scroll-target="#the-west-zones-and-gas-exchange"><span class="header-section-number">27.2.3</span> The West zones and gas exchange</a></li>
+  </ul></li>
+  <li><a href="#oxygen-from-air-to-tissue" id="toc-oxygen-from-air-to-tissue" class="nav-link" data-scroll-target="#oxygen-from-air-to-tissue"><span class="header-section-number">27.3</span> Oxygen: from air to tissue</a></li>
+  <li><a href="#case-1-a-comatose-patient" id="toc-case-1-a-comatose-patient" class="nav-link" data-scroll-target="#case-1-a-comatose-patient"><span class="header-section-number">27.4</span> Case 1: a comatose patient</a>
+  <ul class="collapse">
+  <li><a href="#causes-of-a-low-alveolar-po2" id="toc-causes-of-a-low-alveolar-po2" class="nav-link" data-scroll-target="#causes-of-a-low-alveolar-po2"><span class="header-section-number">27.4.1</span> Causes of a low alveolar PO<sub>2</sub></a></li>
+  </ul></li>
+  <li><a href="#the-aa-gradient" id="toc-the-aa-gradient" class="nav-link" data-scroll-target="#the-aa-gradient"><span class="header-section-number">27.5</span> The A–a gradient</a></li>
+  <li><a href="#the-vq-spectrum" id="toc-the-vq-spectrum" class="nav-link" data-scroll-target="#the-vq-spectrum"><span class="header-section-number">27.6</span> The V/Q spectrum</a></li>
+  <li><a href="#case-2-pneumonia-on-40-o2" id="toc-case-2-pneumonia-on-40-o2" class="nav-link" data-scroll-target="#case-2-pneumonia-on-40-o2"><span class="header-section-number">27.7</span> Case 2: pneumonia on 40% O<sub>2</sub></a></li>
+  <li><a href="#the-two-alveolus-model" id="toc-the-two-alveolus-model" class="nav-link" data-scroll-target="#the-two-alveolus-model"><span class="header-section-number">27.8</span> The two-alveolus model</a>
+  <ul class="collapse">
+  <li><a href="#shunt" id="toc-shunt" class="nav-link" data-scroll-target="#shunt"><span class="header-section-number">27.8.1</span> Shunt</a></li>
+  <li><a href="#shunt-is-refractory-to-o2" id="toc-shunt-is-refractory-to-o2" class="nav-link" data-scroll-target="#shunt-is-refractory-to-o2"><span class="header-section-number">27.8.2</span> Shunt is refractory to O<sub>2</sub></a></li>
+  <li><a href="#case-3-cough-and-fever-on-room-air-and-then-100-o2" id="toc-case-3-cough-and-fever-on-room-air-and-then-100-o2" class="nav-link" data-scroll-target="#case-3-cough-and-fever-on-room-air-and-then-100-o2"><span class="header-section-number">27.8.3</span> Case 3: cough and fever, on room air and then 100% O<sub>2</sub></a></li>
+  <li><a href="#hypoxic-pulmonary-vasoconstriction" id="toc-hypoxic-pulmonary-vasoconstriction" class="nav-link" data-scroll-target="#hypoxic-pulmonary-vasoconstriction"><span class="header-section-number">27.8.4</span> Hypoxic pulmonary vasoconstriction</a></li>
+  <li><a href="#a-low-mixed-venous-saturation-worsens-shunt" id="toc-a-low-mixed-venous-saturation-worsens-shunt" class="nav-link" data-scroll-target="#a-low-mixed-venous-saturation-worsens-shunt"><span class="header-section-number">27.8.5</span> A low mixed venous saturation worsens shunt</a></li>
+  <li><a href="#o2-delivery" id="toc-o2-delivery" class="nav-link" data-scroll-target="#o2-delivery"><span class="header-section-number">27.8.6</span> O<sub>2</sub> delivery</a></li>
+  </ul></li>
+  <li><a href="#case-4-low-vq-in-asthma" id="toc-case-4-low-vq-in-asthma" class="nav-link" data-scroll-target="#case-4-low-vq-in-asthma"><span class="header-section-number">27.9</span> Case 4: low V/Q in asthma</a>
+  <ul class="collapse">
+  <li><a href="#what-disturbs-vq" id="toc-what-disturbs-vq" class="nav-link" data-scroll-target="#what-disturbs-vq"><span class="header-section-number">27.9.1</span> What disturbs V/Q</a></li>
+  </ul></li>
+  <li><a href="#the-approach-to-hypoxemia" id="toc-the-approach-to-hypoxemia" class="nav-link" data-scroll-target="#the-approach-to-hypoxemia"><span class="header-section-number">27.10</span> The approach to hypoxemia</a></li>
+  <li><a href="#check-your-understanding" id="toc-check-your-understanding" class="nav-link" data-scroll-target="#check-your-understanding"><span class="header-section-number">27.11</span> Check your understanding</a></li>
+  <li><a href="#key-equations" id="toc-key-equations" class="nav-link" data-scroll-target="#key-equations"><span class="header-section-number">27.12</span> Key equations</a></li>
+  <li><a href="#sources" id="toc-sources" class="nav-link" data-scroll-target="#sources"><span class="header-section-number">27.13</span> Sources</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pulmonary/respiratory-intro.html">Pulmonary physiology</a></li><li class="breadcrumb-item"><a href="../pulmonary/ventilation-perfusion.html"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Ventilation and Perfusion</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Ventilation and Perfusion</span></h1>
+<p class="subtitle lead">Matching air to blood, and what happens when they don’t match</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Goals for this chapter
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Separate anatomic, alveolar and physiologic dead space, and explain how the Fowler and Bohr methods measure them.</li>
+<li>Explain why ventilation and blood flow are both greater at the base of the upright lung, why V/Q is lowest there, and what zone 1 means for gas exchange.</li>
+<li>Use the alveolar gas equation and the A–a gradient to sort hypoxemia into a low PAO<sub>2</sub> and a gas-exchange problem.</li>
+<li>Use the two-alveolus model to explain shunt and low V/Q, and why one responds to supplemental O<sub>2</sub> and the other does not.</li>
+<li>Explain how hypoxic pulmonary vasoconstriction and a low mixed venous saturation change the PaO<sub>2</sub> when there is shunt.</li>
+<li>Calculate O<sub>2</sub> delivery and say how it differs from O<sub>2</sub> content.</li>
+<li>Work through the approach to hypoxemia.</li>
+</ul>
+<p>Names, dates and the exact values in figure captions are context, not things to memorize.</p>
+</div>
+</div>
+<p>The heart and lungs work as one system: they bring O<sub>2</sub> to the tissues and carry CO<sub>2</sub> away and out of the body. Doing that takes two flows. <em>Ventilation</em> is the convective movement of air that exchanges gas between the atmosphere and the alveoli. <em>Perfusion</em> is the convective movement of blood that carries dissolved gases to and from the lung. Gas exchange works only where the two meet in the right proportion. Earlier chapters covered each piece on its own (<a href="../pulmonary/ventilation.html">Alveolar Ventilation</a>, <a href="../pulmonary/diffusion.html">Diffusion</a>, <a href="../pulmonary/o2-co2-transport.html">Transport of O<sub>2</sub> and CO<sub>2</sub></a>), and the CV block covered the pulmonary circulation (<a href="../cardiovascular/pulmonary-circulation.html">Pulmonary Circulation</a>). This chapter puts them together, first in the normal lung and then in disease, where a mismatch between air and blood is the most common reason a patient is hypoxemic.</p>
+<section id="ventilation-dead-space-and-alveolar-ventilation" class="level2" data-number="27.1">
+<h2 data-number="27.1" class="anchored" data-anchor-id="ventilation-dead-space-and-alveolar-ventilation"><span class="header-section-number">27.1</span> Ventilation, dead space and alveolar ventilation</h2>
+<p>A quick review of the numbers from <a href="../pulmonary/ventilation.html">Alveolar Ventilation</a>:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Quantity</th>
+<th>Per breath</th>
+<th>Per minute (at 15/min)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tidal volume, V<sub>T</sub>, and minute ventilation, V̇E</td>
+<td>500 mL</td>
+<td>7.5 L/min</td>
+</tr>
+<tr class="even">
+<td>Anatomic dead space, V<sub>D</sub>, and dead space ventilation, V̇D</td>
+<td>150 mL</td>
+<td>2.25 L/min</td>
+</tr>
+<tr class="odd">
+<td>Fresh gas reaching the alveoli, and alveolar ventilation, V̇A</td>
+<td>350 mL</td>
+<td>5.25 L/min</td>
+</tr>
+</tbody>
+</table>
+<p>The 350 mL of fresh gas mixes into the 2 to 3 L already in the lung at FRC. The muscles do the work of moving all of V̇E, but only V̇A takes part in gas exchange, and it is close to pulmonary blood flow, about 5 L/min. Dead space is ventilated but does no gas exchange (the trachea has a blood supply, but no gas crosses its wall).</p>
+<section id="fast-or-deep" class="level3" data-number="27.1.1">
+<h3 data-number="27.1.1" class="anchored" data-anchor-id="fast-or-deep"><span class="header-section-number">27.1.1</span> Fast or deep</h3>
+<p>The lecture reviews why, for the same V̇E, deep breaths give more alveolar ventilation than fast, shallow ones: the dead space is a smaller fraction of each breath (<a href="#fig-ventilation-perfusion-dead-space" class="quarto-xref">Figure&nbsp;<span>27.1</span></a> B; the arithmetic is in <a href="../pulmonary/ventilation.html">Alveolar Ventilation</a>). In a sick patient whose muscles are tiring, rapid, shallow breathing is a recipe for respiratory failure: much of the work goes into moving air in and out of the dead space.</p>
+<div id="fig-ventilation-perfusion-dead-space" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ventilation-perfusion-dead-space-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ventilation-perfusion/dead-space.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ventilation-perfusion-dead-space-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;27.1: (A) Anatomic dead space is the conducting airways. Alveolar dead space is alveoli that are ventilated but not perfused. Together they make the physiologic dead space. (B) Two breathing patterns with the same V̇E of 15 L/min, using the lecture’s numbers. Deep breathing gives more alveolar ventilation because the dead space is a smaller fraction of each breath. Course figure.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="anatomic-alveolar-and-physiologic-dead-space" class="level3" data-number="27.1.2">
+<h3 data-number="27.1.2" class="anchored" data-anchor-id="anatomic-alveolar-and-physiologic-dead-space"><span class="header-section-number">27.1.2</span> Anatomic, alveolar and physiologic dead space</h3>
+<p>In a healthy person almost all dead space is <em>anatomic</em>: the conducting airways from the nose and mouth to the terminal bronchioles. In disease, alveoli that still get air can lose their blood flow. Air moved into them does no gas exchange, so they add <em>alveolar dead space</em>. The two together are the <em>physiologic dead space</em>. The classic example is a pulmonary embolism: a clot blocks a pulmonary artery, and the alveoli it supplied are ventilated but not perfused.</p>
+<p><strong>Fowler’s method</strong> measures the anatomic dead space. The subject takes a single breath of 100% O<sub>2</sub> and then breathes out through a nitrogen meter. The O<sub>2</sub> that filled the conducting airways comes out first and has no nitrogen. Once alveolar gas, still carrying nitrogen from earlier room-air breaths, starts to arrive, nitrogen rises. The volume exhaled before the rise is the anatomic dead space. It is a laboratory method, not a bedside one, and you need the concept, not the tracing.</p>
+<p><strong>Bohr’s method</strong> measures the physiologic dead space, anatomic plus alveolar, and uses a gas that matters to physiology: CO<sub>2</sub>. Inspired air has essentially no CO<sub>2</sub>. Only perfused alveoli add CO<sub>2</sub> to the gas, and their PCO<sub>2</sub> is close to PaCO<sub>2</sub>. Gas from the conducting airways and from unperfused alveoli comes out with no CO<sub>2</sub> and dilutes the rest. So the more dead space, the lower the PCO<sub>2</sub> of the whole exhaled breath. Any CO<sub>2</sub>-free inspired gas works, and room air is the usual one; the method does not need 100% O<sub>2</sub>. The Bohr equation:</p>
+<p><span class="math display">\[\frac{V_D}{V_T} = \frac{P_{aCO_2} - P_{\bar{E}CO_2}}{P_{aCO_2}}\]</span></p>
+<p>P<sub>Ē</sub>CO<sub>2</sub> is the <em>mixed expired</em> PCO<sub>2</sub>, the average PCO<sub>2</sub> of all the gas exhaled in a breath, measured by collecting the gas. PaCO<sub>2</sub> from a blood gas stands in for alveolar PCO<sub>2</sub>. With a PaCO<sub>2</sub> of 40 and a P<sub>Ē</sub>CO<sub>2</sub> of 28:</p>
+<p><span class="math display">\[\frac{V_D}{V_T} = \frac{40 - 28}{40} = 0.3\]</span></p>
+<p>Normal is 20 to 35% of each tidal breath. In a healthy person there is so little alveolar dead space that the Fowler and Bohr methods give nearly the same number.</p>
+<div id="fig-ventilation-perfusion-bohr" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ventilation-perfusion-bohr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ventilation-perfusion/bohr.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ventilation-perfusion-bohr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;27.2: The PCO<sub>2</sub> of exhaled gas across one 500 mL breath. Gas from the anatomic dead space comes out first, with no CO<sub>2</sub>. (A) In a healthy lung the alveolar plateau sits at PaCO<sub>2</sub> (drawn idealized; in a real lung end-tidal PCO<sub>2</sub> is a few mm Hg below PaCO<sub>2</sub>). The mixed expired PCO<sub>2</sub> averages the whole breath, 28 mm Hg, and gives V<sub>D</sub>/V<sub>T</sub> 0.3. (B) If half the alveoli lose their blood flow, their CO<sub>2</sub>-free gas dilutes the plateau to 20 and the mixed expired PCO<sub>2</sub> falls to 14, so V<sub>D</sub>/V<sub>T</sub> is 0.65. Adapted from Boron and Boulpaep, <em>Medical Physiology</em> <span class="citation" data-cites="w11-boron2012">[<a href="../cardiovascular/cv-overview.html#ref-w11-boron2012" role="doc-biblioref">1</a>]</span>, as used in the 2026 lecture.
+</figcaption>
+</figure>
+</div>
+<p>At the bedside, a capnograph measures <em>end-tidal</em> PCO<sub>2</sub> (P<sub>ET</sub>CO<sub>2</sub>): the PCO<sub>2</sub> of the last gas out, which comes from the alveoli. In a healthy lung it is a few mm Hg below PaCO<sub>2</sub>, about 35 to 38 when PaCO<sub>2</sub> is 40. When part of the lung loses its blood flow, the alveolar gas is diluted and end-tidal PCO<sub>2</sub> falls well below PaCO<sub>2</sub> (<a href="#fig-ventilation-perfusion-bohr" class="quarto-xref">Figure&nbsp;<span>27.2</span></a> B). That <em>gap</em> is the bedside sign of alveolar dead space. A patient on a ventilator whose end-tidal PCO<sub>2</sub> falls from about 38 to 20 while PaCO<sub>2</sub> rises has added alveolar dead space, and an embolism is a classic cause.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>If you are comparing with the slides
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The slide 12 notes say mixed expired PCO<sub>2</sub> can be measured by capnography, and in the recording end-tidal PCO<sub>2</sub> goes into the Bohr equation with a normal value of “28, 30 or so”. The 28 on slide 13 is the mixed expired value, which the Bohr equation uses. A bedside capnograph shows end-tidal PCO<sub>2</sub>, normally close to PaCO<sub>2</sub>; the arterial to end-tidal gap estimates alveolar dead space, not total V<sub>D</sub>/V<sub>T</sub>. The slide 10 figure (and the recording) label the breath 100% O<sub>2</sub>. Any CO<sub>2</sub>-free gas works, including room air, as the slide 10 notes say.</p>
+</div>
+</div>
+<p>You can often spot extra dead space without a calculation. Sitting in class you breathe about 12 times a minute at half a liter and hold your PaCO<sub>2</sub> at 40. A patient taking big breaths 35 times a minute with a PaCO<sub>2</sub> of 40 is doing a great deal of breathing for very little CO<sub>2</sub> clearance; unless he is making far more CO<sub>2</sub>, his dead space is up. The extra work is one way dead space leads to respiratory failure (<a href="../pulmonary/acid-base.html">Pulmonary Acid Base</a>).</p>
+</section>
+<section id="co2-and-alveolar-ventilation" class="level3" data-number="27.1.3">
+<h3 data-number="27.1.3" class="anchored" data-anchor-id="co2-and-alveolar-ventilation"><span class="header-section-number">27.1.3</span> CO<sub>2</sub> and alveolar ventilation</h3>
+<p>With CO<sub>2</sub> production steady at about 200 mL/min, PACO<sub>2</sub> ∝ V̇CO<sub>2</sub>/V̇A: halve alveolar ventilation and PaCO<sub>2</sub> doubles, double it and PaCO<sub>2</sub> halves (<a href="../pulmonary/ventilation.html">Alveolar Ventilation</a>). A patient breathing fast and hard with a normal or high PaCO<sub>2</sub> has a low <em>alveolar</em> ventilation, whatever the V̇E.</p>
+</section>
+</section>
+<section id="the-vq-ratio" class="level2" data-number="27.2">
+<h2 data-number="27.2" class="anchored" data-anchor-id="the-vq-ratio"><span class="header-section-number">27.2</span> The V/Q ratio</h2>
+<p>Picture the ideal lung as a single alveolus with a single capillary. Mixed venous blood arrives, equilibrates with alveolar gas, and leaves with the alveolar PO<sub>2</sub> and PCO<sub>2</sub>. For that to work, the air brought to the alveolus has to match the blood carried past it. The <em>ventilation-perfusion ratio</em> is:</p>
+<p><span class="math display">\[\dot V / \dot Q = \frac{\text{alveolar ventilation (L/min)}}{\text{pulmonary blood flow (L/min)}}\]</span></p>
+<p>For the whole lung it is about 0.8 to 1. A V̇A of 4 to 5.25 L/min over a cardiac output of 5 to 6 L/min gives anything from about 0.7 to 1.05. Real lungs have millions of units, each with its own ratio, and in health they cluster around that average.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>If you are comparing with the slides
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The V/Q lecture’s slides use 0.8 (slide 28), and the Ventilation lecture uses about 1. Both come from the same arithmetic with different inputs (4.2 L/min over 5 gives 0.84; 5.25 over 5 gives 1.05). What matters is the direction: apex high, base low, and disease pushing units toward 0 or infinity.</p>
+</div>
+</div>
+<section id="ventilation-is-greater-at-the-base" class="level3" data-number="27.2.1">
+<h3 data-number="27.2.1" class="anchored" data-anchor-id="ventilation-is-greater-at-the-base"><span class="header-section-number">27.2.1</span> Ventilation is greater at the base</h3>
+<p>In an upright person, pleural pressure is more negative at the apex (about −10 cm H<sub>2</sub>O) than at the base (about −2.5). The weight of the lung hangs from the top, like a Slinky held by its top coil: the upper coils are stretched and the lower ones bunched. So at FRC the apical alveoli are already well inflated and the basal ones are small.</p>
+<p>Ventilation is about the <em>change</em> in volume during a breath, not the volume. The small basal alveoli sit on the steep part of the lung’s pressure-volume curve, and the stretched apical alveoli sit near the flat top (<a href="../pulmonary/statics.html">Respiratory Statics</a>). The same fall in pleural pressure during inspiration therefore adds more volume at the base. Ventilation per unit of lung falls steadily from base to apex.</p>
+</section>
+<section id="blood-flow-is-greater-at-the-base-by-more" class="level3" data-number="27.2.2">
+<h3 data-number="27.2.2" class="anchored" data-anchor-id="blood-flow-is-greater-at-the-base-by-more"><span class="header-section-number">27.2.2</span> Blood flow is greater at the base, by more</h3>
+<p>The pulmonary circulation is low pressure, low resistance and highly compliant, and its capillaries are recruited and distended as flow rises (<a href="../cardiovascular/pulmonary-circulation.html">Pulmonary Circulation</a>). Because its pressures are low, gravity has a large effect on them: arterial pressure is higher at the base, where the column of blood above adds to it, and lower at the apex. Blood flow therefore falls from base to apex too, and it falls more steeply than ventilation.</p>
+<p>So V/Q rises from base to apex (<a href="#fig-ventilation-perfusion-regional" class="quarto-xref">Figure&nbsp;<span>27.3</span></a>). At the base, both are high but blood flow is higher, and V/Q is about 0.6. Near the middle they are about equal. At the apex both are low, but blood flow is much lower, and V/Q is about 3.</p>
+<div id="fig-ventilation-perfusion-regional" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ventilation-perfusion-regional-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ventilation-perfusion/regional-vq.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ventilation-perfusion-regional-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;27.3: (A) Alveolar ventilation and blood flow in three slices of an upright lung, with their ratio, from the values on the 2026 lecture slide. Both fall toward the apex, blood flow more steeply. (B) Each region’s alveolar gas, plotted as PO<sub>2</sub> against PCO<sub>2</sub>. A unit with V/Q of 0 has the gas of mixed venous blood; a unit with infinite V/Q has the gas of inspired air. Panel B values adapted from Costanzo, <em>Physiology</em> <span class="citation" data-cites="costanzo">[<a href="../cardiovascular/cv-overview.html#ref-costanzo" role="doc-biblioref">2</a>]</span>, as used in the 2026 lecture.
+</figcaption>
+</figure>
+</div>
+<p>A unit’s V/Q sets its alveolar gas. At the high-V/Q apex, PAO<sub>2</sub> is about 130 mm Hg and PACO<sub>2</sub> about 33. At the low-V/Q base, PAO<sub>2</sub> is about 90 and PACO<sub>2</sub> about 42. The base has the lowest PAO<sub>2</sub> and highest PACO<sub>2</sub> of the upright lung, even though it gets the most air, and because it also gets most of the blood, its gas counts most toward the arterial blood.</p>
+</section>
+<section id="the-west-zones-and-gas-exchange" class="level3" data-number="27.2.3">
+<h3 data-number="27.2.3" class="anchored" data-anchor-id="the-west-zones-and-gas-exchange"><span class="header-section-number">27.2.3</span> The West zones and gas exchange</h3>
+<p>The West zones, defined by the order of alveolar pressure (P<sub>alv</sub>) and the pressures in the pulmonary arteries (P<sub>a</sub>) and veins (P<sub>v</sub>), are taught in the CV block; see <a href="../cardiovascular/pulmonary-circulation.html#fig-pulmonary-circulation-zones">the West zones figure</a>. What they add to V/Q is this. In zone 1 (P<sub>alv</sub> &gt; P<sub>a</sub> &gt; P<sub>v</sub>) the capillaries are closed, so a zone 1 region is ventilated but not perfused: alveolar dead space. Healthy lungs have little or none, matching the point that healthy people have almost no alveolar dead space. Zone 1 appears when vascular pressures fall (acute hypovolemia, such as bleeding) or alveolar pressures rise (air trapping in asthma, or high ventilator pressures). Most matched gas exchange happens in zone 3, where the capillaries stay open. The zones move with position: lying on the back, the posterior, dependent lung gets the most blood flow, because gravity sends more blood to whatever part of the lung is lowest.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>If you are comparing with the slides
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The Costanzo figure on slide 28 labels the apex point “Zone 1, V/Q highest”, the middle “Zone 2” and the base “Zone 3”. Read these as apex, middle and base. In the West zones (slide 27), zone 1 has no blood flow, so its V/Q is infinite, and the normal upright lung has little of it. The apex has the highest <em>finite</em> V/Q of the normal lung, about 3, with the highest PAO<sub>2</sub> and lowest PACO<sub>2</sub>.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="oxygen-from-air-to-tissue" class="level2" data-number="27.3">
+<h2 data-number="27.3" class="anchored" data-anchor-id="oxygen-from-air-to-tissue"><span class="header-section-number">27.3</span> Oxygen: from air to tissue</h2>
+<p>What matters for life is how much O<sub>2</sub> reaches the tissues, the <em>O<sub>2</sub> delivery</em>: cardiac output times arterial O<sub>2</sub> content. At rest the tissues extract about 25%, so mixed venous blood returns about 75% saturated. Getting O<sub>2</sub> from air into the alveoli takes three steps.</p>
+<ol type="1">
+<li><strong>Ambient air.</strong> PO<sub>2</sub> = PB × FiO<sub>2</sub>, with FiO<sub>2</sub> 0.21 for room air.</li>
+<li><strong>Inspired air.</strong> The upper airway humidifies the air completely, even cold, dry air in fast breathing. Water vapor at body temperature takes 47 mm Hg, so PIO<sub>2</sub> = (PB − 47) × FiO<sub>2</sub>.</li>
+<li><strong>Alveolar gas.</strong> CO<sub>2</sub> arriving from the blood takes its share:</li>
+</ol>
+<p><span class="math display">\[P_{AO_2} = (P_B - P_{H_2O})\,F_{IO_2} - \frac{P_{aCO_2}}{R}\]</span></p>
+<p>R is the respiratory exchange ratio, the CO<sub>2</sub> the body puts out divided by the O<sub>2</sub> it takes up, about 0.8 on a typical Western diet. At sea level, (760 − 47) × 0.21 = 150, and 150 − 40/0.8 = 100 mm Hg. In Chicago, with PB 747, PAO<sub>2</sub> is about 97.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>If you are comparing with the slides
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The case slides write PAO<sub>2</sub> = 0.21 (700 mm Hg) − PaCO<sub>2</sub>/R. The 700 is already PB − PH<sub>2</sub>O (747 − 47), so do not subtract 47 again. The V/Q notes do, which is where their ranges (“31–40”, “236–255”, “96–106”) come from; the slide values below are right.</p>
+</div>
+</div>
+</section>
+<section id="case-1-a-comatose-patient" class="level2" data-number="27.4">
+<h2 data-number="27.4" class="anchored" data-anchor-id="case-1-a-comatose-patient"><span class="header-section-number">27.4</span> Case 1: a comatose patient</h2>
+<p>A comatose young woman arrives in the emergency department. Her saturation is 75%. Her blood gas on room air is 7.08 / 85 / 42 / 75%: an acute respiratory acidosis and a low PaO<sub>2</sub>. Did she aspirate and get a pneumonia? The alveolar gas equation answers without an X-ray:</p>
+<p><span class="math display">\[P_{AO_2} = 0.21\,(747 - 47) - \frac{85}{0.8} = 147 - 106 \approx 41 \text{ mm Hg}\]</span></p>
+<p>Her PaO<sub>2</sub> of 42 matches it. The A–a gradient is essentially zero, so whatever O<sub>2</sub> reaches her alveoli is getting into her blood. Her lungs are fine; she is not breathing enough. Her gas is the same as the opioid patient’s in <a href="../pulmonary/acid-base.html">Pulmonary Acid Base</a>, and the lecture treats her as an opioid overdose. Global hypoventilation is enough to cause hypoxemia, and clinicians often miss it: they see a low saturation and assume the lungs are the problem.</p>
+<p>A few liters of O<sub>2</sub> would raise her saturation but not lower her PaCO<sub>2</sub>. The fix is to make her breathe. If she goes from 4 to 6 breaths a minute to 10 to 12, alveolar ventilation roughly doubles, PaCO<sub>2</sub> halves back toward 40, and PAO<sub>2</sub> rises to about 97 with no extra O<sub>2</sub>.</p>
+<section id="causes-of-a-low-alveolar-po2" class="level3" data-number="27.4.1">
+<h3 data-number="27.4.1" class="anchored" data-anchor-id="causes-of-a-low-alveolar-po2"><span class="header-section-number">27.4.1</span> Causes of a low alveolar PO<sub>2</sub></h3>
+<p>Each term in the alveolar gas equation points to a cause:</p>
+<ul>
+<li><strong>Low PB:</strong> high altitude.</li>
+<li><strong>Low FiO<sub>2</sub>:</strong> suffocation, as in a confined space where O<sub>2</sub> has been used up or displaced.</li>
+<li><strong>High PaCO<sub>2</sub>:</strong> global hypoventilation.</li>
+</ul>
+<p>The history usually makes the first two obvious. In all three the A–a gradient is normal.</p>
+</section>
+</section>
+<section id="the-aa-gradient" class="level2" data-number="27.5">
+<h2 data-number="27.5" class="anchored" data-anchor-id="the-aa-gradient"><span class="header-section-number">27.5</span> The A–a gradient</h2>
+<p>The A–a gradient is PAO<sub>2</sub>, calculated, minus PaO<sub>2</sub>, measured on a blood gas. In a young adult it is under 10 mm Hg. PAO<sub>2</sub> at sea level is about 100, but a healthy PaO<sub>2</sub> is more often about 90. About 5% of the cardiac output is a normal anatomic shunt that never meets alveolar gas: bronchial veins draining into the pulmonary veins, and thebesian veins draining the heart muscle into the left ventricle. A little V/Q scatter in the normal lung adds to the gap. Neither raises PaCO<sub>2</sub> noticeably. Mixed venous PCO<sub>2</sub> (46) is only 6 mm Hg above alveolar PCO<sub>2</sub> (40), while mixed venous PO<sub>2</sub> (40) is 60 below alveolar PO<sub>2</sub>. The shapes of the curves matter more. Blood mixes by content, and because the top of the O<sub>2</sub> curve is flat, a small loss of O<sub>2</sub> content lowers PO<sub>2</sub> a lot; the CO<sub>2</sub> curve is steep and nearly straight, so the same mixing barely moves PCO<sub>2</sub> (see the two-alveolus model below).</p>
+<p>The gradient rises with age. The slide 44 notes give an estimate, (age/4) + 4, which comes to about 10 at 24 and about 21 at 68.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>If you are comparing with the slides
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Course materials give less than 10 mm Hg (small-group keys, slide 44, the lecture), 5 to 15 (Ventilation notes) and (age/4) + 4 (slide 44 notes). They differ only for gradients between 10 and 15 mm Hg, and none of the course’s cases falls there. This book uses under 10 for a young adult, as the small groups do. In the recording, “anything less than ten is a problem” is a slip for <em>more</em> than ten.</p>
+</div>
+</div>
+<p>A raised gradient means O<sub>2</sub> is reaching the alveoli but not getting into the arterial blood. The causes are:</p>
+<ul>
+<li><strong>Diffusion limitation,</strong> where a thickened barrier slows O<sub>2</sub> transfer, most of all in exercise (<a href="../pulmonary/diffusion.html">Diffusion</a>).</li>
+<li><strong>V/Q mismatch,</strong> mainly units with low V/Q.</li>
+<li><strong>Shunt,</strong> blood that passes the lung without meeting ventilated alveoli.</li>
+</ul>
+<p>A low mixed venous saturation does not belong on this list by itself. It makes shunt and low V/Q worse, as a later section shows, but it does little in normal lungs.</p>
+</section>
+<section id="the-vq-spectrum" class="level2" data-number="27.6">
+<h2 data-number="27.6" class="anchored" data-anchor-id="the-vq-spectrum"><span class="header-section-number">27.6</span> The V/Q spectrum</h2>
+<p>V/Q runs from 0 to infinity (<a href="#fig-ventilation-perfusion-spectrum" class="quarto-xref">Figure&nbsp;<span>27.4</span></a>).</p>
+<div id="fig-ventilation-perfusion-spectrum" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ventilation-perfusion-spectrum-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ventilation-perfusion/vq-spectrum.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ventilation-perfusion-spectrum-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;27.4: Three units on the V/Q spectrum. Capillary values are PO<sub>2</sub> / PCO<sub>2</sub> in mm Hg. A unit with no ventilation (shunt) leaves blood as it arrived: mixed venous. A matched unit brings blood to the alveolar gas, PO<sub>2</sub> 100 and PCO<sub>2</sub> 40. A unit with no blood flow (dead space) keeps the gas it breathes in, PO<sub>2</sub> 150 and PCO<sub>2</sub> 0. Low V/Q units sit between the first two, and high V/Q units between the last two. Course figure, after the lecture slide.
+</figcaption>
+</figure>
+</div>
+<p>A <em>low V/Q</em> unit is ventilated, but less than its blood flow needs, so blood leaves it with a PO<sub>2</sub> below 100 and a PCO<sub>2</sub> above 40: blood going where there is not enough O<sub>2</sub>. A <em>high V/Q</em> unit has more air than its blood can use: gas going where there is no blood to use it. Healthy lungs have little dead space and only the small anatomic shunt. Diseased lungs are a mixture skewed toward one end or the other; as the course notes put it, “we live in the middle”.</p>
+</section>
+<section id="case-2-pneumonia-on-40-o2" class="level2" data-number="27.7">
+<h2 data-number="27.7" class="anchored" data-anchor-id="case-2-pneumonia-on-40-o2"><span class="header-section-number">27.7</span> Case 2: pneumonia on 40% O<sub>2</sub></h2>
+<p>A 34-year-old woman has had cough, fever and shortness of breath for four days, and her chest X-ray shows pneumonia. On 40% O<sub>2</sub> her blood gas is pH 7.48, PaCO<sub>2</sub> 30 and PaO<sub>2</sub> 65 mm Hg: she is hyperventilating. A PaO<sub>2</sub> of 65 might not look alarming, but compare it with what her alveoli hold. She is breathing 40% O<sub>2</sub> and blowing her CO<sub>2</sub> down to 20, so:</p>
+<p><span class="math display">\[P_{AO_2} = 0.40 \times 700 - \frac{30}{0.8} = 280 - 37.5 \approx 243 \text{ mm Hg}\]</span></p>
+<p>Her A–a gradient is about 243 − 65 = 178 mm Hg (slide 44 calls it the A-a difference), far above 10. Always ask what the PaO<sub>2</sub> <em>should</em> be at the FiO<sub>2</sub> the patient is on. On supplemental O<sub>2</sub>, even a PaO<sub>2</sub> of 100 or 150 can hide a very large gradient.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>If you are comparing with the slides
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Slides 43 and 44 give the gas as 7.40 / 20 / 65. A pH of 7.40 with a PaCO<sub>2</sub> of 20 implies an HCO<sub>3</sub><sup>−</sup> of about 12 mEq/L, a mixed disorder the case does not discuss, and the lecture noted the numbers need fixing. The course errata replace it with 7.48 / 30 / 65, which is used here. The A–a gradient is a little smaller (178 rather than 190 mm Hg), and the conclusion is the same.</p>
+</div>
+</div>
+</section>
+<section id="the-two-alveolus-model" class="level2" data-number="27.8">
+<h2 data-number="27.8" class="anchored" data-anchor-id="the-two-alveolus-model"><span class="header-section-number">27.8</span> The two-alveolus model</h2>
+<p>The lecture explains the causes of a raised gradient with two alveoli side by side, each with its own capillary, the blood from both mixing in the pulmonary veins. In the normal model both alveoli have PAO<sub>2</sub> about 102 and PACO<sub>2</sub> 40; mixed venous blood arrives at PO<sub>2</sub> 40 and PCO<sub>2</sub> 46 and leaves both units at the alveolar values.</p>
+<section id="shunt" class="level3" data-number="27.8.1">
+<h3 data-number="27.8.1" class="anchored" data-anchor-id="shunt"><span class="header-section-number">27.8.1</span> Shunt</h3>
+<p><strong>Anatomic shunt</strong> is blood that bypasses the lung through a channel: the normal bronchial and thebesian veins (about 5%), an abnormal connection inside the heart, or an arteriovenous malformation in the lung. The lecture focuses on <strong>physiologic shunt</strong>, where blood flows past alveoli that get no air. Either the airway is blocked completely (a tumor, a foreign body, a mucus plug) or the alveoli are filled with something other than air: blood, pus or water. Collapsed alveoli (atelectasis) and the flooded lung of ARDS are shunt too.</p>
+<p>Blood that leaves a shunted alveolus is still mixed venous blood. The breathing centers respond to the low PaO<sub>2</sub> by driving more ventilation, so the good alveoli get extra air and a higher PAO<sub>2</sub>, but the blood passing the shunted alveolus never meets it. Mixing gives an arterial saturation below 100% (<a href="#fig-ventilation-perfusion-shunt" class="quarto-xref">Figure&nbsp;<span>27.5</span></a> A).</p>
+<p>With equal flow through the two units, blood leaves the shunted unit at 75% and the good unit at 100%, and the mixture is about 88%. Averaging saturations works here: when two streams with the same Hb mix, the O<sub>2</sub> <em>content</em> of the mixture is the flow-weighted average of the two, and on room air almost all the O<sub>2</sub> is bound to Hb. PO<sub>2</sub> is the value you cannot average, because the dissociation curve is not straight. Blood at 88% has a PO<sub>2</sub> of about 55 mm Hg, not the average of 100 and 40.</p>
+<div id="fig-ventilation-perfusion-shunt" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ventilation-perfusion-shunt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ventilation-perfusion/shunt-two-alveolus.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ventilation-perfusion-shunt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;27.5: The two-alveolus model with half the blood flow through a shunt. (A) On room air, blood leaving the shunted unit at 75% mixes with blood at 100% for an SaO<sub>2</sub> of about 88%. (B) On 100% O<sub>2</sub> the good unit’s PAO<sub>2</sub> is 663, but its Hb was already full; only the dissolved O<sub>2</sub> rises, and SaO<sub>2</sub> reaches only about 92%. (C) If mixed venous saturation falls to 50%, the same shunt gives about 79% even on 100% O<sub>2</sub>. (D) Arterial saturation against shunt fraction on room air and on 100% O<sub>2</sub> (Hb 15 g/dL, PaCO<sub>2</sub> 40, sea level). Mixed values come from averaging O<sub>2</sub> contents, with O<sub>2</sub> content = 1.39 × Hb × SO<sub>2</sub> + 0.003 × PO<sub>2</sub>. The ventilated unit is taken as fully saturated, as on the slides. Course figure, after the lecture’s two-alveolus slides.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="shunt-is-refractory-to-o2" class="level3" data-number="27.8.2">
+<h3 data-number="27.8.2" class="anchored" data-anchor-id="shunt-is-refractory-to-o2"><span class="header-section-number">27.8.2</span> Shunt is refractory to O<sub>2</sub></h3>
+<p>Give this patient 100% O<sub>2</sub>. The good alveolus now has a PAO<sub>2</sub> of about (760 − 47) × 1.0 − 40/0.8 = 663 mm Hg. Its blood was already 100% saturated, and Hb cannot carry more than full. The extra PO<sub>2</sub> adds only dissolved O<sub>2</sub>, 0.003 × 663 ≈ 2 mL/dL. The shunted blood never sees the extra O<sub>2</sub> and still leaves at 75%. The mixture rises only to about 92% (<a href="#fig-ventilation-perfusion-shunt" class="quarto-xref">Figure&nbsp;<span>27.5</span></a> B). Shunt is refractory to supplemental O<sub>2</sub>, and that failure to respond is how you recognize it.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>If you are comparing with the slides
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Slides 49 and 54 average saturations on 100% O<sub>2</sub> to get 87.5% and 75% (and write “75 + 100/2” for (75 + 100)/2). The dissolved O<sub>2</sub> in the ventilated stream makes the true values about 92% and 79%. Either way the shunt is refractory, which is the slides’ point. The V/Q notes and the Small Group 3 key call averaging saturations “not mathematically correct”; it is close enough on room air, and averaging PO<sub>2</sub> is the mistake to avoid.</p>
+</div>
+</div>
+<p><a href="#fig-ventilation-perfusion-shunt" class="quarto-xref">Figure&nbsp;<span>27.5</span></a> D shows why shunt size matters. The lecture’s slide 52 makes the same point with PaO<sub>2</sub>: above about a 30% shunt, an FiO<sub>2</sub> of 1.0 cannot bring PaO<sub>2</sub> to 100.</p>
+</section>
+<section id="case-3-cough-and-fever-on-room-air-and-then-100-o2" class="level3" data-number="27.8.3">
+<h3 data-number="27.8.3" class="anchored" data-anchor-id="case-3-cough-and-fever-on-room-air-and-then-100-o2"><span class="header-section-number">27.8.3</span> Case 3: cough and fever, on room air and then 100% O<sub>2</sub></h3>
+<p>A 68-year-old man with cough and fever has a chest X-ray with widespread white opacities. On room air his gas is 7.35 / 33 / 40 / 75%:</p>
+<p><span class="math display">\[P_{AO_2} = 0.21 \times 700 - \frac{33}{0.8} \approx 147 - 41 = 106 \text{ mm Hg}\]</span></p>
+<p>His A–a gradient is 106 − 40 = 66. On 100% O<sub>2</sub> his saturation rises only to 88%: shunt physiology. It rises more than a pure shunt would, because some alveoli are only partly filled and still take some air, and those low-V/Q units respond to O<sub>2</sub>.</p>
+</section>
+<section id="hypoxic-pulmonary-vasoconstriction" class="level3" data-number="27.8.4">
+<h3 data-number="27.8.4" class="anchored" data-anchor-id="hypoxic-pulmonary-vasoconstriction"><span class="header-section-number">27.8.4</span> Hypoxic pulmonary vasoconstriction</h3>
+<p>The body has its own way to reduce a shunt. Small pulmonary arteries that supply poorly ventilated, hypoxic alveoli constrict. The response is present even in isolated lung tissue; its exact mechanism is still unclear. With cardiac output unchanged, blood that would have gone to the bad region goes to better-ventilated lung, so the shunt fraction falls and PaO<sub>2</sub> rises. In the lecture’s example, moving the flow through a shunted unit from half to a quarter raises SaO<sub>2</sub> from about 88% to about 94% (<a href="#fig-ventilation-perfusion-lowvq" class="quarto-xref">Figure&nbsp;<span>27.6</span></a> C).</p>
+<p>It helps most when the disease is regional. A patient who suddenly plugs a bronchus with mucus may drop to a saturation of 60 to 70%, with a whited-out lung on X-ray, and over about 15 minutes the saturation climbs back. Suctioning may get the credit, but the repeat X-ray often still shows the whited-out lung; vasoconstriction diverted the blood. When less than about 20% of the lung is affected, total resistance barely changes. When the disease is diffuse, or the whole lung is hypoxic as at altitude, the vessels constrict everywhere, pulmonary vascular resistance can double, and the right ventricle faces an afterload it tolerates poorly.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Background: when inflammation overrides the response
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>In a bacterial or other strongly inflammatory lung lesion, the inflammation dilates the local vessels and brings blood to the infected region, so the bad lobe can get <em>more</em> blood flow, not less, and the shunt is worse than its size suggests. This was taught in the 2026 lecture. The Small Group 3 key marks it as not on the exam.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="a-low-mixed-venous-saturation-worsens-shunt" class="level3" data-number="27.8.5">
+<h3 data-number="27.8.5" class="anchored" data-anchor-id="a-low-mixed-venous-saturation-worsens-shunt"><span class="header-section-number">27.8.5</span> A low mixed venous saturation worsens shunt</h3>
+<p>The blood that passes a shunt leaves with whatever O<sub>2</sub> it arrived with. Mixed venous O<sub>2</sub> depends on how much O<sub>2</sub> is delivered to the tissues and how much they take out. If cardiac output falls, as in heart failure, or the tissues extract more, as with fever, a high work of breathing or sepsis, mixed venous blood comes back less saturated. In a patient with a shunt, that lower saturation goes straight into the arterial blood. The slides and lecture call this mixing <em>venous admixture</em> (slide 54, “Poor venous saturation/admixture”): poorly saturated venous blood that passes the shunt mixing into the arterial blood. Without any change in the shunt, SaO<sub>2</sub> falls further (<a href="#fig-ventilation-perfusion-shunt" class="quarto-xref">Figure&nbsp;<span>27.5</span></a> C), and hypoxemia lowers delivery further, a downward spiral.</p>
+<p>In normal lungs a low mixed venous saturation does little, because blood that passes well-ventilated alveoli reaches the alveolar PO<sub>2</sub> whatever it started at. It matters when there is shunt, low V/Q, or a diffusion-limited barrier, as in exercise.</p>
+<p>So with a severe shunt, the levers are to lower the shunt fraction, raise O<sub>2</sub> delivery and lower O<sub>2</sub> consumption (treating fever, resting the respiratory muscles).</p>
+</section>
+<section id="o2-delivery" class="level3" data-number="27.8.6">
+<h3 data-number="27.8.6" class="anchored" data-anchor-id="o2-delivery"><span class="header-section-number">27.8.6</span> O<sub>2</sub> delivery</h3>
+<p><span class="math display">\[\dot Q_{O_2} = \dot Q \times C_{aO_2} = \dot Q \times \left[(1.39 \times S_{aO_2} \times \text{Hb}) + (0.003 \times P_{aO_2})\right]\]</span></p>
+<p>Each gram of fully saturated Hb carries 1.39 mL of O<sub>2</sub>, and each mm Hg of PO<sub>2</sub> adds 0.003 mL/dL dissolved. With a cardiac output of 5 L/min (50 dL/min), SaO<sub>2</sub> 1.0, Hb 15 g/dL and PaO<sub>2</sub> 97:</p>
+<p><span class="math display">\[\dot Q_{O_2} = 50 \times \left[(1.39 \times 1.0 \times 15) + (0.003 \times 97)\right] = 50 \times 21 \approx 1050 \text{ mL O}_2/\text{min}\]</span></p>
+<p>O<sub>2</sub> content is Hb, saturation and, slightly, PaO<sub>2</sub>. Cardiac output is not part of content; it multiplies content to give delivery. Raising cardiac output helps a patient with a shunt by raising delivery, which lowers extraction and raises the mixed venous O<sub>2</sub>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>If you are comparing with the slides
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The slide 54 notes say “oxygen content relies on hemoglobin and cardiac output” and then give the content equation, which has no cardiac output in it. Content depends on Hb and saturation (and slightly on PaO<sub>2</sub>); delivery is cardiac output times content, as slide 56 shows.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="case-4-low-vq-in-asthma" class="level2" data-number="27.9">
+<h2 data-number="27.9" class="anchored" data-anchor-id="case-4-low-vq-in-asthma"><span class="header-section-number">27.9</span> Case 4: low V/Q in asthma</h2>
+<p>A 24-year-old man has cough, wheezing, shortness of breath and a subjective fever. His saturation is 85% on room air and 97% on 30% O<sub>2</sub>. His X-ray shows big lungs with flat diaphragms and not much white. A few liters of O<sub>2</sub> fixed his saturation, so this is not shunt.</p>
+<p>Air goes preferentially to units whose airways are open, so the units behind narrowed airways get less ventilation for the same blood flow: low V/Q, with a lower PAO<sub>2</sub> and a higher PACO<sub>2</sub> (<a href="#fig-ventilation-perfusion-lowvq" class="quarto-xref">Figure&nbsp;<span>27.6</span></a> A). They are still ventilated, so raising FiO<sub>2</sub> raises their PAO<sub>2</sub> too and their blood saturates (<a href="#fig-ventilation-perfusion-lowvq" class="quarto-xref">Figure&nbsp;<span>27.6</span></a> B). Low V/Q responds to O<sub>2</sub>.</p>
+<div id="fig-ventilation-perfusion-lowvq" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ventilation-perfusion-lowvq-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ventilation-perfusion/lowvq-hpv.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ventilation-perfusion-lowvq-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;27.6: (A) Low V/Q in the two-alveolus model, with the lecture’s values. Behind a narrowed airway, PAO<sub>2</sub> is 77 and PACO<sub>2</sub> 45; the other unit gets extra ventilation, with PAO<sub>2</sub> 105 and PACO<sub>2</sub> 36. Mixed pulmonary venous PO<sub>2</sub> is about 89, while PCO<sub>2</sub> is back near 40. (B) On 30% O<sub>2</sub>, PIO<sub>2</sub> rises by about 64 mm Hg in every ventilated unit, and both units now saturate their blood. (C) Hypoxic vasoconstriction in a shunt: halving the flow to the airless unit, from 50% to 25% of the total, raises SaO<sub>2</sub> from about 88% to about 94%. Course figure, after the lecture slides.
+</figcaption>
+</figure>
+</div>
+<p>The low-V/Q unit in <a href="#fig-ventilation-perfusion-lowvq" class="quarto-xref">Figure&nbsp;<span>27.6</span></a> A raises its PCO<sub>2</sub> to 45, but the extra ventilation of the other unit lowers its PCO<sub>2</sub> to 36, and the mix comes back near 40. The same extra ventilation cannot rescue the O<sub>2</sub>. Blood leaving the well-ventilated unit is already nearly saturated, so a PAO<sub>2</sub> of 105 instead of 100 adds almost nothing; the flat top of the O<sub>2</sub> dissociation curve leaves nothing to gain. The CO<sub>2</sub> curve is nearly straight over this range, so extra ventilation removes extra CO<sub>2</sub> in proportion. That is why V/Q mismatch lowers PaO<sub>2</sub> much more than it raises PaCO<sub>2</sub>, and why a high PaCO<sub>2</sub> usually means total alveolar ventilation is too low: the patient is tiring, or cannot raise ventilation enough, as in severe COPD.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>If you are comparing with the notes
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The V/Q notes say V/Q mismatch spares PaCO<sub>2</sub> because CO<sub>2</sub> diffuses about 20 times faster than O<sub>2</sub>. Both gases equilibrate fully in a normal capillary; the reason is the shapes of the two dissociation curves.</p>
+</div>
+</div>
+<p>Opening the airways improves oxygenation, but the more immediate danger in asthma is the work of moving air through narrowed tubes. Hypoxic vasoconstriction plays a small part in low V/Q; once the patient gets O<sub>2</sub>, the stimulus goes away.</p>
+<section id="what-disturbs-vq" class="level3" data-number="27.9.1">
+<h3 data-number="27.9.1" class="anchored" data-anchor-id="what-disturbs-vq"><span class="header-section-number">27.9.1</span> What disturbs V/Q</h3>
+<p><strong>Airway problems:</strong> asthma, COPD (bronchitis and emphysema), secretions, bronchiectasis, foreign bodies and masses. <strong>Alveolar problems:</strong> pneumonia, interstitial lung disease and edema. <strong>Vascular problems:</strong> high or low pressures in the pulmonary circulation. Pneumonia and edema cause low V/Q where the alveoli are partly filled and shunt where they are filled completely. Atelectasis, where the alveoli have collapsed, is shunt.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>If you are comparing with the slides
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Slide 59 lists atelectasis with pneumonia, interstitial lung disease and edema as alveolar problems that disturb V/Q, and the lecture presented the list as problems that “don’t totally sock in” the alveoli, that is, low V/Q. Collapsed alveoli get no air, so atelectasis is shunt, as the slide 47 notes say.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="the-approach-to-hypoxemia" class="level2" data-number="27.10">
+<h2 data-number="27.10" class="anchored" data-anchor-id="the-approach-to-hypoxemia"><span class="header-section-number">27.10</span> The approach to hypoxemia</h2>
+<p>Every patient with a low saturation goes through the same steps (<a href="#fig-ventilation-perfusion-approach" class="quarto-xref">Figure&nbsp;<span>27.7</span></a>). Calculate PAO<sub>2</sub>, measure PaO<sub>2</sub>, and take the A–a gradient. If the gradient is normal, gas exchange works and too little O<sub>2</sub> is reaching the alveoli: look for hypoventilation, altitude or a low FiO<sub>2</sub>. If it is raised, give O<sub>2</sub>. A good response means low V/Q (or diffusion limitation); keep the O<sub>2</sub> on while you treat what is lowering ventilation. A poor response means shunt.</p>
+<div id="fig-ventilation-perfusion-approach" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ventilation-perfusion-approach-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ventilation-perfusion/hypoxemia-approach.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ventilation-perfusion-approach-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;27.7: The approach to hypoxemia, from the 2026 lecture. The A–a gradient separates a low alveolar PO<sub>2</sub> from a gas-exchange problem, and the response to supplemental O<sub>2</sub> separates low V/Q from shunt. A low mixed venous O<sub>2</sub> worsens shunt and low V/Q. Course figure.
+</figcaption>
+</figure>
+</div>
+<p>Low V/Q is by far the most common reason a patient is hypoxemic.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Background: the shunt toolbox
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>For severe shunt the lecture described, as physiology, what ICU teams do: positive end-expiratory pressure (PEEP) holds flooded alveoli open and turns shunt into O<sub>2</sub>-responsive low V/Q; diuresis removes lung water; turning a patient with ARDS onto the belly evens out ventilation and perfusion; and laying a patient good lung down lets gravity send blood to the ventilated lung.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="check-your-understanding" class="level2" data-number="27.11">
+<h2 data-number="27.11" class="anchored" data-anchor-id="check-your-understanding"><span class="header-section-number">27.11</span> Check your understanding</h2>
+<ol type="1">
+<li><p>A person pants, with a very high rate and a tidal volume close to the anatomic dead space. The mixed expired PCO<sub>2</sub> of the gas collected from his breaths falls toward zero, yet his PaCO<sub>2</sub> rises. Explain both changes.</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>Each breath first fills and empties the conducting airways, which add no CO<sub>2</sub>. With V<sub>T</sub> close to V<sub>D</sub>, almost all of each exhaled breath is dead space gas, and the little alveolar gas in it is diluted, so the mixed expired PCO<sub>2</sub> falls toward zero (in the Bohr equation, V<sub>D</sub>/V<sub>T</sub> approaches 1). Meanwhile alveolar ventilation, (V<sub>T</sub> − V<sub>D</sub>) × RR, stays small however high the rate goes. CO<sub>2</sub> leaves the body only with alveolar ventilation, so removal falls below production and PaCO<sub>2</sub> rises.</p>
+</details></li>
+<li><p>In an upright person, the base gets the most ventilation. Why does it still have the lowest PAO<sub>2</sub>?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>Blood flow rises toward the base even more steeply than ventilation, so the base has the lowest V/Q (about 0.6). Each unit of blood there is matched with less fresh air, so more O<sub>2</sub> is taken out of the alveolar gas and more CO<sub>2</sub> added to it, and PAO<sub>2</sub> ends up lowest and PACO<sub>2</sub> highest.</p>
+</details></li>
+<li><p>Breathing 100% O<sub>2</sub> raises a healthy person’s PaO<sub>2</sub> from about 100 to about 600 mm Hg. With a hemoglobin of 15 g/dL, roughly how much does CaO<sub>2</sub> rise, and why so little for a sixfold rise in PaO<sub>2</sub>?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>About 2 mL/dL, from about 20.5 to about 22.6 mL/dL, roughly 10%. Hemoglobin is already about 97% saturated at a PaO<sub>2</sub> of 100, on the flat top of the curve, so the bound term can rise only to 100%: about 1.39 × 15 × 0.03 ≈ 0.6 mL/dL more. The rest is dissolved O<sub>2</sub>, 0.003 × 500 = 1.5 mL/dL. Almost all the O<sub>2</sub> in blood rides on hemoglobin, and once hemoglobin is full, extra PO<sub>2</sub> adds only the small dissolved amount.</p>
+</details></li>
+<li><p>Why does V/Q mismatch lower PaO<sub>2</sub> much more than it raises PaCO<sub>2</sub>?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>The patient breathes more, and the well-ventilated units blow off extra CO<sub>2</sub>. The CO<sub>2</sub> curve is nearly straight, so their lower PCO<sub>2</sub> offsets the high PCO<sub>2</sub> of the low-V/Q units. Extra ventilation cannot add O<sub>2</sub> to blood that is already nearly saturated, because the O<sub>2</sub> curve is flat at the top, so nothing offsets the poorly saturated blood from the low-V/Q units.</p>
+</details></li>
+</ol>
+</section>
+<section id="key-equations" class="level2" data-number="27.12">
+<h2 data-number="27.12" class="anchored" data-anchor-id="key-equations"><span class="header-section-number">27.12</span> Key equations</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Equation</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>V̇E = V<sub>T</sub> × RR; V̇A = (V<sub>T</sub> − V<sub>D</sub>) × RR</td>
+<td>Minute and alveolar ventilation</td>
+</tr>
+<tr class="even">
+<td>V<sub>D</sub>/V<sub>T</sub> = (PaCO<sub>2</sub> − P<sub>Ē</sub>CO<sub>2</sub>)/PaCO<sub>2</sub></td>
+<td>Bohr equation, with mixed expired PCO<sub>2</sub></td>
+</tr>
+<tr class="odd">
+<td>PACO<sub>2</sub> ∝ V̇CO<sub>2</sub> / V̇A</td>
+<td>CO<sub>2</sub> and alveolar ventilation</td>
+</tr>
+<tr class="even">
+<td>V/Q = V̇A / Q̇</td>
+<td>Ventilation-perfusion ratio</td>
+</tr>
+<tr class="odd">
+<td>PIO<sub>2</sub> = (PB − PH<sub>2</sub>O) FiO<sub>2</sub></td>
+<td>Inspired PO<sub>2</sub></td>
+</tr>
+<tr class="even">
+<td>PAO<sub>2</sub> = (PB − PH<sub>2</sub>O) FiO<sub>2</sub> − PaCO<sub>2</sub>/R</td>
+<td>Alveolar gas equation</td>
+</tr>
+<tr class="odd">
+<td>A–a gradient = PAO<sub>2</sub> − PaO<sub>2</sub></td>
+<td>Is gas exchange working?</td>
+</tr>
+<tr class="even">
+<td>CaO<sub>2</sub> = (1.39 × Hb × SaO<sub>2</sub>) + (0.003 × PaO<sub>2</sub>)</td>
+<td>O<sub>2</sub> content</td>
+</tr>
+<tr class="odd">
+<td>Q̇O<sub>2</sub> = Q̇ × CaO<sub>2</sub></td>
+<td>O<sub>2</sub> delivery</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sources" class="level2" data-number="27.13">
+<h2 data-number="27.13" class="anchored" data-anchor-id="sources"><span class="header-section-number">27.13</span> Sources</h2>
+<p>This chapter follows the 2026 Ventilation and Perfusion I and II lectures for MEDC 30504 and draws on the course’s V/Q notes, Small Group 3 and the 2018 course notes, corrected and updated. All figures were drawn for this book.</p>
+<div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-w11-boron2012" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Boron WF, Boulpaep EL. <em>Medical Physiology</em>. 2, updated ed. Saunders; 2012.</div>
+</div>
+<div id="ref-costanzo" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Costanzo LS. <em>Physiology</em>. Philadelphia: Saunders Elsevier.</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/beiser-lab\.github\.io\/tcop-web-book\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+<nav class="page-navigation" aria-label="Page">
+  <div class="nav-page nav-page-previous">
+      <a href="../pulmonary/acid-base.html" class="pagination-link" aria-label="Pulmonary Acid Base">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Pulmonary Acid Base</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../pulmonary/control-of-ventilation.html" class="pagination-link" aria-label="Control of Pulmonary Ventilation">
+        <span class="nav-page-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Control of Pulmonary Ventilation</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

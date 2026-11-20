@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>10&nbsp; ANS and Extrinsic Control – Tissues, Cells &amp; Organ Physiology</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../cardiovascular/ecg-ionic-basis.html" rel="next">
+<link href="../cardiovascular/control-of-co.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-01a495efc5497ac6e3f5457e7ed18e65.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Toolbar">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../cardiovascular/cv-overview.html">Cardiovascular physiology, excitable cells and muscle</a></li><li class="breadcrumb-item"><a href="../cardiovascular/ans-extrinsic-control.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">ANS and Extrinsic Control</span></a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Tissues, Cells &amp; Organ Physiology</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About this book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Cardiovascular physiology, excitable cells and muscle</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cv-overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cardiovascular Physiology Overview</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cardiac-pump.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Cardiac Pump</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/excitable-cells.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Membrane Potentials and Excitable Cells</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/hemodynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Peripheral Circulation and Hemodynamics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/skeletal-muscle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Skeletal Muscle</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/smooth-muscle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Smooth Muscle</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/cardiac-muscle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Cardiac Muscle</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/microcirculation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Microcirculation and Local Control</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/control-of-co.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Control of Cardiac Output and Ventricular-Vascular Coupling</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ans-extrinsic-control.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">ANS and Extrinsic Control</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ecg-ionic-basis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">EKG I: Ionic Basis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ecg-vectors-axis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">ECG II: Vectors and Mean Electrical Axis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ecg-interpretation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">EKG III: Clinical Interpretation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cv-integration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Cardiovascular Integration and Adaptation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cv-exercise.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Cardiovascular Adaptation to Exercise</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/coronary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Coronary Circulation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/special-circulations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Other Special Circulations</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/pulmonary-circulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Pulmonary Circulation</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Pulmonary physiology</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/respiratory-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Respiratory Physiology Introduction</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/statics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Respiratory Statics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/dynamics-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Respiratory Dynamics I</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/dynamics-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Respiratory Dynamics II</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/ventilation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Alveolar Ventilation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/diffusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Diffusion</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/o2-co2-transport.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Transport of O<sub>2</sub> and CO<sub>2</sub> in the Blood</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/acid-base.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Pulmonary Acid Base</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/ventilation-perfusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Ventilation and Perfusion</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/control-of-ventilation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Control of Pulmonary Ventilation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/exercise.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Physiology of Exercise</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/respiratory-consultant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Think Like a Respiratory Consultant</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#the-control-hierarchy" id="toc-the-control-hierarchy" class="nav-link active" data-scroll-target="#the-control-hierarchy"><span class="header-section-number">10.1</span> The control hierarchy</a></li>
+  <li><a href="#efferent-pathways" id="toc-efferent-pathways" class="nav-link" data-scroll-target="#efferent-pathways"><span class="header-section-number">10.2</span> Efferent pathways</a>
+  <ul class="collapse">
+  <li><a href="#sympathetic" id="toc-sympathetic" class="nav-link" data-scroll-target="#sympathetic"><span class="header-section-number">10.2.1</span> Sympathetic</a></li>
+  <li><a href="#parasympathetic" id="toc-parasympathetic" class="nav-link" data-scroll-target="#parasympathetic"><span class="header-section-number">10.2.2</span> Parasympathetic</a></li>
+  </ul></li>
+  <li><a href="#autonomic-control-of-the-heart" id="toc-autonomic-control-of-the-heart" class="nav-link" data-scroll-target="#autonomic-control-of-the-heart"><span class="header-section-number">10.3</span> Autonomic control of the heart</a>
+  <ul class="collapse">
+  <li><a href="#heart-rate" id="toc-heart-rate" class="nav-link" data-scroll-target="#heart-rate"><span class="header-section-number">10.3.1</span> Heart rate</a></li>
+  <li><a href="#vagal-tone-dominates-at-rest" id="toc-vagal-tone-dominates-at-rest" class="nav-link" data-scroll-target="#vagal-tone-dominates-at-rest"><span class="header-section-number">10.3.2</span> Vagal tone dominates at rest</a></li>
+  <li><a href="#contractility" id="toc-contractility" class="nav-link" data-scroll-target="#contractility"><span class="header-section-number">10.3.3</span> Contractility</a></li>
+  </ul></li>
+  <li><a href="#autonomic-control-of-the-vessels" id="toc-autonomic-control-of-the-vessels" class="nav-link" data-scroll-target="#autonomic-control-of-the-vessels"><span class="header-section-number">10.4</span> Autonomic control of the vessels</a>
+  <ul class="collapse">
+  <li><a href="#the-receptor-decides-the-response" id="toc-the-receptor-decides-the-response" class="nav-link" data-scroll-target="#the-receptor-decides-the-response"><span class="header-section-number">10.4.1</span> The receptor decides the response</a></li>
+  </ul></li>
+  <li><a href="#putting-the-efferent-side-together" id="toc-putting-the-efferent-side-together" class="nav-link" data-scroll-target="#putting-the-efferent-side-together"><span class="header-section-number">10.5</span> Putting the efferent side together</a></li>
+  <li><a href="#afferents-and-reflexes-the-baroreceptors" id="toc-afferents-and-reflexes-the-baroreceptors" class="nav-link" data-scroll-target="#afferents-and-reflexes-the-baroreceptors"><span class="header-section-number">10.6</span> Afferents and reflexes: the baroreceptors</a>
+  <ul class="collapse">
+  <li><a href="#the-baroreceptor-reflex" id="toc-the-baroreceptor-reflex" class="nav-link" data-scroll-target="#the-baroreceptor-reflex"><span class="header-section-number">10.6.1</span> The baroreceptor reflex</a></li>
+  </ul></li>
+  <li><a href="#afferents-and-reflexes-the-chemoreceptors" id="toc-afferents-and-reflexes-the-chemoreceptors" class="nav-link" data-scroll-target="#afferents-and-reflexes-the-chemoreceptors"><span class="header-section-number">10.7</span> Afferents and reflexes: the chemoreceptors</a>
+  <ul class="collapse">
+  <li><a href="#two-responses-to-the-same-stimulus" id="toc-two-responses-to-the-same-stimulus" class="nav-link" data-scroll-target="#two-responses-to-the-same-stimulus"><span class="header-section-number">10.7.1</span> Two responses to the same stimulus</a></li>
+  </ul></li>
+  <li><a href="#extrinsic-control-a-preview" id="toc-extrinsic-control-a-preview" class="nav-link" data-scroll-target="#extrinsic-control-a-preview"><span class="header-section-number">10.8</span> Extrinsic control: a preview</a></li>
+  <li><a href="#check-your-understanding" id="toc-check-your-understanding" class="nav-link" data-scroll-target="#check-your-understanding"><span class="header-section-number">10.9</span> Check your understanding</a></li>
+  <li><a href="#key-equations" id="toc-key-equations" class="nav-link" data-scroll-target="#key-equations"><span class="header-section-number">10.10</span> Key equations</a></li>
+  <li><a href="#sources" id="toc-sources" class="nav-link" data-scroll-target="#sources"><span class="header-section-number">10.11</span> Sources</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../cardiovascular/cv-overview.html">Cardiovascular physiology, excitable cells and muscle</a></li><li class="breadcrumb-item"><a href="../cardiovascular/ans-extrinsic-control.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">ANS and Extrinsic Control</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">ANS and Extrinsic Control</span></h1>
+<p class="subtitle lead">How the nervous system sets heart rate, contractility and vascular tone</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Goals for this chapter
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Describe the control hierarchy: the hypothalamus as coordinator, the medullary cardiorespiratory center (NTS, DMV, RVLM, CVLM) as integrator, and the limbic system as context.</li>
+<li>Compare sympathetic and parasympathetic pathways: where the neurons start, where they synapse, and which transmitter and receptor each step uses, including the sweat gland and adrenal medulla exceptions.</li>
+<li>Explain how β<sub>1</sub> and M<sub>2</sub> receptors change heart rate, AV conduction and contractility.</li>
+<li>Predict whether adrenergic signaling constricts or dilates a vessel from the receptor it acts on (α<sub>1</sub> or β<sub>2</sub>), and explain how venous tone changes stressed volume and P<sub>ms</sub>.</li>
+<li>Trace the baroreceptor reflex from stretch of the carotid sinus to the change in heart rate and vascular tone.</li>
+<li>Explain why the chemoreceptor reflex slows the heart when ventilation is fixed but speeds it in a person who is breathing.</li>
+<li>Name the extrinsic factors, from other organ systems, that also act on the circulation.</li>
+</ul>
+<p>Names, dates and the exact values in figure captions are context, not things to memorize.</p>
+</div>
+</div>
+<p>Every tissue controls its own arterioles. The <a href="../cardiovascular/microcirculation.html">Microcirculation and Local Control</a> chapter showed how myogenic, metabolic and endothelial mechanisms match local blood flow to local need, minute to minute. Local control cannot defend the whole circulation, though. If every bed dilated at once, arterial pressure would fall and the brain and heart would lose their perfusion pressure. The circulation is a set of parallel beds fed by one pump, so something has to set cardiac output, hold mean arterial pressure (MAP) steady, and decide which beds get the cardiac output when there is not enough to go around. That is the job of the autonomic nervous system (ANS), with help from hormones and other organ systems. The <a href="../cardiovascular/control-of-co.html">Control of Cardiac Output</a> chapter showed what moves cardiac output: P<sub>ms</sub>, contractility, heart rate and SVR. This chapter shows how the nerves move them. It covers the efferent side first (what the nerves do to the heart and vessels), then the afferent side (the sensors and the reflexes they drive), then a preview of extrinsic control.</p>
+<section id="the-control-hierarchy" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="the-control-hierarchy"><span class="header-section-number">10.1</span> The control hierarchy</h2>
+<p>Higher centers and the medulla together shape autonomic output to the circulation (<a href="#fig-ans-extrinsic-control-hierarchy" class="quarto-xref">Figure&nbsp;<span>10.1</span></a>).</p>
+<div id="fig-ans-extrinsic-control-hierarchy" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ans-extrinsic-control-hierarchy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ans-extrinsic-control/control-hierarchy.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ans-extrinsic-control-hierarchy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.1: The control hierarchy. Higher centers set the context and the overall pattern; the medulla integrates the afferent signals and sets sympathetic and vagal outflow moment to moment. Green arrows excite and the red bar inhibits. The NTS excites the CVLM, which inhibits the RVLM, so more afferent input to the NTS means less sympathetic outflow. Course figure.
+</figcaption>
+</figure>
+</div>
+<p><strong>The hypothalamus is the coordinator.</strong> It sits below the thalamus, above the pituitary, and takes input from the retina, cortex, striatum, amygdala, hippocampus and spinal cord. It sets broad autonomic patterns and links cardiovascular responses to temperature control and endocrine output. It is a relay that sets the pattern, not the controller that adjusts each beat.</p>
+<p><strong>The limbic system provides context.</strong> The amygdala, hippocampus and cingulate cortex supply the emotional reasons to act: fear, anxiety, anticipation. That is why your heart rate rises before an exam starts, with no change in posture or blood volume.</p>
+<p><strong>The medullary cardiorespiratory center is the integrator.</strong> (The slide figures label it the medullary cardiovascular control center.) Clusters of neurons in the medulla (and lower pons) receive the afferent signals from the baroreceptors and chemoreceptors, combine them with input from higher centers, and set sympathetic and parasympathetic outflow in real time. The course names these nuclei:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Nucleus</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Nucleus tractus solitarius (NTS)</td>
+<td>Receives the afferents in CN IX and CN X. The first stop for baroreceptor and chemoreceptor signals.</td>
+</tr>
+<tr class="even">
+<td>Dorsal motor nucleus of the vagus (DMV)</td>
+<td>Parasympathetic (vagal) output. The nucleus ambiguus, in the ventrolateral medulla, sends most of the vagal fibers to the heart.</td>
+</tr>
+<tr class="odd">
+<td>Rostral ventrolateral medulla (RVLM)</td>
+<td>Tonically active. Drives the sympathetic preganglionic neurons in the spinal cord.</td>
+</tr>
+<tr class="even">
+<td>Caudal ventrolateral medulla (CVLM)</td>
+<td>Inhibitory. When the NTS excites it, it turns the RVLM down.</td>
+</tr>
+</tbody>
+</table>
+<p>The wiring explains the direction of the baroreflex. The NTS does not inhibit the RVLM directly. It excites the CVLM, and the CVLM inhibits the RVLM. So when the NTS gets more afferent traffic, sympathetic outflow falls. At the same time the NTS excites the vagal neurons, so parasympathetic outflow rises.</p>
+</section>
+<section id="efferent-pathways" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="efferent-pathways"><span class="header-section-number">10.2</span> Efferent pathways</h2>
+<p>Both divisions of the ANS use two neurons in series between the central nervous system and the target. The first, the <em>preganglionic</em> neuron, has its cell body in the brainstem or spinal cord. It synapses in a ganglion on the second, <em>postganglionic</em> neuron, which runs to the target. At every autonomic ganglion, the preganglionic neuron releases acetylcholine (ACh) onto nicotinic receptors. The divisions differ in where the ganglia sit and in what the postganglionic neuron releases (<a href="#fig-ans-extrinsic-control-efferents" class="quarto-xref">Figure&nbsp;<span>10.2</span></a>).</p>
+<div id="fig-ans-extrinsic-control-efferents" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ans-extrinsic-control-efferents-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ans-extrinsic-control/efferent-pathways.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ans-extrinsic-control-efferents-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.2: Autonomic efferent pathways. Every ganglion uses ACh on nicotinic receptors. Sympathetic postganglionic neurons release norepinephrine (NE), except those to sweat glands, which release ACh. The adrenal medulla has no postganglionic neuron: preganglionic fibers end on chromaffin cells, which release epinephrine into the blood. Course figure.
+</figcaption>
+</figure>
+</div>
+<section id="sympathetic" class="level3" data-number="10.2.1">
+<h3 data-number="10.2.1" class="anchored" data-anchor-id="sympathetic"><span class="header-section-number">10.2.1</span> Sympathetic</h3>
+<ol type="1">
+<li>Signals from the hypothalamus pass through the medullary center (the RVLM) and down the spinal cord to preganglionic cell bodies in the lateral horn (the intermediolateral column) of the thoracic and upper lumbar cord, T1 to L2.</li>
+<li>The preganglionic axons leave the cord with the ventral roots and enter the sympathetic trunk (the chain of ganglia beside the vertebral column). Most synapse in the chain ganglion at the level where they left the cord. Some run up or down the chain first, which is how the head and the pelvis get sympathetic fibers even though no preganglionic neurons sit in the cervical or sacral cord. The preganglionic neurons are short.</li>
+<li>The postganglionic neurons have their cell bodies in the chain ganglia (or, for the abdominal organs, in ganglia in front of the aorta) and send long axons to the target tissues, where they release norepinephrine (NE) onto adrenergic receptors (α<sub>1</sub>, α<sub>2</sub>, β<sub>1</sub>, β<sub>2</sub>).</li>
+</ol>
+<p>Sympathetic postganglionic fibers to sweat glands are an exception: they release ACh onto muscarinic receptors (the skin’s circulation is covered in <a href="../cardiovascular/special-circulations.html">Other Special Circulations</a>). And in the adrenal medulla, preganglionic fibers end directly on chromaffin cells, which act as modified postganglionic neurons and release epinephrine (with a little NE) into the blood. Sympathetic activation is therefore both a nerve signal to specific targets and a hormone signal to every tissue with adrenergic receptors.</p>
+</section>
+<section id="parasympathetic" class="level3" data-number="10.2.2">
+<h3 data-number="10.2.2" class="anchored" data-anchor-id="parasympathetic"><span class="header-section-number">10.2.2</span> Parasympathetic</h3>
+<ol type="1">
+<li>Signals from the hypothalamus reach preganglionic neurons in the brainstem nuclei and the sacral cord (the craniosacral outflow).</li>
+<li>The preganglionic axons are long. They run all the way to ganglia in or next to the target organ. About 75% of all parasympathetic outflow travels in the vagus nerve (CN X).</li>
+<li>The postganglionic neurons are short. They release ACh onto muscarinic receptors on the target.</li>
+</ol>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Sympathetic</th>
+<th>Parasympathetic</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Preganglionic cell bodies</td>
+<td>Lateral horn, T1 to L2</td>
+<td>Brainstem (mostly CN X) and sacral cord</td>
+</tr>
+<tr class="even">
+<td>Ganglia</td>
+<td>Sympathetic trunk (and prevertebral ganglia), near the cord</td>
+<td>In or near the target</td>
+</tr>
+<tr class="odd">
+<td>Preganglionic neuron</td>
+<td>Short; ACh on nicotinic receptors</td>
+<td>Long; ACh on nicotinic receptors</td>
+</tr>
+<tr class="even">
+<td>Postganglionic neuron</td>
+<td>Long; NE on adrenergic receptors</td>
+<td>Short; ACh on muscarinic receptors</td>
+</tr>
+<tr class="odd">
+<td>Exceptions</td>
+<td>Sweat glands (ACh, muscarinic); adrenal medulla (epinephrine into blood)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>The receptors are G protein-coupled (<a href="../muscle/excitable-cells.html">Membrane Potentials and Excitable Cells</a> explains what that means). The table of receptors, G proteins and second messengers (G<sub>s</sub> and cAMP, G<sub>i</sub>, G<sub>q</sub> and IP<sub>3</sub>) is in <a href="../muscle/smooth-muscle.html">Smooth Muscle</a>. This chapter uses them without the detail.</p>
+</section>
+</section>
+<section id="autonomic-control-of-the-heart" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="autonomic-control-of-the-heart"><span class="header-section-number">10.3</span> Autonomic control of the heart</h2>
+<p>Sympathetic and parasympathetic fibers reach the heart through the cardiac plexus, a web of nerves at the base of the heart. Sympathetic preganglionic neurons in the upper thoracic cord synapse in the cervical and upper thoracic chain ganglia (including the stellate ganglion), and the postganglionic fibers run in the cardiac nerves to the plexus and on to the SA node, the AV node and the working myocytes of the atria and ventricles. Vagal preganglionic fibers run to the plexus and synapse on postganglionic neurons on the heart itself, mostly near the SA and AV nodes and in the atria.</p>
+<p>The nerves act on:</p>
+<ul>
+<li>the <strong>SA node</strong>, which sets heart <strong>rate</strong>;</li>
+<li>the <strong>AV node</strong>, which sets how fast the impulse passes from atria to ventricles;</li>
+<li>the <strong>myocytes</strong>, where sympathetic input sets <strong>contractility</strong>.</li>
+</ul>
+<section id="heart-rate" class="level3" data-number="10.3.1">
+<h3 data-number="10.3.1" class="anchored" data-anchor-id="heart-rate"><span class="header-section-number">10.3.1</span> Heart rate</h3>
+<p>The SA node fires slow-response action potentials. Phase 4 is a slow depolarization driven mostly by the funny current (I<sub>f</sub>, a mixed Na<sup>+</sup>/K<sup>+</sup> cation current through HCN channels, carried mainly by inward Na<sup>+</sup> at diastolic potentials) and then by T-type and L-type Ca<sup>2+</sup> current. When the membrane reaches threshold, the L-type Ca<sup>2+</sup> current produces the upstroke. The time it takes to get from the most negative potential to threshold sets the rate. The <a href="../cardiovascular/ecg-ionic-basis.html">EKG I: Ionic Basis</a> chapter, later in the block, covers the ionic basis in full.</p>
+<p><strong>Sympathetic (β<sub>1</sub>).</strong> NE binds β<sub>1</sub> receptors on SA node cells. G<sub>s</sub> activates adenylyl cyclase and cAMP rises. cAMP increases I<sub>f</sub> and the Ca<sup>2+</sup> currents, so phase 4 is steeper and the cell reaches threshold sooner. The rate rises.</p>
+<p><strong>Parasympathetic (M<sub>2</sub>).</strong> ACh from vagal fibers binds M<sub>2</sub> receptors and has two effects at the same time:</p>
+<ul>
+<li>It opens K<sup>+</sup> channels. K<sup>+</sup> conductance rises, the membrane moves toward E<sub>K</sub>, and each cycle starts from a more negative potential.</li>
+<li>Through G<sub>i</sub>, it lowers cAMP. Less cAMP means less I<sub>f</sub>, so the phase 4 slope flattens.</li>
+</ul>
+<p>Both effects lengthen the time to threshold, and both slow the heart. The EKG I chapter draws both effects on the SA node action potential.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>If you are comparing with the notes
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The peer-educator notes write the vagal effect as one chain: “ACh → muscarinic receptors → ↑ K<sup>+</sup> efflux → ↓ cAMP → slower phase 4 slope.” That reads as if K<sup>+</sup> efflux causes the fall in cAMP. It does not. The K<sup>+</sup> channel effect and the cAMP effect run in parallel from the same receptor (course errata entry 21). The notes also say sympathetic input acts on “the sodium channels” in pacemaker cells. Those are the HCN channels, whose funny current is carried mostly by Na<sup>+</sup>, not the fast Na<sup>+</sup> channels of working myocytes. cAMP also increases the Ca<sup>2+</sup> currents.</p>
+</div>
+</div>
+<p><strong>The AV node.</strong> The same receptors act on the AV node, which is also a slow-response tissue. β<sub>1</sub> stimulation speeds AV conduction and shortens the PR interval; M<sub>2</sub> stimulation slows it and lengthens the PR interval. Strong vagal activity can block AV conduction for a beat or more. The AV node changes conduction, not rate.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>A common mistake
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In the SA and AV nodes the upstroke is carried by L-type Ca<sup>2+</sup> current, not by fast Na<sup>+</sup> current. So AV conduction depends on L-type Ca<sup>2+</sup> channels: β<sub>1</sub> stimulation, which increases L-type current, speeds it, and an L-type Ca<sup>2+</sup> channel blocker slows it and lengthens the PR interval. A Na<sup>+</sup> channel blocker does not slow the heart rate. It slows the upstroke of fast-response action potentials in atrial and ventricular muscle and in the Purkinje fibers, so it slows conduction there and widens the QRS.</p>
+</div>
+</div>
+</section>
+<section id="vagal-tone-dominates-at-rest" class="level3" data-number="10.3.2">
+<h3 data-number="10.3.2" class="anchored" data-anchor-id="vagal-tone-dominates-at-rest"><span class="header-section-number">10.3.2</span> Vagal tone dominates at rest</h3>
+<p>Both divisions are active all the time, but at rest the vagus wins. With no autonomic input at all, the SA node fires at its intrinsic rate, about 100/min. The normal resting sinus rate, 60 to 100/min and often 60 to 70 in a resting adult, sits below that because vagal tone holds it down.</p>
+<p>The lecture shows this with a transplanted heart and with drugs. In a person with a heart transplant, the autonomic nerves to the heart are cut and do not reconnect, so the resting rate is near the intrinsic rate, about 100/min. And in healthy subjects, blocking each division with a drug shows how much each contributes (<a href="#fig-ans-extrinsic-control-dual-blockade" class="quarto-xref">Figure&nbsp;<span>10.3</span></a>). Atropine blocks muscarinic receptors and removes vagal tone: the rate jumps from about 63 to about 117/min. Propranolol blocks β receptors and removes sympathetic tone: the rate falls only from about 61 to about 51/min. With both blocked, in either order, the rate settles near 100/min.</p>
+<div id="fig-ans-extrinsic-control-dual-blockade" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ans-extrinsic-control-dual-blockade-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ans-extrinsic-control/dual-blockade.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ans-extrinsic-control-dual-blockade-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.3: Heart rate in healthy nonathletes after autonomic blockade. Atropine (muscarinic block) raises the rate far more than propranolol (β block) lowers it, so vagal tone dominates at rest. With both blocked, the rate is the intrinsic rate of the SA node. Values read from the graph of Katona, McLean, Dighton and Guz <span class="citation" data-cites="w6-katona">[<a href="cv-overview.html#ref-w6-katona" role="doc-biblioref">1</a>]</span>, as shown in the 2026 lecture.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="contractility" class="level3" data-number="10.3.3">
+<h3 data-number="10.3.3" class="anchored" data-anchor-id="contractility"><span class="header-section-number">10.3.3</span> Contractility</h3>
+<p>Contractility is the force the heart muscle can develop at a given preload and afterload, which the course measures as the slope of the end-systolic pressure-volume relationship. Heart rate and relaxation are separate properties (course errata entry 2). Sympathetic stimulation raises contractility; this is the main reason sympathetic activity increases stroke volume at a given end-diastolic volume.</p>
+<p>NE (or circulating epinephrine) binds β<sub>1</sub> receptors on ventricular myocytes. G<sub>s</sub> raises cAMP, and cAMP activates protein kinase A (PKA), which phosphorylates, among other proteins (<a href="#fig-ans-extrinsic-control-signaling" class="quarto-xref">Figure&nbsp;<span>10.4</span></a> A):</p>
+<ul>
+<li><strong>L-type Ca<sup>2+</sup> channels.</strong> More Ca<sup>2+</sup> enters during the plateau, which triggers more Ca<sup>2+</sup> release from the sarcoplasmic reticulum (SR).</li>
+<li><strong>Phospholamban.</strong> Unphosphorylated phospholamban holds back SERCA, the pump that returns Ca<sup>2+</sup> to the SR. Phosphorylation removes the brake. SERCA takes up Ca<sup>2+</sup> faster, so the SR holds more Ca<sup>2+</sup> to release on the next beat (stronger contraction) and the cytosol clears faster (faster relaxation, which helps preserve filling time at high heart rates).</li>
+</ul>
+<p>The details of excitation-contraction coupling and phospholamban are in <a href="../muscle/cardiac-muscle.html">Cardiac Muscle</a>.</p>
+<p>ACh at M<sub>2</sub> receptors does the reverse through G<sub>i</sub>: cAMP falls, phospholamban is less phosphorylated, SERCA takes up less Ca<sup>2+</sup>, and force falls. Vagal fibers go mostly to the nodes and the atria, so vagal effects on force are strongest in the atria. There, ACh also opens the same K<sup>+</sup> channels it opens in the SA node, which shortens the action potential and lets in less Ca<sup>2+</sup>. In the ventricles, the main thing ACh does is blunt the effect of whatever sympathetic stimulation is present.</p>
+<div id="fig-ans-extrinsic-control-signaling" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ans-extrinsic-control-signaling-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ans-extrinsic-control/receptor-signaling.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ans-extrinsic-control-signaling-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.4: Receptor signaling. (A) In the heart, β<sub>1</sub> receptors raise cAMP and M<sub>2</sub> receptors lower it; M<sub>2</sub> receptors also open K<sup>+</sup> channels in the SA node and atria. (B) In vascular smooth muscle, α<sub>1</sub> receptors raise intracellular Ca<sup>2+</sup> through IP<sub>3</sub> and cause constriction; β<sub>2</sub> receptors raise cAMP, which inhibits myosin light chain kinase (MLCK) and causes relaxation. Course figure.
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="autonomic-control-of-the-vessels" class="level2" data-number="10.4">
+<h2 data-number="10.4" class="anchored" data-anchor-id="autonomic-control-of-the-vessels"><span class="header-section-number">10.4</span> Autonomic control of the vessels</h2>
+<p>Sympathetic nerves supply the smooth muscle of nearly all small arteries, arterioles and veins, and they are tonically active. Parasympathetic nerves supply only a few vessels (in the genitalia and the salivary glands), so the vascular half of autonomic control is almost entirely sympathetic. The capillaries have no smooth muscle and no nerves.</p>
+<p>Sympathetic tone acts on veins and arterioles with different results:</p>
+<ul>
+<li><strong>Veins (venous tone).</strong> Venoconstriction shrinks the unstressed volume of the veins and moves blood into the stressed volume. Stressed volume rises, so P<sub>ms</sub> (mean systemic filling pressure) rises, venous return rises, and preload rises. About 30% of venous volume can be mobilized this way. The <a href="../cardiovascular/control-of-co.html">Control of Cardiac Output</a> chapter explained stressed volume and P<sub>ms</sub>.</li>
+<li><strong>Arterioles (arterial tone).</strong> Arteriolar constriction raises SVR, which raises MAP and afterload. Constricting some beds while others stay open also redistributes cardiac output.</li>
+</ul>
+<section id="the-receptor-decides-the-response" class="level3" data-number="10.4.1">
+<h3 data-number="10.4.1" class="anchored" data-anchor-id="the-receptor-decides-the-response"><span class="header-section-number">10.4.1</span> The receptor decides the response</h3>
+<p>“Sympathetic” does not mean “constriction.” What NE or epinephrine does to a vessel depends on which receptor its smooth muscle carries (<a href="#fig-ans-extrinsic-control-signaling" class="quarto-xref">Figure&nbsp;<span>10.4</span></a> B):</p>
+<ul>
+<li><strong>α<sub>1</sub> receptors</strong> couple to G<sub>q</sub>. Phospholipase C makes IP<sub>3</sub>, IP<sub>3</sub> releases Ca<sup>2+</sup> from the SR, Ca<sup>2+</sup>-calmodulin activates MLCK, and the muscle contracts. α<sub>1</sub> is the predominant receptor in most of the peripheral circulation, on arterioles and veins alike.</li>
+<li><strong>β<sub>2</sub> receptors</strong> couple to G<sub>s</sub>. cAMP rises and inhibits MLCK, and the muscle relaxes. β<sub>2</sub> receptors are plentiful on skeletal muscle arterioles.</li>
+</ul>
+<p>The mechanism of smooth muscle contraction, and why MLCK is the switch, is in <a href="../muscle/smooth-muscle.html">Smooth Muscle</a>.</p>
+<p>The two catecholamines do not reach these receptors equally. NE released from sympathetic nerves acts strongly on α<sub>1</sub> and β<sub>1</sub> receptors and weakly on β<sub>2</sub>. So sympathetic nerve activity constricts skeletal muscle arterioles, as it does arterioles elsewhere. Epinephrine from the adrenal medulla reaches every vessel through the blood and acts on β<sub>2</sub> receptors as well. At the concentrations of a “fight or flight” response, it dilates skeletal muscle arterioles through β<sub>2</sub> while it constricts the skin, gut and kidney through α<sub>1</sub>. That shift of flow toward muscle is the receptor distribution at work. During exercise, metabolic vasodilators add to it (<a href="../cardiovascular/special-circulations.html">Other Special Circulations</a>).</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>If you are comparing with the slides
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The vascular-control slides show “Epinephrine / Norepinephrine” acting on α<sub>1</sub> and β<sub>2</sub> receptors and say “B2 present in muscle vasculature =&gt; Dilation.” The peer-educator notes go further and list “skeletal muscle vasodilation (β<sub>2</sub>)” as an effect of sympathetic nerves, and say NE “will cause dilation” in muscle. The β<sub>2</sub> dilation in muscle comes from circulating epinephrine. Neural NE has little effect on β<sub>2</sub> receptors, so sympathetic nerve stimulation constricts muscle arterioles through α<sub>1</sub>. Both versions agree that receptors set the response; the difference is which catecholamine reaches the β<sub>2</sub> receptors.</p>
+<p>The same slides show parasympathetic “(pelvic) M<sub>2</sub> (vasodilation)” with “(Gut).” Parasympathetic vasodilation is limited to a few beds, such as the genitalia, and ACh dilates vessels by acting on muscarinic receptors on endothelial cells, which release nitric oxide. The gut circulation is under sympathetic, not parasympathetic, control (course errata entry 14; <a href="../cardiovascular/special-circulations.html">Other Special Circulations</a>).</p>
+</div>
+</div>
+</section>
+</section>
+<section id="putting-the-efferent-side-together" class="level2" data-number="10.5">
+<h2 data-number="10.5" class="anchored" data-anchor-id="putting-the-efferent-side-together"><span class="header-section-number">10.5</span> Putting the efferent side together</h2>
+<p>The lecture summarizes autonomic control with the arterial version of Ohm’s law, CO = (MAP − CVP)/SVR, rearranged with CVP left out and expanded:</p>
+<p><span class="math display">\[\text{MAP} \approx \text{CO} \times \text{SVR} = (\text{HR} \times \text{SV}) \times \text{SVR} = \big(\text{HR} \times (\text{EDV} - \text{ESV})\big) \times \text{SVR}\]</span></p>
+<p>Each term has an autonomic handle. Sympathetic and vagal input set HR. Venous return and the compliance of the ventricle set EDV, and venous tone sets venous return. Contractility sets how far the ventricle empties, ESV. Arteriolar tone sets SVR. Sympathetic activation raises HR, EDV and SVR and lowers ESV. Vagal activation lowers HR. In the baroreflex, vagal activation and sympathetic withdrawal happen together, so the changes all reverse.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>A common mistake
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>MAP ≈ CO × SVR drops CVP. That is harmless when CVP is a few mm Hg, but when CVP is high, as in heart failure or tamponade, use SVR = (MAP − CVP)/CO, as in <a href="../cardiovascular/hemodynamics.html">Peripheral Circulation and Hemodynamics</a>.</p>
+</div>
+</div>
+<p>The same summary can be drawn on the cardiac and vascular function curves (<a href="#fig-ans-extrinsic-control-curves" class="quarto-xref">Figure&nbsp;<span>10.5</span></a>). Sympathetic stimulation of the heart (rate and contractility) shifts the cardiac function curve up. Venoconstriction raises P<sub>ms</sub> and shifts the vascular function curve to the right. The new operating point has a higher cardiac output, while right atrial pressure (P<sub>ra</sub>) barely changes. These are the curves from the <a href="../cardiovascular/control-of-co.html">Control of Cardiac Output</a> chapter.</p>
+<div id="fig-ans-extrinsic-control-curves" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ans-extrinsic-control-curves-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ans-extrinsic-control/sympathetic-curves.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ans-extrinsic-control-curves-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.5: Sympathetic activation on the cardiac and vascular function curves. β<sub>1</sub> stimulation shifts the cardiac function curve up; venoconstriction raises P<sub>ms</sub> and shifts the vascular function curve right. Open circle, operating point before; filled circle, after. Course figure. The lecture’s summary slide reuses the hemorrhage-with-compensation graph from the Control of Cardiac Output lecture.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="afferents-and-reflexes-the-baroreceptors" class="level2" data-number="10.6">
+<h2 data-number="10.6" class="anchored" data-anchor-id="afferents-and-reflexes-the-baroreceptors"><span class="header-section-number">10.6</span> Afferents and reflexes: the baroreceptors</h2>
+<p>The efferent nerves need information. The main sensors for the circulation are the arterial baroreceptors: stretch-sensitive nerve endings in the walls of the <strong>carotid sinus</strong> (a slight bulge where the internal carotid artery begins) and the <strong>aortic arch</strong>. Their afferent fibers run in the glossopharyngeal nerve (CN IX) from the carotid sinus and in the vagus nerve (CN X) from the aortic arch, and both end in the NTS.</p>
+<p>The receptors sense stretch of the arterial wall, so they report pressure. When MAP rises, the wall stretches more, the nerve endings depolarize more, and their firing rate rises. When MAP falls, firing falls.</p>
+<section id="the-baroreceptor-reflex" class="level3" data-number="10.6.1">
+<h3 data-number="10.6.1" class="anchored" data-anchor-id="the-baroreceptor-reflex"><span class="header-section-number">10.6.1</span> The baroreceptor reflex</h3>
+<p>The reflex is a negative feedback loop that holds MAP near its set point (<a href="#fig-ans-extrinsic-control-baroreflex" class="quarto-xref">Figure&nbsp;<span>10.6</span></a>). Follow a rise in pressure:</p>
+<ol type="1">
+<li>MAP rises and the carotid sinus and aortic arch stretch.</li>
+<li>Baroreceptor firing rises in CN IX and CN X.</li>
+<li>The NTS excites the CVLM, which inhibits the RVLM, so sympathetic outflow falls. The NTS also excites the vagal neurons, so vagal outflow rises.</li>
+<li>Heart rate falls (more vagal, less sympathetic), contractility falls, arterioles dilate (SVR falls), and veins dilate (stressed volume and P<sub>ms</sub> fall, so venous return falls).</li>
+<li>CO and SVR fall, and MAP comes back down.</li>
+</ol>
+<p>A fall in pressure runs the loop the other way: less firing, less vagal and more sympathetic outflow, a faster and stronger heart, venoconstriction and arteriolar constriction, and MAP back up.</p>
+<div id="fig-ans-extrinsic-control-baroreflex" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ans-extrinsic-control-baroreflex-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ans-extrinsic-control/baroreflex.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ans-extrinsic-control-baroreflex-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.6: The baroreceptor reflex for a rise in MAP. Afferents in CN IX and CN X reach the NTS, which inhibits sympathetic outflow (through the CVLM and RVLM) and increases vagal outflow. The effects lower MAP back toward its set point. Course figure, after the reflex chart in Boron and Boulpaep <span class="citation" data-cites="w6-boron2012">[<a href="cv-overview.html#ref-w6-boron2012" role="doc-biblioref">2</a>]</span>, as used in the 2026 lecture.
+</figcaption>
+</figure>
+</div>
+<p>Standing up is the everyday test. Gravity pools blood in the leg veins, venous return falls, stroke volume and CO fall, and MAP starts to drop. Within a few beats the baroreceptors fire less, and the reflex raises heart rate and contractility, constricts the veins (which pushes blood back toward the heart) and constricts the arterioles. MAP is restored before you notice. When the efferent side fails, as in some neurologic disorders that damage autonomic nerves, standing drops the pressure and can cause fainting: orthostatic hypotension, the puzzle at the end of the <a href="../cardiovascular/control-of-co.html">Control of Cardiac Output</a> chapter.</p>
+<p>The baroreflex is fast and strong, but it is a short-term controller. The kidneys, previewed at the end of the lecture, set blood volume over days. In hemorrhage and heart failure, the baroreflex is what produces the compensation you see in the curves (<a href="../cardiovascular/cv-integration.html">Cardiovascular Integration and Adaptation</a>).</p>
+</section>
+</section>
+<section id="afferents-and-reflexes-the-chemoreceptors" class="level2" data-number="10.7">
+<h2 data-number="10.7" class="anchored" data-anchor-id="afferents-and-reflexes-the-chemoreceptors"><span class="header-section-number">10.7</span> Afferents and reflexes: the chemoreceptors</h2>
+<p>Chemoreceptors sense the chemistry of blood and brain fluid. Their main job is to control breathing (<a href="../pulmonary/control-of-ventilation.html">Control of Ventilation</a>), but they also act on the heart and vessels.</p>
+<ul>
+<li><strong>Central chemoreceptors</strong>, near the surface of the medulla, detect CO<sub>2</sub> and pH. CO<sub>2</sub> crosses into the brain fluid and lowers its pH.</li>
+<li><strong>Peripheral chemoreceptors</strong> sit next to the baroreceptors. The <strong>carotid bodies</strong>, at the carotid bifurcation, detect O<sub>2</sub>, CO<sub>2</sub> and pH and signal through CN IX. The <strong>aortic bodies</strong>, on the aortic arch, detect O<sub>2</sub> and CO<sub>2</sub> and signal through CN X.</li>
+</ul>
+<section id="two-responses-to-the-same-stimulus" class="level3" data-number="10.7.1">
+<h3 data-number="10.7.1" class="anchored" data-anchor-id="two-responses-to-the-same-stimulus"><span class="header-section-number">10.7.1</span> Two responses to the same stimulus</h3>
+<p>Low PO<sub>2</sub>, high PCO<sub>2</sub> or low pH activates the chemoreceptors, and what happens to the heart depends on whether the person can breathe (<a href="#fig-ans-extrinsic-control-chemoreflex" class="quarto-xref">Figure&nbsp;<span>10.7</span></a>).</p>
+<p><strong>The integrated response, breathing freely.</strong> In a person who can breathe, the chemoreceptors drive ventilation up: the peripheral chemoreceptors alone respond to low PO<sub>2</sub>, and both central and peripheral chemoreceptors respond to high PCO<sub>2</sub> or low pH. The larger breaths stretch the lungs, and the extra ventilation lowers PCO<sub>2</sub>. Lung stretch and the lower PCO<sub>2</sub> both inhibit the vagal center. The net effect is less vagal outflow and <strong>tachycardia</strong>, the usual result of hypoxia in daily life. The respiratory response normally overrides the peripheral “hypoxic” bradycardia described next.</p>
+<p><strong>The primary response, with ventilation fixed.</strong> If breathing cannot increase, the peripheral chemoreceptor reflex shows itself directly. It is unusual in using both divisions at once: it increases vagal outflow to the heart, which causes <strong>bradycardia</strong>, and increases sympathetic outflow to the vessels, which causes <strong>vasoconstriction</strong>. The lecture’s thought exercise is a patient who is not breathing during placement of a breathing tube. PO<sub>2</sub> falls and PCO<sub>2</sub> rises with no rise in ventilation, and the heart slows, sometimes sharply.</p>
+<div id="fig-ans-extrinsic-control-chemoreflex" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ans-extrinsic-control-chemoreflex-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ans-extrinsic-control/chemoreflex.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ans-extrinsic-control-chemoreflex-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.7: The chemoreceptor reflex. (A) When breathing is free, ventilation rises (low PO<sub>2</sub> acts through the peripheral chemoreceptors; high PCO<sub>2</sub> and low pH act through both), and lung stretch and the lower PCO<sub>2</sub> inhibit the vagal center, so the heart speeds up. (B) With ventilation held fixed, the peripheral chemoreceptors increase vagal outflow to the heart (bradycardia) and sympathetic outflow to the vessels (vasoconstriction). Course figure, after the reflex charts in Boron and Boulpaep <span class="citation" data-cites="w6-boron2012">[<a href="cv-overview.html#ref-w6-boron2012" role="doc-biblioref">2</a>]</span>, as used in the 2026 lecture.
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="extrinsic-control-a-preview" class="level2" data-number="10.8">
+<h2 data-number="10.8" class="anchored" data-anchor-id="extrinsic-control-a-preview"><span class="header-section-number">10.8</span> Extrinsic control: a preview</h2>
+<p>The lecture closes with a preview of the other organ systems that act on the circulation. Each gets its own lectures later.</p>
+<ul>
+<li><strong>The lungs and chest.</strong> Each breath changes intrathoracic pressure. Inspiration lowers the pressure around the right atrium and the great veins, which draws blood toward the heart; positive pressure in the chest does the reverse.</li>
+<li><strong>The kidneys.</strong> They set blood volume, and so P<sub>ms</sub>, by controlling salt and water excretion. They also release renin, which leads to angiotensin II.</li>
+<li><strong>Hormones.</strong> Epinephrine from the adrenal medulla acts on β<sub>1</sub> receptors in the heart and β<sub>2</sub> receptors in muscle vessels, as above. Angiotensin II and vasopressin (antidiuretic hormone) constrict vessels and help the kidneys retain volume. Thyroid hormone raises heart rate and contractility.</li>
+<li><strong>Temperature.</strong> The hypothalamus controls skin blood flow through sympathetic nerves to the skin’s vessels and sweat glands.</li>
+<li><strong>Emotion and behavior.</strong> Limbic and hypothalamic signals change the baseline output of the medulla.</li>
+<li><strong>Exercise.</strong> Sympathetic activation and local metabolic vasodilation act together (<a href="../cardiovascular/cv-exercise.html">Cardiovascular Adaptation to Exercise</a>).</li>
+</ul>
+</section>
+<section id="check-your-understanding" class="level2" data-number="10.9">
+<h2 data-number="10.9" class="anchored" data-anchor-id="check-your-understanding"><span class="header-section-number">10.9</span> Check your understanding</h2>
+<ol type="1">
+<li><p>A patient with a transplanted heart has a resting heart rate of 98/min. Why is it higher than yours, and what does that tell you about the autonomic balance at rest in a normal heart?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>The transplanted heart has no autonomic nerves, so it beats at the intrinsic rate of the SA node, about 100/min. A normal resting sinus rate, often 60 to 70/min in a resting adult, is lower than that, so at rest vagal tone outweighs sympathetic tone and holds the rate down.</p>
+</details></li>
+<li><p>ACh at M<sub>2</sub> receptors slows the SA node by two separate mechanisms. Name them, and say which part of the action potential each one changes.</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>It opens K<sup>+</sup> channels, which moves the membrane toward E<sub>K</sub>, so each cycle starts from a more negative potential. And it lowers cAMP through G<sub>i</sub>, which reduces the funny current (I<sub>f</sub>) and flattens the phase 4 slope. Both lengthen the time to threshold. The K<sup>+</sup> effect does not cause the cAMP effect; they run in parallel.</p>
+</details></li>
+<li><p>A drug blocks α<sub>1</sub> receptors and nothing else. Predict the effect on SVR, on P<sub>ms</sub>, and, before any reflex, on MAP.</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>α<sub>1</sub> receptors carry most sympathetic constriction of both arterioles and veins. Blocking them dilates the arterioles, so SVR falls, and dilates the veins, so unstressed volume rises, stressed volume falls and P<sub>ms</sub> falls. With SVR down and venous return down, MAP falls. The baroreflex then raises heart rate through β<sub>1</sub> receptors, which the drug does not block.</p>
+</details></li>
+<li><p>During a sudden scare, blood flow to the leg muscles rises while blood flow to the skin falls. Both beds receive the same sympathetic signal. Explain the difference.</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>The adrenal medulla releases epinephrine into the blood. Skeletal muscle arterioles have many β<sub>2</sub> receptors, and epinephrine acting on them raises cAMP, inhibits MLCK and dilates the vessels. Skin arterioles have mainly α<sub>1</sub> receptors, so epinephrine and neural NE constrict them. Neural NE alone would constrict both beds; the dilation in muscle comes from circulating epinephrine.</p>
+</details></li>
+<li><p>A drug constricts arterioles and veins through α<sub>1</sub> receptors and has no direct action on the heart. MAP rises within a minute. Trace the reflex. Why does heart rate fall, and why does MAP come back down only part of the way?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>The higher pressure stretches the carotid sinus and aortic arch, and baroreceptor firing rises in CN IX and CN X. The NTS excites the CVLM, which inhibits the RVLM, so sympathetic outflow falls, and the NTS excites the vagal neurons, so vagal outflow rises. At the SA node there is more ACh at M<sub>2</sub> receptors and less norepinephrine at β<sub>1</sub> receptors: K<sup>+</sup> channels open, cAMP falls, phase 4 flattens, and the rate falls. The drug has no action on the heart, so the whole fall in rate comes from the reflex. The vascular arm of the reflex helps less than usual, because withdrawing sympathetic tone cannot relax vessels whose α<sub>1</sub> receptors the drug is still activating. Most of the correction comes from the slower, weaker heart, and MAP stays above where it started.</p>
+</details></li>
+<li><p>A sedated patient stops breathing for two minutes. PO<sub>2</sub> falls and PCO<sub>2</sub> rises. Does the heart rate rise or fall, and why is this different from what happens at high altitude?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>It falls. With ventilation fixed at zero, the peripheral chemoreceptor reflex acts alone: it increases vagal outflow to the heart (bradycardia) and sympathetic outflow to the vessels (vasoconstriction). At altitude the person can breathe. Low PO<sub>2</sub> drives ventilation up through the peripheral chemoreceptors (the central chemoreceptors do not sense O<sub>2</sub>), and lung stretch and the lower PCO<sub>2</sub> inhibit vagal outflow. The net response there is tachycardia.</p>
+</details></li>
+</ol>
+</section>
+<section id="key-equations" class="level2" data-number="10.10">
+<h2 data-number="10.10" class="anchored" data-anchor-id="key-equations"><span class="header-section-number">10.10</span> Key equations</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Equation</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CO = (MAP − CVP)/SVR; MAP ≈ CO × SVR</td>
+<td>Arterial pressure from flow and resistance (CVP ≈ P<sub>ra</sub>)</td>
+</tr>
+<tr class="even">
+<td>CO = HR × SV; SV = EDV − ESV</td>
+<td>Where heart rate, venous return and contractility enter</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sources" class="level2" data-number="10.11">
+<h2 data-number="10.11" class="anchored" data-anchor-id="sources"><span class="header-section-number">10.11</span> Sources</h2>
+<p>This chapter follows the 2026 Autonomic and Extrinsic Regulation lecture for MEDC 30504 and draws on the peer-educator notes and the course’s 2018 notes on autonomic regulation, corrected and updated. All figures were drawn for this book.</p>
+<div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-w6-katona" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Katona, McLean, Dighton, Guz. <em>Heart Rate After Atropine and Propranolol in Nonathletes</em>. Graph shown in the 2026 Autonomic and Extrinsic Regulation lecture.</div>
+</div>
+<div id="ref-w6-boron2012" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Boron WF, Boulpaep EL. <em>Medical Physiology</em>. 2, updated ed. Saunders Elsevier; 2012.</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/beiser-lab\.github\.io\/tcop-web-book\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+<nav class="page-navigation" aria-label="Page">
+  <div class="nav-page nav-page-previous">
+      <a href="../cardiovascular/control-of-co.html" class="pagination-link" aria-label="Control of Cardiac Output and Ventricular-Vascular Coupling">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Control of Cardiac Output and Ventricular-Vascular Coupling</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../cardiovascular/ecg-ionic-basis.html" class="pagination-link" aria-label="EKG I: Ionic Basis">
+        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">EKG I: Ionic Basis</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

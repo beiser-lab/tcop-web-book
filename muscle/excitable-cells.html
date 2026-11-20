@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>3&nbsp; Membrane Potentials and Excitable Cells – Tissues, Cells &amp; Organ Physiology</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../cardiovascular/hemodynamics.html" rel="next">
+<link href="../cardiovascular/cardiac-pump.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-01a495efc5497ac6e3f5457e7ed18e65.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Toolbar">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../cardiovascular/cv-overview.html">Cardiovascular physiology, excitable cells and muscle</a></li><li class="breadcrumb-item"><a href="../muscle/excitable-cells.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Membrane Potentials and Excitable Cells</span></a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Tissues, Cells &amp; Organ Physiology</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About this book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Cardiovascular physiology, excitable cells and muscle</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cv-overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cardiovascular Physiology Overview</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cardiac-pump.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Cardiac Pump</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/excitable-cells.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Membrane Potentials and Excitable Cells</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/hemodynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Peripheral Circulation and Hemodynamics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/skeletal-muscle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Skeletal Muscle</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/smooth-muscle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Smooth Muscle</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/cardiac-muscle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Cardiac Muscle</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/microcirculation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Microcirculation and Local Control</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/control-of-co.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Control of Cardiac Output and Ventricular-Vascular Coupling</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ans-extrinsic-control.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">ANS and Extrinsic Control</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ecg-ionic-basis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">EKG I: Ionic Basis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ecg-vectors-axis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">ECG II: Vectors and Mean Electrical Axis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ecg-interpretation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">EKG III: Clinical Interpretation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cv-integration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Cardiovascular Integration and Adaptation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cv-exercise.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Cardiovascular Adaptation to Exercise</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/coronary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Coronary Circulation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/special-circulations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Other Special Circulations</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/pulmonary-circulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Pulmonary Circulation</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Pulmonary physiology</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/respiratory-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Respiratory Physiology Introduction</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/statics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Respiratory Statics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/dynamics-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Respiratory Dynamics I</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/dynamics-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Respiratory Dynamics II</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/ventilation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Alveolar Ventilation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/diffusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Diffusion</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/o2-co2-transport.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Transport of O<sub>2</sub> and CO<sub>2</sub> in the Blood</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/acid-base.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Pulmonary Acid Base</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/ventilation-perfusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Ventilation and Perfusion</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/control-of-ventilation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Control of Pulmonary Ventilation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/exercise.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Physiology of Exercise</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/respiratory-consultant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Think Like a Respiratory Consultant</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#the-cell-membrane" id="toc-the-cell-membrane" class="nav-link active" data-scroll-target="#the-cell-membrane"><span class="header-section-number">3.1</span> The cell membrane</a>
+  <ul class="collapse">
+  <li><a href="#how-molecules-cross" id="toc-how-molecules-cross" class="nav-link" data-scroll-target="#how-molecules-cross"><span class="header-section-number">3.1.1</span> How molecules cross</a></li>
+  <li><a href="#channels-are-selective" id="toc-channels-are-selective" class="nav-link" data-scroll-target="#channels-are-selective"><span class="header-section-number">3.1.2</span> Channels are selective</a></li>
+  <li><a href="#channels-are-gated" id="toc-channels-are-gated" class="nav-link" data-scroll-target="#channels-are-gated"><span class="header-section-number">3.1.3</span> Channels are gated</a></li>
+  </ul></li>
+  <li><a href="#membrane-potentials" id="toc-membrane-potentials" class="nav-link" data-scroll-target="#membrane-potentials"><span class="header-section-number">3.2</span> Membrane potentials</a>
+  <ul class="collapse">
+  <li><a href="#how-a-potential-is-generated" id="toc-how-a-potential-is-generated" class="nav-link" data-scroll-target="#how-a-potential-is-generated"><span class="header-section-number">3.2.1</span> How a potential is generated</a></li>
+  <li><a href="#measuring-it" id="toc-measuring-it" class="nav-link" data-scroll-target="#measuring-it"><span class="header-section-number">3.2.2</span> Measuring it</a></li>
+  </ul></li>
+  <li><a href="#calculating-membrane-potentials" id="toc-calculating-membrane-potentials" class="nav-link" data-scroll-target="#calculating-membrane-potentials"><span class="header-section-number">3.3</span> Calculating membrane potentials</a>
+  <ul class="collapse">
+  <li><a href="#the-nernst-equation-one-ion" id="toc-the-nernst-equation-one-ion" class="nav-link" data-scroll-target="#the-nernst-equation-one-ion"><span class="header-section-number">3.3.1</span> The Nernst equation: one ion</a></li>
+  <li><a href="#the-goldman-hodgkin-katz-equation-several-ions-at-once" id="toc-the-goldman-hodgkin-katz-equation-several-ions-at-once" class="nav-link" data-scroll-target="#the-goldman-hodgkin-katz-equation-several-ions-at-once"><span class="header-section-number">3.3.2</span> The Goldman-Hodgkin-Katz equation: several ions at once</a></li>
+  <li><a href="#what-the-pump-does" id="toc-what-the-pump-does" class="nav-link" data-scroll-target="#what-the-pump-does"><span class="header-section-number">3.3.3</span> What the pump does</a></li>
+  </ul></li>
+  <li><a href="#changes-in-membrane-potential" id="toc-changes-in-membrane-potential" class="nav-link" data-scroll-target="#changes-in-membrane-potential"><span class="header-section-number">3.4</span> Changes in membrane potential</a></li>
+  <li><a href="#excitable-cells-and-the-action-potential" id="toc-excitable-cells-and-the-action-potential" class="nav-link" data-scroll-target="#excitable-cells-and-the-action-potential"><span class="header-section-number">3.5</span> Excitable cells and the action potential</a>
+  <ul class="collapse">
+  <li><a href="#the-steps" id="toc-the-steps" class="nav-link" data-scroll-target="#the-steps"><span class="header-section-number">3.5.1</span> The steps</a></li>
+  <li><a href="#all-or-none" id="toc-all-or-none" class="nav-link" data-scroll-target="#all-or-none"><span class="header-section-number">3.5.2</span> All or none</a></li>
+  <li><a href="#different-cells-different-action-potentials" id="toc-different-cells-different-action-potentials" class="nav-link" data-scroll-target="#different-cells-different-action-potentials"><span class="header-section-number">3.5.3</span> Different cells, different action potentials</a></li>
+  </ul></li>
+  <li><a href="#how-the-action-potential-spreads" id="toc-how-the-action-potential-spreads" class="nav-link" data-scroll-target="#how-the-action-potential-spreads"><span class="header-section-number">3.6</span> How the action potential spreads</a></li>
+  <li><a href="#check-your-understanding" id="toc-check-your-understanding" class="nav-link" data-scroll-target="#check-your-understanding"><span class="header-section-number">3.7</span> Check your understanding</a></li>
+  <li><a href="#key-equations" id="toc-key-equations" class="nav-link" data-scroll-target="#key-equations"><span class="header-section-number">3.8</span> Key equations</a></li>
+  <li><a href="#sources" id="toc-sources" class="nav-link" data-scroll-target="#sources"><span class="header-section-number">3.9</span> Sources</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../cardiovascular/cv-overview.html">Cardiovascular physiology, excitable cells and muscle</a></li><li class="breadcrumb-item"><a href="../muscle/excitable-cells.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Membrane Potentials and Excitable Cells</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Membrane Potentials and Excitable Cells</span></h1>
+<p class="subtitle lead">Why the inside of a cell is negative, and how excitable cells use that to signal</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Goals for this chapter
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Describe the lipid bilayer and the ways molecules cross it: simple diffusion, channels, carriers and active transport.</li>
+<li>Explain how an ion gradient and a selectively permeable membrane create a membrane potential.</li>
+<li>Use the Nernst equation to find an ion’s equilibrium potential, and the Goldman-Hodgkin-Katz (GHK) equation to see why the resting potential sits near E<sub>K</sub>.</li>
+<li>Define depolarization, repolarization and hyperpolarization, and say which way a given channel moves the membrane potential.</li>
+<li>List the steps of the action potential (threshold, rising phase, falling phase, rebound hyperpolarization, refractory period) and the channels behind each.</li>
+<li>Explain how an action potential spreads along a cell and why it travels in one direction.</li>
+</ul>
+<p>Ion concentrations and exact millivolt values are context. What you need is the direction each ion moves and why. You should be able to use the 61 mV log<sub>10</sub> form of the Nernst equation for a single ion. You do not need the GHK arithmetic.</p>
+</div>
+</div>
+<p>Every lecture in the muscle block, and the autonomic lecture after it, assumes you know what a membrane potential is and how a cell changes it. A skeletal muscle fiber contracts because an action potential reaches it. A heart cell’s plateau, a pacemaker’s slow drift toward threshold and a smooth muscle cell’s response to norepinephrine are all changes in membrane potential made by opening or closing particular channels. This chapter builds that foundation in the order the lecture does: the membrane, the resting potential and how to calculate it, how the potential changes, and the action potential.</p>
+<section id="the-cell-membrane" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="the-cell-membrane"><span class="header-section-number">3.1</span> The cell membrane</h2>
+<p>The plasma membrane is a lipid bilayer. Each phospholipid has a polar head group that faces water and two nonpolar hydrocarbon tails. The tails of the two layers face each other, so the middle of the membrane is a thin oily sheet with no charge.</p>
+<p>That oily core decides what can cross on its own. Small nonpolar molecules (O<sub>2</sub>, CO<sub>2</sub>, and lipid-soluble substances such as benzene) dissolve in it and diffuse straight through. Water crosses slowly. Ions, glucose, amino acids and proteins cannot cross without help: an ion carries a charge and a shell of water molecules, and moving it into a nonpolar layer costs far too much energy. So the membrane is a barrier to charge, and that is what lets it hold a voltage.</p>
+<section id="how-molecules-cross" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="how-molecules-cross"><span class="header-section-number">3.1.1</span> How molecules cross</h3>
+<p><a href="#fig-excitable-cells-transport" class="quarto-xref">Figure&nbsp;<span>3.1</span></a> shows the four routes the lecture covers.</p>
+<div id="fig-excitable-cells-transport" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-excitable-cells-transport-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/excitable-cells/transport.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-excitable-cells-transport-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.1: Ways across the membrane. Simple diffusion through the lipid, channel-mediated diffusion through a water-filled pore, and carrier-mediated transport, in which the carrier binds its cargo on one side and changes shape to release it on the other, are all passive: they move substances down their electrochemical gradient and use no ATP. Active transport, such as the Na<sup>+</sup>/K<sup>+</sup> ATPase, moves ions against their gradients and uses ATP. Course figure.
+</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>Simple diffusion</strong> through the lipid, for small nonpolar molecules.</li>
+<li><strong>Channel-mediated diffusion.</strong> A channel is a protein with a water-filled pore that lets particular ions through, down their gradient.</li>
+<li><strong>Carrier-mediated transport.</strong> A carrier binds its cargo on one side, changes shape, and releases it on the other. The carrier is highly specific, and if it simply moves its cargo down a gradient it needs no ATP (glucose entering most cells works this way).</li>
+<li><strong>Active transport.</strong> A pump uses energy from ATP to move ions <em>against</em> their gradients. The one that matters most here is the <strong>Na<sup>+</sup>/K<sup>+</sup> ATPase</strong>, which moves 3 Na<sup>+</sup> out of the cell and 2 K<sup>+</sup> in for each ATP it splits.</li>
+</ul>
+<p>The first three are passive: they only let substances move down the gradient that already exists. The pump is what makes the gradients in the first place and keeps them there.</p>
+</section>
+<section id="channels-are-selective" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="channels-are-selective"><span class="header-section-number">3.1.2</span> Channels are selective</h3>
+<p>A K<sup>+</sup> channel lets K<sup>+</sup> through and keeps Na<sup>+</sup> out, even though Na<sup>+</sup> is the smaller ion:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Ion</th>
+<th>Radius (Å)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Li<sup>+</sup></td>
+<td>0.60</td>
+</tr>
+<tr class="even">
+<td>Na<sup>+</sup></td>
+<td>0.95</td>
+</tr>
+<tr class="odd">
+<td>K<sup>+</sup></td>
+<td>1.33</td>
+</tr>
+<tr class="even">
+<td>Rb<sup>+</sup></td>
+<td>1.48</td>
+</tr>
+</tbody>
+</table>
+<p>So selectivity cannot be a matter of size alone. Channels select by:</p>
+<ul>
+<li><strong>Size and shape</strong> of the narrowest part of the pore, the selectivity filter.</li>
+<li><strong>Charge.</strong> Charged amino acids lining the pore attract ions of the opposite charge and repel ions of the same charge, so cation channels exclude anions.</li>
+<li><strong>Hydration energy.</strong> In water each ion is wrapped in a shell of water molecules, and a small ion holds its shell more tightly than a large one, because its charge is concentrated in a smaller space. To pass through a narrow filter an ion has to shed some of that water, and the channel has to pay the energy back by letting the ion bind to oxygen atoms lining the pore. The K<sup>+</sup> channel’s filter is the right size for those oxygens to sit where the water molecules around a K<sup>+</sup> ion would sit. Na<sup>+</sup> is too small to touch all of them, so it cannot make up the energy of losing its tightly held water, and it stays out.</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>If you are comparing with the slides
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The ion-radius table on the slides lists Rb<sup>+</sup> as 2.48 Å. The radius of Rb<sup>+</sup> is about 1.48 Å. The point of the table is unchanged: the radii rise from Li<sup>+</sup> to Rb<sup>+</sup>, and the channel that passes K<sup>+</sup> excludes the smaller Na<sup>+</sup>.</p>
+</div>
+</div>
+</section>
+<section id="channels-are-gated" class="level3" data-number="3.1.3">
+<h3 data-number="3.1.3" class="anchored" data-anchor-id="channels-are-gated"><span class="header-section-number">3.1.3</span> Channels are gated</h3>
+<p>Most channels open and close, which is called <em>gating</em>. The lecture lists these kinds of gate:</p>
+<ul>
+<li><strong>Ligand-gated</strong> channels open when a molecule binds them. The nicotinic acetylcholine receptor at the neuromuscular junction is one (see <a href="../muscle/skeletal-muscle.html">Skeletal Muscle</a>).</li>
+<li><strong>Voltage-gated</strong> channels open or close when the membrane potential changes. These make the action potential.</li>
+<li><strong>Thermally gated</strong> channels respond to temperature, as in temperature-sensing nerve endings.</li>
+<li><strong>Mechanically gated</strong> channels open when the membrane is stretched or deformed, as in touch receptors and the stretch-activated channels of smooth muscle.</li>
+</ul>
+<p>Some channels have no gate and stay open. The K<sup>+</sup> “leak” channels that are open at rest are the most important of these.</p>
+</section>
+</section>
+<section id="membrane-potentials" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="membrane-potentials"><span class="header-section-number">3.2</span> Membrane potentials</h2>
+<p>The <em>membrane potential</em> (V<sub>m</sub>) is the difference in electrical potential across the membrane. In this course it is always given as the inside relative to the outside, so “−70 mV” means the inside is 70 mV negative to the outside.</p>
+<p>It is stored energy: it pushes cations into the cell and anions out, and the cell uses that push to move ions and to drive transporters. And it is a signal: neurons, muscle cells and some secretory cells communicate by changing it.</p>
+<section id="how-a-potential-is-generated" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="how-a-potential-is-generated"><span class="header-section-number">3.2.1</span> How a potential is generated</h3>
+<p>The lecture builds the idea in two compartments (<a href="#fig-excitable-cells-two-compartment" class="quarto-xref">Figure&nbsp;<span>3.2</span></a>). Compartment 1 holds 0.15 M KCl and compartment 2 holds 0.15 M NaCl. Each side is electrically neutral. The membrane between them lets only K<sup>+</sup> through.</p>
+<div id="fig-excitable-cells-two-compartment" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-excitable-cells-two-compartment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/excitable-cells/two-compartment.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-excitable-cells-two-compartment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.2: How a K<sup>+</sup> gradient across a membrane permeable only to K<sup>+</sup> makes a potential. (A) At the start each side is neutral. (B) K<sup>+</sup> diffuses from compartment 1 into compartment 2, down its concentration gradient. Each K<sup>+</sup> that crosses leaves a Cl<sup>−</sup> behind, so a thin layer of negative charge builds on the compartment 1 side of the membrane and positive charge on the other. That charge pulls K<sup>+</sup> back. At equilibrium the electrical pull balances the concentration gradient and net K<sup>+</sup> flux is zero. Course figure, after the lecture’s model.
+</figcaption>
+</figure>
+</div>
+<p>K<sup>+</sup> is much more concentrated in compartment 1, so it starts to diffuse into compartment 2. Cl<sup>−</sup> cannot follow. Each K<sup>+</sup> that crosses carries a positive charge away and leaves a negative charge behind, so compartment 1 becomes negative. Now two forces act on K<sup>+</sup>:</p>
+<ul>
+<li>the <strong>concentration (chemical) gradient</strong>, pushing K<sup>+</sup> from compartment 1 to compartment 2, and</li>
+<li>the <strong>electrical gradient</strong>, pulling the positive K<sup>+</sup> back toward the negative compartment 1.</li>
+</ul>
+<p>As more K<sup>+</sup> crosses, the electrical force grows until it exactly balances the chemical force. Net K<sup>+</sup> movement stops. The voltage at which that happens is the <strong>equilibrium potential</strong> for K<sup>+</sup>, E<sub>K</sub>. The two forces together are the <em>electrochemical gradient</em>, and at the equilibrium potential it is zero for that ion.</p>
+<p>Very few ions have to move. In a cell about 10 µm across, only about one K<sup>+</sup> in tens of thousands crosses to set up the potential, so the concentrations inside and outside do not measurably change. And the separated charge sits in a thin layer right against the two faces of the membrane. The bulk solution on each side stays neutral.</p>
+<p>A cell works the same way. Compartment 1 is the cytosol, rich in K<sup>+</sup>, and compartment 2 is the extracellular fluid, rich in Na<sup>+</sup>. At rest the membrane is far more permeable to K<sup>+</sup> than to anything else, through K<sup>+</sup> leak channels, so K<sup>+</sup> leaves, the inside becomes negative, and the resting potential sits close to E<sub>K</sub>.</p>
+</section>
+<section id="measuring-it" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="measuring-it"><span class="header-section-number">3.2.2</span> Measuring it</h3>
+<p>The membrane potential is measured with a fine glass microelectrode filled with salt solution and pushed through the membrane, compared with a reference electrode in the extracellular fluid. As the tip enters the cell the reading drops from 0 to the resting potential, about −70 mV in a neuron and about −90 mV in skeletal and cardiac muscle cells.</p>
+</section>
+</section>
+<section id="calculating-membrane-potentials" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="calculating-membrane-potentials"><span class="header-section-number">3.3</span> Calculating membrane potentials</h2>
+<section id="the-nernst-equation-one-ion" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="the-nernst-equation-one-ion"><span class="header-section-number">3.3.1</span> The Nernst equation: one ion</h3>
+<p>The Nernst equation gives the equilibrium potential for one ion: the voltage at which the electrical work of moving that ion across the membrane exactly balances the chemical work of moving it down its concentration gradient. You do not need to know the derivation.</p>
+<p><span class="math display">\[E_X = \frac{RT}{zF}\ln\frac{[X]_o}{[X]_i}\]</span></p>
+<p>R is the gas constant, T the absolute temperature, F Faraday’s constant, z the charge on the ion including its sign (+1 for K<sup>+</sup> and Na<sup>+</sup>, +2 for Ca<sup>2+</sup>, −1 for Cl<sup>−</sup>), and [X]<sub>o</sub> and [X]<sub>i</sub> the concentrations outside and inside. At body temperature RT/F is about 26.7 mV. Switching to base-10 logarithms multiplies the constant by 2.303, and the equation becomes</p>
+<p><span class="math display">\[E_X = \frac{61\ \text{mV}}{z}\log_{10}\frac{[X]_o}{[X]_i} \quad \text{at } 37\ ^\circ\text{C}\]</span></p>
+<p>At room temperature the constant is about 58 to 59 mV. A tenfold concentration gradient of a monovalent cation gives an equilibrium potential 61 mV in size at body temperature, negative inside if the ion is more concentrated inside.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>If you are comparing with the slides
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The slides and the notes write E<sub>X</sub> = 61 ln([X]<sub>o</sub>/[X]<sub>i</sub>) (and 59 ln at room temperature). The 61 mV constant goes with log<sub>10</sub>, not the natural log. With ln the constant is RT/F, about 26.7 mV. Using 61 with ln gives potentials 2.3 times too large: for K<sup>+</sup> it would give about −216 mV instead of −94 mV. The slide’s key also defines z as the number of electrons transferred. In the Nernst equation z is the charge on the ion.</p>
+</div>
+</div>
+<p>Using typical concentrations for a mammalian cell (these come from the 2018 course notes):</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Ion</th>
+<th>Outside (mM)</th>
+<th>Inside (mM)</th>
+<th>Equilibrium potential (37 °C)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>K<sup>+</sup></td>
+<td>4.5</td>
+<td>155</td>
+<td>E<sub>K</sub> = 61 log(4.5/155) ≈ −94 mV</td>
+</tr>
+<tr class="even">
+<td>Na<sup>+</sup></td>
+<td>145</td>
+<td>12</td>
+<td>E<sub>Na</sub> = 61 log(145/12) ≈ +66 mV</td>
+</tr>
+<tr class="odd">
+<td>Cl<sup>−</sup></td>
+<td>123</td>
+<td>5 to 25 (7 used here)</td>
+<td>E<sub>Cl</sub> = −61 log(123/7) ≈ −76 mV</td>
+</tr>
+<tr class="even">
+<td>Ca<sup>2+</sup></td>
+<td>1.8</td>
+<td>about 0.0001 (100 nM)</td>
+<td>E<sub>Ca</sub> = 30.5 log(1.8/0.0001) ≈ +130 mV</td>
+</tr>
+</tbody>
+</table>
+<p>Read each equilibrium potential as the voltage that ion is “trying” to bring the membrane to (<a href="#fig-excitable-cells-equilibrium" class="quarto-xref">Figure&nbsp;<span>3.3</span></a>). When channels for an ion open, that ion flows in the direction that moves V<sub>m</sub> toward its equilibrium potential. At −70 mV, opening Na<sup>+</sup> or Ca<sup>2+</sup> channels lets positive charge in and depolarizes the cell. Opening K<sup>+</sup> channels lets K<sup>+</sup> out and moves V<sub>m</sub> toward −94 mV.</p>
+<div id="fig-excitable-cells-equilibrium" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-excitable-cells-equilibrium-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/excitable-cells/equilibrium-potentials.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-excitable-cells-equilibrium-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.3: Equilibrium potentials for the four main ions (left) and resting potentials of neurons and muscle cells (right), from the concentrations in the table. Resting potentials lie close to E<sub>K</sub> because the resting membrane is most permeable to K<sup>+</sup>. Course figure.
+</figcaption>
+</figure>
+</div>
+<p>The driving force on an ion is the difference between where the membrane is and where that ion’s equilibrium potential is, V<sub>m</sub> − E<sub>X</sub>. At rest the driving force on Na<sup>+</sup> is huge (−70 − 66 = −136 mV, inward), and on K<sup>+</sup> it is small (−70 − (−94) = +24 mV, outward). Only the small Na<sup>+</sup> leak, driven by that large inward force, keeps the resting cell from going all the way to E<sub>K</sub>.</p>
+</section>
+<section id="the-goldman-hodgkin-katz-equation-several-ions-at-once" class="level3" data-number="3.3.2">
+<h3 data-number="3.3.2" class="anchored" data-anchor-id="the-goldman-hodgkin-katz-equation-several-ions-at-once"><span class="header-section-number">3.3.2</span> The Goldman-Hodgkin-Katz equation: several ions at once</h3>
+<p>A real membrane is permeable to more than one ion, so the resting potential is not any single equilibrium potential. The GHK equation combines them, weighting each ion’s concentrations by its permeability (P):</p>
+<p><span class="math display">\[V_m = \frac{RT}{F}\ln\frac{P_K[K^+]_o + P_{Na}[Na^+]_o + P_{Cl}[Cl^-]_i}{P_K[K^+]_i + P_{Na}[Na^+]_i + P_{Cl}[Cl^-]_o}\]</span></p>
+<p>Cl<sup>−</sup> appears upside down (inside on top, outside on the bottom) because it carries a negative charge. That flip is the only trick in the equation.</p>
+<p>The meaning is simpler than the formula: <strong>the membrane potential sits nearest the equilibrium potential of the ion the membrane is most permeable to.</strong> If only one P is large, the GHK equation collapses into the Nernst equation for that ion.</p>
+<p>Permeability ratios were first measured in the squid giant axon: at rest, P<sub>K</sub> : P<sub>Na</sub> : P<sub>Cl</sub> is about 1 : 0.04 : 0.45. Borrowing those ratios and using the mammalian concentrations in the table, the GHK equation gives about −73 mV, close to the −70 mV of a neuron. During an action potential P<sub>Na</sub> rises far above P<sub>K</sub>, and V<sub>m</sub> swings toward E<sub>Na</sub>. Nothing about the concentrations changed. Only the permeabilities did. That is the whole basis of electrical signaling: cells change their membrane potential by opening and closing channels.</p>
+<p>Muscle cells rest nearer −90 mV than neurons do because their resting Na<sup>+</sup> permeability is even smaller relative to K<sup>+</sup> (in heart and skeletal muscle, inward-rectifier K<sup>+</sup> channels carry the resting K<sup>+</sup> current).</p>
+</section>
+<section id="what-the-pump-does" class="level3" data-number="3.3.3">
+<h3 data-number="3.3.3" class="anchored" data-anchor-id="what-the-pump-does"><span class="header-section-number">3.3.3</span> What the pump does</h3>
+<p>The Na<sup>+</sup>/K<sup>+</sup> ATPase does not make the resting potential directly in any large way. Because it moves 3 Na<sup>+</sup> out for 2 K<sup>+</sup> in, it pushes out one net positive charge per cycle and adds a few millivolts of extra negativity. Its main job is to keep the gradients. At rest Na<sup>+</sup> leaks in and K<sup>+</sup> leaks out all the time, and without the pump the gradients would slowly run down and the resting potential with them. So the resting potential needs both kinds of transport: the pump to build the gradients, and the open K<sup>+</sup> channels to turn the K<sup>+</sup> gradient into a voltage.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>A common mistake
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>“More K<sup>+</sup> inside the cell makes the inside more positive.” It does the opposite. The inside is negative <em>because</em> K<sup>+</sup> leaves. What sets the resting potential is the K<sup>+</sup> gradient, [K<sup>+</sup>]<sub>o</sub>/[K<sup>+</sup>]<sub>i</sub>. A bigger gradient (more K<sup>+</sup> inside or less outside) makes E<sub>K</sub>, and the resting potential, more negative. A smaller gradient, as when extracellular K<sup>+</sup> rises, makes them less negative.</p>
+</div>
+</div>
+<p><strong>Extracellular K<sup>+</sup>.</strong> Because the resting membrane is mostly a K<sup>+</sup> electrode, its potential is very sensitive to the K<sup>+</sup> outside the cell, which is small and can change. Doubling extracellular K<sup>+</sup> from 4.5 to 9 mM moves E<sub>K</sub> from about −94 to −75 mV, and the GHK resting potential from about −73 to −65 mV: the cell is partly depolarized. Raising intracellular K<sup>+</sup> by the same amount would barely matter, because 4.5 mM more on top of 155 mM hardly changes the ratio. This is why high plasma K<sup>+</sup> (hyperkalemia) is dangerous for the heart. The ECG chapters follow what partial depolarization does to cardiac action potentials (<a href="../cardiovascular/ecg-ionic-basis.html">EKG I: Ionic Basis</a>).</p>
+</section>
+</section>
+<section id="changes-in-membrane-potential" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="changes-in-membrane-potential"><span class="header-section-number">3.4</span> Changes in membrane potential</h2>
+<p>The membrane potential is not static. The lecture uses three words, always with the inside of the cell as the frame of reference:</p>
+<ul>
+<li><strong>Depolarization:</strong> the membrane potential becomes less negative (moves toward zero, or past it).</li>
+<li><strong>Repolarization:</strong> it returns toward the resting potential after a depolarization.</li>
+<li><strong>Hyperpolarization:</strong> it becomes more negative than rest.</li>
+</ul>
+<p>The lecture’s examples are two transmitters that open ligand-gated channels on a neuron (<a href="#fig-excitable-cells-changes" class="quarto-xref">Figure&nbsp;<span>3.4</span></a> A).</p>
+<ul>
+<li><strong>Glutamate</strong> opens cation channels. At −70 mV the driving force on Na<sup>+</sup> is large and inward, so Na<sup>+</sup> enters and the cell depolarizes.</li>
+<li><strong>GABA</strong> opens Cl<sup>−</sup> channels. When E<sub>Cl</sub> is more negative than the membrane potential (here −76 versus −70 mV), Cl<sup>−</sup> enters, negative charge builds inside, and the cell hyperpolarizes.</li>
+</ul>
+<p>The rule behind both is the one from the Nernst section: an open channel pulls V<sub>m</sub> toward the equilibrium potential of the ion it passes.</p>
+<div id="fig-excitable-cells-changes" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-excitable-cells-changes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/excitable-cells/potential-changes.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-excitable-cells-changes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.4: Changes in membrane potential. (A) A depolarization from glutamate and a hyperpolarization from GABA, schematic. (B) Graded potentials in a model neuron (Hodgkin-Huxley model, adjusted to rest at −70 mV with threshold near −55 mV). Larger stimuli give larger depolarizations, each fading back to rest. Two stimuli close together summate, reach threshold, and fire an action potential. Course figure.
+</figcaption>
+</figure>
+</div>
+<p>These local changes are <em>graded</em>: a bigger stimulus opens more channels and gives a bigger change. They also fade, in time as the charge leaks back out through resting channels, and with distance as current spreads along the cell. Two of them that overlap in time can add together, which is called summation (<a href="#fig-excitable-cells-changes" class="quarto-xref">Figure&nbsp;<span>3.4</span></a> B). If the sum reaches <strong>threshold</strong>, the cell fires an action potential.</p>
+</section>
+<section id="excitable-cells-and-the-action-potential" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="excitable-cells-and-the-action-potential"><span class="header-section-number">3.5</span> Excitable cells and the action potential</h2>
+<p>An <em>excitable cell</em> is a cell that can generate an action potential. The course covers four: neurons, skeletal muscle, cardiac muscle and smooth muscle.</p>
+<p>An <strong>action potential</strong> is a rapid, transient change in membrane potential. In outline:</p>
+<ol type="1">
+<li>A stimulus depolarizes the membrane.</li>
+<li>If it reaches threshold, voltage-gated channels open.</li>
+<li>A rapid, self-limited influx of positive ions depolarizes the cell.</li>
+<li>An efflux of positive ions repolarizes it.</li>
+</ol>
+<section id="the-steps" class="level3" data-number="3.5.1">
+<h3 data-number="3.5.1" class="anchored" data-anchor-id="the-steps"><span class="header-section-number">3.5.1</span> The steps</h3>
+<p><a href="#fig-excitable-cells-ap" class="quarto-xref">Figure&nbsp;<span>3.5</span></a> follows a neuron’s action potential through the five steps on the lecture slides.</p>
+<div id="fig-excitable-cells-ap" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-excitable-cells-ap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/excitable-cells/action-potential.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-excitable-cells-ap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.5: The action potential in a model neuron, with the five steps from the lecture. (A) Membrane potential. Numbers mark (1) threshold, (2) the rising phase, (3) the falling phase and (4) rebound hyperpolarization. The tan band is the absolute refractory period, from the upstroke through repolarization, and the gray band is the relative refractory period (5) during rebound hyperpolarization. Both are drawn schematically. (B) Na<sup>+</sup> and K<sup>+</sup> conductances. Hodgkin-Huxley model of the squid giant axon, adjusted so rest is −70 mV and threshold about −55 mV. The slides’ figures use somewhat different resting and threshold values; the sequence of events is what matters. Course figure.
+</figcaption>
+</figure>
+</div>
+<p><strong>1. Reaching threshold.</strong> A stimulus depolarizes the membrane. Depolarization opens some voltage-gated Na<sup>+</sup> channels, Na<sup>+</sup> enters, and that depolarizes the membrane further. Below threshold, the outward K<sup>+</sup> leak wins and the membrane falls back to rest. At <strong>threshold</strong> (about −55 mV in a neuron), the Na<sup>+</sup> entering just outruns the K<sup>+</sup> leaving, and the process feeds itself.</p>
+<p><strong>2. Rising phase.</strong> Now positive feedback takes over: depolarization opens Na<sup>+</sup> channels, Na<sup>+</sup> entry depolarizes the membrane further, which opens more Na<sup>+</sup> channels. P<sub>Na</sub> jumps far above P<sub>K</sub>, and the membrane potential races toward E<sub>Na</sub>. It overshoots zero, but it never quite reaches E<sub>Na</sub>, because K<sup>+</sup> is still leaving.</p>
+<p><strong>3. Falling phase.</strong> Within about a millisecond the Na<sup>+</sup> channels <em>inactivate</em>: a separate inactivation gate plugs the pore, so they close even though the membrane is still depolarized. At the same time the voltage-gated K<sup>+</sup> channels, which open more slowly than Na<sup>+</sup> channels, are now open. K<sup>+</sup> leaves and repolarizes the cell.</p>
+<p><strong>4. Rebound hyperpolarization.</strong> The voltage-gated K<sup>+</sup> channels also close slowly, so for a few milliseconds P<sub>K</sub> is higher than at rest and the membrane dips below the resting potential, toward E<sub>K</sub>. The notes call this the after-hyperpolarization.</p>
+<p><strong>5. Refractory period.</strong> An inactivated Na<sup>+</sup> channel cannot be opened again by depolarization. It has to return to the closed state first, and it only does that once the membrane has repolarized. The Na<sup>+</sup> channel therefore has three states:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>State</th>
+<th>Activation gate</th>
+<th>Inactivation gate</th>
+<th>Can depolarization open it?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Closed (resting)</td>
+<td>shut</td>
+<td>open</td>
+<td>yes</td>
+</tr>
+<tr class="even">
+<td>Open</td>
+<td>open</td>
+<td>open</td>
+<td>(already open)</td>
+</tr>
+<tr class="odd">
+<td>Inactivated</td>
+<td>open</td>
+<td>shut</td>
+<td>no, until the membrane repolarizes</td>
+</tr>
+</tbody>
+</table>
+<p>During the <strong>absolute refractory period</strong>, from the upstroke through repolarization, so many Na<sup>+</sup> channels are inactivated that no stimulus, however large, can fire a second action potential. During the <strong>relative refractory period</strong> that follows, enough Na<sup>+</sup> channels have recovered to fire one, but some are still inactivated and extra K<sup>+</sup> channels are still open, so it takes a stronger-than-normal stimulus. The refractory period limits how often a cell can fire and keeps an action potential moving forward (below).</p>
+<p>The voltage-gated K<sup>+</sup> channel in this picture has only two states, closed and open. It opens and closes slowly, but it does not inactivate.</p>
+</section>
+<section id="all-or-none" class="level3" data-number="3.5.2">
+<h3 data-number="3.5.2" class="anchored" data-anchor-id="all-or-none"><span class="header-section-number">3.5.2</span> All or none</h3>
+<p>An action potential is an all-or-none event. A stimulus that does not reach threshold produces only a graded potential that fades. Any stimulus that does reach threshold produces a full action potential, and a bigger stimulus does not make a bigger one. The size and shape come from the cell’s channels, not from the stimulus. Cells signal “more” by firing more often, not by firing larger spikes.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>If you are comparing with the slides
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The notes say that once threshold is reached “every channel in that region participates.” Not every channel opens. What is all-or-none is the event: once the positive feedback starts, the spike runs to its full size no matter how strong the stimulus was.</p>
+</div>
+</div>
+</section>
+<section id="different-cells-different-action-potentials" class="level3" data-number="3.5.3">
+<h3 data-number="3.5.3" class="anchored" data-anchor-id="different-cells-different-action-potentials"><span class="header-section-number">3.5.3</span> Different cells, different action potentials</h3>
+<p>Action potentials come from time- and voltage-dependent changes in ionic permeability, and different excitable cells have different channels, so their action potentials look different (<a href="#fig-excitable-cells-shapes" class="quarto-xref">Figure&nbsp;<span>3.6</span></a>).</p>
+<div id="fig-excitable-cells-shapes" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-excitable-cells-shapes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/excitable-cells/ap-shapes.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-excitable-cells-shapes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.6: Action potentials of three excitable cells, each on its own time scale. (A) Neuron: about 2 ms. (B) Skeletal muscle fiber: about 5 ms, from a resting potential near −90 mV. (C) Ventricular muscle cell: about 250 ms, with a long plateau. Panel A is from the model in <a href="#fig-excitable-cells-ap" class="quarto-xref">Figure&nbsp;<span>3.5</span></a>; panels B and C are drawn to match the lecture’s comparison. Course figure.
+</figcaption>
+</figure>
+</div>
+<ul>
+<li>A <strong>neuron’s</strong> action potential lasts about 2 ms.</li>
+<li>A <strong>skeletal muscle fiber’s</strong> lasts a few milliseconds and starts from about −90 mV. It is over long before the muscle reaches peak force, which matters for tetanus (<a href="../muscle/skeletal-muscle.html">Skeletal Muscle</a>).</li>
+<li>A <strong>ventricular muscle cell’s</strong> (a fast-response action potential) lasts about 250 ms. After a fast Na<sup>+</sup> upstroke, L-type Ca<sup>2+</sup> channels open and Ca<sup>2+</sup> entry balances K<sup>+</sup> exit for a long <em>plateau</em>. The plateau keeps the cell refractory until the contraction is nearly over, which is why heart muscle cannot be tetanized. The <a href="../muscle/cardiac-muscle.html">Cardiac Muscle</a> chapter and <a href="../cardiovascular/ecg-ionic-basis.html">EKG I: Ionic Basis</a> cover its phases (0 to 4) and currents.</li>
+</ul>
+<p>Not every excitable cell uses Na<sup>+</sup> for its upstroke. Cardiac pacemaker cells in the SA and AV nodes have slow-response action potentials whose upstroke is carried by L-type Ca<sup>2+</sup> channels, and most smooth muscle also depends on Ca<sup>2+</sup> entry.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>A common mistake
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Applying the neuron’s rules to every cell. A Na<sup>+</sup> channel blocker slows the upstroke and the conduction of action potentials in cells that depend on Na<sup>+</sup> channels (neurons, skeletal muscle, atrial and ventricular muscle, Purkinje fibers). It does not slow the SA node, so it does not slow the heart rate, and AV nodal conduction depends on the L-type Ca<sup>2+</sup> current, not on Na<sup>+</sup> channels. Before predicting what a drug or an ion change does, ask which channel carries the upstroke in <em>that</em> cell.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="how-the-action-potential-spreads" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="how-the-action-potential-spreads"><span class="header-section-number">3.6</span> How the action potential spreads</h2>
+<p>An action potential starts at one spot and has to travel along the cell. It does this by local current (<a href="#fig-excitable-cells-propagation" class="quarto-xref">Figure&nbsp;<span>3.7</span></a>).</p>
+<div id="fig-excitable-cells-propagation" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-excitable-cells-propagation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/excitable-cells/propagation.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-excitable-cells-propagation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.7: How an action potential spreads, at one instant. (A) Membrane potential along the axon. (B) Inside the active region Na<sup>+</sup> is entering. That positive charge flows along the inside of the cell in both directions and returns outside, completing local circuits. Ahead of the active region the current depolarizes resting membrane to threshold, so it fires next. Behind it the Na<sup>+</sup> channels are inactivated, so the same current cannot re-excite that membrane. Farther behind, the membrane is recovering and is still relatively refractory. Drawn from the model in <a href="#fig-excitable-cells-ap" class="quarto-xref">Figure&nbsp;<span>3.5</span></a>; the rise ahead of the wave is schematic. Course figure.
+</figcaption>
+</figure>
+</div>
+<p>Where the membrane is firing, Na<sup>+</sup> pours in and the inside becomes positive. That charge spreads along the inside of the cell to the neighboring membrane, which is still at rest, and returns through the extracellular fluid, completing a <em>local circuit</em>. The current depolarizes the neighboring membrane. When that membrane reaches threshold, its own Na<sup>+</sup> channels open and it fires, and then it depolarizes the next patch. Each patch regenerates the full action potential, so the signal does not fade with distance the way a graded potential does.</p>
+<p>The current spreads backward as well as forward. The membrane just behind has fired a moment earlier and its Na<sup>+</sup> channels are inactivated, so it is refractory and cannot fire again. That is why an action potential travels in one direction, away from where it started.</p>
+<p>Between cells the same local currents can pass through <em>gap junctions</em>: channels that connect the cytoplasm of neighboring cells. Heart muscle cells and single-unit smooth muscle cells are linked this way, so an action potential in one cell spreads to the next and the tissue contracts together. Skeletal muscle fibers are not coupled. Each fiber is fired by its own motor nerve ending.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Background: two kinds of receptor
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The 2026 lecture does not cover this. The autonomic and smooth muscle lectures build on it.</p>
+<ul>
+<li><strong>Ligand-gated ion channels</strong> (also called ionotropic receptors) are themselves channels. The transmitter binds, the channel opens, and the membrane potential changes within a millisecond. Examples: the nicotinic acetylcholine receptor at the neuromuscular junction and on autonomic ganglion cells, and the glutamate and GABA receptors above.</li>
+<li><strong>G protein-coupled receptors</strong> are not channels. The ligand changes the receptor’s shape, the receptor activates a G protein on the inside of the membrane, and the G protein changes an enzyme or a channel. The response is slower, and it is amplified, because one receptor activates many G proteins and each enzyme makes many second-messenger molecules. Adrenergic and muscarinic receptors are G protein-coupled.</li>
+</ul>
+<p>The <a href="../muscle/smooth-muscle.html">Smooth Muscle</a> and <a href="../cardiovascular/ans-extrinsic-control.html">ANS and Extrinsic Control</a> chapters show which G protein each adrenergic and muscarinic receptor uses.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="check-your-understanding" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="check-your-understanding"><span class="header-section-number">3.7</span> Check your understanding</h2>
+<ol type="1">
+<li><p>A membrane separates 100 mM KCl (side 1) from 10 mM KCl (side 2) at 37 °C and is permeable only to K<sup>+</sup>. Which side becomes negative, and by how much?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>K<sup>+</sup> diffuses from side 1 to side 2, leaving Cl<sup>−</sup> behind, so side 1 becomes negative. With side 1 as “inside,” E<sub>K</sub> = 61 log(10/100) = −61 mV. If you used the slide’s form of the equation, 61 × ln(0.1), you would get −140 mV: 61 goes with log<sub>10</sub>.</p>
+</details></li>
+<li><p>Why is a neuron’s resting potential (−70 mV) close to E<sub>K</sub> (−94 mV) and far from E<sub>Na</sub> (+66 mV), and why is it not exactly at E<sub>K</sub>?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>At rest the membrane is far more permeable to K<sup>+</sup> than to Na<sup>+</sup> (about 25 to 1), and the GHK equation weights each ion by its permeability, so V<sub>m</sub> sits near E<sub>K</sub>. A small Na<sup>+</sup> permeability remains, and Na<sup>+</sup> has a large inward driving force, so the trickle of Na<sup>+</sup> in pulls V<sub>m</sub> a little positive of E<sub>K</sub>. The pump keeps the gradients from running down.</p>
+</details></li>
+<li><p>Extracellular K<sup>+</sup> rises from 4.5 to 7 mM, with intracellular K<sup>+</sup> at 155 mM. Calculate the new E<sub>K</sub>. The resting potential moves from about −73 to about −68 mV. Why does V<sub>m</sub> move less than E<sub>K</sub> does?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>E<sub>K</sub> = 61 log(7/155) ≈ −82 mV, so E<sub>K</sub> moves about 12 mV, from −94 to −82. The resting potential moves only about 5 mV. V<sub>m</sub> is a permeability-weighted balance of all the ions the membrane passes, not E<sub>K</sub> itself. K<sup>+</sup> has by far the largest permeability, so V<sub>m</sub> moves the same way as E<sub>K</sub>, but the Na<sup>+</sup> and Cl<sup>−</sup> terms in the GHK equation have not changed, and they hold V<sub>m</sub> back from following the whole way. A cell whose resting Na<sup>+</sup> permeability is even smaller relative to K<sup>+</sup>, such as a muscle cell resting near −90 mV, follows E<sub>K</sub> more closely.</p>
+</details></li>
+<li><p>In the heart, acetylcholine from the vagus nerve opens extra K<sup>+</sup> channels in SA node cells. Which way does K<sup>+</sup> move, and which way does the membrane potential change?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>An open channel pulls V<sub>m</sub> toward the equilibrium potential of the ion it passes. SA node cells sit well positive of E<sub>K</sub>, so K<sup>+</sup> leaves the cell, positive charge is lost from the inside, and V<sub>m</sub> moves toward E<sub>K</sub>: the cell hyperpolarizes. Starting each cycle from a more negative potential is one way acetylcholine slows the heart (<a href="../cardiovascular/ans-extrinsic-control.html">ANS and Extrinsic Control</a>).</p>
+</details></li>
+<li><p>A drug removes the Na<sup>+</sup> channel’s inactivation gate, so the channels stay open as long as the membrane is depolarized. Which phases of the action potential change?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>The rising phase is unchanged, because it depends on activation. The falling phase is slowed or lost, because Na<sup>+</sup> inactivation is one of the two things that end the spike, so the cell stays depolarized much longer, held up by continued Na<sup>+</sup> entry against the K<sup>+</sup> current. Inactivation is also what makes the membrane behind a moving action potential refractory, so that protection would be lost as well.</p>
+</details></li>
+<li><p>The neuromuscular junction sits near the middle of a skeletal muscle fiber. Why does the fiber’s action potential travel toward both ends, and why does neither wave turn back?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>Local current spreads both ways from the active membrane at the end plate. Membrane on both sides is at rest and can be brought to threshold, so two action potentials leave in opposite directions, one toward each end. Once each wave is moving, the membrane behind it has just fired and its Na<sup>+</sup> channels are inactivated, so it is refractory. Only the membrane ahead can fire, and the waves stop when they reach the ends of the fiber.</p>
+</details></li>
+</ol>
+</section>
+<section id="key-equations" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="key-equations"><span class="header-section-number">3.8</span> Key equations</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Equation</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>E<sub>X</sub> = (RT/zF) ln([X]<sub>o</sub>/[X]<sub>i</sub>) = (61 mV/z) log<sub>10</sub>([X]<sub>o</sub>/[X]<sub>i</sub>) at 37 °C</td>
+<td>Equilibrium potential of one ion (Nernst)</td>
+</tr>
+<tr class="even">
+<td>V<sub>m</sub> = (RT/F) ln[(P<sub>K</sub>[K<sup>+</sup>]<sub>o</sub> + P<sub>Na</sub>[Na<sup>+</sup>]<sub>o</sub> + P<sub>Cl</sub>[Cl<sup>−</sup>]<sub>i</sub>)/(P<sub>K</sub>[K<sup>+</sup>]<sub>i</sub> + P<sub>Na</sub>[Na<sup>+</sup>]<sub>i</sub> + P<sub>Cl</sub>[Cl<sup>−</sup>]<sub>o</sub>)]</td>
+<td>Membrane potential with several permeable ions (GHK)</td>
+</tr>
+<tr class="odd">
+<td>Driving force = V<sub>m</sub> − E<sub>X</sub></td>
+<td>Which way an ion moves when its channels open</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sources" class="level2" data-number="3.9">
+<h2 data-number="3.9" class="anchored" data-anchor-id="sources"><span class="header-section-number">3.9</span> Sources</h2>
+<p>This chapter follows the 2026 Membrane Potentials and Excitable Cells lecture for MEDC 30504 and draws on the peer-educator notes and the 2018 course notes, corrected and updated. All figures were drawn for this book.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/beiser-lab\.github\.io\/tcop-web-book\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+<nav class="page-navigation" aria-label="Page">
+  <div class="nav-page nav-page-previous">
+      <a href="../cardiovascular/cardiac-pump.html" class="pagination-link" aria-label="The Cardiac Pump">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Cardiac Pump</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../cardiovascular/hemodynamics.html" class="pagination-link" aria-label="Peripheral Circulation and Hemodynamics">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Peripheral Circulation and Hemodynamics</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>9&nbsp; Control of Cardiac Output and Ventricular-Vascular Coupling – Tissues, Cells &amp; Organ Physiology</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../cardiovascular/ans-extrinsic-control.html" rel="next">
+<link href="../cardiovascular/microcirculation.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-01a495efc5497ac6e3f5457e7ed18e65.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Toolbar">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../cardiovascular/cv-overview.html">Cardiovascular physiology, excitable cells and muscle</a></li><li class="breadcrumb-item"><a href="../cardiovascular/control-of-co.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Control of Cardiac Output and Ventricular-Vascular Coupling</span></a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Tissues, Cells &amp; Organ Physiology</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About this book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Cardiovascular physiology, excitable cells and muscle</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cv-overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cardiovascular Physiology Overview</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cardiac-pump.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Cardiac Pump</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/excitable-cells.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Membrane Potentials and Excitable Cells</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/hemodynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Peripheral Circulation and Hemodynamics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/skeletal-muscle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Skeletal Muscle</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/smooth-muscle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Smooth Muscle</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/cardiac-muscle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Cardiac Muscle</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/microcirculation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Microcirculation and Local Control</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/control-of-co.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Control of Cardiac Output and Ventricular-Vascular Coupling</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ans-extrinsic-control.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">ANS and Extrinsic Control</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ecg-ionic-basis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">EKG I: Ionic Basis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ecg-vectors-axis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">ECG II: Vectors and Mean Electrical Axis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ecg-interpretation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">EKG III: Clinical Interpretation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cv-integration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Cardiovascular Integration and Adaptation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cv-exercise.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Cardiovascular Adaptation to Exercise</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/coronary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Coronary Circulation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/special-circulations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Other Special Circulations</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/pulmonary-circulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Pulmonary Circulation</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Pulmonary physiology</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/respiratory-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Respiratory Physiology Introduction</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/statics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Respiratory Statics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/dynamics-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Respiratory Dynamics I</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/dynamics-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Respiratory Dynamics II</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/ventilation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Alveolar Ventilation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/diffusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Diffusion</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/o2-co2-transport.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Transport of O<sub>2</sub> and CO<sub>2</sub> in the Blood</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/acid-base.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Pulmonary Acid Base</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/ventilation-perfusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Ventilation and Perfusion</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/control-of-ventilation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Control of Pulmonary Ventilation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/exercise.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Physiology of Exercise</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/respiratory-consultant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Think Like a Respiratory Consultant</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#systolic-diastolic-and-pulse-pressure" id="toc-systolic-diastolic-and-pulse-pressure" class="nav-link active" data-scroll-target="#systolic-diastolic-and-pulse-pressure"><span class="header-section-number">9.1</span> Systolic, diastolic and pulse pressure</a></li>
+  <li><a href="#the-elastic-aorta-a-hydraulic-filter" id="toc-the-elastic-aorta-a-hydraulic-filter" class="nav-link" data-scroll-target="#the-elastic-aorta-a-hydraulic-filter"><span class="header-section-number">9.2</span> The elastic aorta: a hydraulic filter</a></li>
+  <li><a href="#pressure-along-the-circulation" id="toc-pressure-along-the-circulation" class="nav-link" data-scroll-target="#pressure-along-the-circulation"><span class="header-section-number">9.3</span> Pressure along the circulation</a></li>
+  <li><a href="#compliance-not-just-a-property-of-the-relaxed-ventricle" id="toc-compliance-not-just-a-property-of-the-relaxed-ventricle" class="nav-link" data-scroll-target="#compliance-not-just-a-property-of-the-relaxed-ventricle"><span class="header-section-number">9.4</span> Compliance: not just a property of the relaxed ventricle</a></li>
+  <li><a href="#control-of-blood-pressure" id="toc-control-of-blood-pressure" class="nav-link" data-scroll-target="#control-of-blood-pressure"><span class="header-section-number">9.5</span> Control of blood pressure</a>
+  <ul class="collapse">
+  <li><a href="#pulse-pressure-in-shock" id="toc-pulse-pressure-in-shock" class="nav-link" data-scroll-target="#pulse-pressure-in-shock"><span class="header-section-number">9.5.1</span> Pulse pressure in shock</a></li>
+  </ul></li>
+  <li><a href="#what-controls-cardiac-output" id="toc-what-controls-cardiac-output" class="nav-link" data-scroll-target="#what-controls-cardiac-output"><span class="header-section-number">9.6</span> What controls cardiac output?</a>
+  <ul class="collapse">
+  <li><a href="#a-simple-model-of-the-circulation" id="toc-a-simple-model-of-the-circulation" class="nav-link" data-scroll-target="#a-simple-model-of-the-circulation"><span class="header-section-number">9.6.1</span> A simple model of the circulation</a></li>
+  </ul></li>
+  <li><a href="#mean-systemic-filling-pressure-pms" id="toc-mean-systemic-filling-pressure-pms" class="nav-link" data-scroll-target="#mean-systemic-filling-pressure-pms"><span class="header-section-number">9.7</span> Mean systemic filling pressure (P<sub>ms</sub>)</a>
+  <ul class="collapse">
+  <li><a href="#stressed-and-unstressed-volume" id="toc-stressed-and-unstressed-volume" class="nav-link" data-scroll-target="#stressed-and-unstressed-volume"><span class="header-section-number">9.7.1</span> Stressed and unstressed volume</a></li>
+  </ul></li>
+  <li><a href="#the-vascular-function-curve" id="toc-the-vascular-function-curve" class="nav-link" data-scroll-target="#the-vascular-function-curve"><span class="header-section-number">9.8</span> The vascular function curve</a></li>
+  <li><a href="#the-cardiac-function-curve" id="toc-the-cardiac-function-curve" class="nav-link" data-scroll-target="#the-cardiac-function-curve"><span class="header-section-number">9.9</span> The cardiac function curve</a></li>
+  <li><a href="#ventricular-vascular-coupling-the-operating-point" id="toc-ventricular-vascular-coupling-the-operating-point" class="nav-link" data-scroll-target="#ventricular-vascular-coupling-the-operating-point"><span class="header-section-number">9.10</span> Ventricular-vascular coupling: the operating point</a></li>
+  <li><a href="#finding-the-cause" id="toc-finding-the-cause" class="nav-link" data-scroll-target="#finding-the-cause"><span class="header-section-number">9.11</span> Finding the cause</a></li>
+  <li><a href="#two-pumps-in-series" id="toc-two-pumps-in-series" class="nav-link" data-scroll-target="#two-pumps-in-series"><span class="header-section-number">9.12</span> Two pumps in series</a></li>
+  <li><a href="#a-puzzle-orthostatic-hypotension-with-a-normal-heart" id="toc-a-puzzle-orthostatic-hypotension-with-a-normal-heart" class="nav-link" data-scroll-target="#a-puzzle-orthostatic-hypotension-with-a-normal-heart"><span class="header-section-number">9.13</span> A puzzle: orthostatic hypotension with a normal heart</a></li>
+  <li><a href="#check-your-understanding" id="toc-check-your-understanding" class="nav-link" data-scroll-target="#check-your-understanding"><span class="header-section-number">9.14</span> Check your understanding</a></li>
+  <li><a href="#key-equations" id="toc-key-equations" class="nav-link" data-scroll-target="#key-equations"><span class="header-section-number">9.15</span> Key equations</a></li>
+  <li><a href="#sources" id="toc-sources" class="nav-link" data-scroll-target="#sources"><span class="header-section-number">9.16</span> Sources</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../cardiovascular/cv-overview.html">Cardiovascular physiology, excitable cells and muscle</a></li><li class="breadcrumb-item"><a href="../cardiovascular/control-of-co.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Control of Cardiac Output and Ventricular-Vascular Coupling</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Control of Cardiac Output and Ventricular-Vascular Coupling</span></h1>
+<p class="subtitle lead">How the heart and the vessels together set cardiac output</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Goals for this chapter
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Explain how the elastic aorta works as a hydraulic filter (the Windkessel effect).</li>
+<li>Name the determinants of arterial blood volume and relate them to blood pressure.</li>
+<li>Explain what pulse pressure tells you, and why it is narrow in low-output shock and wide in high-output shock.</li>
+<li>Define mean systemic filling pressure (P<sub>ms</sub>) and stressed and unstressed volume.</li>
+<li>Name the determinants of venous return and draw the vascular function curve.</li>
+<li>Find the operating point where the cardiac and vascular function curves meet, and work out from the way it moves which curve shifted.</li>
+</ul>
+<p>Names, dates and the exact values in figure captions are context, not things to memorize.</p>
+</div>
+</div>
+<p>So far the heart and the blood vessels have had their own chapters. This lecture puts them back together by asking what sets the arterial blood pressure and what sets the cardiac output. The first answer turns on the arteries: how much blood is in them and how stiff they are. The second turns on the veins, because the heart can only pump out what comes back to it. The last part of the chapter draws the heart and the vessels on one graph and uses it to predict what happens when either one changes. The <a href="../cardiovascular/ans-extrinsic-control.html">ANS and Extrinsic Control</a> chapter, next, covers the nerves that move these curves.</p>
+<section id="systolic-diastolic-and-pulse-pressure" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="systolic-diastolic-and-pulse-pressure"><span class="header-section-number">9.1</span> Systolic, diastolic and pulse pressure</h2>
+<p>A blood pressure of 120/80 mm Hg gives two numbers. The <strong>systolic</strong> pressure (SBP), 120, is the peak in the arteries during ejection. The <strong>diastolic</strong> pressure (DBP), 80, is the lowest pressure, reached just before the next ejection. The difference is the <strong>pulse pressure</strong>:</p>
+<p><span class="math display">\[\text{PP} = \text{SBP} - \text{DBP}\]</span></p>
+<p>Here PP is 40 mm Hg. Mean arterial pressure (MAP) is the time average of the waveform. At a normal heart rate it is about DBP + ⅓(SBP − DBP), about 93 mm Hg here (<a href="../cardiovascular/hemodynamics.html">Peripheral Circulation and Hemodynamics</a>).</p>
+</section>
+<section id="the-elastic-aorta-a-hydraulic-filter" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="the-elastic-aorta-a-hydraulic-filter"><span class="header-section-number">9.2</span> The elastic aorta: a hydraulic filter</h2>
+<p>The left ventricle ejects only during systole, about a third of each cycle at rest, yet blood flows through the capillaries all the time. During ejection the aorta and large arteries stretch and take up part of the stroke volume. During diastole the aortic valve is closed, and the stretched walls recoil and push the stored blood on toward the arterioles. The compliant arteries, together with the resistance of the arterioles downstream, smooth a pulsatile inflow into a nearly steady outflow. The course calls this a <strong>hydraulic filter</strong>. It is also called the <strong>Windkessel effect</strong>, after the German word for the air chamber that old fire engines used to turn the strokes of a hand pump into a steady jet.</p>
+<p>If the arteries were rigid pipes, flow to the tissues would stop in diastole. A stiffer aorta stores less, so outflow and pressure swing more. The <a href="../cardiovascular/hemodynamics.html">Peripheral Circulation and Hemodynamics</a> chapter models this as an RC filter and draws the flows and pressures.</p>
+<p>The filter has these benefits:</p>
+<ul>
+<li><strong>It allows perfusion during diastole.</strong> This matters most for the heart. Contraction squeezes the vessels inside the left ventricular wall, so most left coronary flow happens in diastole, driven by the diastolic pressure the aorta maintains (<a href="../cardiovascular/coronary.html">Coronary Circulation</a>).</li>
+<li><strong>It converts intermittent flow into continuous flow.</strong></li>
+<li><strong>It protects the microcirculation.</strong> By the time blood reaches the capillaries, the pressure swings are gone and the mean pressure is low.</li>
+</ul>
+<p>In the lecture’s thought experiment, a valve lets pulses of water into an elastic tube. If twice as much water passed with each opening, the peak (“systolic”) pressure and the pulse pressure would both rise: stroke volume is a major determinant of both.</p>
+</section>
+<section id="pressure-along-the-circulation" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="pressure-along-the-circulation"><span class="header-section-number">9.3</span> Pressure along the circulation</h2>
+<p>From the aorta to the capillaries, pulsations shrink and mean pressure falls, most steeply across the small arteries and arterioles, where the resistance is. The pulsations are damped by the hydraulic filter: the compliance of the arteries working against the resistance of the small arteries and arterioles. The large aggregate cross-sectional area of the capillaries slows the blood, but it is not what causes the drop in pressure (<a href="../cardiovascular/hemodynamics.html">Peripheral Circulation and Hemodynamics</a>).</p>
+<p>Among the large arteries, though, systolic pressure and pulse pressure <em>rise</em> from the aorta toward the periphery, so a cuff on the arm reads a higher systolic pressure than the aortic root. The pressure wave travels along the arterial wall much faster than the blood itself moves, reflects back from branch points and narrowing vessels, and adds to the forward (incident) wave. Recorded pressure is incident wave plus reflected wave. This is a real change in the waveform, not a cuff artifact.</p>
+<p>Both statements are true. Pulse pressure is amplified along the large conduit arteries, from the aorta out to the arm and leg, and damped across the arterioles and capillaries.</p>
+</section>
+<section id="compliance-not-just-a-property-of-the-relaxed-ventricle" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="compliance-not-just-a-property-of-the-relaxed-ventricle"><span class="header-section-number">9.4</span> Compliance: not just a property of the relaxed ventricle</h2>
+<p>Compliance is the change in volume for a given change in pressure. Its reciprocal, elastance, describes stiffness:</p>
+<p><span class="math display">\[C = \frac{\Delta V}{\Delta P} \qquad\qquad E = \frac{\Delta P}{\Delta V}\]</span></p>
+<p>Arteries have compliance too. With age, elastin in the aortic wall fragments and collagen and calcium accumulate (the slides call it age-related medial degeneration with elastocalcinosis), so the same added volume raises the pressure more in older aortas.</p>
+<p>That gives the course’s rule for pulse pressure (<a href="#fig-control-of-co-pulse-pressure" class="quarto-xref">Figure&nbsp;<span>9.1</span></a>). At a given stroke volume, a stiffer aorta produces a wider pulse pressure, and at a given compliance, a larger stroke volume does:</p>
+<p><span class="math display">\[\text{PP} \approx \frac{\text{SV}}{C_{\text{arterial}}}\]</span></p>
+<div id="fig-control-of-co-pulse-pressure" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-control-of-co-pulse-pressure-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/control-of-co/pulse-pressure-compliance.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-control-of-co-pulse-pressure-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.1: The same stroke volume in a compliant and a stiff aorta. In the young, compliant aorta, 70 mL raises pressure from 80 to 120 mm Hg. In the older, stiff aorta, the same 70 mL raises it from 75 to about 157 mm Hg. Stiffness widens the pulse pressure. Straight lines over the working range, with illustrative compliances of 1.75 and 0.85 mL/mm Hg. Course figure.
+</figcaption>
+</figure>
+</div>
+<p>The approximation leaves out runoff during ejection and wave reflection, but it gets the direction right. With age, pulse wave velocity rises, so the reflected wave comes back sooner, during systole instead of diastole, and adds to the systolic peak. The aorta behaves more like a stiff pipe than a rubber hose, and systolic and pulse pressure rise with age: age-related hypertension. The slides note that the rise in arterial stiffness with age is greater in women, with elastin and collagen changes after menopause.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Pulse pressure rises with</th>
+<th>Pulse pressure falls with</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>↑ stroke volume</td>
+<td>↓ stroke volume</td>
+</tr>
+<tr class="even">
+<td>↓ arterial compliance (stiffer arteries)</td>
+<td>↑ arterial compliance</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="control-of-blood-pressure" class="level2" data-number="9.5">
+<h2 data-number="9.5" class="anchored" data-anchor-id="control-of-blood-pressure"><span class="header-section-number">9.5</span> Control of blood pressure</h2>
+<p>You can raise the pressure in a water balloon by adding water or by making the balloon stiffer. Arterial pressure works the same way: it depends on the <strong>arterial blood volume</strong> and the <strong>arterial compliance</strong>. Compliance changes over years. Minute to minute, the body controls blood pressure by changing arterial blood volume.</p>
+<p>Arterial blood volume is set by blood in (cardiac output) and blood out, which runs off through the arterioles at a rate set by their resistance, SVR. If inflow briefly exceeds outflow, arterial volume and pressure rise until runoff catches up. So:</p>
+<ul>
+<li>↑ CO → ↑ arterial blood volume → ↑ BP (if SVR is unchanged)</li>
+<li>↑ SVR → ↑ arterial blood volume → ↑ BP (if CO is unchanged): constricted arterioles hold blood in the arteries longer</li>
+</ul>
+<p>At steady state, inflow and outflow are equal, and the relation between them is Ohm’s law for the systemic circulation, as the course writes it:</p>
+<p><span class="math display">\[\text{CO} = \frac{\text{MAP} - \text{CVP}}{\text{SVR}} \qquad\qquad \text{MAP} \approx \text{CO} \times \text{SVR}\]</span></p>
+<p>CVP is the measured central venous pressure, which is about equal to right atrial pressure, P<sub>ra</sub>, the pressure the curves below use. The shortcut on the right works when CVP is small; when it is high, leave it in (<a href="../cardiovascular/hemodynamics.html">Peripheral Circulation and Hemodynamics</a> has worked examples).</p>
+<section id="pulse-pressure-in-shock" class="level3" data-number="9.5.1">
+<h3 data-number="9.5.1" class="anchored" data-anchor-id="pulse-pressure-in-shock"><span class="header-section-number">9.5.1</span> Pulse pressure in shock</h3>
+<p>Low blood pressure has more than one pattern, and pulse pressure helps tell them apart (<a href="#fig-control-of-co-shock" class="quarto-xref">Figure&nbsp;<span>9.2</span></a>).</p>
+<div id="fig-control-of-co-shock" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-control-of-co-shock-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/control-of-co/shock-pulse-pressure.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-control-of-co-shock-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.2: Pulse pressure in three states, from a two-element Windkessel model (C dP/dt = inflow − P/R) with the same arterial compliance in each. Low-output hypotension (hemorrhage): a small stroke volume and a raised SVR give a narrow pulse pressure. High-output hypotension (sepsis): a low SVR lets the arteries run off quickly in diastole, so DBP falls, and a large stroke volume gives a wide pulse pressure, even though MAP is low. Pressures are model values; the lecture’s normal is 120/80. Course figure.
+</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>Low-output hypotension.</strong> After hemorrhage, or when the heart pumps weakly, stroke volume is small and pulse pressure is narrow. Arterioles constrict (a sympathetic reflex covered in the next chapter, <a href="../cardiovascular/ans-extrinsic-control.html">ANS and Extrinsic Control</a>), so SVR rises and partly compensates for the low CO.</li>
+<li><strong>High-output hypotension.</strong> In the pattern of septic shock the lecture shows, the arterioles are dilated and SVR is low. Blood runs off the arteries quickly, so diastolic pressure falls, and the heart, facing a low afterload, ejects a large stroke volume. Pulse pressure is wide even though MAP is low. A high CO partly compensates for the low SVR. Sepsis can also be a low-output state when volume is depleted or the heart is depressed.</li>
+</ul>
+<p>The lesson on the slide is CO ≠ BP: a low pressure can come with a high output. The slide also writes PP ∝ SV ∝ CO. Read it as: at a given arterial compliance and heart rate, pulse pressure tracks stroke volume, and so gives a clue to cardiac output, not a measurement of it. The full shock pictures are in <a href="../cardiovascular/cv-integration.html">Cardiovascular Integration and Adaptation</a>.</p>
+</section>
+</section>
+<section id="what-controls-cardiac-output" class="level2" data-number="9.6">
+<h2 data-number="9.6" class="anchored" data-anchor-id="what-controls-cardiac-output"><span class="header-section-number">9.6</span> What controls cardiac output?</h2>
+<p>Cardiac output is heart rate times stroke volume:</p>
+<p><span class="math display">\[\text{CO} = \text{HR} \times \text{SV}\]</span></p>
+<p>Stroke volume depends on preload, afterload and contractility. Preload is the stretch of the ventricle before it contracts (end-diastolic volume). Afterload is the load it ejects against, roughly arterial pressure. Contractility is the force the muscle can develop at a given preload and afterload (course errata entry 2). Very fast heart rates can lower stroke volume by cutting filling time.</p>
+<p>The rest of the chapter is about preload. The heart cannot set its own preload: how much blood returns to it depends on the vessels, so the vessels share control of cardiac output with the heart. Guyton and his colleagues showed this in the 1950s by replacing the heart of an animal with a pump and changing the vessels <span class="citation" data-cites="w6-guyton1955">[<a href="cv-overview.html#ref-w6-guyton1955" role="doc-biblioref">1</a>]</span>.</p>
+<section id="a-simple-model-of-the-circulation" class="level3" data-number="9.6.1">
+<h3 data-number="9.6.1" class="anchored" data-anchor-id="a-simple-model-of-the-circulation"><span class="header-section-number">9.6.1</span> A simple model of the circulation</h3>
+<p>The lecture’s model:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Part</th>
+<th>Compliance</th>
+<th>Resistance</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Arterial system</td>
+<td>Low</td>
+<td>High</td>
+<td>Stores pressure</td>
+</tr>
+<tr class="even">
+<td>Veins</td>
+<td>About 20 times arterial</td>
+<td>Low</td>
+<td>Store volume</td>
+</tr>
+<tr class="odd">
+<td>Heart</td>
+<td></td>
+<td></td>
+<td>A sump pump that moves blood from the veins to the arteries</td>
+</tr>
+</tbody>
+</table>
+<p>About two thirds of the blood volume sits in the veins. The rest is spread among the arteries, capillaries, heart and lungs. The course’s short version: arteries control pressure, veins control volume.</p>
+</section>
+</section>
+<section id="mean-systemic-filling-pressure-pms" class="level2" data-number="9.7">
+<h2 data-number="9.7" class="anchored" data-anchor-id="mean-systemic-filling-pressure-pms"><span class="header-section-number">9.7</span> Mean systemic filling pressure (P<sub>ms</sub>)</h2>
+<p>Start with the heart pumping 5 L/min. Mean arterial pressure is about 102 mm Hg and venous pressure about 2 mm Hg. Now stop the heart. Blood keeps running off from the arteries into the veins, but nothing moves it back. Arterial pressure falls and venous pressure rises until they are equal and flow stops. In the lecture’s numbers they meet at <strong>7 mm Hg</strong> (<a href="#fig-control-of-co-equilibration" class="quarto-xref">Figure&nbsp;<span>9.3</span></a>).</p>
+<div id="fig-control-of-co-equilibration" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-control-of-co-equilibration-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/control-of-co/equilibration-pms.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-control-of-co-equilibration-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.3: Arterial and venous pressure at each cardiac output, from the lecture’s table. With the heart stopped (CO 0), both pressures equal P<sub>ms</sub>, 7 mm Hg. At 5 L/min, arterial pressure is 102 and venous pressure 2. Course figure.
+</figcaption>
+</figure>
+</div>
+<p>That pressure is the <strong>mean systemic filling pressure, P<sub>ms</sub></strong>: the pressure throughout the systemic circulation when cardiac output is zero. The slides also call it P<sub>mc</sub> (mean circulatory pressure) or MCFP (mean circulatory filling pressure). Strictly, those terms include the pulmonary circulation and P<sub>ms</sub> refers to the systemic circulation, but the lecture treats them as the same. This book uses P<sub>ms</sub>.</p>
+<p>Why does arterial pressure fall 95 mm Hg while venous pressure rises only 5? The same volume of blood leaves the arteries and enters the veins, and by C = ΔV/ΔP the pressure change for that volume is ΔV/C. The veins are about 20 times as compliant, so their pressure changes about one twentieth as much.</p>
+<p>P<sub>ms</sub> cannot be measured in a routine clinical setting. A CVP line measures right atrial pressure, not P<sub>ms</sub>.</p>
+<section id="stressed-and-unstressed-volume" class="level3" data-number="9.7.1">
+<h3 data-number="9.7.1" class="anchored" data-anchor-id="stressed-and-unstressed-volume"><span class="header-section-number">9.7.1</span> Stressed and unstressed volume</h3>
+<p>What sets P<sub>ms</sub>? Pour blood into an empty, floppy vein, and at first the pressure stays near zero. The blood just rounds out the vessel. Only once the vessel is full does more blood stretch the wall, and then pressure rises with each added milliliter (<a href="#fig-control-of-co-stressed" class="quarto-xref">Figure&nbsp;<span>9.4</span></a>).</p>
+<ul>
+<li><strong>Unstressed volume</strong> is the volume needed to round out the vessels before any pressure is generated.</li>
+<li><strong>Stressed volume</strong> is everything above that. It stretches the walls, and the walls’ recoil makes the pressure.</li>
+</ul>
+<p>These terms describe how blood volume relates to the capacity of the vessels. They are not two separate pools of blood. Applying C = ΔV/ΔP to the whole systemic circulation, with no flow:</p>
+<p><span class="math display">\[P_{ms} \approx \frac{\text{stressed volume}}{\text{compliance}}\]</span></p>
+<div id="fig-control-of-co-stressed" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-control-of-co-stressed-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/control-of-co/stressed-unstressed.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-control-of-co-stressed-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.4: Stressed and unstressed volume for the systemic circulation. Venoconstriction shrinks the unstressed volume, so the same volume has more stressed volume and a higher P<sub>ms</sub>. Brackets mark the unstressed (3.6 L) and stressed (1.4 L) volumes at normal venous tone. Illustrative values (5 L in the systemic circulation, compliance 0.2 L/mm Hg). Course figure.
+</figcaption>
+</figure>
+</div>
+<p>So P<sub>ms</sub> depends on the volume of blood and on the capacity and compliance of the vessels, chiefly the veins:</p>
+<ul>
+<li><strong>↑ blood volume</strong> (transfusion, fluid retention by the kidneys) → ↑ stressed volume → ↑ P<sub>ms</sub>.</li>
+<li><strong>↓ blood volume</strong> (hemorrhage) → ↓ stressed volume → ↓ P<sub>ms</sub>.</li>
+<li><strong>Venoconstriction</strong> → smaller unstressed volume → ↑ stressed volume at the same total volume → ↑ P<sub>ms</sub>.</li>
+<li><strong>Venodilation</strong> does the reverse.</li>
+</ul>
+<p>The lecture’s analogy is a tube of toothpaste. Squeezing the tube, or rolling it up from the bottom, raises the pressure inside without adding any toothpaste. Sympathetic venoconstriction can mobilize about 30% of the venous volume this way.</p>
+</section>
+</section>
+<section id="the-vascular-function-curve" class="level2" data-number="9.8">
+<h2 data-number="9.8" class="anchored" data-anchor-id="the-vascular-function-curve"><span class="header-section-number">9.8</span> The vascular function curve</h2>
+<p>Now restart the heart and turn it up a step at a time. Each liter per minute of cardiac output moves blood from the veins into the arteries, so venous pressure falls 1 mm Hg and arterial pressure rises 19. At 5 L/min, venous pressure is 2 mm Hg and arterial pressure 102. Plotting the pressure at the right atrium against the flow gives the <strong>vascular function curve</strong>, also called the venous return curve.</p>
+<p>Flow back to the heart obeys Ohm’s law. The upstream pressure is P<sub>ms</sub>, the downstream pressure is P<sub>ra</sub>, and the resistance is the <strong>resistance to venous return (RVR)</strong>:</p>
+<p><span class="math display">\[\text{VR} = \frac{P_{ms} - P_{ra}}{\text{RVR}}\]</span></p>
+<p>In the lecture’s numbers, RVR = (7 − 2)/5 = 1 mm Hg·min/L. RVR is not the same as SVR. SVR is the resistance between the aorta and the right atrium. RVR is the effective resistance between the upstream pressure P<sub>ms</sub> and the right atrium, and most of it lies in the veins.</p>
+<p><a href="#fig-control-of-co-vascular-curves" class="quarto-xref">Figure&nbsp;<span>9.5</span></a> A draws the curve the way the course does, with P<sub>ra</sub> on the x-axis and venous return on the y-axis.</p>
+<ul>
+<li><strong>The x-intercept is P<sub>ms</sub>.</strong> When P<sub>ra</sub> equals P<sub>ms</sub>, there is no pressure gradient and venous return is zero.</li>
+<li><strong>Lower P<sub>ra</sub> means more venous return.</strong> P<sub>ra</sub> is the back pressure. On the straight part of the curve, the slope is −1/RVR.</li>
+<li><strong>The curve flattens at low P<sub>ra</sub>.</strong> When P<sub>ra</sub> falls below about 0, the large veins collapse where they enter the chest, so lowering P<sub>ra</sub> further adds no flow.</li>
+</ul>
+<div id="fig-control-of-co-vascular-curves" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-control-of-co-vascular-curves-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/control-of-co/vascular-function-curves.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-control-of-co-vascular-curves-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.5: Vascular function curves, drawn as the course draws them. (A) Raising P<sub>ms</sub> shifts the curve right; lowering it shifts it left. RVR is unchanged, so the curves are parallel. (B) Changing RVR changes the slope around the same P<sub>ms</sub>. Course figure.
+</figcaption>
+</figure>
+</div>
+<p><strong>Changing P<sub>ms</sub> shifts the curve</strong> (panel A). Transfusion or venoconstriction raises P<sub>ms</sub> and shifts the curve to the right: more venous return at every P<sub>ra</sub>. Hemorrhage or venodilation shifts it to the left. In the lecture’s words, the regulation of venomotor tone, and thus P<sub>ms</sub>, is one of the principal mechanisms by which cardiac output is controlled.</p>
+<p><strong>Changing RVR changes the slope</strong> (panel B). A higher RVR flattens the curve around the same P<sub>ms</sub>; a lower RVR steepens it. Panel B holds P<sub>ms</sub> fixed to isolate the slope. In this course, slope changes are small next to changes in P<sub>ms</sub> and can be ignored until exercise. In exercise, metabolic dilation of the arterioles in the working muscles lowers RVR and steepens the curve, and the course also treats the rhythmic squeeze of the skeletal muscle pump, working with the venous valves, as lowering the effective RVR (<a href="../cardiovascular/cv-exercise.html">Cardiovascular Adaptation to Exercise</a>).</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>If you are comparing with the slides
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The lecture’s first vascular function curves (from Berne and Levy’s <em>Physiology</em>) put central venous pressure on the y-axis and cardiac output on the x-axis. Later slides, and this book, flip them so P<sub>ra</sub> is on the x-axis and the curve can share axes with the cardiac function curve. The flip changes how a slope change looks: the slide’s “clockwise rotation” with more resistance is, with P<sub>ra</sub> on the x-axis, a flatter curve around P<sub>ms</sub>. Think “flatter” and “steeper,” not clockwise and counterclockwise.</p>
+</div>
+</div>
+</section>
+<section id="the-cardiac-function-curve" class="level2" data-number="9.9">
+<h2 data-number="9.9" class="anchored" data-anchor-id="the-cardiac-function-curve"><span class="header-section-number">9.9</span> The cardiac function curve</h2>
+<p>The cardiac function curve plots cardiac output against P<sub>ra</sub> (slide 45 labels it the ventricular function curve). It is the Frank-Starling relationship for the whole heart. More filling pressure fills the ventricle to a larger end-diastolic volume, the stretched muscle contracts with more force, and stroke volume and cardiac output rise. At high filling pressures, more filling adds less and less, and the curve flattens.</p>
+<p>A change in filling moves the heart <strong>along</strong> the curve. A change in pump performance <strong>shifts</strong> the curve:</p>
+<ul>
+<li><strong>Up:</strong> more contractility; a faster heart rate, up to a point.</li>
+<li><strong>Down:</strong> less contractility; more afterload; a heart rate so fast that filling time is cut short.</li>
+</ul>
+<p>P<sub>ra</sub> is used here as the filling pressure. It is not the same as end-diastolic volume. How much volume a given pressure produces depends on the ventricle’s filling curve (the EDPVR in <a href="../cardiovascular/cardiac-pump.html">The Cardiac Pump</a>).</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>A common mistake
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Moving up a cardiac function curve does not change contractility. Extra stretch raises the <em>force</em> of contraction; that is the Frank-Starling mechanism. A change in contractility moves the heart to a different cardiac function curve.</p>
+</div>
+</div>
+</section>
+<section id="ventricular-vascular-coupling-the-operating-point" class="level2" data-number="9.10">
+<h2 data-number="9.10" class="anchored" data-anchor-id="ventricular-vascular-coupling-the-operating-point"><span class="header-section-number">9.10</span> Ventricular-vascular coupling: the operating point</h2>
+<p>Now put both curves on the same axes (<a href="#fig-control-of-co-operating-shifts" class="quarto-xref">Figure&nbsp;<span>9.6</span></a>). The cardiac function curve says how much the heart will pump at each P<sub>ra</sub>. The vascular function curve says how much will return at each P<sub>ra</sub>. At steady state the two flows must match, because blood cannot pile up forever in one part of a closed circuit:</p>
+<p><span class="math display">\[\text{CO} = \text{VR}\]</span></p>
+<p>The only P<sub>ra</sub> where both are true is where the curves cross. That intersection is the <strong>operating point</strong>, and its coordinates are the steady-state cardiac output and P<sub>ra</sub>. The slides call it the equilibrium point.</p>
+<p>The same P<sub>ra</sub> plays opposite roles on the two curves: a higher P<sub>ra</sub> helps the heart fill but opposes venous return. If P<sub>ra</sub> rose above the operating point for a moment, the heart would pump out more than came back, and P<sub>ra</sub> would fall back; below it, the reverse. A stronger pump lowers its own filling pressure.</p>
+<div id="fig-control-of-co-operating-shifts" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-control-of-co-operating-shifts-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/control-of-co/operating-point-shifts.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-control-of-co-operating-shifts-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.6: Four changes on the cardiac and vascular function curves, following the lecture. Faint lines, normal curves; open circle, normal operating point; filled circle, new operating point. (A) Transfusion. (B) Reduced contractility. (C) Hemorrhage. (D) Hemorrhage with compensation: from the hemorrhage point (2), venoconstriction raises P<sub>ms</sub> part of the way back and a faster, stronger heart raises the cardiac function curve, so CO is nearly restored at a low P<sub>ra</sub>. Course figure.
+</figcaption>
+</figure>
+</div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Initial change</th>
+<th>Curve that moves</th>
+<th>New operating point</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Transfusion or more venous tone</td>
+<td>Vascular curve shifts right (P<sub>ms</sub> up)</td>
+<td>CO up, P<sub>ra</sub> up</td>
+</tr>
+<tr class="even">
+<td>Hemorrhage or venodilation</td>
+<td>Vascular curve shifts left (P<sub>ms</sub> down)</td>
+<td>CO down, P<sub>ra</sub> down</td>
+</tr>
+<tr class="odd">
+<td>More contractility</td>
+<td>Cardiac curve shifts up</td>
+<td>CO up, P<sub>ra</sub> down</td>
+</tr>
+<tr class="even">
+<td>Less contractility, or more afterload</td>
+<td>Cardiac curve shifts down</td>
+<td>CO down, P<sub>ra</sub> up</td>
+</tr>
+</tbody>
+</table>
+<p>These predictions assume the other curve does not change, RVR is constant, and the heart is on the rising part of its curve.</p>
+<p>The <a href="https://beiser-lab.github.io/circulation-lab/">Circulation Lab</a> plots the cardiac function and venous return curves while a model circulation runs <span class="citation" data-cites="circlab2026">[<a href="cv-overview.html#ref-circlab2026" role="doc-biblioref">2</a>]</span>. Remove blood or infuse volume and watch the operating point move.</p>
+<p>Hemorrhage shows the whole sequence. Blood loss lowers P<sub>ms</sub>, and CO falls (panel C). The baroreflex then responds. Sympathetic venoconstriction recruits unstressed volume into stressed volume and raises P<sub>ms</sub> part of the way back, while a faster, stronger heart raises the cardiac function curve (panel D). Arteriolar constriction raises SVR and helps hold MAP. A young person with these reflexes intact can lose a good deal of blood before the pressure falls. P<sub>ms</sub> acts on filling through venous return and filling pressure; the ventricle does not equilibrate with P<sub>ms</sub> (<a href="../cardiovascular/cardiac-pump.html">The Cardiac Pump</a>; course errata entry 16). The integration chapter follows hemorrhage, heart failure and sepsis in detail (<a href="../cardiovascular/cv-integration.html">Cardiovascular Integration and Adaptation</a>).</p>
+</section>
+<section id="finding-the-cause" class="level2" data-number="9.11">
+<h2 data-number="9.11" class="anchored" data-anchor-id="finding-the-cause"><span class="header-section-number">9.11</span> Finding the cause</h2>
+<p>Locating the new operating point is half the problem. The other half is saying why it moved. A common error is to find the new intersection correctly and then name the wrong change as its cause. The way the operating point moves tells you which curve moved (<a href="#fig-control-of-co-find-cause" class="quarto-xref">Figure&nbsp;<span>9.7</span></a>):</p>
+<ul>
+<li><strong>If only the vascular function curve moves,</strong> the new point lies on the old cardiac function curve. The point slides along the cardiac curve, so <strong>CO and P<sub>ra</sub> move in the same direction</strong>: both up when P<sub>ms</sub> rises, both down when it falls.</li>
+<li><strong>If only the cardiac function curve moves,</strong> the new point lies on the old vascular function curve. The point slides along the vascular curve, so <strong>CO and P<sub>ra</sub> move in opposite directions</strong>: CO up and P<sub>ra</sub> down for a stronger heart, CO down and P<sub>ra</sub> up for a weaker one.</li>
+</ul>
+<div id="fig-control-of-co-find-cause" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-control-of-co-find-cause-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/control-of-co/find-the-cause.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-control-of-co-find-cause-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.7: Reading the cause from the movement of the operating point. (A) A shifted vascular function curve (dashed) moves the point along the unchanged cardiac function curve (thick). (B) A shifted cardiac function curve (dashed) moves it along the unchanged vascular function curve (thick). Course figure.
+</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>A common mistake
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>“The operating point moved right” does not mean “P<sub>ms</sub> rose.” A weaker heart also moves the operating point to a higher P<sub>ra</sub>, with P<sub>ms</sub> unchanged. Before you name a cause, ask which curve the new point still sits on.</p>
+</div>
+</div>
+<p>Work any problem in this order:</p>
+<ol type="1">
+<li>Identify the initial disturbance. Is it in the heart (contractility, rate, afterload) or in the vessels (blood volume, venous tone, RVR)?</li>
+<li>Shift that curve, and only that curve, and find the new intersection.</li>
+<li>Add the compensation, which usually moves the <em>other</em> curve. A failing heart triggers venoconstriction and fluid retention that raise P<sub>ms</sub>; a hemorrhage triggers sympathetic stimulation of the heart.</li>
+<li>Think through the consequences upstream and downstream: arterial pressure (from CO and SVR) and where blood is accumulating.</li>
+</ol>
+<p>When both curves move, P<sub>ra</sub> may be clear while CO depends on the sizes of the two changes. More venous tone with less contractility raises P<sub>ra</sub> for both reasons, but one raises CO and the other lowers it.</p>
+</section>
+<section id="two-pumps-in-series" class="level2" data-number="9.12">
+<h2 data-number="9.12" class="anchored" data-anchor-id="two-pumps-in-series"><span class="header-section-number">9.12</span> Two pumps in series</h2>
+<p>The single-pump model treats the heart and lungs as one pump filled from the right atrium. The real circulation has two pumps in series, and at steady state their outputs must be equal. The lecture’s rule applies: when something changes, think through what happens upstream and downstream.</p>
+<p><strong>An acute fall in left ventricular contractility</strong>, as with ischemia. Left ventricular output falls while the right ventricle keeps pumping, so blood accumulates in the lungs. Left atrial pressure (P<sub>la</sub>) rises, which restores part of the left ventricle’s output by Frank-Starling. Less venous return reaches the right heart, so P<sub>ra</sub> falls, and the higher pulmonary pressures raise the right ventricle’s afterload. At the new steady state, both ventricles pump the same, reduced cardiac output, with a higher pulmonary venous pressure. The slide traces what follows: ↓ CO → ↑ LVEDP → ↑ P<sub>pv</sub> → ↑ P<sub>capillary</sub> → ↑ hydrostatic pressure, which drives filtration into the lung (the Starling forces in <a href="../cardiovascular/microcirculation.html">Microcirculation and Local Control</a>) and can cause pulmonary edema and respiratory failure (<a href="../cardiovascular/pulmonary-circulation.html">Pulmonary Circulation</a>).</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>If you are comparing with the slides
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The two-pump slide writes “↑ P<sub>LA</sub> → ↑ P<sub>PV</sub> → ↑ P<sub>PA</sub> → ↑ PVR (↑ afterload).” Pulmonary artery pressure rises because the pressure downstream of the lungs has risen, so the right ventricle faces a higher afterload. Pulmonary vascular resistance need not change. PVR = (mPAP − PCWP)/CO, where the wedge pressure (PCWP) estimates P<sub>la</sub>, and here both pressures rise together. Read the last step as “↑ right ventricular afterload.”</p>
+</div>
+</div>
+<p><strong>An acute fall in right ventricular output</strong>, as with tension pneumothorax. Air trapped under pressure raises intrathoracic pressure, so P<sub>ra</sub> rises even though the right heart is filling poorly. The higher P<sub>ra</sub> cuts venous return and right ventricular output. Less blood reaches the left heart, so left ventricular output falls too, though the left ventricle is normal.</p>
+</section>
+<section id="a-puzzle-orthostatic-hypotension-with-a-normal-heart" class="level2" data-number="9.13">
+<h2 data-number="9.13" class="anchored" data-anchor-id="a-puzzle-orthostatic-hypotension-with-a-normal-heart"><span class="header-section-number">9.13</span> A puzzle: orthostatic hypotension with a normal heart</h2>
+<p>Some neurologic disorders, Parkinson’s disease among them, can cause orthostatic hypotension: blood pressure falls on standing, and the person may faint. Most of these patients have normal cardiac function. How?</p>
+<p>Standing pools blood in the veins of the legs and abdomen. Normally the baroreflex, covered in the next chapter (<a href="../cardiovascular/ans-extrinsic-control.html">ANS and Extrinsic Control</a>), answers within seconds with sympathetic venoconstriction, which recruits that pooled blood back into the stressed volume, along with arteriolar constriction and a faster heart. If the autonomic nerves that control venomotor tone are damaged, the veins cannot constrict. The stressed volume available to drive venous return falls, the vascular function curve shifts left, and venous return, stroke volume, cardiac output and arterial pressure all fall. The heart is fine. The vessels have lost their control.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Background: why morphine can unmask blood loss
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>A hidden slide in the lecture asks why a young patient who has lost blood, with a normal blood pressure, may become hypotensive after a dose of morphine. The answer is the compensation in <a href="#fig-control-of-co-operating-shifts" class="quarto-xref">Figure&nbsp;<span>9.6</span></a> D. Young people with strong reflexes can hold P<sub>ms</sub> near normal after substantial blood loss by sympathetic venoconstriction. Morphine dilates the veins, which removes part of that compensation, so P<sub>ms</sub>, venous return and pressure fall.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="check-your-understanding" class="level2" data-number="9.14">
+<h2 data-number="9.14" class="anchored" data-anchor-id="check-your-understanding"><span class="header-section-number">9.14</span> Check your understanding</h2>
+<ol type="1">
+<li><p>A 75-year-old has a blood pressure of 160/70 mm Hg. A 25-year-old with the same stroke volume has 120/80. What explains the difference in pulse pressure?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>Pulse pressure is about SV divided by arterial compliance. The older aorta is stiffer, so the same stroke volume produces a larger rise in pressure, and the faster pulse wave returns the reflected wave during systole. Pulse pressure is 90 mm Hg instead of 40.</p>
+</details></li>
+<li><p>Two patients both have a MAP of 60 mm Hg. One has a pressure of 72/54, the other 90/45. Which is more likely to have a low cardiac output, and why?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>The patient at 72/54 has a narrow pulse pressure (18 mm Hg), which suggests a small stroke volume and a low cardiac output, with SVR raised to compensate, as after hemorrhage. The patient at 90/45 has a wide pulse pressure (45 mm Hg): low SVR lets the arteries run off fast in diastole, and a large stroke volume, as in high-output sepsis. Same MAP, different cardiac outputs: CO ≠ BP.</p>
+</details></li>
+<li><p>The heart stops. Arterial pressure falls from 102 to 7 mm Hg while venous pressure rises from 2 to 7 mm Hg. Why are the changes so unequal, and what is the 7 called?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>The same volume of blood leaves the arteries and enters the veins. The pressure change for a given volume is ΔV/C, and the veins are about 20 times as compliant as the arteries, so their pressure changes about one twentieth as much. The common pressure, with no flow, is the mean systemic filling pressure, P<sub>ms</sub>.</p>
+</details></li>
+<li><p>Sympathetic stimulation constricts the veins with no change in blood volume. Which curve moves, which way, and what happens to CO and P<sub>ra</sub>?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>Venoconstriction shrinks the unstressed volume, so stressed volume and P<sub>ms</sub> rise. The vascular function curve shifts right. The new operating point lies on the unchanged cardiac function curve, up and to the right: CO rises and P<sub>ra</sub> rises. (In real life sympathetic stimulation also raises the cardiac function curve, which pulls P<sub>ra</sub> back down.)</p>
+</details></li>
+<li><p>After an intervention, a patient’s CO falls from 5 to 3.6 L/min and P<sub>ra</sub> rises from 2 to 3.4 mm Hg. A classmate says P<sub>ms</sub> must have risen, because the operating point moved to the right. What actually changed?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>CO and P<sub>ra</sub> moved in opposite directions, so the operating point slid along the vascular function curve, and the vascular curve did not move. The cardiac function curve shifted down: contractility fell, or afterload rose. A rise in P<sub>ms</sub> would have raised both CO and P<sub>ra</sub>.</p>
+</details></li>
+<li><p>A patient’s left ventricle suddenly loses much of its contractility. Predict what happens to left atrial pressure, right atrial pressure, and the outputs of the two ventricles once a new steady state is reached.</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>Left atrial pressure rises as blood accumulates in the lungs, which restores some left ventricular output by Frank-Starling. Right atrial pressure falls, because less blood returns to the right heart. At the new steady state, both ventricles pump the same, reduced output.</p>
+</details></li>
+</ol>
+</section>
+<section id="key-equations" class="level2" data-number="9.15">
+<h2 data-number="9.15" class="anchored" data-anchor-id="key-equations"><span class="header-section-number">9.15</span> Key equations</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Equation</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>PP = SBP − DBP</td>
+<td>Pulse pressure</td>
+</tr>
+<tr class="even">
+<td>PP ≈ SV / C<sub>arterial</sub></td>
+<td>Pulse pressure from stroke volume and arterial compliance</td>
+</tr>
+<tr class="odd">
+<td>C = ΔV/ΔP; E = ΔP/ΔV</td>
+<td>Compliance and elastance</td>
+</tr>
+<tr class="even">
+<td>CO = (MAP − CVP)/SVR (CVP ≈ P<sub>ra</sub>); MAP ≈ CO × SVR</td>
+<td>Arterial pressure from flow and resistance</td>
+</tr>
+<tr class="odd">
+<td>CO = HR × SV</td>
+<td>Cardiac output</td>
+</tr>
+<tr class="even">
+<td>P<sub>ms</sub> ≈ stressed volume / compliance</td>
+<td>What sets P<sub>ms</sub> (concept)</td>
+</tr>
+<tr class="odd">
+<td>VR = (P<sub>ms</sub> − P<sub>ra</sub>)/RVR</td>
+<td>Venous return</td>
+</tr>
+<tr class="even">
+<td>CO = VR at steady state</td>
+<td>The operating point</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sources" class="level2" data-number="9.16">
+<h2 data-number="9.16" class="anchored" data-anchor-id="sources"><span class="header-section-number">9.16</span> Sources</h2>
+<p>This chapter follows the 2026 Control of Cardiac Output and Ventricular-Vascular Coupling lecture for MEDC 30504 and draws on the 2026 lecture notes, the peer-educator notes, the course’s venous return graphs and the course’s 2018 notes, corrected and updated. All figures were drawn for this book.</p>
+<div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-w6-guyton1955" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Guyton AC, Lindsey AW, Kaufmann BN. Effect of mean circulatory filling pressure and other peripheral circulatory factors on cardiac output. <em>American Journal of Physiology</em> 1955;180:463–468.</div>
+</div>
+<div id="ref-circlab2026" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">MEDC 30504. <em>Circulation Lab</em>. Interactive simulator of the circulation: pressure-volume loops, cardiac function and venous return curves, hemorrhage and tamponade. 2026.</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/beiser-lab\.github\.io\/tcop-web-book\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+<nav class="page-navigation" aria-label="Page">
+  <div class="nav-page nav-page-previous">
+      <a href="../cardiovascular/microcirculation.html" class="pagination-link" aria-label="Microcirculation and Local Control">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Microcirculation and Local Control</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../cardiovascular/ans-extrinsic-control.html" class="pagination-link" aria-label="ANS and Extrinsic Control">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">ANS and Extrinsic Control</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

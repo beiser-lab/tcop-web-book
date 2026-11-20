@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>12&nbsp; ECG II: Vectors and Mean Electrical Axis – Tissues, Cells &amp; Organ Physiology</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../cardiovascular/ecg-interpretation.html" rel="next">
+<link href="../cardiovascular/ecg-ionic-basis.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-01a495efc5497ac6e3f5457e7ed18e65.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Toolbar">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../cardiovascular/cv-overview.html">Cardiovascular physiology, excitable cells and muscle</a></li><li class="breadcrumb-item"><a href="../cardiovascular/ecg-vectors-axis.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">ECG II: Vectors and Mean Electrical Axis</span></a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Tissues, Cells &amp; Organ Physiology</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About this book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Cardiovascular physiology, excitable cells and muscle</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cv-overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cardiovascular Physiology Overview</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cardiac-pump.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Cardiac Pump</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/excitable-cells.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Membrane Potentials and Excitable Cells</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/hemodynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Peripheral Circulation and Hemodynamics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/skeletal-muscle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Skeletal Muscle</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/smooth-muscle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Smooth Muscle</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/cardiac-muscle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Cardiac Muscle</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/microcirculation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Microcirculation and Local Control</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/control-of-co.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Control of Cardiac Output and Ventricular-Vascular Coupling</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ans-extrinsic-control.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">ANS and Extrinsic Control</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ecg-ionic-basis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">EKG I: Ionic Basis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ecg-vectors-axis.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">ECG II: Vectors and Mean Electrical Axis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ecg-interpretation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">EKG III: Clinical Interpretation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cv-integration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Cardiovascular Integration and Adaptation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cv-exercise.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Cardiovascular Adaptation to Exercise</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/coronary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Coronary Circulation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/special-circulations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Other Special Circulations</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/pulmonary-circulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Pulmonary Circulation</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Pulmonary physiology</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/respiratory-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Respiratory Physiology Introduction</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/statics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Respiratory Statics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/dynamics-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Respiratory Dynamics I</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/dynamics-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Respiratory Dynamics II</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/ventilation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Alveolar Ventilation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/diffusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Diffusion</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/o2-co2-transport.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Transport of O<sub>2</sub> and CO<sub>2</sub> in the Blood</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/acid-base.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Pulmonary Acid Base</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/ventilation-perfusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Ventilation and Perfusion</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/control-of-ventilation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Control of Pulmonary Ventilation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/exercise.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Physiology of Exercise</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/respiratory-consultant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Think Like a Respiratory Consultant</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#how-charge-moves-from-cell-to-cell" id="toc-how-charge-moves-from-cell-to-cell" class="nav-link active" data-scroll-target="#how-charge-moves-from-cell-to-cell"><span class="header-section-number">12.1</span> How charge moves from cell to cell</a></li>
+  <li><a href="#what-an-electrode-outside-the-cells-sees" id="toc-what-an-electrode-outside-the-cells-sees" class="nav-link" data-scroll-target="#what-an-electrode-outside-the-cells-sees"><span class="header-section-number">12.2</span> What an electrode outside the cells sees</a></li>
+  <li><a href="#the-heart-as-a-dipole" id="toc-the-heart-as-a-dipole" class="nav-link" data-scroll-target="#the-heart-as-a-dipole"><span class="header-section-number">12.3</span> The heart as a dipole</a></li>
+  <li><a href="#the-path-of-activation" id="toc-the-path-of-activation" class="nav-link" data-scroll-target="#the-path-of-activation"><span class="header-section-number">12.4</span> The path of activation</a>
+  <ul class="collapse">
+  <li><a href="#the-ventricular-sequence" id="toc-the-ventricular-sequence" class="nav-link" data-scroll-target="#the-ventricular-sequence"><span class="header-section-number">12.4.1</span> The ventricular sequence</a></li>
+  </ul></li>
+  <li><a href="#leads" id="toc-leads" class="nav-link" data-scroll-target="#leads"><span class="header-section-number">12.5</span> Leads</a>
+  <ul class="collapse">
+  <li><a href="#the-limb-leads-and-einthovens-triangle" id="toc-the-limb-leads-and-einthovens-triangle" class="nav-link" data-scroll-target="#the-limb-leads-and-einthovens-triangle"><span class="header-section-number">12.5.1</span> The limb leads and Einthoven’s triangle</a></li>
+  <li><a href="#each-lead-records-a-projection" id="toc-each-lead-records-a-projection" class="nav-link" data-scroll-target="#each-lead-records-a-projection"><span class="header-section-number">12.5.2</span> Each lead records a projection</a></li>
+  <li><a href="#augmented-leads-and-the-hexaxial-system" id="toc-augmented-leads-and-the-hexaxial-system" class="nav-link" data-scroll-target="#augmented-leads-and-the-hexaxial-system"><span class="header-section-number">12.5.3</span> Augmented leads and the hexaxial system</a></li>
+  </ul></li>
+  <li><a href="#the-mean-electrical-axis" id="toc-the-mean-electrical-axis" class="nav-link" data-scroll-target="#the-mean-electrical-axis"><span class="header-section-number">12.6</span> The mean electrical axis</a>
+  <ul class="collapse">
+  <li><a href="#normal-and-abnormal-ranges" id="toc-normal-and-abnormal-ranges" class="nav-link" data-scroll-target="#normal-and-abnormal-ranges"><span class="header-section-number">12.6.1</span> Normal and abnormal ranges</a></li>
+  </ul></li>
+  <li><a href="#finding-the-axis" id="toc-finding-the-axis" class="nav-link" data-scroll-target="#finding-the-axis"><span class="header-section-number">12.7</span> Finding the axis</a></li>
+  <li><a href="#the-precordial-leads" id="toc-the-precordial-leads" class="nav-link" data-scroll-target="#the-precordial-leads"><span class="header-section-number">12.8</span> The precordial leads</a>
+  <ul class="collapse">
+  <li><a href="#contiguous-leads" id="toc-contiguous-leads" class="nav-link" data-scroll-target="#contiguous-leads"><span class="header-section-number">12.8.1</span> Contiguous leads</a></li>
+  </ul></li>
+  <li><a href="#is-the-ecg-a-picture-of-the-heart" id="toc-is-the-ecg-a-picture-of-the-heart" class="nav-link" data-scroll-target="#is-the-ecg-a-picture-of-the-heart"><span class="header-section-number">12.9</span> Is the ECG a picture of the heart?</a></li>
+  <li><a href="#check-your-understanding" id="toc-check-your-understanding" class="nav-link" data-scroll-target="#check-your-understanding"><span class="header-section-number">12.10</span> Check your understanding</a></li>
+  <li><a href="#sources" id="toc-sources" class="nav-link" data-scroll-target="#sources"><span class="header-section-number">12.11</span> Sources</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../cardiovascular/cv-overview.html">Cardiovascular physiology, excitable cells and muscle</a></li><li class="breadcrumb-item"><a href="../cardiovascular/ecg-vectors-axis.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">ECG II: Vectors and Mean Electrical Axis</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">ECG II: Vectors and Mean Electrical Axis</span></h1>
+<p class="subtitle lead">From action potentials to the surface ECG</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Goals for this chapter
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Explain how current flowing between depolarized and resting cells produces a voltage outside the heart, and why a wave moving toward a positive electrode writes an upward deflection.</li>
+<li>Describe the heart’s electrical activity as a dipole vector, and name what sets its size.</li>
+<li>Trace the normal sequence of activation, from the SA node to the last part of the ventricles, with the conduction speed of each part and the piece of the ECG it produces.</li>
+<li>Build Einthoven’s triangle and the hexaxial reference system, and explain how each lead records a projection of the heart’s vector.</li>
+<li>Define the mean electrical axis (MEA), give its normal range, and recognize physiologic leftward axis, left axis deviation, right axis deviation and extreme axis.</li>
+<li>Find the axis with lead I and lead II (the “ER Doc” method), and explain why lead II, not aVF, is the second lead.</li>
+</ul>
+<p>Names, dates and the exact values in figure captions are context, not things to memorize.</p>
+</div>
+</div>
+<p>The <a href="../cardiovascular/ecg-ionic-basis.html">first chapter</a> followed single cells. This one moves to the whole heart. Action potentials spread from cell to cell, and while some of the heart is depolarized and some is still at rest, current flows between the two regions. That current flows through the tissues of the body, and a small part of it reaches the skin, where a pair of electrodes can measure it. The question for this chapter is how the heart’s electrical activity becomes the shape on the paper, and what the shape tells you about which way the activity was going.</p>
+<p>A 12-lead ECG is a cheap, non-invasive measure of several things at once: autonomic state (through the heart rate), the size, thickness and orientation of the heart, the conduction system, ischemia, and some non-cardiac disease. Einthoven built the first string galvanometer sensitive enough to record it from the body surface in 1903, with the patient’s limbs in buckets of salt water, work that later won him the Nobel Prize.</p>
+<section id="how-charge-moves-from-cell-to-cell" class="level2" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="how-charge-moves-from-cell-to-cell"><span class="header-section-number">12.1</span> How charge moves from cell to cell</h2>
+<p>Cardiac cells are joined end to end at intercalated disks, and the disks are studded with <em>gap junctions</em>: channels made of connexin proteins that connect the cytoplasm of one cell to the next. They are not selective, and they conduct well. When one cell depolarizes, positive charge flows through the gap junctions into its resting neighbor. Part of that current discharges the neighbor’s membrane capacitance and depolarizes it toward threshold; part flows on to the next cell. Once the neighbor reaches threshold it fires its own action potential, and the process repeats down the line. This is electrotonic (passive) spread followed by regeneration, and it makes the heart act as one electrical unit. How fast it goes depends on the resistance and capacitance of the membranes, gap junctions and cytoplasm, and on how fast each cell’s upstroke is.</p>
+</section>
+<section id="what-an-electrode-outside-the-cells-sees" class="level2" data-number="12.2">
+<h2 data-number="12.2" class="anchored" data-anchor-id="what-an-electrode-outside-the-cells-sees"><span class="header-section-number">12.2</span> What an electrode outside the cells sees</h2>
+<p>The lecture uses a model of two cells, A and B, to show how a voltage recorded outside cells differs from one recorded inside.</p>
+<ul>
+<li><strong>Inside.</strong> With one electrode inside each cell, depolarizing cell A makes it positive relative to resting cell B. The recording swings up, then fades as cell B depolarizes too. When A repolarizes first, the recording swings down.</li>
+<li><strong>Outside.</strong> On the outer surface, the signs are reversed. A depolarized cell has lost positive charge from its outer surface, so the outside of depolarized tissue is <em>negative</em> compared with the outside of resting tissue. The surface of the heart has a moving boundary, negative behind the wavefront and positive ahead of it.</li>
+</ul>
+<p>That gives the three rules every ECG lead follows (<a href="#fig-ecg-vectors-axis-two-cell" class="quarto-xref">Figure&nbsp;<span>12.1</span></a>):</p>
+<ol type="1">
+<li>A wave of depolarization moving <strong>toward</strong> the positive electrode writes an <strong>upward</strong> (positive) deflection.</li>
+<li>A wave of depolarization moving <strong>away</strong> from the positive electrode writes a <strong>downward</strong> (negative) deflection.</li>
+<li>A wave moving <strong>perpendicular</strong> to the line between the electrodes writes <strong>no</strong> deflection. The lead is “blind” to it.</li>
+</ol>
+<div id="fig-ecg-vectors-axis-two-cell" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ecg-vectors-axis-two-cell-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ecg-vectors-axis/two-cell.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ecg-vectors-axis-two-cell-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.1: Extracellular recording from a strip of cells. Behind the wave of depolarization the outer surface is negative, ahead of it positive. (A) With the positive electrode ahead of the wave, the recording goes up. (B) Swap the electrodes and it goes down. (C) With the electrodes on a line perpendicular to the wave’s direction, both see the same voltage and nothing is recorded. Adapted from Boron and Boulpaep <span class="citation" data-cites="w4-boronupd">[<a href="cv-overview.html#ref-w4-boronupd" role="doc-biblioref">1</a>]</span>, as used in the 2026 lecture.
+</figcaption>
+</figure>
+</div>
+<p>A wave of <em>repolarization</em> reverses the signs. Repolarized tissue is positive outside again, so a wave of repolarization moving toward the positive electrode writes a downward deflection. This is why the upright T wave is a puzzle, which the <a href="../cardiovascular/ecg-interpretation.html">next chapter</a> solves.</p>
+<p>When the whole heart is at the same state, all depolarized (phase 2 everywhere) or all at rest (phase 4), there is no boundary, no current between regions, and the ECG is flat. These flat stretches are the <em>isoelectric</em> segments.</p>
+</section>
+<section id="the-heart-as-a-dipole" class="level2" data-number="12.3">
+<h2 data-number="12.3" class="anchored" data-anchor-id="the-heart-as-a-dipole"><span class="header-section-number">12.3</span> The heart as a dipole</h2>
+<p>A <em>dipole</em> is a pair of equal and opposite charges a short distance apart. Its <em>dipole moment</em> is a vector: it points from the negative charge to the positive one, and its size is the charge times the separation. The boundary between depolarized and resting tissue is a sheet of tiny dipoles, each pointing from the negative, depolarized side to the positive, resting side, which is the direction the wave is moving. At any instant the ECG records the sum of all these dipoles, the heart’s net <em>dipole vector</em>.</p>
+<p>The size of that vector depends on three things:</p>
+<ul>
+<li><strong>Balance between depolarized and resting tissue.</strong> If equal regions are depolarizing in opposite directions, their dipoles cancel.</li>
+<li><strong>How consistently the dipoles point the same way.</strong> Disorganized activation produces a small net vector.</li>
+<li><strong>How much tissue is depolarizing at once.</strong> A small structure such as the SA node makes a dipole too small to see on the surface ECG. The thick left ventricle makes the largest one.</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>If you are comparing with the slides
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The speaker notes describe a dipole as creating “an electromagnetic force known as a dipole moment vector.” A dipole moment is not a force. It is charge times separation, a vector, and it produces an electric field. The ECG measures that field’s voltage at the skin.</p>
+</div>
+</div>
+<p>The surface ECG is a graph of the projection of this vector, over time, on the line between two electrodes. The <em>height</em> of a deflection depends on the vector’s size and direction, on the tissue between the heart and the skin, and on how the lead is oriented. The <em>duration</em> depends on how long the action potentials last and how fast they are conducted.</p>
+</section>
+<section id="the-path-of-activation" class="level2" data-number="12.4">
+<h2 data-number="12.4" class="anchored" data-anchor-id="the-path-of-activation"><span class="header-section-number">12.4</span> The path of activation</h2>
+<p>Now follow one beat through the heart (<a href="#fig-ecg-vectors-axis-conduction-timing" class="quarto-xref">Figure&nbsp;<span>12.2</span></a>).</p>
+<p><strong>SA node</strong> (about 0.05 m/s). The beat starts in the SA node, high in the right atrium near where the superior vena cava enters. It fires on its own, with slow-response action potentials, and conducts slowly. The normal sinus rate is 60 to 100 per minute. The SA node is too small to show on the surface ECG.</p>
+<p><strong>Atria</strong> (about 1 m/s). The wave spreads radially from cell to cell through atrial muscle, and along faster bands: the interatrial band (Bachmann’s bundle) to the left atrium and internodal bands to the AV node. Atrial depolarization is the <strong>P wave</strong>. It travels from the high right atrium down and to the left, roughly along lead II, so the normal P wave is upright in lead II. The fibrous AV ring insulates the ventricles from the atria, so the only way through is the AV node.</p>
+<p><strong>AV node</strong> (about 0.05 m/s). The AV node sits in the right side of the interatrial septum, just above the AV ring near the tricuspid valve and the opening of the coronary sinus. Its cells are slow-response cells with small fibers, so the wave crosses it slowly. That delay lets the atria finish contracting (the “atrial kick”) before the ventricles start. The AV node makes no deflection of its own; its delay is most of the <strong>PR interval</strong>. Without the SA node, the AV node’s own rate would be 40 to 60 per minute.</p>
+<p><strong>His bundle and bundle branches</strong> (about 1 m/s). The His bundle emerges from the AV node on the right side of the interventricular septum. The right bundle branch runs down the right side of the septum to the right ventricle. The left bundle branch crosses to the left side of the septum and divides into the left anterior and left posterior fascicles. None of these is large enough to show on the surface ECG.</p>
+<p><strong>Purkinje fibers</strong> (about 4 m/s). Large-diameter fibers with fast-response action potentials spread the wave over the inner (endocardial) surface of both ventricles. They are the fastest tissue in the heart, and they are the main site of ventricular escape pacemakers.</p>
+<p><strong>Ventricular muscle</strong> (about 0.3 to 1 m/s). The wave then crosses the ventricular wall from endocardium to epicardium, cell to cell. Ventricular depolarization is the <strong>QRS complex</strong>. Ventricular repolarization is the <strong>T wave</strong>. Atrial repolarization happens during the QRS and is hidden by it.</p>
+<div id="fig-ecg-vectors-axis-conduction-timing" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ecg-vectors-axis-conduction-timing-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ecg-vectors-axis/conduction-timing.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ecg-vectors-axis-conduction-timing-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.2: The timing of activation in each part of the conduction system during one beat, lined up with a lead II ECG. The SA node, AV node, His bundle, bundle branches and Purkinje fibers produce no visible deflection. The P wave comes from atrial muscle and the QRS from ventricular muscle. Times are illustrative. Course figure.
+</figcaption>
+</figure>
+</div>
+<p>The ECG is not the sum of these action potentials. Each tissue has its own action potential shape, but the ECG records only the voltage gradients that large masses of tissue produce as the wave crosses them.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Background: the conduction speeds in the 2018 course notes
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The 2018 notes give slow-response conduction as 0.02 to 0.1 m/s, ordinary atrial and ventricular muscle as 0.3 to 1 m/s, and the Purkinje system as 1 to 4 m/s. The 2026 slides round these to 0.05 m/s for the nodes, about 1 m/s for the atria, His bundle and bundle branches, and about 4 m/s for the Purkinje fibers. The 2018 notes also say the wave reaches the AV node about 0.01 s after it leaves the SA node; the usual figure is about 0.03 s, and crossing the AV node then takes about 0.1 s. Neither time is a course number.</p>
+</div>
+</div>
+</div>
+<section id="the-ventricular-sequence" class="level3" data-number="12.4.1">
+<h3 data-number="12.4.1" class="anchored" data-anchor-id="the-ventricular-sequence"><span class="header-section-number">12.4.1</span> The ventricular sequence</h3>
+<p>Inside the ventricles, the order of activation sets the shape of the QRS:</p>
+<ol type="1">
+<li><strong>The septum, left to right.</strong> The left bundle branch activates the left side of the septum first, so the first vector points to the right (and forward). Leads that look at the heart from the left, I, aVL, V5 and V6, see this small wave moving away and write a small negative <em>q</em> wave.</li>
+<li><strong>The apex and the free walls of both ventricles,</strong> from endocardium to epicardium. The left ventricle is far thicker than the right, so the net vector points down and to the left. This is the big <strong>R</strong> wave in most leads.</li>
+<li><strong>The base of the left ventricle and the upper septum, last.</strong> The final vector points up and back, and writes a small terminal <strong>S</strong> wave in some leads.</li>
+</ol>
+<p>The vector’s tip traces a loop during the QRS, and each lead sees the loop from its own angle (<a href="#fig-ecg-vectors-axis-qrs-loop" class="quarto-xref">Figure&nbsp;<span>12.5</span></a>).</p>
+</section>
+</section>
+<section id="leads" class="level2" data-number="12.5">
+<h2 data-number="12.5" class="anchored" data-anchor-id="leads"><span class="header-section-number">12.5</span> Leads</h2>
+<p>A <em>lead</em> is a pair of recording points, one treated as positive and one as negative. Each lead records the projection of the heart’s vector on the line between them: positive when the vector points toward the positive end, negative when it points away.</p>
+<section id="the-limb-leads-and-einthovens-triangle" class="level3" data-number="12.5.1">
+<h3 data-number="12.5.1" class="anchored" data-anchor-id="the-limb-leads-and-einthovens-triangle"><span class="header-section-number">12.5.1</span> The limb leads and Einthoven’s triangle</h3>
+<p>Three limb electrodes, on the right arm (RA), left arm (LA) and left leg (LL), make three <em>standard limb leads</em> (<a href="#fig-ecg-vectors-axis-leads" class="quarto-xref">Figure&nbsp;<span>12.3</span></a> A):</p>
+<p><span class="math display">\[\text{I} = V_{LA} - V_{RA} \qquad \text{II} = V_{LL} - V_{RA} \qquad \text{III} = V_{LL} - V_{LA}\]</span></p>
+<p>Einthoven treated the three electrodes as the corners of an equilateral triangle with the heart in the middle. The triangle is insensitive to where on the limb the electrodes go: wrists or shoulders give the same picture, which is why a smartwatch can record lead I from your wrist and the finger of your other hand. Because the three leads are made from the same three electrodes, they are not independent. From the definitions, lead II equals lead I plus lead III at every instant (<em>Einthoven’s law</em>).</p>
+<div id="fig-ecg-vectors-axis-leads" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ecg-vectors-axis-leads-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ecg-vectors-axis/leads.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ecg-vectors-axis-leads-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.3: (A) Einthoven’s triangle. Each standard limb lead is the voltage of its positive electrode minus its negative one. (B) The hexaxial reference system: the six limb leads moved to a common center. The solid half of each line is the lead’s positive end. Course figure.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="each-lead-records-a-projection" class="level3" data-number="12.5.2">
+<h3 data-number="12.5.2" class="anchored" data-anchor-id="each-lead-records-a-projection"><span class="header-section-number">12.5.2</span> Each lead records a projection</h3>
+<p><a href="#fig-ecg-vectors-axis-projection" class="quarto-xref">Figure&nbsp;<span>12.4</span></a> shows a vector pointing at +60°, straight along lead II. Lead II sees all of it. Leads I and III, each 60° away, see half of it. Half plus half equals one, as Einthoven’s law requires.</p>
+<div id="fig-ecg-vectors-axis-projection" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ecg-vectors-axis-projection-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ecg-vectors-axis/projection.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ecg-vectors-axis-projection-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.4: (A) A dipole vector at +60° and its projections on leads I, II and III. Each lead’s shadow is the vector’s length times the cosine of the angle between the vector and the lead. (B) The resulting deflections. Course figure.
+</figcaption>
+</figure>
+</div>
+<p><a href="#fig-ecg-vectors-axis-qrs-loop" class="quarto-xref">Figure&nbsp;<span>12.5</span></a> applies the same rule through a whole QRS. Lead I sees the septal vector moving away (a small q), the main vector at about 60° to its axis (a modest R), and the terminal vector moving away (a small s). Lead II looks almost straight down the main vector and writes the tallest R. aVR looks from the upper right, so almost everything moves away from it and its QRS is negative.</p>
+<div id="fig-ecg-vectors-axis-qrs-loop" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ecg-vectors-axis-qrs-loop-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ecg-vectors-axis/qrs-loop.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ecg-vectors-axis-qrs-loop-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.5: (A) The QRS vector loop of a normal heart in the frontal plane. The numbered arrows are the instantaneous vectors at three moments: (1) the septum, left to right; (2) the apex and free walls; (3) the last regions, at the base. The dashed arrow is the mean of all the instantaneous vectors, the mean electrical axis. (B) The QRS complexes this one loop produces in leads I, II, aVF and aVR. The loop is a model, built to match the course’s description. Course figure.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="augmented-leads-and-the-hexaxial-system" class="level3" data-number="12.5.3">
+<h3 data-number="12.5.3" class="anchored" data-anchor-id="augmented-leads-and-the-hexaxial-system"><span class="header-section-number">12.5.3</span> Augmented leads and the hexaxial system</h3>
+<p>Three more frontal-plane leads come from the same three electrodes, with no extra stickers, just arithmetic. Each <em>augmented lead</em> compares one limb electrode with the average of the other two: aVR (right arm positive), aVL (left arm positive) and aVF (left foot positive). Together the six limb leads look at the frontal plane every 30° (<a href="#fig-ecg-vectors-axis-leads" class="quarto-xref">Figure&nbsp;<span>12.3</span></a> B). By convention, lead I is 0°, angles below it are positive (clockwise), and angles above it are negative.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Lead</th>
+<th>Negative pole</th>
+<th>Positive pole</th>
+<th>Angle</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>I</td>
+<td>RA</td>
+<td>LA</td>
+<td>0°</td>
+</tr>
+<tr class="even">
+<td>II</td>
+<td>RA</td>
+<td>LL</td>
+<td>+60°</td>
+</tr>
+<tr class="odd">
+<td>III</td>
+<td>LA</td>
+<td>LL</td>
+<td>+120°</td>
+</tr>
+<tr class="even">
+<td>aVR</td>
+<td>LA + LL</td>
+<td>RA</td>
+<td>−150°</td>
+</tr>
+<tr class="odd">
+<td>aVL</td>
+<td>RA + LL</td>
+<td>LA</td>
+<td>−30°</td>
+</tr>
+<tr class="even">
+<td>aVF</td>
+<td>RA + LA</td>
+<td>LL</td>
+<td>+90°</td>
+</tr>
+</tbody>
+</table>
+<p>Leads I and aVL look at the lateral wall of the left ventricle (the <em>lateral</em> leads). Leads II, III and aVF look at the inferior wall (the <em>inferior</em> leads).</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>If you are comparing with the slides
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The speaker notes say the augmented leads are measured against “Wilson’s central terminal.” The augmented leads use the average of the <em>other two</em> limb electrodes, as the same note goes on to describe for aVR. Wilson’s central terminal, the average of all three limb electrodes, is the reference for the precordial leads.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="the-mean-electrical-axis" class="level2" data-number="12.6">
+<h2 data-number="12.6" class="anchored" data-anchor-id="the-mean-electrical-axis"><span class="header-section-number">12.6</span> The mean electrical axis</h2>
+<p>The <em>mean electrical axis</em> (MEA) is the average direction of ventricular depolarization in the frontal plane: the mean of all the instantaneous QRS vectors, shown as the dashed arrow in <a href="#fig-ecg-vectors-axis-qrs-loop" class="quarto-xref">Figure&nbsp;<span>12.5</span></a>. In a normal heart it points down and to the left, usually near +60°, because the left ventricle is thick and lies to the left and the apex points down.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>If you are comparing with the slides
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The speaker note on the MEA slide defines it as “the direction of the dipole vector during the peak of ventricular depolarization (peak of R wave).” The MEA is the <em>mean</em> of all the QRS vectors, not the vector at one instant. In a normal heart the two point in nearly the same direction, so either definition gives about the same angle, but in a conduction delay or hypertrophy they can differ. The peer-educator notes give the correct definition, “average direction of ventricular depolarization.”</p>
+</div>
+</div>
+<section id="normal-and-abnormal-ranges" class="level3" data-number="12.6.1">
+<h3 data-number="12.6.1" class="anchored" data-anchor-id="normal-and-abnormal-ranges"><span class="header-section-number">12.6.1</span> Normal and abnormal ranges</h3>
+<p><a href="#fig-ecg-vectors-axis-axis-ranges" class="quarto-xref">Figure&nbsp;<span>12.6</span></a> shows the ranges the course uses.</p>
+<div id="fig-ecg-vectors-axis-axis-ranges" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ecg-vectors-axis-axis-ranges-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ecg-vectors-axis/axis-ranges.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ecg-vectors-axis-axis-ranges-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.6: Ranges of the mean electrical axis. Normal is −30° to +90°, which includes the physiologic leftward axis from −30° to 0°. Left axis deviation is beyond −30° (to −90°), right axis deviation +90° to 180°, and extreme axis −90° to 180° (up and to the right). Course figure.
+</figcaption>
+</figure>
+</div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Axis</th>
+<th>Range</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Normal</td>
+<td>−30° to +90°</td>
+</tr>
+<tr class="even">
+<td>Physiologic leftward axis (part of normal)</td>
+<td>−30° to 0°</td>
+</tr>
+<tr class="odd">
+<td>Left axis deviation (LAD)</td>
+<td>beyond −30° (to −90°)</td>
+</tr>
+<tr class="even">
+<td>Right axis deviation (RAD)</td>
+<td>+90° to 180°</td>
+</tr>
+<tr class="odd">
+<td>Extreme axis</td>
+<td>−90° to 180°</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Physiologic leftward axis.</strong> An axis between 0° and −30° is normal. It is common when the heart lies more horizontally, as in pregnancy or obesity, and in some older or LV-dominant hearts without disease. The course calls this the physiologic leftward axis; some sources call it borderline left axis deviation. It is not left axis deviation.</p>
+<p>The axis moves toward extra muscle and away from tissue that depolarizes late or not at all. The lecture’s causes, at a recognition level:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Axis</th>
+<th>Causes named in the lecture</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Left axis deviation</td>
+<td>Left ventricular hypertrophy, left anterior fascicular block, inferior myocardial infarction</td>
+</tr>
+<tr class="even">
+<td>Right axis deviation</td>
+<td>Right ventricular hypertrophy, lung disease (COPD, acute pulmonary embolism), left posterior fascicular block, anterolateral myocardial infarction</td>
+</tr>
+<tr class="odd">
+<td>Extreme axis</td>
+<td>Ventricular rhythms (ventricular tachycardia, ventricular pacing), hyperkalemia, emphysema, swapped limb leads</td>
+</tr>
+</tbody>
+</table>
+<p>The slide lists a few more (atrial septal defects, pre-excitation, dextrocardia). You do not need them. The left anterior fascicle is thinner than the left posterior one, so left anterior fascicular block is the more common of the two.</p>
+</section>
+</section>
+<section id="finding-the-axis" class="level2" data-number="12.7">
+<h2 data-number="12.7" class="anchored" data-anchor-id="finding-the-axis"><span class="header-section-number">12.7</span> Finding the axis</h2>
+<p>The lecture teaches three methods. For each one, judge a lead by its <strong>net</strong> QRS deflection, the height of the positive part minus the depth of the negative part, not by the R wave alone. A lead with a small R and a deep S is net negative.</p>
+<p><strong>Vector addition.</strong> Take the net QRS deflection in two leads, mark each along its lead’s direction on the hexaxial diagram, draw perpendiculars from the two marks, and the line from the center to where they cross is the axis. With two perpendicular leads the arithmetic is easy. If lead I is net +5 mm and aVF is net +5 mm, the vector points halfway between 0° and +90°, at +45°. This is the most precise method and the slowest, and the ECG machine does it for you.</p>
+<p><strong>Inspection.</strong> Two shortcuts:</p>
+<ul>
+<li>The lead with the <strong>tallest</strong> net positive QRS is closest to the axis.</li>
+<li>The lead with the most <strong>isoelectric</strong> QRS (net deflection near zero) is perpendicular to the axis. The axis is then 90° from that lead, on the side of whichever perpendicular lead is positive.</li>
+</ul>
+<p>A third version, the equal-R-wave method, uses two leads with R waves of the same size and direction: the axis lies midway between them. Equal R waves in II and III, for example, put the axis at +90°, along aVF.</p>
+<p><strong>The “ER Doc” method (lead I, then lead II).</strong> This is the quickest bedside method and the one the course prefers. It answers the clinical question, normal or not, without computing an angle.</p>
+<ol type="1">
+<li><strong>Look at lead I.</strong> If its QRS is net negative, the vector points to the patient’s right, beyond +90° or −90°: right axis deviation (or extreme axis). If lead I is positive, the axis is somewhere from −90° to +90°.</li>
+<li><strong>Look at lead II.</strong> If lead I and lead II are both positive, the axis is normal, from −30° to +90°, including the physiologic leftward axis. If lead I is positive and lead II is negative, the axis is beyond −30°: left axis deviation.</li>
+</ol>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Lead I</th>
+<th>Lead II</th>
+<th>Axis</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Negative</td>
+<td>(either)</td>
+<td>Right axis deviation (or extreme axis)</td>
+</tr>
+<tr class="even">
+<td>Positive</td>
+<td>Positive</td>
+<td>Normal, −30° to +90° (includes physiologic leftward axis)</td>
+</tr>
+<tr class="odd">
+<td>Positive</td>
+<td>Negative</td>
+<td>Left axis deviation, beyond −30°</td>
+</tr>
+</tbody>
+</table>
+<p>Why lead II? Lead II is at +60°, so it turns negative only when the axis passes −30°, exactly the edge of normal. aVF is at +90°, so it turns negative as soon as the axis passes 0°. An axis of −15° is normal, with lead II positive, but aVF is already slightly negative (<a href="#fig-ecg-vectors-axis-axis-method" class="quarto-xref">Figure&nbsp;<span>12.7</span></a>).</p>
+<div id="fig-ecg-vectors-axis-axis-method" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ecg-vectors-axis-axis-method-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ecg-vectors-axis/axis-method.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ecg-vectors-axis-axis-method-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.7: The ER Doc method. QRS complexes in leads I, II and aVF for four axes, all from the same vector loop turned to a different angle. Shading shows the net deflection: green net positive, red net negative. At −15° (physiologic leftward axis) lead II is still positive but aVF is negative. Course figure.
+</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>A common mistake
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Some ECG guides use lead I and <strong>aVF</strong>. That method calls every axis between 0° and −30° abnormal, so it labels a healthy pregnant patient, or anyone with a horizontal heart, as having left axis deviation. Use lead I and <strong>lead II</strong>. If lead II is positive, the axis is normal.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>If you are comparing with the slides
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The ECG Reading Room quick guide lists three axis options. Option 2, “R wave upright in lead I and lead II means normal axis,” is the ER Doc method; check the <em>net</em> QRS rather than the R wave alone. Option 3, “I, II, aVF (thumb rule),” brings aVF back in. If you use it, a negative aVF with a positive lead II is still a normal axis. The answer key’s “borderline left” axis is what this course calls the physiologic leftward axis.</p>
+</div>
+</div>
+</section>
+<section id="the-precordial-leads" class="level2" data-number="12.8">
+<h2 data-number="12.8" class="anchored" data-anchor-id="the-precordial-leads"><span class="header-section-number">12.8</span> The precordial leads</h2>
+<p>The six limb leads see only the frontal plane. Six <em>precordial</em> (chest) leads, V1 to V6, look at the horizontal plane. Each compares one chest electrode with a central reference made by averaging the three limb electrodes (Wilson’s central terminal), so again there is no extra electrode for the negative end. Unlike the limb leads, where an electrode goes on the chest matters, because the chest electrodes sit close to the heart. V1 and V2 sit on either side of the sternum, over the right ventricle and septum; V3 and V4 are over the anterior wall; V5 and V6 are on the left side of the chest over the lateral wall. The lecture’s map of the heart’s surfaces helps here: the right atrium forms the right border, the left ventricle the left border, the right ventricle most of the front (anterior) surface, and the left ventricle most of the diaphragmatic surface.</p>
+<p>As in the limb leads, activation moving toward a chest electrode writes an upward deflection. In V1, the septal vector moves toward the electrode (a small r), and then the large left ventricular forces move away (a deep S). In V6 the order reverses: a small q from the septum, then a tall R. Between them, the R wave grows and the S wave shrinks from V1 to V6. This is <em>R wave progression</em> (<a href="#fig-ecg-vectors-axis-precordial" class="quarto-xref">Figure&nbsp;<span>12.8</span></a>). It reflects the change from looking across the thin right ventricle to looking straight at the thick left ventricle.</p>
+<div id="fig-ecg-vectors-axis-precordial" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ecg-vectors-axis-precordial-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ecg-vectors-axis/precordial.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ecg-vectors-axis-precordial-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.8: (A) The positions of V1 to V6 around the chest, seen from below. (B) Normal R wave progression: rS in V1, R and S about equal near V3 and V4, qR in V6. Model complexes from a vector loop in the horizontal plane. Course figure.
+</figcaption>
+</figure>
+</div>
+<section id="contiguous-leads" class="level3" data-number="12.8.1">
+<h3 data-number="12.8.1" class="anchored" data-anchor-id="contiguous-leads"><span class="header-section-number">12.8.1</span> Contiguous leads</h3>
+<p>Leads that look at the same region of the heart are grouped. When the waveform changes in one lead, look for the same change in its neighbors. This grouping matters most when you diagnose ischemia, which is a second-year topic.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Region</th>
+<th>Leads</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Inferior</td>
+<td>II, III, aVF</td>
+</tr>
+<tr class="even">
+<td>Lateral</td>
+<td>I, aVL, V5, V6</td>
+</tr>
+<tr class="odd">
+<td>Septal</td>
+<td>V1, V2</td>
+</tr>
+<tr class="even">
+<td>Anterior</td>
+<td>V3, V4</td>
+</tr>
+</tbody>
+</table>
+<p>aVR looks at the heart from the upper right and is read on its own.</p>
+</section>
+</section>
+<section id="is-the-ecg-a-picture-of-the-heart" class="level2" data-number="12.9">
+<h2 data-number="12.9" class="anchored" data-anchor-id="is-the-ecg-a-picture-of-the-heart"><span class="header-section-number">12.9</span> Is the ECG a picture of the heart?</h2>
+<p>Not quite. The ECG is a set of projections of one moving vector, recorded from twelve directions, and it tells you about timing, direction and the amount of muscle being activated. Imaging gives anatomy. The lecture ends with body-surface maps made from dozens of electrodes, which come closer to a picture but are not used in routine care.</p>
+</section>
+<section id="check-your-understanding" class="level2" data-number="12.10">
+<h2 data-number="12.10" class="anchored" data-anchor-id="check-your-understanding"><span class="header-section-number">12.10</span> Check your understanding</h2>
+<ol type="1">
+<li><p>A wave of depolarization travels from the left arm toward the right arm. What does lead I record, and why?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>A downward (negative) deflection. Lead I’s positive electrode is on the left arm, so a wave moving from left to right is moving away from the positive electrode.</p>
+</details></li>
+<li><p>At one instant lead I reads +0.3 mV and lead III reads +0.6 mV. What does lead II read?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>+0.9 mV. By Einthoven’s law, lead II equals lead I plus lead III.</p>
+</details></li>
+<li><p>In a patient’s ECG, aVL has the most nearly isoelectric QRS and lead II is strongly positive. Estimate the axis.</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>aVL is at −30°, so the axis is perpendicular to it, at +60° or −120°. Lead II (+60°) is positive, so the axis is about +60°. Normal.</p>
+</details></li>
+<li><p>On the hexaxial diagram, which limb lead is perpendicular to −30°, and which is perpendicular to 0°? Use your answers to explain why, once lead I is positive, the sign of lead II and not of aVF marks the boundary between a normal axis and left axis deviation.</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>Lead II, at +60°, is perpendicular to −30°, and aVF, at +90°, is perpendicular to 0°. A lead’s QRS changes sign when the axis crosses the line perpendicular to that lead. So lead II turns from positive to negative as the axis moves past −30°, the edge of the normal range. aVF turns negative as the axis moves above 0°, which is still inside the normal range (0° to −30° is the physiologic leftward axis). A negative aVF cannot tell normal from abnormal, and a negative lead II can.</p>
+</details></li>
+<li><p>Long-standing hypertension thickens a patient’s left ventricle. Which way does the mean electrical axis move, and what would the ER Doc method show if it moved far enough?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>To the left, toward the extra muscle, because the thicker left ventricle adds more leftward dipole. If it moves past −30°, lead I stays positive and lead II turns negative: left axis deviation.</p>
+</details></li>
+<li><p>Why does the SA node produce no wave on the ECG, while the atria produce the P wave?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>The size of the dipole depends on how much tissue is depolarizing at once. The SA node is tiny, so its dipole is too small to detect at the skin. The atria are a much larger mass of muscle depolarizing together.</p>
+</details></li>
+</ol>
+</section>
+<section id="sources" class="level2" data-number="12.11">
+<h2 data-number="12.11" class="anchored" data-anchor-id="sources"><span class="header-section-number">12.11</span> Sources</h2>
+<p>This chapter follows the 2026 ECG II: Vectors and Mean Electrical Axis lecture for MEDC 30504 (the 2024 deck with speaker notes) and draws on the peer-educator notes, the ECG Reading Room key, and the course’s 2018 electrophysiology notes, corrected and updated. All figures were drawn for this book.</p>
+<div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-w4-boronupd" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Boron WF, Boulpaep EL. <em>Medical Physiology</em>. Updated ed. Elsevier.</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/beiser-lab\.github\.io\/tcop-web-book\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+<nav class="page-navigation" aria-label="Page">
+  <div class="nav-page nav-page-previous">
+      <a href="../cardiovascular/ecg-ionic-basis.html" class="pagination-link" aria-label="EKG I: Ionic Basis">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">EKG I: Ionic Basis</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../cardiovascular/ecg-interpretation.html" class="pagination-link" aria-label="EKG III: Clinical Interpretation">
+        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">EKG III: Clinical Interpretation</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

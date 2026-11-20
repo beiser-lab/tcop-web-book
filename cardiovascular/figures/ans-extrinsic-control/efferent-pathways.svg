@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="590.202419pt" height="335.952pt" viewBox="0 0 590.202419 335.952" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 335.952 
+L 590.202419 335.952 
+L 590.202419 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 182.931907 52.067721 
+L 368.759051 52.067721 
+" clip-path="url(#pc2bb9c721a)" style="fill: none; stroke: #155f83; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 393.436298 52.067721 
+L 463.355163 52.067721 
+" clip-path="url(#pc2bb9c721a)" style="fill: none; stroke-dasharray: 8.8,4.4; stroke-dashoffset: 0; stroke: #155f83; stroke-width: 2.2"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 182.931907 126.847256 
+L 252.850772 126.847256 
+" clip-path="url(#pc2bb9c721a)" style="fill: none; stroke: #800000; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 277.528019 126.847256 
+L 463.355163 126.847256 
+" clip-path="url(#pc2bb9c721a)" style="fill: none; stroke-dasharray: 8.8,4.4; stroke-dashoffset: 0; stroke: #800000; stroke-width: 2.2"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 182.931907 201.626791 
+L 252.850772 201.626791 
+" clip-path="url(#pc2bb9c721a)" style="fill: none; stroke: #800000; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 277.528019 201.626791 
+L 463.355163 201.626791 
+" clip-path="url(#pc2bb9c721a)" style="fill: none; stroke-dasharray: 8.8,4.4; stroke-dashoffset: 0; stroke: #800000; stroke-width: 2.2"/>
+   </g>
+   <g id="line2d_7">
+    <path d="M 182.931907 276.406326 
+L 339.96893 276.406326 
+" clip-path="url(#pc2bb9c721a)" style="fill: none; stroke: #800000; stroke-width: 2.2; stroke-linecap: square"/>
+   </g>
+   <g id="patch_2">
+    <path d="M 416.750999 276.406326 
+Q 439.053242 276.406326 459.678434 276.406326 
+" style="fill: none; stroke-dasharray: 3,3; stroke-dashoffset: 0; stroke: #800000; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 454.878434 274.006326 
+L 459.678434 276.406326 
+L 454.878434 278.806326 
+z
+" style="fill: #800000; stroke-dasharray: 3,3; stroke-dashoffset: 0; stroke: #800000; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 9.8px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #155f83" x="10.938977" y="55.781921" transform="rotate(-0 10.938977 55.781921)">Parasympathetic</text>
+   </g>
+   <g id="patch_3">
+    <path d="M 115.630326 69.640912 
+L 179.19293 69.640912 
+Q 183.679702 69.640912 183.679702 65.15414 
+L 183.679702 38.981302 
+Q 183.679702 34.49453 179.19293 34.49453 
+L 115.630326 34.49453 
+Q 111.143553 34.49453 111.143553 38.981302 
+L 111.143553 65.15414 
+Q 111.143553 69.640912 115.630326 69.640912 
+z
+" clip-path="url(#pc2bb9c721a)" style="fill: #ffffff; stroke: #155f83; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 381.097674 64.406344 
+C 384.369916 64.406344 387.508575 63.106269 389.822399 60.792445 
+C 392.136222 58.478621 393.436298 55.339962 393.436298 52.067721 
+C 393.436298 48.79548 392.136222 45.656821 389.822399 43.342997 
+C 387.508575 41.029173 384.369916 39.729098 381.097674 39.729098 
+C 377.825433 39.729098 374.686774 41.029173 372.37295 43.342997 
+C 370.059126 45.656821 368.759051 48.79548 368.759051 52.067721 
+C 368.759051 55.339962 370.059126 58.478621 372.37295 60.792445 
+C 374.686774 63.106269 377.825433 64.406344 381.097674 64.406344 
+z
+" clip-path="url(#pc2bb9c721a)" style="fill: #f4f4f4; stroke: #155f83; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 8px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4d4d4d" x="381.097674" y="33.372837" transform="rotate(-0 381.097674 33.372837)">ganglion</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 8.3px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4d4d4d" x="275.845479" y="71.186251" transform="rotate(-0 275.845479 71.186251)">ACh, nicotinic</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #155f83" x="428.39573" y="45.337563" transform="rotate(-0 428.39573 45.337563)">ACh</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 8.3px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4d4d4d" x="428.39573" y="69.316763" transform="rotate(-0 428.39573 69.316763)">muscarinic</text>
+   </g>
+   <g id="patch_5">
+    <path d="M 467.09414 70.575656 
+L 571.785488 70.575656 
+Q 576.27226 70.575656 576.27226 66.088884 
+L 576.27226 38.046558 
+Q 576.27226 33.559786 571.785488 33.559786 
+L 467.09414 33.559786 
+Q 462.607367 33.559786 462.607367 38.046558 
+L 462.607367 66.088884 
+Q 462.607367 70.575656 467.09414 70.575656 
+z
+" clip-path="url(#pc2bb9c721a)" style="fill: #ffffff; stroke: #155f83; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 9.8px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #800000" x="10.938977" y="130.561456" transform="rotate(-0 10.938977 130.561456)">Sympathetic</text>
+   </g>
+   <g id="patch_6">
+    <path d="M 115.630326 144.420447 
+L 179.19293 144.420447 
+Q 183.679702 144.420447 183.679702 139.933674 
+L 183.679702 113.760837 
+Q 183.679702 109.274065 179.19293 109.274065 
+L 115.630326 109.274065 
+Q 111.143553 109.274065 111.143553 113.760837 
+L 111.143553 139.933674 
+Q 111.143553 144.420447 115.630326 144.420447 
+z
+" clip-path="url(#pc2bb9c721a)" style="fill: #ffffff; stroke: #800000; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 265.189395 139.185879 
+C 268.461636 139.185879 271.600296 137.885804 273.91412 135.57198 
+C 276.227943 133.258156 277.528019 130.119497 277.528019 126.847256 
+C 277.528019 123.575015 276.227943 120.436356 273.91412 118.122532 
+C 271.600296 115.808708 268.461636 114.508633 265.189395 114.508633 
+C 261.917154 114.508633 258.778495 115.808708 256.464671 118.122532 
+C 254.150847 120.436356 252.850772 123.575015 252.850772 126.847256 
+C 252.850772 130.119497 254.150847 133.258156 256.464671 135.57198 
+C 258.778495 137.885804 261.917154 139.185879 265.189395 139.185879 
+z
+" clip-path="url(#pc2bb9c721a)" style="fill: #f4f4f4; stroke: #800000; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 8px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4d4d4d" x="265.189395" y="108.152372" transform="rotate(-0 265.189395 108.152372)">ganglion</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 8.3px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4d4d4d" x="217.89134" y="145.965786" transform="rotate(-0 217.89134 145.965786)">ACh, nicotinic</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #800000" x="370.441591" y="120.117098" transform="rotate(-0 370.441591 120.117098)">NE</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 8.3px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #4d4d4d" transform="translate(350.882122 144.212498)">adrenergic</text>
+    <!-- (α$_1$, β$_1$, β$_2$) -->
+    <g style="fill: #4d4d4d" transform="translate(350.521591 154.114398)">
+     <text>
+      <tspan x="0" y="-0.9375" style="font-size: 8.3px; font-family: 'Helvetica Neue'; fill: #4d4d4d">(</tspan>
+      <tspan x="2.148911" y="-0.9375" style="font-size: 8.3px; font-family: 'Helvetica Neue'; fill: #4d4d4d">α</tspan>
+      <tspan x="11.020725" y="-0.9375" style="font-size: 8.3px; font-family: 'Helvetica Neue'; fill: #4d4d4d">,</tspan>
+      <tspan x="13.32729" y="-0.9375" style="font-size: 8.3px; font-family: 'Helvetica Neue'; fill: #4d4d4d"> </tspan>
+      <tspan x="15.633854" y="-0.9375" style="font-size: 8.3px; font-family: 'Helvetica Neue'; fill: #4d4d4d">β</tspan>
+      <tspan x="24.314843" y="-0.9375" style="font-size: 8.3px; font-family: 'Helvetica Neue'; fill: #4d4d4d">,</tspan>
+      <tspan x="26.621407" y="-0.9375" style="font-size: 8.3px; font-family: 'Helvetica Neue'; fill: #4d4d4d"> </tspan>
+      <tspan x="28.927971" y="-0.9375" style="font-size: 8.3px; font-family: 'Helvetica Neue'; fill: #4d4d4d">β</tspan>
+      <tspan x="37.60896" y="-0.9375" style="font-size: 8.3px; font-family: 'Helvetica Neue'; fill: #4d4d4d">)</tspan>
+      <tspan x="7.09866" y="0.307496" style="font-size: 5.81px; font-family: 'DejaVu Sans'; fill: #4d4d4d">1</tspan>
+      <tspan x="20.392777" y="0.307496" style="font-size: 5.81px; font-family: 'DejaVu Sans'; fill: #4d4d4d">1</tspan>
+      <tspan x="33.686894" y="0.307496" style="font-size: 5.81px; font-family: 'DejaVu Sans'; fill: #4d4d4d">2</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="patch_8">
+    <path d="M 467.09414 145.355191 
+L 571.785488 145.355191 
+Q 576.27226 145.355191 576.27226 140.868419 
+L 576.27226 112.826093 
+Q 576.27226 108.339321 571.785488 108.339321 
+L 467.09414 108.339321 
+Q 462.607367 108.339321 462.607367 112.826093 
+L 462.607367 140.868419 
+Q 462.607367 145.355191 467.09414 145.355191 
+z
+" clip-path="url(#pc2bb9c721a)" style="fill: #ffffff; stroke: #800000; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 9.8px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #800000" transform="translate(10.938977 199.358091)">Sympathetic to</text>
+    <text style="font-weight: 700; font-size: 9.8px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #800000" transform="translate(10.938977 211.323891)">sweat glands</text>
+   </g>
+   <g id="patch_9">
+    <path d="M 115.630326 219.199981 
+L 179.19293 219.199981 
+Q 183.679702 219.199981 183.679702 214.713209 
+L 183.679702 188.540372 
+Q 183.679702 184.0536 179.19293 184.0536 
+L 115.630326 184.0536 
+Q 111.143553 184.0536 111.143553 188.540372 
+L 111.143553 214.713209 
+Q 111.143553 219.199981 115.630326 219.199981 
+z
+" clip-path="url(#pc2bb9c721a)" style="fill: #ffffff; stroke: #800000; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 265.189395 213.965414 
+C 268.461636 213.965414 271.600296 212.665339 273.91412 210.351515 
+C 276.227943 208.037691 277.528019 204.899032 277.528019 201.626791 
+C 277.528019 198.35455 276.227943 195.21589 273.91412 192.902067 
+C 271.600296 190.588243 268.461636 189.288167 265.189395 189.288167 
+C 261.917154 189.288167 258.778495 190.588243 256.464671 192.902067 
+C 254.150847 195.21589 252.850772 198.35455 252.850772 201.626791 
+C 252.850772 204.899032 254.150847 208.037691 256.464671 210.351515 
+C 258.778495 212.665339 261.917154 213.965414 265.189395 213.965414 
+z
+" clip-path="url(#pc2bb9c721a)" style="fill: #f4f4f4; stroke: #800000; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 8px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4d4d4d" x="265.189395" y="182.931907" transform="rotate(-0 265.189395 182.931907)">ganglion</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 8.3px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4d4d4d" x="217.89134" y="220.745321" transform="rotate(-0 217.89134 220.745321)">ACh, nicotinic</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #800000" x="370.441591" y="194.896633" transform="rotate(-0 370.441591 194.896633)">ACh</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 8.3px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4d4d4d" x="370.441591" y="218.875833" transform="rotate(-0 370.441591 218.875833)">muscarinic</text>
+   </g>
+   <g id="patch_11">
+    <path d="M 467.09414 220.134726 
+L 571.785488 220.134726 
+Q 576.27226 220.134726 576.27226 215.647953 
+L 576.27226 187.605628 
+Q 576.27226 183.118856 571.785488 183.118856 
+L 467.09414 183.118856 
+Q 462.607367 183.118856 462.607367 187.605628 
+L 462.607367 215.647953 
+Q 462.607367 220.134726 467.09414 220.134726 
+z
+" clip-path="url(#pc2bb9c721a)" style="fill: #ffffff; stroke: #800000; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 9.8px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #800000" transform="translate(10.938977 274.137626)">Adrenal</text>
+    <text style="font-weight: 700; font-size: 9.8px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #800000" transform="translate(10.938977 286.103426)">medulla</text>
+   </g>
+   <g id="patch_12">
+    <path d="M 115.630326 293.979516 
+L 179.19293 293.979516 
+Q 183.679702 293.979516 183.679702 289.492744 
+L 183.679702 263.319907 
+Q 183.679702 258.833135 179.19293 258.833135 
+L 115.630326 258.833135 
+Q 111.143553 258.833135 111.143553 263.319907 
+L 111.143553 289.492744 
+Q 111.143553 293.979516 115.630326 293.979516 
+z
+" clip-path="url(#pc2bb9c721a)" style="fill: #ffffff; stroke: #800000; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 8.3px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4d4d4d" x="261.450419" y="295.524856" transform="rotate(-0 261.450419 295.524856)">ACh, nicotinic</text>
+   </g>
+   <g id="patch_13">
+    <path d="M 343.707907 294.91426 
+L 411.009488 294.91426 
+Q 415.49626 294.91426 415.49626 290.427488 
+L 415.49626 262.385163 
+Q 415.49626 257.898391 411.009488 257.898391 
+L 343.707907 257.898391 
+Q 339.221135 257.898391 339.221135 262.385163 
+L 339.221135 290.427488 
+Q 339.221135 294.91426 343.707907 294.91426 
+z
+" clip-path="url(#pc2bb9c721a)" style="fill: #f6ece0; stroke: #800000; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 8.3px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4d4d4d" x="439.051814" y="268.928372" transform="rotate(-0 439.051814 268.928372)">blood</text>
+   </g>
+   <g id="patch_14">
+    <path d="M 467.09414 294.91426 
+L 571.785488 294.91426 
+Q 576.27226 294.91426 576.27226 290.427488 
+L 576.27226 262.385163 
+Q 576.27226 257.898391 571.785488 257.898391 
+L 467.09414 257.898391 
+Q 462.607367 257.898391 462.607367 262.385163 
+L 462.607367 290.427488 
+Q 462.607367 294.91426 467.09414 294.91426 
+z
+" clip-path="url(#pc2bb9c721a)" style="fill: #ffffff; stroke: #800000; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 8.6px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #4d4d4d" x="295.101209" y="16.547442" transform="rotate(-0 295.101209 16.547442)">solid line: preganglionic neuron      dashed line: postganglionic neuron</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 8.4px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #193944" transform="translate(115.596628 50.160921)">brainstem (CN X)</text>
+    <text style="font-size: 8.4px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #193944" transform="translate(121.589503 60.182121)">or sacral cord</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 8.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #193944" transform="translate(473.192509 50.138221)">heart (SA and AV nodes,</text>
+    <text style="font-size: 8.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #193944" transform="translate(482.298798 60.278721)">atria), a few vessels</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 8.4px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #193944" transform="translate(125.16869 124.940456)">lateral horn,</text>
+    <text style="font-size: 8.4px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #193944" transform="translate(131.926753 134.961656)">T1 to L2</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 8.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #193944" transform="translate(488.746181 124.917756)">heart, arterioles,</text>
+    <text style="font-size: 8.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #193944" transform="translate(509.601064 135.058256)">veins</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 8.4px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #193944" transform="translate(125.16869 199.719991)">lateral horn,</text>
+    <text style="font-size: 8.4px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #193944" transform="translate(131.926753 209.741191)">T1 to L2</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 8.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #193944" x="519.439814" y="204.767541" transform="rotate(-0 519.439814 204.767541)">sweat glands</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 8.4px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #193944" transform="translate(125.16869 274.499526)">lateral horn,</text>
+    <text style="font-size: 8.4px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #193944" transform="translate(131.926753 284.520726)">T1 to L2</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 8.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #193944" transform="translate(357.268815 274.476826)">chromaffin</text>
+    <text style="font-size: 8.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #193944" transform="translate(368.781666 284.617326)">cells</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 8.3px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #193944" transform="translate(469.320783 274.522226)">epinephrine (and some NE)</text>
+    <text style="font-size: 8.3px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #193944" transform="translate(496.382025 284.424126)">to all tissues</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pc2bb9c721a">
+   <rect x="7.2" y="7.2" width="575.802419" height="321.552"/>
+  </clipPath>
+ </defs>
+</svg>

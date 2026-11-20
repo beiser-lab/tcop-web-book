@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>11&nbsp; EKG I: Ionic Basis – Tissues, Cells &amp; Organ Physiology</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../cardiovascular/ecg-vectors-axis.html" rel="next">
+<link href="../cardiovascular/ans-extrinsic-control.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-01a495efc5497ac6e3f5457e7ed18e65.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Toolbar">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../cardiovascular/cv-overview.html">Cardiovascular physiology, excitable cells and muscle</a></li><li class="breadcrumb-item"><a href="../cardiovascular/ecg-ionic-basis.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">EKG I: Ionic Basis</span></a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Tissues, Cells &amp; Organ Physiology</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About this book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Cardiovascular physiology, excitable cells and muscle</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cv-overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cardiovascular Physiology Overview</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cardiac-pump.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Cardiac Pump</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/excitable-cells.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Membrane Potentials and Excitable Cells</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/hemodynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Peripheral Circulation and Hemodynamics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/skeletal-muscle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Skeletal Muscle</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/smooth-muscle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Smooth Muscle</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/cardiac-muscle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Cardiac Muscle</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/microcirculation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Microcirculation and Local Control</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/control-of-co.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Control of Cardiac Output and Ventricular-Vascular Coupling</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ans-extrinsic-control.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">ANS and Extrinsic Control</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ecg-ionic-basis.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">EKG I: Ionic Basis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ecg-vectors-axis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">ECG II: Vectors and Mean Electrical Axis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ecg-interpretation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">EKG III: Clinical Interpretation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cv-integration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Cardiovascular Integration and Adaptation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cv-exercise.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Cardiovascular Adaptation to Exercise</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/coronary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Coronary Circulation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/special-circulations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Other Special Circulations</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/pulmonary-circulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Pulmonary Circulation</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Pulmonary physiology</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/respiratory-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Respiratory Physiology Introduction</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/statics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Respiratory Statics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/dynamics-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Respiratory Dynamics I</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/dynamics-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Respiratory Dynamics II</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/ventilation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Alveolar Ventilation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/diffusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Diffusion</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/o2-co2-transport.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Transport of O<sub>2</sub> and CO<sub>2</sub> in the Blood</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/acid-base.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Pulmonary Acid Base</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/ventilation-perfusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Ventilation and Perfusion</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/control-of-ventilation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Control of Pulmonary Ventilation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/exercise.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Physiology of Exercise</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/respiratory-consultant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Think Like a Respiratory Consultant</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#three-kinds-of-action-potential" id="toc-three-kinds-of-action-potential" class="nav-link active" data-scroll-target="#three-kinds-of-action-potential"><span class="header-section-number">11.1</span> Three kinds of action potential</a></li>
+  <li><a href="#the-fast-response-action-potential" id="toc-the-fast-response-action-potential" class="nav-link" data-scroll-target="#the-fast-response-action-potential"><span class="header-section-number">11.2</span> The fast-response action potential</a>
+  <ul class="collapse">
+  <li><a href="#the-forces-on-each-ion" id="toc-the-forces-on-each-ion" class="nav-link" data-scroll-target="#the-forces-on-each-ion"><span class="header-section-number">11.2.1</span> The forces on each ion</a></li>
+  <li><a href="#why-the-inward-rectifier-matters" id="toc-why-the-inward-rectifier-matters" class="nav-link" data-scroll-target="#why-the-inward-rectifier-matters"><span class="header-section-number">11.2.2</span> Why the inward rectifier matters</a></li>
+  </ul></li>
+  <li><a href="#three-differences-between-cardiac-and-skeletal-muscle" id="toc-three-differences-between-cardiac-and-skeletal-muscle" class="nav-link" data-scroll-target="#three-differences-between-cardiac-and-skeletal-muscle"><span class="header-section-number">11.3</span> Three differences between cardiac and skeletal muscle</a></li>
+  <li><a href="#excitation-contraction-coupling-briefly" id="toc-excitation-contraction-coupling-briefly" class="nav-link" data-scroll-target="#excitation-contraction-coupling-briefly"><span class="header-section-number">11.4</span> Excitation-contraction coupling, briefly</a></li>
+  <li><a href="#the-slow-response-action-potential" id="toc-the-slow-response-action-potential" class="nav-link" data-scroll-target="#the-slow-response-action-potential"><span class="header-section-number">11.5</span> The slow-response action potential</a></li>
+  <li><a href="#automaticity" id="toc-automaticity" class="nav-link" data-scroll-target="#automaticity"><span class="header-section-number">11.6</span> Automaticity</a>
+  <ul class="collapse">
+  <li><a href="#how-the-autonomic-nervous-system-changes-the-rate" id="toc-how-the-autonomic-nervous-system-changes-the-rate" class="nav-link" data-scroll-target="#how-the-autonomic-nervous-system-changes-the-rate"><span class="header-section-number">11.6.1</span> How the autonomic nervous system changes the rate</a></li>
+  </ul></li>
+  <li><a href="#refractory-periods" id="toc-refractory-periods" class="nav-link" data-scroll-target="#refractory-periods"><span class="header-section-number">11.7</span> Refractory periods</a></li>
+  <li><a href="#upstroke-speed-resting-potential-and-conduction" id="toc-upstroke-speed-resting-potential-and-conduction" class="nav-link" data-scroll-target="#upstroke-speed-resting-potential-and-conduction"><span class="header-section-number">11.8</span> Upstroke speed, resting potential and conduction</a></li>
+  <li><a href="#check-your-understanding" id="toc-check-your-understanding" class="nav-link" data-scroll-target="#check-your-understanding"><span class="header-section-number">11.9</span> Check your understanding</a></li>
+  <li><a href="#sources" id="toc-sources" class="nav-link" data-scroll-target="#sources"><span class="header-section-number">11.10</span> Sources</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../cardiovascular/cv-overview.html">Cardiovascular physiology, excitable cells and muscle</a></li><li class="breadcrumb-item"><a href="../cardiovascular/ecg-ionic-basis.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">EKG I: Ionic Basis</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">EKG I: Ionic Basis</span></h1>
+<p class="subtitle lead">Cardiac action potentials, automaticity and refractoriness</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Goals for this chapter
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Name the phases of the fast-response action potential and the current that dominates each one.</li>
+<li>Explain why the cardiac action potential lasts about 300 ms and why the heart cannot be tetanized.</li>
+<li>Describe the slow-response action potential of the SA and AV nodes, and the currents that drive its phase 4 depolarization.</li>
+<li>Explain automaticity, and how sympathetic and parasympathetic input change the rate at which the SA node fires.</li>
+<li>Define the absolute and relative refractory periods and the channel events behind them.</li>
+<li>Predict how a Na⁺ channel blocker, an L-type Ca²⁺ channel blocker, or a high extracellular K⁺ changes the upstroke, conduction and the ECG.</li>
+</ul>
+<p>Names, dates and the exact values in figure captions are context, not things to memorize.</p>
+</div>
+</div>
+<p>This is the first of three lectures that take you from ion channels to the clinical electrocardiogram. This one stays inside single cells: which channels open, in what order, and what that does to the membrane potential. The next chapter, <a href="../cardiovascular/ecg-vectors-axis.html">ECG II: Vectors and Mean Electrical Axis</a>, follows the wave of depolarization through the heart and onto the body surface, and <a href="../cardiovascular/ecg-interpretation.html">EKG III: Clinical Interpretation</a> reads real tracings. The course titles spell the recording both ways, EKG and ECG. This book writes ECG.</p>
+<p>Keep one warning in mind from the start: <strong>the ECG is not an action potential.</strong> An action potential is the voltage across one cell’s membrane, recorded with an electrode inside the cell. The ECG records small voltage differences between points on the skin, made by the whole heart at once. The shapes look a little alike, and that is where the confusion starts. The second chapter explains how one turns into the other.</p>
+<p>The membrane-potential basics (equilibrium potentials, the Nernst equation, voltage-gated channels) are in <a href="../muscle/excitable-cells.html">Membrane Potentials and Excitable Cells</a>, and excitation-contraction coupling is in <a href="../muscle/cardiac-muscle.html">Cardiac Muscle</a>. This chapter uses both.</p>
+<section id="three-kinds-of-action-potential" class="level2" data-number="11.1">
+<h2 data-number="11.1" class="anchored" data-anchor-id="three-kinds-of-action-potential"><span class="header-section-number">11.1</span> Three kinds of action potential</h2>
+<p>The lecture starts by setting three action potentials side by side.</p>
+<ul>
+<li><strong>Skeletal muscle.</strong> A fast upstroke and a fast return, all over in 3 to 5 ms. There is no plateau.</li>
+<li><strong>Fast-response action potential.</strong> Found in atrial and ventricular muscle and in the His-Purkinje conduction system. The upstroke is fast, like skeletal muscle, but the cell then holds near 0 mV for 200 ms or more before it repolarizes. The whole action potential lasts about 250 to 300 ms.</li>
+<li><strong>Slow-response action potential.</strong> Found in the pacemaker cells of the sinoatrial (SA) and atrioventricular (AV) nodes. The upstroke is slow, there is no true plateau, and the cell never sits at a stable resting potential. Between beats it drifts upward on its own until it fires again.</li>
+</ul>
+<p>The slides call these the fast and slow cardiac APs. The difference in their upstrokes comes from which ion carries the inward current: Na⁺ in fast-response cells, Ca²⁺ in slow-response cells. Most of the rest of the chapter follows from that.</p>
+</section>
+<section id="the-fast-response-action-potential" class="level2" data-number="11.2">
+<h2 data-number="11.2" class="anchored" data-anchor-id="the-fast-response-action-potential"><span class="header-section-number">11.2</span> The fast-response action potential</h2>
+<p><a href="#fig-ecg-ionic-basis-fast-ap-currents" class="quarto-xref">Figure&nbsp;<span>11.1</span></a> shows a ventricular action potential with the main currents underneath it. By convention, inward current (positive charge entering the cell, which depolarizes it) is drawn downward, and outward current upward.</p>
+<div id="fig-ecg-ionic-basis-fast-ap-currents" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ecg-ionic-basis-fast-ap-currents-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ecg-ionic-basis/fast-ap-currents.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ecg-ionic-basis-fast-ap-currents-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;11.1: A fast-response action potential from a ventricular myocyte, with its phases numbered, and the time course of the main ionic currents below it. Inward currents are drawn downward. The current traces show when each current flows, not how large it is. Adapted from Näbauer and Kääb <span class="citation" data-cites="w4-nabauer1998">[<a href="cv-overview.html#ref-w4-nabauer1998" role="doc-biblioref">1</a>]</span>, as used in the 2026 lecture.
+</figcaption>
+</figure>
+</div>
+<p><strong>Phase 4, rest.</strong> Between beats the cell sits at about −90 mV, close to the K⁺ equilibrium potential. It is held there by the inward rectifier K⁺ current, I<sub>K1</sub>. The membrane at rest is far more permeable to K⁺ than to anything else, so the membrane potential stays near E<sub>K</sub>. A small inward leak of Na⁺ keeps it slightly less negative than E<sub>K</sub> itself. The Na⁺/K⁺-ATPase, a pump that moves 3 Na⁺ out and 2 K⁺ in for each ATP, restores the gradients that each beat runs down.</p>
+<p><strong>Phase 0, rapid depolarization.</strong> When a neighboring cell’s current depolarizes the membrane past threshold, about −65 mV, voltage-gated Na⁺ channels open. Na⁺ rushes in, driven both by its concentration gradient and by the negative inside of the cell, and the membrane swings from −90 mV to a peak above 0 (about +20 mV) in 1 to 2 ms. This inward Na⁺ current, I<sub>Na</sub>, is the largest current the cell carries, but it is brief. Within a millisecond or two the Na⁺ channels inactivate, and they stay inactivated until the cell repolarizes.</p>
+<p><strong>Phase 1, early partial repolarization.</strong> The transient outward K⁺ current, I<sub>to</sub>, opens with depolarization and inactivates within a few milliseconds. K⁺ leaving the cell pulls the peak back toward 0 mV and makes the small notch at the top of the action potential.</p>
+<p><strong>Phase 2, the plateau.</strong> For 200 ms or more the membrane potential stays near 0 mV. This is the phase that makes cardiac muscle different. The membrane potential hardly changes because inward and outward currents are almost equal:</p>
+<ul>
+<li><em>Inward</em>: Ca²⁺ through L-type (“long-lasting”) Ca²⁺ channels, I<sub>Ca,L</sub>. These channels respond to the depolarization of phase 0 but open slowly, so their current builds late in phase 0 and carries the plateau. The Ca²⁺ that enters here is the trigger for contraction (see the excitation-contraction coupling section below). L-type channels are the target of the Ca²⁺ channel blockers.</li>
+<li><em>Outward</em>: K⁺ through the delayed rectifier channels. They open slowly during the plateau, so their current starts small and grows.</li>
+</ul>
+<p><strong>Phase 3, repolarization.</strong> As the L-type channels inactivate and the delayed rectifier K⁺ channels open further, the outward current wins and the membrane repolarizes. There are two delayed rectifier currents, a rapid one (I<sub>Kr</sub>) and a slow one (I<sub>Ks</sub>). Late in phase 3, once the membrane is negative enough, I<sub>K1</sub> comes back and finishes the job, pulling the cell back to −90 mV.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Phase</th>
+<th>What happens</th>
+<th>Main current</th>
+<th>Ion and direction</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>4</td>
+<td>Stable rest near −90 mV</td>
+<td>I<sub>K1</sub> (inward rectifier)</td>
+<td>K⁺ out</td>
+</tr>
+<tr class="even">
+<td>0</td>
+<td>Rapid upstroke from threshold (about −65 mV)</td>
+<td>I<sub>Na</sub></td>
+<td>Na⁺ in</td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>Early notch</td>
+<td>I<sub>to</sub></td>
+<td>K⁺ out</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Plateau near 0 mV for 200 ms or more</td>
+<td>I<sub>Ca,L</sub> against delayed rectifier K⁺</td>
+<td>Ca²⁺ in, K⁺ out</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Repolarization</td>
+<td>I<sub>Kr</sub> and I<sub>Ks</sub>, then I<sub>K1</sub></td>
+<td>K⁺ out</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>If you are comparing with the slides
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The slide figures show the resting potential as −96 mV and the peak as +52 mV. The peer-educator notes give −90 mV and +20 mV. These are the same action potential drawn from different sources; any value near E<sub>K</sub> for rest and somewhat above 0 for the peak is right.</p>
+<p>hERG carries I<sub>Kr</sub> and KCNQ1 (also called KvLQT1) carries I<sub>Ks</sub>; inherited defects in either lengthen the QT interval.</p>
+<p>The phase 4 notes call the Na⁺/K⁺-ATPase an “exchanger” and say excess Ca²⁺ leaves by “an ATP-driven Ca pump.” The Na⁺/K⁺-ATPase is a pump. Most of the Ca²⁺ that leaves the cell goes out by the Na⁺/Ca²⁺ exchanger (NCX), as the calcium-cycling slide shows (28%); the sarcolemmal Ca²⁺ pump moves only a small fraction.</p>
+</div>
+</div>
+<section id="the-forces-on-each-ion" class="level3" data-number="11.2.1">
+<h3 data-number="11.2.1" class="anchored" data-anchor-id="the-forces-on-each-ion"><span class="header-section-number">11.2.1</span> The forces on each ion</h3>
+<p>The lecture walks through the same phases in terms of the two forces on each ion, its concentration gradient and the electrical gradient. The pattern is easier to remember than the slide animations:</p>
+<ul>
+<li><strong>Phase 0.</strong> Na⁺ is at high concentration outside and the inside of the cell is negative, so both forces push Na⁺ in. That is why the current is so large and the upstroke so fast.</li>
+<li><strong>Phase 1 and 3.</strong> K⁺ is at high concentration inside. Whenever the membrane potential is above E<sub>K</sub> (about −94 mV), the net force on K⁺ is outward, and K⁺ leaves through any open K⁺ channel. That outward current repolarizes the cell.</li>
+<li><strong>Phase 2.</strong> During the plateau the inside of the cell is slightly positive, so the electrical force pushes both Ca²⁺ and K⁺ outward, though only weakly. Ca²⁺ still enters, because its concentration outside is about ten thousand times its concentration inside, and K⁺ leaves down its own concentration gradient. The two currents roughly cancel.</li>
+<li><strong>Phase 4.</strong> At rest the membrane sits just positive to E<sub>K</sub>, where the chemical and electrical forces on K⁺ nearly balance.</li>
+</ul>
+</section>
+<section id="why-the-inward-rectifier-matters" class="level3" data-number="11.2.2">
+<h3 data-number="11.2.2" class="anchored" data-anchor-id="why-the-inward-rectifier-matters"><span class="header-section-number">11.2.2</span> Why the inward rectifier matters</h3>
+<p>I<sub>K1</sub> is called an <em>inward rectifier</em> because it passes current much more easily into the cell than out of it. In practice its conductance is large near the resting potential, which clamps the cell close to E<sub>K</sub> (the net current there is small, because the membrane is already near E<sub>K</sub>), and very small once the cell is depolarized. During the plateau, I<sub>K1</sub> channels pass almost no outward current. If they did, the plateau would need a much larger inward current to hold the membrane near 0, and it would cost the cell far more ion movement. Slow-response cells have almost no I<sub>K1</sub>, which is one reason they have no stable resting potential.</p>
+</section>
+</section>
+<section id="three-differences-between-cardiac-and-skeletal-muscle" class="level2" data-number="11.3">
+<h2 data-number="11.3" class="anchored" data-anchor-id="three-differences-between-cardiac-and-skeletal-muscle"><span class="header-section-number">11.3</span> Three differences between cardiac and skeletal muscle</h2>
+<p>The lecture names three:</p>
+<ol type="1">
+<li><strong>The plateau.</strong> A cardiac action potential lasts about 300 ms; a skeletal muscle action potential lasts about 5 ms. The long cardiac action potential means the cell stays refractory through most of its own contraction, so twitches cannot fuse and the heart cannot be tetanized.</li>
+<li><strong>Cell-to-cell conduction.</strong> Cardiac action potentials spread directly from one cell to the next through gap junctions. Every skeletal muscle fiber needs its own motor neuron and neuromuscular junction.</li>
+<li><strong>Automaticity.</strong> Some cardiac cells fire on their own, with no outside trigger.</li>
+</ol>
+<p><a href="#fig-ecg-ionic-basis-skeletal-vs-cardiac" class="quarto-xref">Figure&nbsp;<span>11.2</span></a> shows the first difference.</p>
+<div id="fig-ecg-ionic-basis-skeletal-vs-cardiac" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ecg-ionic-basis-skeletal-vs-cardiac-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ecg-ionic-basis/skeletal-vs-cardiac.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ecg-ionic-basis-skeletal-vs-cardiac-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;11.2: (A) In skeletal muscle each action potential lasts about 5 ms and is over long before the twitch it triggers. Stimuli 25 ms apart each produce a separate, full-sized action potential, and the forces add (tetanus). (B) In cardiac muscle the action potential lasts as long as most of the contraction. The cell is absolutely refractory (tan) until it has repolarized to about −50 mV, then relatively refractory (blue), so a second stimulus during the rise and peak of the contraction produces nothing and twitches cannot fuse. Course figure.
+</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>A common mistake
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In tetanus, <strong>force</strong> sums. Action potentials do not. Each skeletal muscle action potential is an all-or-none event that is over in a few milliseconds, and the next one is the same size. What adds up is the Ca²⁺ released and the force of the overlapping twitches. Cardiac muscle cannot do this because its action potential, and so its refractory period, lasts almost as long as the twitch.</p>
+</div>
+</div>
+</section>
+<section id="excitation-contraction-coupling-briefly" class="level2" data-number="11.4">
+<h2 data-number="11.4" class="anchored" data-anchor-id="excitation-contraction-coupling-briefly"><span class="header-section-number">11.4</span> Excitation-contraction coupling, briefly</h2>
+<p>The action potential exists to make the heart contract. The steps, which the <a href="../muscle/cardiac-muscle.html">Cardiac Muscle</a> chapter covers in detail, are:</p>
+<ol type="1">
+<li>The action potential spreads down the T-tubules.</li>
+<li>L-type Ca²⁺ channels open during the plateau. This Ca²⁺ entry from outside the cell is required. Without extracellular Ca²⁺ the heart does not contract.</li>
+<li>The entering Ca²⁺ opens ryanodine receptors (RyR2) in the sarcoplasmic reticulum, which release a much larger amount of Ca²⁺: calcium-induced calcium release.</li>
+<li>Ca²⁺ binds troponin C, tropomyosin moves off the myosin-binding sites on actin, and the cell contracts (systole).</li>
+<li>To relax (diastole), Ca²⁺ is removed from the cytosol. About 70% goes back into the sarcoplasmic reticulum through SERCA2a, about 28% leaves the cell through NCX, and the last 1 to 2% goes through the sarcolemmal Ca²⁺-ATPase and into the mitochondria.</li>
+</ol>
+<p>The sarcoplasmic reticulum’s Ca²⁺ triggers contraction. It does not depolarize the cell; Na⁺ entry does that, and the plateau is carried by Ca²⁺ entering across the sarcolemma.</p>
+</section>
+<section id="the-slow-response-action-potential" class="level2" data-number="11.5">
+<h2 data-number="11.5" class="anchored" data-anchor-id="the-slow-response-action-potential"><span class="header-section-number">11.5</span> The slow-response action potential</h2>
+<p><a href="#fig-ecg-ionic-basis-slow-ap-currents" class="quarto-xref">Figure&nbsp;<span>11.3</span></a> shows two beats from an SA node cell. Only phases 4, 0 and 3 are labeled. There is no phase 1 notch, and the brief, sloping top of the action potential blends phase 2 into phase 3.</p>
+<div id="fig-ecg-ionic-basis-slow-ap-currents" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ecg-ionic-basis-slow-ap-currents-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ecg-ionic-basis/slow-ap-currents.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ecg-ionic-basis-slow-ap-currents-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;11.3: Slow-response action potentials from an SA node cell, with the currents that shape them. Phase 4 has no stable resting potential: the membrane depolarizes from about −60 mV toward threshold, about −40 mV, carried first by the funny current (I<sub>f</sub>) and then by T-type and L-type Ca²⁺ currents while outward K⁺ current dies away. Phase 0 is carried by L-type Ca²⁺ current. Current traces are not to scale. Course figure.
+</figcaption>
+</figure>
+</div>
+<p><strong>Phase 4, spontaneous depolarization.</strong> The most negative point, the <em>maximum diastolic potential</em>, is about −60 mV, well above E<sub>K</sub>. From there the membrane depolarizes on its own. Three things push it up:</p>
+<ul>
+<li>The <strong>funny current, I<sub>f</sub></strong>. It is “funny” because, unlike most voltage-gated channels, its channels open when the membrane <em>hyperpolarizes</em> at the end of phase 3. The channels are HCN channels, mainly HCN4 in the SA node. I<sub>f</sub> is a mixed cation current, carried mainly by inward Na⁺ at diastolic potentials. It starts the slope of phase 4.</li>
+<li><strong>T-type (“transient”) Ca²⁺ channels</strong> open at fairly negative potentials, so their current builds in the second half of phase 4 and carries the membrane toward the L-type threshold.</li>
+<li><strong>L-type Ca²⁺ channels</strong> begin to open at the end of phase 4.</li>
+</ul>
+<p>At the same time the outward K⁺ current left over from phase 3 is dying away, which also lets the membrane depolarize.</p>
+<p><strong>Phase 0, the upstroke.</strong> At about −40 mV enough L-type Ca²⁺ channels open to fire the cell. Slow-response cells have few working Na⁺ channels, and at a membrane potential this positive most of those would be inactivated anyway. So the upstroke is carried by Ca²⁺ through L-type channels, which open more slowly and carry less current than Na⁺ channels. The upstroke is slow and the peak is low, near +10 mV.</p>
+<p><strong>Phase 3, repolarization.</strong> Delayed rectifier K⁺ current repolarizes the cell, more slowly than in a fast-response cell. Because there is almost no I<sub>K1</sub> to clamp the membrane at E<sub>K</sub>, it never settles at a resting potential, and phase 4 begins again at once.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Fast-response</th>
+<th>Slow-response</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Where</td>
+<td>Atrial and ventricular muscle, His-Purkinje system</td>
+<td>SA node, AV node</td>
+</tr>
+<tr class="even">
+<td>Phase 4</td>
+<td>Stable, about −90 mV, held by I<sub>K1</sub></td>
+<td>Drifts upward from about −60 mV; I<sub>f</sub>, then T- and L-type Ca²⁺ current</td>
+</tr>
+<tr class="odd">
+<td>Threshold</td>
+<td>About −65 mV</td>
+<td>About −40 mV</td>
+</tr>
+<tr class="even">
+<td>Phase 0 current</td>
+<td>I<sub>Na</sub></td>
+<td>I<sub>Ca,L</sub></td>
+</tr>
+<tr class="odd">
+<td>Upstroke</td>
+<td>Very fast</td>
+<td>Slow</td>
+</tr>
+<tr class="even">
+<td>Plateau</td>
+<td>Long (200 ms or more)</td>
+<td>None to speak of</td>
+</tr>
+<tr class="odd">
+<td>Conduction</td>
+<td>Fast (about 0.3 to 1 m/s in muscle, up to 4 m/s in Purkinje fibers)</td>
+<td>Slow (about 0.05 m/s)</td>
+</tr>
+</tbody>
+</table>
+<p>What the two share: both depend on L-type Ca²⁺ channels (for the plateau in one, the upstroke in the other), and both repolarize through delayed rectifier K⁺ channels.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>If you are comparing with the slides
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>One slow-response slide credits phase 0 to T-type Ca²⁺ channels; the next slide, the summary slide and the peer-educator notes credit L-type channels. Phase 0 of the slow-response action potential is carried by L-type Ca²⁺ current. T-type current helps late in phase 4.</p>
+<p>The slides and notes say the funny current flows through “HCN1” channels. The main isoform in the SA node is HCN4. The peer-educator notes call I<sub>f</sub> “Na⁺ leak + T-type Ca²⁺.” T-type Ca²⁺ current is a separate current through separate channels.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>A common mistake
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The AV node is a slow-response tissue, so its action potentials, and conduction through it, depend on <strong>L-type Ca²⁺ current</strong>, not on Na⁺ current. That is why L-type Ca²⁺ channel blockers slow conduction through the AV node and lengthen the PR interval. Na⁺ channel blockers do not act on the AV node. They act on fast-response tissue: they slow phase 0 in the His-Purkinje system and ventricular muscle and widen the QRS. They do not slow the heart rate, because the SA node does not use Na⁺ channels to fire.</p>
+</div>
+</div>
+</section>
+<section id="automaticity" class="level2" data-number="11.6">
+<h2 data-number="11.6" class="anchored" data-anchor-id="automaticity"><span class="header-section-number">11.6</span> Automaticity</h2>
+<p><em>Automaticity</em> is the ability of a cell to fire without an outside trigger. Any cell with a phase 4 that drifts up to threshold has it. The cells that do this best sit in a hierarchy:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Pacemaker</th>
+<th>Rate when it sets the rhythm (per minute)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>SA node</td>
+<td>60 to 100 at rest (the normal resting sinus rate)</td>
+</tr>
+<tr class="even">
+<td>AV node</td>
+<td>40 to 60</td>
+</tr>
+<tr class="odd">
+<td>Purkinje fibers</td>
+<td>about 30 to 40</td>
+</tr>
+</tbody>
+</table>
+<p>The SA node normally wins because its phase 4 reaches threshold first. Each sinus beat spreads through the rest of the heart and fires the slower pacemakers before they get there, so they never get to set the rate. They are <em>latent pacemakers</em>. If the SA node fails, or its impulse is blocked, the fastest remaining pacemaker takes over and produces an <em>escape</em> rhythm. The Purkinje fibers are the main site of ventricular escape pacemakers. Ordinary atrial or ventricular muscle can also acquire automaticity when it is diseased, and then it can fire early, producing extra beats. Escape rhythms and early beats are the subject of the third chapter.</p>
+<section id="how-the-autonomic-nervous-system-changes-the-rate" class="level3" data-number="11.6.1">
+<h3 data-number="11.6.1" class="anchored" data-anchor-id="how-the-autonomic-nervous-system-changes-the-rate"><span class="header-section-number">11.6.1</span> How the autonomic nervous system changes the rate</h3>
+<p>With no autonomic input at all, as in a transplanted heart, the SA node fires at its <em>intrinsic rate</em>, about 100 per minute. At rest it is held below that by parasympathetic (vagal) tone, which is why the normal resting sinus rate is 60 to 100. Sympathetic nerves and circulating catecholamines speed it up. Both act by changing how long phase 4 takes to reach threshold (<a href="#fig-ecg-ionic-basis-autonomic-sa" class="quarto-xref">Figure&nbsp;<span>11.4</span></a>).</p>
+<div id="fig-ecg-ionic-basis-autonomic-sa" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ecg-ionic-basis-autonomic-sa-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ecg-ionic-basis/autonomic-sa.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ecg-ionic-basis-autonomic-sa-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;11.4: The SA node under sympathetic (top), resting (middle) and parasympathetic (bottom) conditions. Sympathetic input steepens phase 4, so threshold is reached sooner. Parasympathetic input starts each cycle from a more negative potential and flattens phase 4, so threshold is reached later. Rates are illustrative. Course figure.
+</figcaption>
+</figure>
+</div>
+<p><strong>Sympathetic (β<sub>1</sub>-adrenergic).</strong> Norepinephrine from sympathetic nerves, or epinephrine from the adrenal medulla, binds β<sub>1</sub> receptors on SA node cells. The receptor raises cAMP. cAMP binds HCN channels directly and makes them open at less negative potentials, so I<sub>f</sub> is larger and the phase 4 slope steeper. β<sub>1</sub> stimulation also increases L-type Ca²⁺ current, which shifts the firing threshold slightly more negative. Threshold comes sooner and the rate rises.</p>
+<p><strong>Parasympathetic (M<sub>2</sub>-muscarinic).</strong> Acetylcholine from the vagus binds M<sub>2</sub> receptors. It has two separate effects that happen at the same time:</p>
+<ul>
+<li>It opens a set of K⁺ channels, so K⁺ conductance rises and the membrane moves toward E<sub>K</sub>. Each cycle starts from a more negative potential.</li>
+<li>It lowers cAMP, which reduces I<sub>f</sub> and flattens the phase 4 slope.</li>
+</ul>
+<p>Both lengthen the time to threshold, and the rate falls. The two effects run in parallel from the same receptor. The rise in K⁺ conductance does not cause the fall in cAMP.</p>
+<p>The same receptors act on the AV node: sympathetic input speeds conduction through it and parasympathetic input slows it. In the ECG, that shows up in the PR interval. The <a href="../cardiovascular/ans-extrinsic-control.html">ANS and Extrinsic Control</a> chapter covers the reflexes that set this autonomic balance.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>What you need from this
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>β<sub>1</sub> steepens and M<sub>2</sub> flattens the I<sub>f</sub> slope. M<sub>2</sub> also hyperpolarizes the cell through K⁺ channels. Everything that changes the sinus rate in the next two chapters works through the slope of phase 4, the potential it starts from, or the threshold it has to reach.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="refractory-periods" class="level2" data-number="11.7">
+<h2 data-number="11.7" class="anchored" data-anchor-id="refractory-periods"><span class="header-section-number">11.7</span> Refractory periods</h2>
+<p>The action potentials so far have waited politely for the cell to finish before the next stimulus came. What happens when a stimulus arrives early? <a href="#fig-ecg-ionic-basis-refractory" class="quarto-xref">Figure&nbsp;<span>11.5</span></a> shows the answer.</p>
+<div id="fig-ecg-ionic-basis-refractory" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ecg-ionic-basis-refractory-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ecg-ionic-basis/refractory.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ecg-ionic-basis-refractory-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;11.5: Refractory periods of a fast-response cell. The three stimuli are alternatives shown on one time axis. A stimulus during the absolute refractory period (tan) produces nothing. A stronger-than-normal stimulus during the relative refractory period (blue) produces a small action potential with a slow upstroke (dashed). A normal stimulus at 620 ms, after the cell has fully recovered (whichever trace it followed), produces a normal action potential. Adapted from Boron and Boulpaep <span class="citation" data-cites="w4-boronupd">[<a href="cv-overview.html#ref-w4-boronupd" role="doc-biblioref">2</a>]</span>, as used in the 2026 lecture.
+</figcaption>
+</figure>
+</div>
+<p><strong>Absolute refractory period</strong> (the slides write “absolute (effective)”). From the upstroke until about halfway through phase 3 (the membrane back to about −50 mV), the cell cannot fire another action potential, however strong the stimulus. The reason is the Na⁺ channels. After they open in phase 0 they inactivate, and an inactivated channel cannot open again until the membrane repolarizes and gives it time to recover. Until enough channels have recovered, there is not enough inward current to make a new upstroke.</p>
+<p>The absolute refractory period does two things for the heart. It prevents summation of action potentials, and so prevents tetanus. And it guarantees a period of relaxation, which is when the heart fills (diastole).</p>
+<p>Separately from any outside stimulus, L-type Ca²⁺ channels can sometimes reopen on their own during the plateau or phase 3 and make a slow upstroke. This can set off an extra beat (the slide lists PACs and PVCs). It is most likely when the action potential is long, which is why a long QT is dangerous (see <a href="../cardiovascular/ecg-interpretation.html">EKG III</a>).</p>
+<p><strong>Relative refractory period.</strong> From about mid-phase 3 into early phase 4, the cell can fire, but only if the stimulus is stronger than normal. Some Na⁺ channels have recovered, but not all, so the upstroke is slower and the action potential smaller. Meanwhile the delayed rectifier K⁺ channels are still open and closing over time, and the extra K⁺ conductance opposes depolarization until it fades.</p>
+<p>Both cell types have refractory periods, but they come from different channels: Na⁺ channel recovery in fast-response cells, and Ca²⁺ channel recovery in slow-response cells.</p>
+</section>
+<section id="upstroke-speed-resting-potential-and-conduction" class="level2" data-number="11.8">
+<h2 data-number="11.8" class="anchored" data-anchor-id="upstroke-speed-resting-potential-and-conduction"><span class="header-section-number">11.8</span> Upstroke speed, resting potential and conduction</h2>
+<p>How fast an action potential spreads from cell to cell depends on how fast its upstroke is. A steep phase 0 pushes a large current into the next cell and brings it to threshold quickly. That one rule explains several clinical effects the lecture uses (<a href="#fig-ecg-ionic-basis-upstroke" class="quarto-xref">Figure&nbsp;<span>11.6</span></a>).</p>
+<div id="fig-ecg-ionic-basis-upstroke" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ecg-ionic-basis-upstroke-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ecg-ionic-basis/upstroke.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ecg-ionic-basis-upstroke-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;11.6: The first 30 ms of a fast-response action potential under three conditions. A Na⁺ channel blocker slows phase 0. So does a less negative resting potential, as with a high extracellular K⁺, because fewer Na⁺ channels are available at rest. Schematic. Course figure.
+</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>Na⁺ channel blockers</strong> reduce I<sub>Na</sub>. Phase 0 is slower in atrial and ventricular muscle and in the His-Purkinje system, so the wave of depolarization takes longer to cross the ventricles and the QRS complex widens.</li>
+<li><strong>L-type Ca²⁺ channel blockers</strong> reduce the current that carries phase 0 in the SA and AV nodes. Conduction through the AV node slows and the PR interval lengthens. They also slow the SA node.</li>
+<li><strong>High extracellular K⁺ (hyperkalemia) or ischemia</strong> partly depolarizes the resting membrane. A less negative resting potential leaves more Na⁺ channels inactivated before the beat begins, so fewer are available for phase 0. The upstroke is slower and smaller, conduction slows, the QRS widens, and the tissue is prone to arrhythmias. Hyperkalemia also slows the SA node and can cause sinus bradycardia.</li>
+</ul>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>A common mistake
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Hyperkalemia means a high K⁺ in the <strong>extracellular</strong> fluid. Raising extracellular K⁺ shrinks the K⁺ gradient across the membrane, so E<sub>K</sub> becomes less negative and the resting potential moves up, toward 0. (Raising intracellular K⁺ would do the opposite, but that is not what happens in disease.) “Less negative” is the direction to remember: the cell is partly depolarized, and its Na⁺ channels pay for it.</p>
+</div>
+</div>
+</section>
+<section id="check-your-understanding" class="level2" data-number="11.9">
+<h2 data-number="11.9" class="anchored" data-anchor-id="check-your-understanding"><span class="header-section-number">11.9</span> Check your understanding</h2>
+<ol type="1">
+<li><p>Suppose a ventricular cell had no I<sub>K1</sub> channels at all. What would happen to its resting membrane potential, and what would that do to its next upstroke?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>The resting potential would become less negative. I<sub>K1</sub> is what makes the resting membrane far more permeable to K⁺ than to anything else, so it holds the cell near E<sub>K</sub>. Without it, the small inward leak of Na⁺ has a larger effect and the membrane drifts up from −90 mV. More Na⁺ channels would then be inactivated before the beat, so the next upstroke would be slower and smaller. (Slow-response cells, which have almost no I<sub>K1</sub>, never settle at a resting potential for a related reason.)</p>
+</details></li>
+<li><p>The AV node conducts at about 0.05 m/s and the His bundle, a few millimeters away, at about 1 m/s. What difference in their action potentials explains most of this, and why does the slow AV node help the heart pump?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>AV node cells are slow-response cells. Their upstroke is carried by L-type Ca²⁺ current, which is smaller and slower to turn on than the Na⁺ current that carries phase 0 in the His bundle, so each AV node cell brings its neighbor to threshold more slowly. (Their small fibers add resistance as well.) The delay holds the ventricles back until the atria have finished contracting and topped up ventricular filling.</p>
+</details></li>
+<li><p>A patient has sinus bradycardia from high vagal tone, and atropine blocks the muscarinic receptors on the SA node. Which two changes in the SA node action potential raise the rate?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>With the M<sub>2</sub> receptors blocked, the extra K⁺ conductance that acetylcholine opened goes away, so each cycle starts from a less negative maximum diastolic potential, closer to threshold. And cAMP is no longer held down, so I<sub>f</sub> is larger and the phase 4 slope steeper. Both shorten the time to threshold.</p>
+</details></li>
+<li><p>Explain, step by step, why a less negative resting potential slows conduction in ventricular muscle even though the Na⁺ channels themselves are normal.</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>At a less negative resting potential, more Na⁺ channels sit in the inactivated state before the beat begins. Fewer are available to open in phase 0, so I<sub>Na</sub> is smaller and the upstroke slower and lower. A slower upstroke drives less current into the next cell, which takes longer to reach threshold, so the wave of depolarization moves more slowly. Hyperkalemia and ischemia do this.</p>
+</details></li>
+<li><p>An extra stimulus reaches a ventricular cell 150 ms after its upstroke. What happens, and what is the channel explanation?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>Nothing: at 150 ms the cell is in its plateau, inside the absolute refractory period. Its Na⁺ channels inactivated during phase 0 and cannot recover until the membrane has repolarized, so there is no current to make a new upstroke.</p>
+</details></li>
+</ol>
+</section>
+<section id="sources" class="level2" data-number="11.10">
+<h2 data-number="11.10" class="anchored" data-anchor-id="sources"><span class="header-section-number">11.10</span> Sources</h2>
+<p>This chapter follows the 2026 EKG I: Ionic Basis lecture for MEDC 30504 (the 2024 deck with speaker notes) and draws on the peer-educator notes and the course’s 2018 electrophysiology notes, corrected and updated. All figures were drawn for this book.</p>
+<div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-w4-nabauer1998" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Näbauer M, Kääb S. <em>Cardiovascular Research</em> 1998;37:324–334.</div>
+</div>
+<div id="ref-w4-boronupd" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Boron WF, Boulpaep EL. <em>Medical Physiology</em>. Updated ed. Elsevier.</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/beiser-lab\.github\.io\/tcop-web-book\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+<nav class="page-navigation" aria-label="Page">
+  <div class="nav-page nav-page-previous">
+      <a href="../cardiovascular/ans-extrinsic-control.html" class="pagination-link" aria-label="ANS and Extrinsic Control">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">ANS and Extrinsic Control</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../cardiovascular/ecg-vectors-axis.html" class="pagination-link" aria-label="ECG II: Vectors and Mean Electrical Axis">
+        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">ECG II: Vectors and Mean Electrical Axis</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

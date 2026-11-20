@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>28&nbsp; Control of Pulmonary Ventilation – Tissues, Cells &amp; Organ Physiology</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../pulmonary/exercise.html" rel="next">
+<link href="../pulmonary/ventilation-perfusion.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-01a495efc5497ac6e3f5457e7ed18e65.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Toolbar">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pulmonary/respiratory-intro.html">Pulmonary physiology</a></li><li class="breadcrumb-item"><a href="../pulmonary/control-of-ventilation.html"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Control of Pulmonary Ventilation</span></a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Tissues, Cells &amp; Organ Physiology</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About this book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Cardiovascular physiology, excitable cells and muscle</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cv-overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cardiovascular Physiology Overview</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cardiac-pump.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Cardiac Pump</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/excitable-cells.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Membrane Potentials and Excitable Cells</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/hemodynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Peripheral Circulation and Hemodynamics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/skeletal-muscle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Skeletal Muscle</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/smooth-muscle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Smooth Muscle</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../muscle/cardiac-muscle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Cardiac Muscle</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/microcirculation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Microcirculation and Local Control</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/control-of-co.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Control of Cardiac Output and Ventricular-Vascular Coupling</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ans-extrinsic-control.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">ANS and Extrinsic Control</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ecg-ionic-basis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">EKG I: Ionic Basis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ecg-vectors-axis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">ECG II: Vectors and Mean Electrical Axis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/ecg-interpretation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">EKG III: Clinical Interpretation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cv-integration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Cardiovascular Integration and Adaptation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/cv-exercise.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Cardiovascular Adaptation to Exercise</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/coronary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Coronary Circulation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/special-circulations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Other Special Circulations</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../cardiovascular/pulmonary-circulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Pulmonary Circulation</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Pulmonary physiology</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/respiratory-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Respiratory Physiology Introduction</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/statics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Respiratory Statics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/dynamics-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Respiratory Dynamics I</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/dynamics-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Respiratory Dynamics II</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/ventilation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Alveolar Ventilation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/diffusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Diffusion</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/o2-co2-transport.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Transport of O<sub>2</sub> and CO<sub>2</sub> in the Blood</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/acid-base.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Pulmonary Acid Base</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/ventilation-perfusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Ventilation and Perfusion</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/control-of-ventilation.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Control of Pulmonary Ventilation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/exercise.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Physiology of Exercise</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pulmonary/respiratory-consultant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Think Like a Respiratory Consultant</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#rhythm-generation-the-medulla" id="toc-rhythm-generation-the-medulla" class="nav-link active" data-scroll-target="#rhythm-generation-the-medulla"><span class="header-section-number">28.1</span> Rhythm generation: the medulla</a></li>
+  <li><a href="#rhythm-modulation-the-pons" id="toc-rhythm-modulation-the-pons" class="nav-link" data-scroll-target="#rhythm-modulation-the-pons"><span class="header-section-number">28.2</span> Rhythm modulation: the pons</a>
+  <ul class="collapse">
+  <li><a href="#what-the-transection-experiments-showed" id="toc-what-the-transection-experiments-showed" class="nav-link" data-scroll-target="#what-the-transection-experiments-showed"><span class="header-section-number">28.2.1</span> What the transection experiments showed</a></li>
+  </ul></li>
+  <li><a href="#muscles-of-respiration" id="toc-muscles-of-respiration" class="nav-link" data-scroll-target="#muscles-of-respiration"><span class="header-section-number">28.3</span> Muscles of respiration</a></li>
+  <li><a href="#sensory-receptors-in-the-respiratory-system" id="toc-sensory-receptors-in-the-respiratory-system" class="nav-link" data-scroll-target="#sensory-receptors-in-the-respiratory-system"><span class="header-section-number">28.4</span> Sensory receptors in the respiratory system</a></li>
+  <li><a href="#central-and-peripheral-chemoreceptors" id="toc-central-and-peripheral-chemoreceptors" class="nav-link" data-scroll-target="#central-and-peripheral-chemoreceptors"><span class="header-section-number">28.5</span> Central and peripheral chemoreceptors</a>
+  <ul class="collapse">
+  <li><a href="#central-chemoreceptors" id="toc-central-chemoreceptors" class="nav-link" data-scroll-target="#central-chemoreceptors"><span class="header-section-number">28.5.1</span> Central chemoreceptors</a></li>
+  <li><a href="#peripheral-chemoreceptors" id="toc-peripheral-chemoreceptors" class="nav-link" data-scroll-target="#peripheral-chemoreceptors"><span class="header-section-number">28.5.2</span> Peripheral chemoreceptors</a></li>
+  </ul></li>
+  <li><a href="#how-ventilation-responds-to-o2-and-co2" id="toc-how-ventilation-responds-to-o2-and-co2" class="nav-link" data-scroll-target="#how-ventilation-responds-to-o2-and-co2"><span class="header-section-number">28.6</span> How ventilation responds to O<sub>2</sub> and CO<sub>2</sub></a>
+  <ul class="collapse">
+  <li><a href="#congenital-central-hypoventilation-syndrome" id="toc-congenital-central-hypoventilation-syndrome" class="nav-link" data-scroll-target="#congenital-central-hypoventilation-syndrome"><span class="header-section-number">28.6.1</span> Congenital central hypoventilation syndrome</a></li>
+  <li><a href="#chronic-co2-retention-a-blunted-response" id="toc-chronic-co2-retention-a-blunted-response" class="nav-link" data-scroll-target="#chronic-co2-retention-a-blunted-response"><span class="header-section-number">28.6.2</span> Chronic CO<sub>2</sub> retention: a blunted response</a></li>
+  <li><a href="#the-two-signals-interact" id="toc-the-two-signals-interact" class="nav-link" data-scroll-target="#the-two-signals-interact"><span class="header-section-number">28.6.3</span> The two signals interact</a></li>
+  </ul></li>
+  <li><a href="#cheyne-stokes-breathing" id="toc-cheyne-stokes-breathing" class="nav-link" data-scroll-target="#cheyne-stokes-breathing"><span class="header-section-number">28.7</span> Cheyne-Stokes breathing</a></li>
+  <li><a href="#baroreceptors" id="toc-baroreceptors" class="nav-link" data-scroll-target="#baroreceptors"><span class="header-section-number">28.8</span> Baroreceptors</a></li>
+  <li><a href="#higher-brain-centers-and-integration" id="toc-higher-brain-centers-and-integration" class="nav-link" data-scroll-target="#higher-brain-centers-and-integration"><span class="header-section-number">28.9</span> Higher brain centers and integration</a></li>
+  <li><a href="#check-your-understanding" id="toc-check-your-understanding" class="nav-link" data-scroll-target="#check-your-understanding"><span class="header-section-number">28.10</span> Check your understanding</a></li>
+  <li><a href="#sources" id="toc-sources" class="nav-link" data-scroll-target="#sources"><span class="header-section-number">28.11</span> Sources</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pulmonary/respiratory-intro.html">Pulmonary physiology</a></li><li class="breadcrumb-item"><a href="../pulmonary/control-of-ventilation.html"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Control of Pulmonary Ventilation</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Control of Pulmonary Ventilation</span></h1>
+<p class="subtitle lead">How the brainstem sets the rhythm, and what it listens to</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Goals for this chapter
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Name the six brainstem centers that generate and shape the breathing rhythm, and say what each one does.</li>
+<li>Match the primary and secondary muscles of breathing to the medullary groups that drive them.</li>
+<li>Describe the four kinds of lung receptors, what stimulates each, how their signals reach the brainstem, and how breathing changes when they fire.</li>
+<li>Compare central and peripheral chemoreceptors: where they are, what they sense, and why the central ones respond to blood CO<sub>2</sub> but hardly to blood H<sup>+</sup>.</li>
+<li>Read the ventilation response curves to O<sub>2</sub> and CO<sub>2</sub>, explain why CO<sub>2</sub> is the main stimulus in health, and explain how hypoxemia changes the response to CO<sub>2</sub>.</li>
+<li>Use those curves to explain the blunted CO<sub>2</sub> response of chronic CO<sub>2</sub> retention and the waxing and waning of Cheyne-Stokes breathing.</li>
+<li>Explain how baroreceptors and higher brain centers act on breathing, and how the competing inputs are settled.</li>
+</ul>
+<p>The lecturer calls this lecture “more on the memorization end.” The movie and TV references on the slides are memory aids, not things to learn. You do not need the individual chemosensitive zones on the surface of the medulla (the slide notes say so).</p>
+</div>
+</div>
+<p>This is the last lecture of new material in the block. The earlier chapters followed the gas from the air to the alveolus (<a href="../pulmonary/statics.html">statics</a>, <a href="../pulmonary/dynamics-1.html">dynamics</a>, <a href="../pulmonary/ventilation.html">ventilation</a>), across the barrier (<a href="../pulmonary/diffusion.html">diffusion</a>), into the blood (<a href="../pulmonary/o2-co2-transport.html">transport</a>), through the matching of air and blood (<a href="../pulmonary/ventilation-perfusion.html">ventilation and perfusion</a>), and on to the tissues as O<sub>2</sub> delivery, cardiac output times O<sub>2</sub> content. All of that runs without conscious effort, and it has to change from moment to moment as we sleep, talk, eat and exercise. This chapter is about the control system. The lecture builds it in four parts around one diagram (<a href="#fig-control-of-ventilation-control-loop" class="quarto-xref">Figure&nbsp;<span>28.6</span></a>, at the end of the chapter):</p>
+<ol type="1">
+<li><strong>Rhythm generation</strong> in the brainstem, which produces each breath.</li>
+<li><strong>The muscles of respiration and the sensory receptors</strong> in the respiratory system, which carry out the breath and report on it.</li>
+<li><strong>Central and peripheral chemoreceptors</strong>, which report how gas exchange is going (with the baroreceptors).</li>
+<li><strong>Higher brain centers and integration</strong>, including how the system settles competing demands.</li>
+</ol>
+<section id="rhythm-generation-the-medulla" class="level2" data-number="28.1">
+<h2 data-number="28.1" class="anchored" data-anchor-id="rhythm-generation-the-medulla"><span class="header-section-number">28.1</span> Rhythm generation: the medulla</h2>
+<p>The basic drive to breathe comes from the brainstem: the medulla, which sits on top of the spinal cord, and the pons above it. Six structures matter for this course (<a href="#fig-control-of-ventilation-centers" class="quarto-xref">Figure&nbsp;<span>28.1</span></a>). Four are in the medulla, and they generate the rhythm. Two are in the pons, and they shape it.</p>
+<div id="fig-control-of-ventilation-centers" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-control-of-ventilation-centers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/control-of-ventilation/centers.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-control-of-ventilation-centers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;28.1: The six brainstem centers that control breathing. In the medulla, the pre-Bötzinger complex starts each breath and the Bötzinger complex ends inspiration. The dorsal respiratory group drives the primary muscles for quiet breathing, and the ventral respiratory group recruits the secondary muscles when breathing must be augmented. In the pons, the apneustic center drives inspiration and the pneumotaxic center restrains it. Course figure, after the lecture’s diagram.
+</figcaption>
+</figure>
+</div>
+<p><strong>Pre-Bötzinger complex (pre-BC): the “go” button.</strong> Its neurons are autorhythmic. Like the cells of the sinus node in the heart, they depolarize on their own at a regular rate, and each burst of firing starts a breath. That is why you breathe all day, and all night, without thinking about it. Recording electrodes moved through the brainstem pick up these rhythmic bursts most strongly at the pre-BC. Different groups of its neurons produce different patterns: ordinary tidal breaths (eupnea), sighs (a longer, deeper inspiration), and gasps (a sudden, abrupt inspiration). Other inputs shift which pattern dominates. Profound hypoxia, for example, shifts the pre-BC toward gasping, which is the gasp of someone who has been held underwater too long.</p>
+<p><strong>Bötzinger complex (BC): the “stop” button.</strong> It sits right next to the pre-BC and sends mostly inhibitory signals to it. The cycle has phases: pre-inspiration, when the inspiratory neurons begin to ramp up at the end of expiration; inspiration; a brief post-inspiration transition; and expiration. Toward the end of inspiration the BC fires and shuts off the inspiratory drive, so the inspiratory muscles relax and you breathe out. Go, stop, go, stop: the pair sets the rhythm.</p>
+<p><strong>Dorsal respiratory group (DRG): tidal breathing.</strong> The DRG carries out the rhythm for quiet breathing. It signals the primary muscles of inspiration, the diaphragm and the external intercostals. It sits beside the nucleus tractus solitarius (NTS), where much of the sensory feedback arrives (below), so that feedback acts on it directly.</p>
+<p><strong>Ventral respiratory group (VRG): augmented breathing.</strong> The VRG recruits the secondary muscles of inspiration and expiration. It is most active when breathing has to be augmented: deeper, fuller inspirations, or forced expirations.</p>
+</section>
+<section id="rhythm-modulation-the-pons" class="level2" data-number="28.2">
+<h2 data-number="28.2" class="anchored" data-anchor-id="rhythm-modulation-the-pons"><span class="header-section-number">28.2</span> Rhythm modulation: the pons</h2>
+<p>The two pontine centers do not start breaths. They shape the breath that the medulla starts: how deep it is, and how the cycle divides between inspiration and expiration. Their output is graded, set by the feedback they receive.</p>
+<p><strong>Apneustic center (AC).</strong> It sits at the junction of the pons and the medulla, caudal to the pneumotaxic center. It augments inspiration: it takes the signal from the pre-BC and ramps it up. Left to itself it would drive every inspiration as long and as deep as possible.</p>
+<p><strong>Pneumotaxic center (PC).</strong> It sits higher in the pons and inhibits the apneustic center, which ends inspiration on time and prevents overdistension. It receives the sensory feedback from the stretch receptors in the lungs, so it is the center that says “that’s enough stretch.” With both working, breaths are smooth and of normal size. (The slide notes give the PC’s anatomical names, the Kölliker-Fuse and parabrachial nuclei. You do not need them.)</p>
+<section id="what-the-transection-experiments-showed" class="level3" data-number="28.2.1">
+<h3 data-number="28.2.1" class="anchored" data-anchor-id="what-the-transection-experiments-showed"><span class="header-section-number">28.2.1</span> What the transection experiments showed</h3>
+<p>The functions of these centers were worked out in animals by cutting the brainstem at different levels and watching the breathing pattern, with the vagus nerves left intact or cut. The vagi matter because they carry the stretch-receptor signals from the lungs (next section), which also help end inspiration. <a href="#fig-control-of-ventilation-transections" class="quarto-xref">Figure&nbsp;<span>28.2</span></a> shows the results.</p>
+<div id="fig-control-of-ventilation-transections" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-control-of-ventilation-transections-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/control-of-ventilation/transections.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-control-of-ventilation-transections-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;28.2: Breathing patterns after the brainstem is cut at four levels, with the vagus nerves intact (left) or cut (right). Level I, above the pons; level II, between the pneumotaxic and apneustic centers; level III, between the pons and medulla; level IV, below the medulla. Course figure, after the transection figure used in the lecture.
+</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>Level I (above the pons).</strong> Breathing stays close to normal, perhaps a little slower without the higher inputs. Cutting the vagi as well makes breaths slower and deeper, because the stretch signal that helps end inspiration is gone.</li>
+<li><strong>Level II (below the pneumotaxic center).</strong> The apneustic center now runs without its brake. Breaths are slower and deeper, and if the vagi are also cut, inspiration is held for a long time before a brief expiration: <em>apneustic breathing</em>, or apneusis.</li>
+<li><strong>Level III (between the pons and the medulla).</strong> Only the medullary centers are left. The pre-BC and BC still switch breathing on and off, but the breaths are irregular gasps, with or without the vagi. The pons is what turns that on-off signal into a smooth tidal breath.</li>
+<li><strong>Level IV (below the medulla).</strong> No breathing at all. The rhythm generator has been cut off from the spinal cord.</li>
+</ul>
+<p>The gasping pattern comes from the firing of the medullary neurons, not from the mechanics of the lung or chest wall. You will see it at the bedside as <em>agonal breathing</em>, in patients who are dying or in cardiac arrest, when the higher centers have failed and the medulla is the last thing still working. It can look like breathing, which is why bystander CPR teaching now asks “is the person breathing <em>normally</em>?” rather than “is the person breathing?” A gasping person found collapsed needs CPR. Gasps can also continue for a time after death, which is distressing for families and staff, and knowing where they come from helps you explain them.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>If you are comparing with the slides
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The lecture notes (section I.C) and the recording describe losing the pneumotaxic center as producing apneustic breathing, with breaths “held at inhalation.” The transection figure (slides 23 to 27) shows that apneusis appears only when the vagi are cut as well. With the vagi intact, the stretch-receptor signal still ends each inspiration, and breathing after a level II cut is slower and deeper. The figure is the version to learn. The course errata make the same correction.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="muscles-of-respiration" class="level2" data-number="28.3">
+<h2 data-number="28.3" class="anchored" data-anchor-id="muscles-of-respiration"><span class="header-section-number">28.3</span> Muscles of respiration</h2>
+<p>The rhythm centers act through the respiratory muscles, which are skeletal muscle, so they can also be driven voluntarily (see “Higher brain centers,” below).</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Inspiration</th>
+<th>Expiration</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Primary muscles (eupneic breathing), driven by the DRG</td>
+<td>Diaphragm, external intercostals</td>
+<td>None. The lung’s elastic recoil returns the system to FRC.</td>
+</tr>
+<tr class="even">
+<td>Secondary muscles (forced or augmented breathing), driven by the VRG</td>
+<td>Upper airway muscles (nares, tongue, pharynx, larynx), which hold the airway open and lower its resistance; neck muscles (sternocleidomastoids, scalenes); chest muscles (pectoralis minor and major)</td>
+<td>Internal intercostals, abdominal muscles</td>
+</tr>
+</tbody>
+</table>
+<p>The ribs move like bucket handles, hinged at each end. The external intercostals pull them up and out, which enlarges the chest and lowers pleural pressure. The internal intercostals pull them down and in, which is only needed when expiration has to be forced. Quiet expiration uses no muscle at all, as the <a href="../pulmonary/statics.html">statics chapter</a> explained: the inspiratory muscles relax and recoil does the rest. A person working hard to breathe, sitting forward with hands on knees and the neck muscles standing out with each breath, is using the secondary muscles that the VRG recruits. The skin pulling in above the collarbones and between the ribs shows how negative the pleural pressure has become.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Background: the motor nerves
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The diaphragm is supplied by the phrenic nerve, whose motor neurons sit in the spinal cord at C3 to C5. That is why an injury to the cervical cord above that level stops breathing, while an injury below it spares the diaphragm. The pathways from the brainstem groups to the spinal motor neurons belong to the neurobiology course.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="sensory-receptors-in-the-respiratory-system" class="level2" data-number="28.4">
+<h2 data-number="28.4" class="anchored" data-anchor-id="sensory-receptors-in-the-respiratory-system"><span class="header-section-number">28.4</span> Sensory receptors in the respiratory system</h2>
+<p>As you breathe, the respiratory tract reports back. Its receptors lie throughout the system, from the nose and pharynx down to the alveoli and pleura.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Receptor</th>
+<th>Where</th>
+<th>Stimulus</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Irritant receptors (rapidly adapting receptors, RARs)</td>
+<td>Nerve endings between epithelial cells of the upper and lower airways</td>
+<td>Smoke, dust, noxious gases, cold air</td>
+<td>Airway constriction (bronchospasm), cough, sighs. In asthma this response is exaggerated.</td>
+</tr>
+<tr class="even">
+<td>Pulmonary stretch receptors (slowly adapting receptors, SARs)</td>
+<td>Airway smooth muscle, lung parenchyma, pleura</td>
+<td>Stretch as the lung inflates</td>
+<td>Inspiration cut short to prevent overinflation: the Hering-Breuer reflex</td>
+</tr>
+<tr class="odd">
+<td>Bronchopulmonary C fibers</td>
+<td>Throughout the airways and lungs</td>
+<td>Pain; temperature, including cold; very large stretch</td>
+<td>Rapid, shallow breathing; part of the sensation of dyspnea</td>
+</tr>
+<tr class="even">
+<td>Juxtacapillary (J) receptors</td>
+<td>Alveolar walls, next to the capillaries</td>
+<td>Capillary distension and interstitial edema</td>
+<td>Rapid, shallow breathing; the discomfort of pulmonary edema, as in heart failure</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Rapidly adapting</strong> means the response fades if the stimulus continues. The first cigarette makes a person cough hard; a regular smoker hardly coughs at all, because the irritant receptors have adapted.</p>
+<p><strong>Slowly adapting</strong> means the opposite. The stretch receptors keep firing as long as the lung is overstretched; we never really get used to overdistension. The Hering-Breuer reflex is strong in infants, whose breathing it largely sets; in adults it acts only when tidal volume is several times normal. That is the vagal signal that the transection experiments removed.</p>
+<p>The C fibers are unmyelinated, slow-conducting fibers, like the pain and temperature fibers elsewhere in the body. The C fibers and J receptors both produce rapid, shallow breathing: faster breaths that avoid stretching the lung further. Their signals reach the cortex too, which is part of why a patient with pulmonary edema feels short of breath.</p>
+<p><strong>The route.</strong> Almost all of these signals travel up the vagus nerve (CN X) to the <strong>nucleus tractus solitarius (NTS)</strong> in the medulla, beside the DRG. From the NTS the feedback acts on the DRG and on the rhythm and pattern centers: the pre-BC and BC, which set rate and rhythm, and the pneumotaxic center, which restrains the apneustic center and so sets the depth of each breath.</p>
+</section>
+<section id="central-and-peripheral-chemoreceptors" class="level2" data-number="28.5">
+<h2 data-number="28.5" class="anchored" data-anchor-id="central-and-peripheral-chemoreceptors"><span class="header-section-number">28.5</span> Central and peripheral chemoreceptors</h2>
+<p>The lung receptors report on mechanics. The chemoreceptors report on gas exchange: the O<sub>2</sub>, CO<sub>2</sub> and H<sup>+</sup> of the blood. You met them in the cardiovascular block, where the chemoreceptor reflex acted on the heart with breathing held fixed (<a href="../cardiovascular/ans-extrinsic-control.html">ANS and Extrinsic Control</a>). Here their main job, driving ventilation, takes center stage.</p>
+<section id="central-chemoreceptors" class="level3" data-number="28.5.1">
+<h3 data-number="28.5.1" class="anchored" data-anchor-id="central-chemoreceptors"><span class="header-section-number">28.5.1</span> Central chemoreceptors</h3>
+<p>The central chemoreceptors lie near the ventral surface of the medulla (the slide names the medullary raphe, the ventrolateral medulla and the retrotrapezoid nucleus). They sit right next to the respiratory centers, which makes sense for a sensor whose job is to tell those centers how breathing is going.</p>
+<p>They detect H<sup>+</sup> and CO<sub>2</sub>, and the blood-brain barrier decides what reaches them. The capillaries of the brain have tight junctions between their endothelial cells, plus extra supporting cells, so much less crosses than elsewhere in the body. Water and small uncharged molecules such as CO<sub>2</sub> cross freely. Charged ions such as H<sup>+</sup> cross poorly. So the central chemoreceptors cannot sense the blood’s H<sup>+</sup> directly. Instead, CO<sub>2</sub> diffuses into the brain, and carbonic anhydrase in the brain tissue converts it, by the reaction you saw in the <a href="../pulmonary/acid-base.html">acid-base chapter</a>:</p>
+<p><span class="math display">\[\text{CO}_2 + \text{H}_2\text{O} \rightleftharpoons \text{H}_2\text{CO}_3 \rightleftharpoons \text{H}^+ + \text{HCO}_3^-\]</span></p>
+<p>A rise in arterial PCO<sub>2</sub> therefore raises the H<sup>+</sup> around the chemoreceptors within moments. Bicarbonate reaches the brain fluid more slowly, through the choroid plexus and transporters, and it sets how much H<sup>+</sup> a given CO<sub>2</sub> makes. That is why a person whose bicarbonate has risen over time, as in chronic CO<sub>2</sub> retention, can tolerate a higher PaCO<sub>2</sub> without much extra drive (below). It also means a change in the blood’s H<sup>+</sup> alone, as in a metabolic acidosis, is sensed first by the carotid bodies, which sit in the arterial blood.</p>
+</section>
+<section id="peripheral-chemoreceptors" class="level3" data-number="28.5.2">
+<h3 data-number="28.5.2" class="anchored" data-anchor-id="peripheral-chemoreceptors"><span class="header-section-number">28.5.2</span> Peripheral chemoreceptors</h3>
+<p>The peripheral chemoreceptors are the <strong>carotid bodies</strong>, at the bifurcation of each common carotid artery, and the <strong>aortic bodies</strong>, on the aortic arch. The cells that do the sensing are the <strong>glomus cells</strong>. These are small organs next to the baroreceptors, but they are not the same thing: the baroreceptors are in the wall of the carotid sinus and the aortic arch.</p>
+<ul>
+<li><strong>Carotid bodies</strong> signal through the glossopharyngeal nerve (CN IX). They sense O<sub>2</sub> more than CO<sub>2</sub>, and they also sense pH. They are more sensitive than the aortic bodies.</li>
+<li><strong>Aortic bodies</strong> signal through the vagus (CN X). They also sense O<sub>2</sub> more than CO<sub>2</sub>, and they are less sensitive.</li>
+</ul>
+<p>The peripheral chemoreceptor afferents reach the NTS, the same relay as the lung receptors, and act from there on the DRG and the rhythm centers. The carotid bodies carry the fast ventilatory response to an acute metabolic acidosis, because H<sup>+</sup> in the blood reaches them directly and reaches the central chemoreceptors poorly. The peripheral chemoreceptors respond to the PO<sub>2</sub> of arterial blood, not to its O<sub>2</sub> content. A patient with anemia or carbon monoxide poisoning can have a normal PaO<sub>2</sub> and so gets little ventilatory drive from these receptors, even though the tissues are short of O<sub>2</sub> (<a href="../pulmonary/o2-co2-transport.html">Transport of O<sub>2</sub> and CO<sub>2</sub></a>).</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>If you are comparing with the recording
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>At one point the recording places the peripheral chemoreceptors “in the carotid sinus.” They are in the carotid bodies; the carotid sinus holds baroreceptors. The recording also says the peripheral chemoreceptors are “not going to be sensitive to pH” and then, a few sentences later, that the carotid body does detect pH. The slide is right: the carotid bodies respond to arterial H<sup>+</sup>, and the aortic bodies respond little to it.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="how-ventilation-responds-to-o2-and-co2" class="level2" data-number="28.6">
+<h2 data-number="28.6" class="anchored" data-anchor-id="how-ventilation-responds-to-o2-and-co2"><span class="header-section-number">28.6</span> How ventilation responds to O<sub>2</sub> and CO<sub>2</sub></h2>
+<p>Hold your breath as long as you can. O<sub>2</sub> falls and CO<sub>2</sub> rises. Which one finally forces you to breathe? CO<sub>2</sub>. <a href="#fig-control-of-ventilation-chemoreceptor-curves" class="quarto-xref">Figure&nbsp;<span>28.3</span></a> shows why.</p>
+<div id="fig-control-of-ventilation-chemoreceptor-curves" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-control-of-ventilation-chemoreceptor-curves-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/control-of-ventilation/chemoreceptor-curves.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-control-of-ventilation-chemoreceptor-curves-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;28.3: Minute ventilation as arterial PO<sub>2</sub> (A) or arterial PCO<sub>2</sub> (B) changes while the other gas is held constant. (A) Ventilation barely changes until PaO<sub>2</sub> falls to about 60 mm Hg, then rises steeply, and the rise is larger when PaCO<sub>2</sub> is higher. (B) Ventilation climbs steeply as PaCO<sub>2</sub> rises through the normal range, and hypoxemia makes the climb steeper. Curves from a simple model scaled so that a person at PaO<sub>2</sub> 100 and PaCO<sub>2</sub> 40 mm Hg breathes 7.5 L/min. Course figure, after the response curves in the lecture and the course notes.
+</figcaption>
+</figure>
+</div>
+<p><strong>The response to O<sub>2</sub> (panel A) is flat over a wide range.</strong> With PaCO<sub>2</sub> held constant, PaO<sub>2</sub> can fall from 100 to about 60 mm Hg with little change in ventilation. Below 60 the curve turns sharply upward. Recall the <a href="../pulmonary/o2-co2-transport.html">O<sub>2</sub> dissociation curve</a>: a PaO<sub>2</sub> of 60 still gives a saturation of about 90%. So PaO<sub>2</sub> can fall a long way, while saturation barely changes, before minute ventilation picks up much. The body tolerates a broad range of PaO<sub>2</sub>.</p>
+<p><strong>The response to CO<sub>2</sub> (panel B) is steep.</strong> Normal PaCO<sub>2</sub> is 40 mm Hg. Even 41 or 42 mm Hg raises minute ventilation sharply, and the breaking point of a breath-hold comes only a few mm Hg above normal. PaCO<sub>2</sub> is held in a narrow window because it is tied to pH.</p>
+<p>So in a healthy person, <strong>CO<sub>2</sub> is the primary stimulus for breathing</strong>, sensed mainly by the central chemoreceptors and in part by the carotid bodies. O<sub>2</sub> becomes a large stimulus only when PaO<sub>2</sub> falls below about 60 mm Hg.</p>
+<section id="congenital-central-hypoventilation-syndrome" class="level3" data-number="28.6.1">
+<h3 data-number="28.6.1" class="anchored" data-anchor-id="congenital-central-hypoventilation-syndrome"><span class="header-section-number">28.6.1</span> Congenital central hypoventilation syndrome</h3>
+<p>In congenital central hypoventilation syndrome (“Ondine’s curse”), the chemosensitivity to CO<sub>2</sub> and H<sup>+</sup> is impaired from birth. The cause is developmental, sometimes in the CO<sub>2</sub> sensors and sometimes in the brainstem centers. Without the CO<sub>2</sub> drive, these children breathe shallowly or stop breathing when voluntary control lapses, most dangerously during sleep. Unless it is recognized early it can be fatal, and many of these children need breathing support, often through a tracheostomy with a ventilator. The name comes from a folk tale in which a water nymph cursed her unfaithful husband to stop breathing if he ever fell asleep.</p>
+</section>
+<section id="chronic-co2-retention-a-blunted-response" class="level3" data-number="28.6.2">
+<h3 data-number="28.6.2" class="anchored" data-anchor-id="chronic-co2-retention-a-blunted-response"><span class="header-section-number">28.6.2</span> Chronic CO<sub>2</sub> retention: a blunted response</h3>
+<p>The CO<sub>2</sub> response is not fixed. In people who retain CO<sub>2</sub> chronically, most often from chronic obstructive pulmonary disease (COPD), it adapts over time. The response line shifts to the right and flattens (<a href="#fig-control-of-ventilation-blunted-co2-response" class="quarto-xref">Figure&nbsp;<span>28.4</span></a>): they need a higher PaCO<sub>2</sub> before ventilation rises, and each extra mm Hg drives less breathing.</p>
+<div id="fig-control-of-ventilation-blunted-co2-response" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-control-of-ventilation-blunted-co2-response-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/control-of-ventilation/blunted-co2-response.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-control-of-ventilation-blunted-co2-response-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;28.4: The ventilatory response to CO<sub>2</sub> in a healthy person and in a person with chronic CO<sub>2</sub> retention. The blunted line is shifted right and is flatter, so the same minute ventilation goes with a higher PaCO<sub>2</sub>. Course figure, after the lecture’s slide.
+</figcaption>
+</figure>
+</div>
+<p>A person who has retained CO<sub>2</sub> for years can sit comfortably with an arterial blood gas of about pH 7.37, PaCO<sub>2</sub> 52 mm Hg and HCO<sub>3</sub><sup>−</sup> 29 mEq/L (an illustrative gas). At a PaCO<sub>2</sub> of 52 most of us would be very short of breath. The bicarbonate is high, the mark of CO<sub>2</sub> retained for a long time, so the pH is near normal and the central chemoreceptors are not strongly stimulated. Part of the blunting is this compensation. Part is mechanical: the drive to breathe may rise, but obstructed, overinflated lungs cannot turn it into ventilation (<a href="../pulmonary/respiratory-consultant.html">Think Like a Respiratory Consultant</a>). In some patients the CO<sub>2</sub> sensitivity itself is lower.</p>
+<p>When the CO<sub>2</sub> window widens like this, O<sub>2</sub> becomes a larger part of what drives breathing. In some patients with advanced COPD, a falling PaO<sub>2</sub> may be what finally raises ventilation.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Background: what this does and does not mean for oxygen therapy
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>You may hear that giving O<sub>2</sub> to a CO<sub>2</sub> retainer is dangerous because it “removes the hypoxic drive.” The blunted CO<sub>2</sub> response is real, and it does make O<sub>2</sub> a larger share of the drive. But when supplemental O<sub>2</sub> raises PaCO<sub>2</sub> in these patients, most of the rise comes from other effects: O<sub>2</sub> relaxes hypoxic pulmonary vasoconstriction, so blood flows back to poorly ventilated units and V/Q matching gets worse, and well-oxygenated hemoglobin holds less CO<sub>2</sub> (the Haldane effect; see <a href="../pulmonary/o2-co2-transport.html">Transport of O<sub>2</sub> and CO<sub>2</sub></a>). Loss of hypoxic drive is a small part of it.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="the-two-signals-interact" class="level3" data-number="28.6.3">
+<h3 data-number="28.6.3" class="anchored" data-anchor-id="the-two-signals-interact"><span class="header-section-number">28.6.3</span> The two signals interact</h3>
+<p>In real life O<sub>2</sub> and CO<sub>2</sub> change together, and each one changes the response to the other. When rising CO<sub>2</sub> drives ventilation up, tidal volume rises first and then the rate. In panel B, the CO<sub>2</sub> response line gets steeper as PaO<sub>2</sub> falls: at a PaO<sub>2</sub> of 47, and even more at 37, a small rise in PaCO<sub>2</sub> drives a large rise in ventilation. In panel A, the hypoxic response is larger when PaCO<sub>2</sub> is higher. Hypoxemia and hypercapnia together drive ventilation far harder than either alone.</p>
+<p>The same interaction shapes the response to altitude. Low inspired PO<sub>2</sub> lowers PaO<sub>2</sub> below 60, and the carotid bodies drive ventilation up. The extra ventilation lowers PaCO<sub>2</sub>, which raises alveolar PO<sub>2</sub> by the alveolar gas equation (<a href="../pulmonary/ventilation.html">Alveolar Ventilation</a>). It also causes a respiratory alkalosis, and the low PaCO<sub>2</sub> and high pH damp the central drive, which limits how far ventilation rises (<a href="../pulmonary/acid-base.html">Pulmonary Acid Base</a>).</p>
+</section>
+</section>
+<section id="cheyne-stokes-breathing" class="level2" data-number="28.7">
+<h2 data-number="28.7" class="anchored" data-anchor-id="cheyne-stokes-breathing"><span class="header-section-number">28.7</span> Cheyne-Stokes breathing</h2>
+<p>When the CO<sub>2</sub> response is very steep (hypoxemia is one cause, <a href="#fig-control-of-ventilation-chemoreceptor-curves" class="quarto-xref">Figure&nbsp;<span>28.3</span></a> B; heart failure is another), a person can overreact to small changes in CO<sub>2</sub>. The result is <em>Cheyne-Stokes breathing</em> (<a href="#fig-control-of-ventilation-cheyne-stokes" class="quarto-xref">Figure&nbsp;<span>28.5</span></a>):</p>
+<ol type="1">
+<li>PaCO<sub>2</sub> rises a little.</li>
+<li>The exaggerated response produces deep, fast breaths that wax and then wane.</li>
+<li>The overbreathing drives PaCO<sub>2</sub> below normal.</li>
+<li>With PaCO<sub>2</sub> low, the drive to breathe disappears and the person stops breathing (apnea).</li>
+<li>During the apnea CO<sub>2</sub> builds up again, and the cycle repeats.</li>
+</ol>
+<p>The cycle needs two things: a steep response, and a delay between the lungs and the chemoreceptors. Blood whose CO<sub>2</sub> the lungs have just changed takes several seconds to reach the carotid bodies and the brainstem, so the controller is always acting on old information and each correction overshoots. In heart failure the slow circulation lengthens that delay, which is why heart failure is the classic setting.</p>
+<div id="fig-control-of-ventilation-cheyne-stokes" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-control-of-ventilation-cheyne-stokes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/control-of-ventilation/cheyne-stokes.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-control-of-ventilation-cheyne-stokes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;28.5: Cheyne-Stokes breathing. Periods of deep, fast breathing that wax and wane alternate with apnea. PaCO<sub>2</sub> falls below normal during each hyperpnea and builds during each apnea. Schematic. Course figure.
+</figcaption>
+</figure>
+</div>
+<p>The usual settings are chronic heart failure, prematurity, sleeping at altitude, and other states of prolonged hypoxia. A stroke can also cause it, and it is common near the end of life. You will see it on the wards. Hypoxia is one setting, not the common thread: many patients with heart failure and Cheyne-Stokes breathing are not hypoxemic. What they share is a chemoreflex that overresponds and, in heart failure, the long delay.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>If you are comparing with the slides
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Slide 67’s first line, and the recording, present prolonged hypoxia as the usual setting. It is one setting, as at altitude, but many heart failure patients with Cheyne-Stokes breathing are not hypoxemic; what they share is the overresponding chemoreflex and the delay described above.</p>
+<p>The slide and the notes also list “Drug use (Opiates).” Opioids work the other way: they blunt the drive to breathe. The usual result is slow, irregular breathing with central apneas, which clinicians classify separately, rather than the smooth crescendo and decrescendo of Cheyne-Stokes breathing. The rest of the slide, including its mechanism (an exaggerated response, then low CO<sub>2</sub> and apnea), matches this chapter. The course errata make the same corrections.</p>
+</div>
+</div>
+</section>
+<section id="baroreceptors" class="level2" data-number="28.8">
+<h2 data-number="28.8" class="anchored" data-anchor-id="baroreceptors"><span class="header-section-number">28.8</span> Baroreceptors</h2>
+<p>The baroreceptors also feed into breathing. The carotid sinus baroreceptors send their afferents in the glossopharyngeal nerve (CN IX), and the aortic arch baroreceptors in the vagus (CN X), as in the <a href="../cardiovascular/ans-extrinsic-control.html">baroreceptor reflex</a>. Besides reaching the cardiovascular centers, these afferents reach the medullary respiratory centers. A sudden rise in arterial pressure can briefly reduce ventilation, and a fall can increase it. The lecture showed an experiment in which raising the pressure in the carotid sinus slowed the respiratory rate a little.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>If you are comparing with the slides
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Slides 69 to 71 label the baroreceptor input “Vagal (X) Afferents,” the recording says the baroreceptors feed back “through vagus afferents,” and the notes describe it as a parasympathetic response. The carotid sinus baroreceptors travel in CN IX and the aortic arch baroreceptors in CN X, the same split as the carotid and aortic bodies on slides 50 to 52. The effect on breathing is a connection within the brainstem to the respiratory centers, not a parasympathetic efferent effect.</p>
+</div>
+</div>
+</section>
+<section id="higher-brain-centers-and-integration" class="level2" data-number="28.9">
+<h2 data-number="28.9" class="anchored" data-anchor-id="higher-brain-centers-and-integration"><span class="header-section-number">28.9</span> Higher brain centers and integration</h2>
+<p>So far the system runs on its own: the medulla and pons generate the rhythm, and feedback from the lungs, chemoreceptors and baroreceptors adjusts it. But we also need to take control of breathing. Higher brain centers can override the rhythm center:</p>
+<ul>
+<li><strong>Motor cortex:</strong> voluntary breathing. You can take a deep breath, hold your breath, or blow out candles.</li>
+<li><strong>Prefrontal cortex:</strong> planning. Breathing can rise in anticipation of exercise, before any CO<sub>2</sub> has been produced.</li>
+<li><strong>Hypothalamus and amygdala:</strong> emotion. Fear, excitement and pain change the rate, depth and pattern of breathing, much as they act on the autonomic nervous system.</li>
+</ul>
+<p>These inputs let us pause or reshape breathing to speak, give lectures, sing, go underwater, and hold the breath while swallowing so that food is not aspirated. In sleep they fall away and the automatic system runs alone.</p>
+<p>All of these inputs compete for one rhythm center and one set of lungs. In exercise, the drive to breathe more says “bigger breaths,” and the stretch receptors say “enough.” Which wins depends on which signal is stronger: tidal volume rises a long way, and near its ceiling the rate takes over (<a href="../pulmonary/exercise.html">Physiology of Exercise</a>). In a breath-hold, the chemoreceptors say “breathe” and the cortex says “not yet.” The cortex wins, but only to a point: hold your breath long enough and the rising CO<sub>2</sub> wins, or you pass out.</p>
+<p><a href="#fig-control-of-ventilation-control-loop" class="quarto-xref">Figure&nbsp;<span>28.6</span></a> puts all four parts together.</p>
+<div id="fig-control-of-ventilation-control-loop" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-control-of-ventilation-control-loop-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/control-of-ventilation/control-loop.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-control-of-ventilation-control-loop-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;28.6: The control of breathing as one loop. The brainstem rhythm generator drives the muscles, the muscles move the lungs, and gas exchange sets the arterial blood gases. Central and peripheral chemoreceptors, baroreceptors and lung receptors report back to the rhythm generator. Higher brain centers act on the rhythm generator and can also drive the muscles directly. Course figure, after the lecture’s integration diagram.
+</figcaption>
+</figure>
+</div>
+<p>The next chapter, <a href="../pulmonary/exercise.html">Physiology of Exercise</a>, puts this system under the largest load a healthy person faces.</p>
+</section>
+<section id="check-your-understanding" class="level2" data-number="28.10">
+<h2 data-number="28.10" class="anchored" data-anchor-id="check-your-understanding"><span class="header-section-number">28.10</span> Check your understanding</h2>
+<ol type="1">
+<li><p>Experimenters cut the brainstem just below the pneumotaxic center and then cut both vagus nerves. What breathing pattern do they see, and why does cutting the vagi make the difference?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>Apneusis: long, held inspirations with brief expirations. The cut removes the pneumotaxic center, which normally restrains the apneustic center. With the vagi intact, the stretch receptors still help end each inspiration, so breaths are only slower and deeper. Cutting the vagi removes that second brake, and the apneustic center holds inspiration on.</p>
+</details></li>
+<li><p>A patient develops an acute metabolic acidosis: the blood’s H<sup>+</sup> rises while PaCO<sub>2</sub> is at first normal. Which chemoreceptors raise ventilation first, and why do the central chemoreceptors respond less at first?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>The carotid bodies, which sit in the arterial blood and respond to its H<sup>+</sup>. The central chemoreceptors are behind the blood-brain barrier, which H<sup>+</sup> crosses poorly; they respond to the H<sup>+</sup> that CO<sub>2</sub> makes in the brain fluid. Once the extra ventilation lowers PaCO<sub>2</sub>, the brain fluid becomes less acidic, which damps the central drive.</p>
+</details></li>
+<li><p>Why does a fall in PaO<sub>2</sub> from 100 to 70 mm Hg change ventilation very little, when a rise in PaCO<sub>2</sub> from 40 to 45 mm Hg makes a person breathe much harder?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>The ventilatory response to O<sub>2</sub> is nearly flat until PaO<sub>2</sub> falls to about 60 mm Hg, and at 70 the saturation is still above 90%. The response to CO<sub>2</sub> is steep near 40, because PaCO<sub>2</sub> is tied directly to pH, which the body holds in a narrow range. CO<sub>2</sub> is the main stimulus to breathe in health.</p>
+</details></li>
+<li><p>After surgery that removes both carotid bodies, a patient breathes 12% O<sub>2</sub> for a few minutes, and on another day 5% CO<sub>2</sub>. Compared with before the surgery, what happens to the rise in ventilation with each gas, and why?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>The response to 12% O<sub>2</sub> is nearly lost. The carotid bodies are the main O<sub>2</sub> sensors. The aortic bodies also sense O<sub>2</sub> but are less sensitive, and the central chemoreceptors do not sense O<sub>2</sub>. So a PaO<sub>2</sub> well below 60, which would normally drive ventilation up steeply, now raises it very little. The response to 5% CO<sub>2</sub> is mostly kept. CO<sub>2</sub> is sensed mainly by the central chemoreceptors in the medulla, which are intact, so ventilation still rises steeply with PaCO<sub>2</sub>. It rises somewhat less than before, because the carotid bodies supplied part of the CO<sub>2</sub> response.</p>
+</details></li>
+<li><p>Two people breathe the same 7.5 L/min. One has a PaCO<sub>2</sub> of 40 mm Hg, the other a PaCO<sub>2</sub> of 52 mm Hg with a high bicarbonate. On <a href="#fig-control-of-ventilation-blunted-co2-response" class="quarto-xref">Figure&nbsp;<span>28.4</span></a>, which line is each on, and what happens to each one’s ventilation if PaCO<sub>2</sub> rises by 5 mm Hg?</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>The first is on the normal line, the second on the blunted line of chronic CO<sub>2</sub> retention, shifted right and flatter. A 5 mm Hg rise raises ventilation a lot in the first person and much less in the second. The high bicarbonate keeps the second person’s pH near normal, which is part of why the CO<sub>2</sub> drive is blunted.</p>
+</details></li>
+<li><p>During Cheyne-Stokes breathing, is PaCO<sub>2</sub> highest during the deep breaths or during the apnea? Explain the order of events.</p>
+<details>
+<summary>
+<p>Answer</p>
+</summary>
+<p>It is highest at the end of the apnea, just as breathing restarts. CO<sub>2</sub> builds during the apnea; the exaggerated response then produces deep, fast breaths that drive PaCO<sub>2</sub> below normal; once it is low, the drive disappears and the next apnea begins.</p>
+</details></li>
+</ol>
+</section>
+<section id="sources" class="level2" data-number="28.11">
+<h2 data-number="28.11" class="anchored" data-anchor-id="sources"><span class="header-section-number">28.11</span> Sources</h2>
+<p>This chapter follows the 2026 Control of Pulmonary Ventilation lecture for MEDC 30504 and its 2026 recording, and draws on the course’s lecture notes and the 2018 course notes, corrected and updated. All figures were drawn for this book.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/beiser-lab\.github\.io\/tcop-web-book\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+<nav class="page-navigation" aria-label="Page">
+  <div class="nav-page nav-page-previous">
+      <a href="../pulmonary/ventilation-perfusion.html" class="pagination-link" aria-label="Ventilation and Perfusion">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Ventilation and Perfusion</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../pulmonary/exercise.html" class="pagination-link" aria-label="Physiology of Exercise">
+        <span class="nav-page-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Physiology of Exercise</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
